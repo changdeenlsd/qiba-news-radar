@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2026-05-27",
+    "top20File": "data/2026-05-27_top20.json",
+    "count": 20,
+    "totalCount": 133,
+    "duplicateCount": 16
+  },
+  {
+    "date": "2026-05-26",
+    "top20File": "data/2026-05-26_top20.json",
+    "count": 20,
+    "totalCount": 133,
+    "duplicateCount": 0
+  }
+]
