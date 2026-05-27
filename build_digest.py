@@ -5,6 +5,7 @@ import re
 from datetime import datetime, timezone
 from html import escape
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import yaml
 
@@ -13,8 +14,10 @@ ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
 DOCS_DIR = ROOT / "docs"
 KEYWORDS_FILE = ROOT / "keywords.yml"
+REPORT_TZ = ZoneInfo("Asia/Shanghai")
 TOP_PICK_LIMIT = 20
 MAX_TOP_PICKS_PER_SOURCE = 5
+TOP20_FILE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})_top20\.json$")
 
 
 PRIORITY_SOURCES = {
@@ -107,7 +110,14 @@ def load_keyword_rules() -> dict:
         return yaml.safe_load(file) or {}
 
 
+def report_date_today() -> str:
+    return datetime.now(REPORT_TZ).strftime("%Y-%m-%d")
+
+
 def latest_raw_file() -> Path:
+    today_file = DATA_DIR / f"{report_date_today()}.raw.json"
+    if today_file.exists():
+        return today_file
     files = sorted(DATA_DIR.glob("*.raw.json"))
     if not files:
         raise FileNotFoundError("No raw news file found. Run fetch_news.py first.")
@@ -117,6 +127,14 @@ def latest_raw_file() -> Path:
 def clean_text(text: str) -> str:
     text = re.sub(r"<[^>]+>", "", text or "")
     return re.sub(r"\s+", " ", text).strip()
+
+
+def normalize_title(title: str) -> str:
+    title = clean_text(title).lower()
+    title = re.sub(r"\s+[-|]\s+(openai blog|microsoft ai blog|google ai blog|meta ai blog|nvidia blog|mit news|stanford hai|techcrunch|the verge).*?$", "", title)
+    title = re.sub(r"[^\w\s\u4e00-\u9fff]", " ", title)
+    title = re.sub(r"\s+", " ", title).strip()
+    return title
 
 
 def keyword_matches(text: str, keyword: str) -> bool:
@@ -460,9 +478,125 @@ def similarity_key(item: dict) -> tuple[str, str, str]:
     return (item.get("source", ""), date, " ".join(useful_words[:8]))
 
 
+def load_seen_items(data_dir: Path, current_date: str) -> dict:
+    seen = {
+        "links": {},
+        "titles": {},
+        "history_files": [],
+        "used_history_files": [],
+        "item_count": 0,
+    }
+    for path in sorted(data_dir.glob("*_top20.json")):
+        match = TOP20_FILE_RE.match(path.name)
+        if not match:
+            continue
+        file_date = match.group(1)
+        seen["history_files"].append(str(path))
+        if file_date >= current_date:
+            continue
+        try:
+            items = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        seen["used_history_files"].append(str(path))
+        for item in items:
+            seen["item_count"] += 1
+            link = item.get("link", "").strip()
+            title = clean_text(item.get("title", ""))
+            normalized = item.get("normalized_title") or normalize_title(title)
+            if link and link not in seen["links"]:
+                seen["links"][link] = file_date
+            if normalized and normalized not in seen["titles"]:
+                seen["titles"][normalized] = file_date
+    return seen
+
+
+def similar_seen_title(normalized_title: str, seen_titles: dict[str, str]) -> tuple[bool, str]:
+    if not normalized_title or len(normalized_title) <= 20:
+        return False, ""
+    for seen_title, first_seen_date in seen_titles.items():
+        if len(seen_title) <= 20:
+            continue
+        if normalized_title in seen_title or seen_title in normalized_title:
+            return True, first_seen_date
+    return False, ""
+
+
+def mark_duplicates(items: list[dict], seen_items: dict) -> int:
+    duplicate_count = 0
+    seen_links = seen_items.get("links", {})
+    seen_titles = seen_items.get("titles", {})
+    for item in items:
+        link = item.get("link", "").strip()
+        normalized = normalize_title(item.get("title", ""))
+        item["normalized_title"] = normalized
+        item["is_duplicate"] = False
+        item["duplicate_reason"] = ""
+        item["first_seen_date"] = ""
+        item["allow_repeat"] = False
+
+        if link in seen_links:
+            item["is_duplicate"] = True
+            item["duplicate_reason"] = "same_link"
+            item["first_seen_date"] = seen_links[link]
+        elif normalized in seen_titles:
+            item["is_duplicate"] = True
+            item["duplicate_reason"] = "same_title"
+            item["first_seen_date"] = seen_titles[normalized]
+        else:
+            is_similar, first_seen_date = similar_seen_title(normalized, seen_titles)
+            if is_similar:
+                item["is_duplicate"] = True
+                item["duplicate_reason"] = "similar_title"
+                item["first_seen_date"] = first_seen_date
+
+        if item["is_duplicate"]:
+            duplicate_count += 1
+    return duplicate_count
+
+
+def build_archive_index(data_dir: Path) -> tuple[list[dict], dict[str, list[dict]]]:
+    archive_index: list[dict] = []
+    archive_data: dict[str, list[dict]] = {}
+    for path in sorted(data_dir.glob("*_top20.json"), reverse=True):
+        match = TOP20_FILE_RE.match(path.name)
+        if not match:
+            continue
+        date_text = match.group(1)
+        try:
+            top_items = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        archive_data[date_text] = top_items
+        full_file = data_dir / f"{date_text}.json"
+        total_count = None
+        duplicate_count = None
+        if full_file.exists():
+            try:
+                full_items = json.loads(full_file.read_text(encoding="utf-8"))
+                total_count = len(full_items)
+                duplicate_count = sum(1 for item in full_items if item.get("is_duplicate"))
+            except json.JSONDecodeError:
+                pass
+        entry = {
+            "date": date_text,
+            "top20File": f"data/{date_text}_top20.json",
+            "count": len(top_items),
+        }
+        if total_count is not None:
+            entry["totalCount"] = total_count
+        if duplicate_count is not None:
+            entry["duplicateCount"] = duplicate_count
+        archive_index.append(entry)
+
+    archive_index.sort(key=lambda entry: entry["date"], reverse=True)
+    archive_data = {entry["date"]: archive_data[entry["date"]] for entry in archive_index}
+    return archive_index, archive_data
+
+
 def select_top_picks(items: list[dict], limit: int = TOP_PICK_LIMIT) -> list[dict]:
     best_by_key: dict[tuple[str, str, str], dict] = {}
-    for item in items:
+    for item in [candidate for candidate in items if not candidate.get("is_duplicate")]:
         key = similarity_key(item)
         current = best_by_key.get(key)
         if current is None or item["priority_score"] > current["priority_score"]:
@@ -497,6 +631,7 @@ def build_digest() -> tuple[Path, Path, Path, Path]:
     date_text = raw_file.name.replace(".raw.json", "")
     raw_items = json.loads(raw_file.read_text(encoding="utf-8"))
     now = datetime.now(timezone.utc)
+    seen_items = load_seen_items(DATA_DIR, date_text)
 
     digest_items = []
     seen_links = set()
@@ -518,16 +653,22 @@ def build_digest() -> tuple[Path, Path, Path, Path]:
                 "published_at": item.get("published_at", ""),
                 "summary": clean_text(item.get("summary", ""))[:300],
                 "tags": tags,
+                "normalized_title": normalize_title(item.get("title", "")),
                 "zh_summary": zh_summary,
                 "story_angle": story_angle,
                 "qiba_pitch": qiba_pitch,
                 "priority_score": priority_score,
                 "recommendation_level": recommendation_level(priority_score),
                 "is_top_pick": False,
+                "is_duplicate": False,
+                "duplicate_reason": "",
+                "first_seen_date": "",
+                "allow_repeat": False,
                 "directions": directions,
             }
         )
 
+    duplicate_count = mark_duplicates(digest_items, seen_items)
     top_items = select_top_picks(digest_items)
     top_links = {item["link"] for item in top_items}
     for item in digest_items:
@@ -539,11 +680,19 @@ def build_digest() -> tuple[Path, Path, Path, Path]:
     md_file = DATA_DIR / f"{date_text}.md"
     top_json_file = DATA_DIR / f"{date_text}_top20.json"
     top_md_file = DATA_DIR / f"{date_text}_top20.md"
+    archive_index_file = DATA_DIR / "archive_index.json"
     json_file.write_text(json.dumps(digest_items, ensure_ascii=False, indent=2), encoding="utf-8")
     md_file.write_text(render_markdown(date_text, digest_items, "七爸新闻雷达｜完整线索"), encoding="utf-8")
     top_json_file.write_text(json.dumps(top_items, ensure_ascii=False, indent=2), encoding="utf-8")
     top_md_file.write_text(render_markdown(date_text, top_items, "七爸新闻雷达｜今日精选 Top 20"), encoding="utf-8")
-    render_html(date_text, top_items, len(digest_items))
+    archive_index, archive_data = build_archive_index(DATA_DIR)
+    archive_index_file.write_text(json.dumps(archive_index, ensure_ascii=False, indent=2), encoding="utf-8")
+    render_html(date_text, top_items, len(digest_items), duplicate_count, archive_index, archive_data)
+    print(f"History top20 files found: {len(seen_items['history_files'])}")
+    print(f"History top20 files used: {len(seen_items['used_history_files'])}")
+    print(f"History top20 items collected: {seen_items['item_count']}")
+    print(f"Filtered duplicate candidates: {duplicate_count}")
+    print(f"Updated archive index: {archive_index_file}")
     return json_file, md_file, top_json_file, top_md_file
 
 
@@ -557,6 +706,9 @@ def render_markdown(date_text: str, items: list[dict], title: str) -> str:
                 f"- 发布时间：{item['published_at'] or '未知'}",
                 f"- 优先级分数：{item['priority_score']}",
                 f"- 推荐级别：{item['recommendation_level']}",
+                f"- 是否重复：{item['is_duplicate']}",
+                f"- 重复原因：{item['duplicate_reason'] or '无'}",
+                f"- 首次推送日期：{item['first_seen_date'] or '无'}",
                 f"- 标签：{', '.join(item['tags'])}",
                 f"- 链接：{item['link']}",
                 f"- 摘要：{item['summary'] or '暂无摘要'}",
@@ -569,7 +721,18 @@ def render_markdown(date_text: str, items: list[dict], title: str) -> str:
     return "\n".join(lines)
 
 
-def render_html(date_text: str, items: list[dict], total_count: int) -> None:
+def script_json(data: object) -> str:
+    return json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
+
+
+def render_html(
+    date_text: str,
+    items: list[dict],
+    total_count: int,
+    duplicate_count: int,
+    archive_index: list[dict],
+    archive_data: dict[str, list[dict]],
+) -> None:
     DOCS_DIR.mkdir(exist_ok=True)
     groups = [
         ("今日必看", [item for item in items if item["priority_score"] >= 80]),
@@ -577,6 +740,11 @@ def render_html(date_text: str, items: list[dict], total_count: int) -> None:
         ("资料储备", [item for item in items if item["priority_score"] < 65]),
     ]
     grouped_sections = "\n".join(render_group(title, group_items) for title, group_items in groups)
+    shortage_notice = ""
+    if len(items) < TOP_PICK_LIMIT:
+        shortage_notice = f'<p class="notice">今日去重后不足20条，实际显示 {len(items)} 条。</p>'
+    archive_index_json = script_json(archive_index)
+    archive_data_json = script_json(archive_data)
     html = f"""<!doctype html>
 <html lang="zh-CN">
 <head>
@@ -589,6 +757,10 @@ def render_html(date_text: str, items: list[dict], total_count: int) -> None:
     main {{ max-width: 960px; margin: 0 auto; padding: 24px 20px 48px; }}
     h1 {{ max-width: 960px; margin: 0 auto 8px; font-size: 28px; line-height: 1.25; }}
     .date {{ max-width: 960px; margin: 0 auto; color: #6b7280; }}
+    .archive-control {{ max-width: 960px; margin: 16px auto 0; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }}
+    .archive-control label {{ color: #374151; font-weight: 600; }}
+    .archive-control select {{ min-width: 180px; border: 1px solid #d1d5db; border-radius: 8px; padding: 7px 10px; background: #ffffff; color: #111827; }}
+    .notice {{ max-width: 960px; margin: 10px auto 0; color: #9a3412; font-weight: 600; }}
     .group {{ margin-bottom: 28px; }}
     .group-header {{ display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin: 0 0 12px; border-bottom: 1px solid #e5e7eb; padding-bottom: 8px; }}
     .group-header h2 {{ margin: 0; font-size: 22px; line-height: 1.3; }}
@@ -612,11 +784,153 @@ def render_html(date_text: str, items: list[dict], total_count: int) -> None:
 <body>
   <header>
     <h1>七爸新闻雷达｜AI·科技·教育研究日报</h1>
-    <p class="date">日报日期：{escape(date_text)}｜今日精选 {len(items)} 条 / 原始线索共 {total_count} 条</p>
+    <p class="date" id="archive-meta">日报日期：{escape(date_text)}｜今日精选 {len(items)} 条 / 原始线索共 {total_count} 条 / 已过滤重复 {duplicate_count} 条</p>
+    <div class="archive-control">
+      <label for="archive-date">选择日报日期</label>
+      <select id="archive-date" aria-label="选择日报日期"></select>
+    </div>
+    <p class="notice" id="archive-notice">{shortage_notice.replace('<p class="notice">', '').replace('</p>', '')}</p>
   </header>
-  <main>
+  <main id="digest-content">
     {grouped_sections}
   </main>
+  <script id="archive-index-data" type="application/json">{archive_index_json}</script>
+  <script id="archive-items-data" type="application/json">{archive_data_json}</script>
+  <script>
+    const embeddedArchiveIndex = JSON.parse(document.getElementById("archive-index-data").textContent);
+    const embeddedArchiveData = JSON.parse(document.getElementById("archive-items-data").textContent);
+    let archiveIndex = embeddedArchiveIndex;
+    const archiveCache = {{ ...embeddedArchiveData }};
+
+    const dateSelect = document.getElementById("archive-date");
+    const metaEl = document.getElementById("archive-meta");
+    const noticeEl = document.getElementById("archive-notice");
+    const contentEl = document.getElementById("digest-content");
+
+    function escapeHtml(value) {{
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }}
+
+    function groupItems(items) {{
+      return [
+        ["今日必看", items.filter((item) => Number(item.priority_score || 0) >= 80)],
+        ["可写成文章", items.filter((item) => Number(item.priority_score || 0) >= 65 && Number(item.priority_score || 0) <= 79)],
+        ["资料储备", items.filter((item) => Number(item.priority_score || 0) < 65)],
+      ];
+    }}
+
+    function renderCard(item) {{
+      const tags = (item.tags || []).map((tag) => `<span class="tag">${{escapeHtml(tag)}}</span>`).join("");
+      return `<article class="item">
+  <h2><a href="${{escapeHtml(item.link)}}" target="_blank" rel="noopener noreferrer">${{escapeHtml(item.title)}}</a></h2>
+  <p class="meta">${{escapeHtml(item.source)}}｜${{escapeHtml(item.published_at || "发布时间未知")}}</p>
+  <div class="score-row">
+    <span class="score-pill">优先级分数：${{escapeHtml(item.priority_score ?? "")}}</span>
+    <span class="level-pill">推荐级别：${{escapeHtml(item.recommendation_level || "")}}</span>
+  </div>
+  <div class="tags">${{tags}}</div>
+  <p>${{escapeHtml(item.summary || "暂无摘要")}}</p>
+  <section class="news-section">
+    <h3>中文速读</h3>
+    <p>${{escapeHtml(item.zh_summary || "暂无中文速读")}}</p>
+  </section>
+  <section class="news-section">
+    <h3>选题判断</h3>
+    <p>${{escapeHtml(item.story_angle || "暂无选题判断")}}</p>
+  </section>
+  <section class="news-section">
+    <h3>七爸选题建议</h3>
+    <p>${{escapeHtml(item.qiba_pitch || "暂无七爸选题建议")}}</p>
+  </section>
+</article>`;
+    }}
+
+    function renderGroup(title, items) {{
+      const body = items.length ? items.map(renderCard).join("") : '<p class="empty">暂无</p>';
+      return `<section class="group">
+  <div class="group-header">
+    <h2>${{escapeHtml(title)}}</h2>
+    <span class="group-count">${{items.length}} 条</span>
+  </div>
+  ${{body}}
+</section>`;
+    }}
+
+    function updateMeta(entry, items) {{
+      if (Number.isFinite(entry.totalCount) && Number.isFinite(entry.duplicateCount)) {{
+        metaEl.textContent = `日报日期：${{entry.date}}｜今日精选 ${{items.length}} 条 / 原始线索共 ${{entry.totalCount}} 条 / 已过滤重复 ${{entry.duplicateCount}} 条`;
+      }} else {{
+        metaEl.textContent = `日报日期：${{entry.date}}｜今日精选 ${{items.length}} 条 / 历史归档`;
+      }}
+      noticeEl.textContent = items.length < {TOP_PICK_LIMIT} ? `今日去重后不足20条，实际显示 ${{items.length}} 条。` : "";
+    }}
+
+    function renderArchive(entry, items) {{
+      updateMeta(entry, items);
+      contentEl.innerHTML = groupItems(items).map(([title, group]) => renderGroup(title, group)).join("");
+      dateSelect.value = entry.date;
+      const url = new URL(window.location.href);
+      url.searchParams.set("date", entry.date);
+      window.history.replaceState(null, "", url);
+    }}
+
+    async function loadArchiveIndex() {{
+      try {{
+        const response = await fetch("../data/archive_index.json", {{ cache: "no-store" }});
+        if (!response.ok) throw new Error("archive index not found");
+        archiveIndex = await response.json();
+      }} catch (error) {{
+        archiveIndex = embeddedArchiveIndex;
+      }}
+    }}
+
+    async function loadArchiveItems(entry) {{
+      if (archiveCache[entry.date]) return archiveCache[entry.date];
+      try {{
+        const response = await fetch(`../${{entry.top20File}}`, {{ cache: "no-store" }});
+        if (!response.ok) throw new Error("archive file not found");
+        const items = await response.json();
+        archiveCache[entry.date] = items;
+        return items;
+      }} catch (error) {{
+        if (embeddedArchiveData[entry.date]) return embeddedArchiveData[entry.date];
+        throw error;
+      }}
+    }}
+
+    function populateDateSelect() {{
+      dateSelect.innerHTML = archiveIndex
+        .map((entry) => `<option value="${{escapeHtml(entry.date)}}">${{escapeHtml(entry.date)}}</option>`)
+        .join("");
+    }}
+
+    async function showDate(date) {{
+      const entry = archiveIndex.find((item) => item.date === date) || archiveIndex[0];
+      if (!entry) return;
+      try {{
+        const items = await loadArchiveItems(entry);
+        renderArchive(entry, items);
+      }} catch (error) {{
+        noticeEl.textContent = "该日期归档加载失败，请检查 data 文件是否存在。";
+      }}
+    }}
+
+    async function initArchiveBrowser() {{
+      await loadArchiveIndex();
+      populateDateSelect();
+      const params = new URLSearchParams(window.location.search);
+      const requestedDate = params.get("date");
+      await showDate(requestedDate || archiveIndex[0]?.date);
+    }}
+
+    dateSelect.addEventListener("change", () => showDate(dateSelect.value));
+    initArchiveBrowser();
+  </script>
 </body>
 </html>
 """
