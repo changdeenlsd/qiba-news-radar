@@ -62,36 +62,6 @@
     ]
   },
   {
-    "title": "Microsoft Elevate Washington: World-class AI for every student and teacher, right here at home",
-    "link": "https://blogs.microsoft.com/on-the-issues/2025/10/09/microsoft-elevate-washington/",
-    "source": "Microsoft Education Blog",
-    "source_category": "ai_education",
-    "published_at": "2025-10-18T00:40:00+00:00",
-    "summary": "Learn how Microsoft Elevate Washington is putting educators and students first—equipping them with skills to thrive as AI reshapes our world. The post Microsoft Elevate Washington: World-class AI for every student and teacher, right here at home appeared first on Microsoft Education Blog.",
-    "tags": [
-      "AI",
-      "教育研究",
-      "科技巨头",
-      "未来职业",
-      "Microsoft"
-    ],
-    "normalized_title": "microsoft elevate washington world class ai for every student and teacher right here at home",
-    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
-    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
-    "qiba_pitch": "适合写成主稿，角度可定为“AI 家教真的能帮孩子学数学吗”。重点解释工具如何提升练习反馈、信心和学习效率，同时提醒家长别把陪伴、诊断和鼓励完全交给系统。 可作为早间选题会的辅助判断。",
-    "priority_score": 66,
-    "recommendation_level": "可收藏",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
     "title": "Building data-empowered higher education institutions",
     "link": "https://www.microsoft.com/en-us/education/blog/2025/10/building-data-empowered-higher-education-institutions/",
     "source": "Microsoft Education Blog",
@@ -110,6 +80,37 @@
     "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
     "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
     "priority_score": 64,
+    "recommendation_level": "可收藏",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Microsoft Elevate for Educators: Advanced recognition application guide 2026-2027",
+    "link": "https://www.microsoft.com/en-us/education/blog/2026/05/microsoft-elevate-for-educators-advanced-recognition-application-guide-2026-2027/",
+    "source": "Microsoft Education Blog",
+    "source_category": "ai_education",
+    "published_at": "2026-05-21T15:00:00+00:00",
+    "summary": "Lead with AI. Apply for Microsoft Elevate Educators 2026–2027 and shape the future of learning. The post Microsoft Elevate for Educators: Advanced recognition application guide 2026-2027 appeared first on Microsoft Education Blog.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "科技巨头",
+      "Microsoft",
+      "AI教育",
+      "未来学习"
+    ],
+    "normalized_title": "microsoft elevate for educators advanced recognition application guide 2026 2027",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 62,
     "recommendation_level": "可收藏",
     "is_top_pick": true,
     "is_duplicate": false,
@@ -207,6 +208,35 @@
     "directions": [
       "AI 产品和研究有哪些新进展？",
       "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "NVIDIA Research Advances Robotics From Simulation to the Real World",
+    "link": "https://blogs.nvidia.com/blog/icra-research-robotics-simulation-to-real-world/",
+    "source": "NVIDIA Blog",
+    "source_category": "high_tech",
+    "published_at": "2026-05-28T13:00:51+00:00",
+    "summary": "Robotics is entering a new phase: moving from controlled demos and scripted automation toward generalizable, reliable embodied autonomy in the real world. At the International Conference on Robotics and Automation (ICRA), eight of NVIDIA Research’s 28 accepted papers show how simulation-to-real tran",
+    "tags": [
+      "高科技",
+      "科技巨头",
+      "未来职业",
+      "NVIDIA"
+    ],
+    "normalized_title": "nvidia research advances robotics from simulation to the real world",
+    "zh_summary": "这项研究围绕AI 模型、智能体或技术应用展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
+    "story_angle": "适合作为教育研究或科技背景资料，暂不急着写主稿；可积累为解释学习科学、AI 影响教育的证据线索。",
+    "qiba_pitch": "可写成未来职业观察，角度是“AI 和自动化正在改变年轻人的工作机会”。适合连接升学、专业选择和职业准备，但需要补充中国家庭能理解的行业案例，避免停留在海外职场新闻。",
+    "priority_score": 50,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "科技巨头的新动作会如何影响教育和内容创作？",
+      "这条新闻是否能帮助家长理解未来职业和技能变化？"
     ]
   },
   {
@@ -485,6 +515,35 @@
     ]
   },
   {
+    "title": "Sneak peek at new Siri app reveals Apple’s plans to take on ChatGPT and more",
+    "link": "https://techcrunch.com/2026/05/28/sneak-peek-at-new-siri-app-reveals-apples-plans-to-take-on-chatgpt-and-more/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-05-28T14:45:13+00:00",
+    "summary": "New renders offer a closer look at Apple’s planned AI overhaul for iOS 27, including a redesigned Siri experience powered and standalone Siri app.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "OpenAI",
+      "Apple"
+    ],
+    "normalized_title": "sneak peek at new siri app reveals apple s plans to take on chatgpt and more",
+    "zh_summary": "TechCrunch相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 34,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
     "title": "Election information and safeguards in 2026",
     "link": "https://openai.com/index/election-safeguards-2026",
     "source": "OpenAI Blog",
@@ -508,57 +567,6 @@
     "directions": [
       "AI 产品和研究有哪些新进展？",
       "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
-    "title": "Solving the “Whac-a-mole dilemma”: A smarter way to debias AI vision models",
-    "link": "https://news.mit.edu/2026/smarter-way-to-debias-ai-vision-models-0429",
-    "source": "MIT News",
-    "source_category": "us_university",
-    "published_at": "2026-04-29T21:40:00+00:00",
-    "summary": "A new debiasing technique called WRING avoids creating or amplifying biases that can occur with existing debiasing approaches.",
-    "tags": [
-      "AI"
-    ],
-    "normalized_title": "solving the whac a mole dilemma a smarter way to debias ai vision models",
-    "zh_summary": "MIT相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
-    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
-    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
-    "priority_score": 34,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
-    "title": "Climate tech companies are going public. What’s next?",
-    "link": "https://www.technologyreview.com/2026/05/28/1138067/climate-tech-ipos/",
-    "source": "MIT Technology Review",
-    "source_category": "high_tech",
-    "published_at": "2026-05-28T10:00:00+00:00",
-    "summary": "This year, there’s been a wave of notable energy companies going public via IPO in the US. The solar and battery company Solv Energy went public in February, to the tune of $6 billion. X-energy, which is building small modular nuclear reactors, did the same in April, and its stocks surged on its fir",
-    "tags": [
-      "观察"
-    ],
-    "normalized_title": "climate tech companies are going public what s next",
-    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
-    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
-    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
-    "priority_score": 31,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "是否可以发展成一篇面向公众号读者的选题线索？"
     ]
   }
 ]
