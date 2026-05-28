@@ -129,6 +129,22 @@ sources:
     region: US
     notes: "Optional/TODO: Bloomberg Technology RSS address not confirmed here. Add only after confirming a stable public RSS feed; avoid paywalled article scraping."
 
+  - name: VOA Learning English - Education Tips
+    url: https://learningenglish.voanews.com/api/z_gjqyl-vomx-tpevmrov
+    category: learning_resource
+    region: 英文世界
+    priority: medium
+    weight: 2
+    notes: Verified VOA Learning English RSS; useful for English learning tips, vocabulary methods, ESL/EFL study habits, listening, and family-friendly learning resources.
+
+  - name: VOA Learning English - Everyday Grammar
+    url: https://learningenglish.voanews.com/api/zoroqql-vomx-tpeptpqq
+    category: learning_resource
+    region: 英文世界
+    priority: medium
+    weight: 2
+    notes: Verified VOA Learning English RSS; useful for grammar practice, everyday English examples, ESL/EFL reading, listening, and worksheet-style learning ideas.
+
 ai_student_builder_signal_sources:
   purpose: Monitor high-value AI education signals, student AI projects, young builder profiles, future learning, higher education AI changes, and tech-company education signals.
   priority_domains:

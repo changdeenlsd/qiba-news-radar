@@ -73,6 +73,15 @@ SUPPLEMENTAL_TOP_PICK_TAGS = {
     "数学",
     "屏幕时间",
 }
+LEARNING_RESOURCE_MAJOR_TOP_PICK_TAGS = {
+    "AI时代学生画像",
+    "AI教育",
+    "学生Builder",
+    "未来学习",
+    "项目制学习",
+    "屏幕时间",
+    "心理健康",
+}
 LOCAL_POLICY_STRONG_EXEMPTION_TAGS = {
     "AI时代学生画像",
     "AI教育",
@@ -1307,6 +1316,22 @@ def supplemental_education_media_can_enter_top20(item: dict) -> bool:
     return score >= 75 or has_education_media_relevance(text, tags) or bool(set(tags) & SUPPLEMENTAL_TOP_PICK_TAGS)
 
 
+def learning_resource_can_enter_top20(item: dict) -> bool:
+    if item.get("source_category") != "learning_resource":
+        return True
+    score = int(item.get("priority_score") or 0)
+    tags = item.get("tags", [])
+    tag_set = set(tags)
+    text = item_text(item, tags)
+    pitch = item.get("qiba_pitch", "")
+    resource_score = score_learning_resource(item, tags, text)
+    if is_learning_resource_candidate(item, tags, text) and resource_score >= RESOURCE_MIN_SCORE:
+        return True
+    if score >= 75 and has_any(pitch, ["适合写成主稿", "适合七点半爸爸主稿", "可以转化为七爸选题", "七爸选题"]):
+        return True
+    return score >= 65 and bool(tag_set & LEARNING_RESOURCE_MAJOR_TOP_PICK_TAGS)
+
+
 def has_qiba_signal(title: str, summary: str, tags: list[str]) -> bool:
     text = f"{title} {summary}"
     return bool(set(tags) & (FIT_TAGS | HIGH_VALUE_EDUCATION_TAGS)) or has_any(
@@ -1507,6 +1532,8 @@ def select_top_picks(items: list[dict], limit: int = TOP_PICK_LIMIT) -> list[dic
         if not general_tech_reserve_can_enter_top20(item):
             continue
         if not supplemental_education_media_can_enter_top20(item):
+            continue
+        if not learning_resource_can_enter_top20(item):
             continue
         if not is_high_score and source_counts.get(source, 0) >= MAX_TOP_PICKS_PER_SOURCE:
             continue
@@ -1825,6 +1852,7 @@ def build_digest() -> tuple[Path, Path, Path, Path, Path, Path]:
                 "title": clean_text(item.get("title", "")),
                 "link": link,
                 "source": item.get("source", ""),
+                "source_category": item.get("source_category", ""),
                 "published_at": item.get("published_at", ""),
                 "summary": clean_text(item.get("summary", ""))[:300],
                 "tags": tags,

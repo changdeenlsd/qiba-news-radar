@@ -14,6 +14,7 @@ from build_digest import (  # noqa: E402
     item_text,
     load_keyword_rules,
     select_daily_resources,
+    select_top_picks,
     tag_item,
 )
 
@@ -57,6 +58,21 @@ def assert_not_resource(item: dict) -> dict:
     selected = select_daily_resources([item])
     assert not selected, f"Expected resource to be rejected: {resource}"
     return resource
+
+
+def top_pick_item(title: str, source_category: str, score: int, tags: list[str] | None = None, summary: str = "") -> dict:
+    return {
+        "title": title,
+        "summary": summary,
+        "source": title,
+        "source_category": source_category,
+        "link": "https://example.com/top/" + title.lower().replace(" ", "-"),
+        "published_at": datetime.now(timezone.utc).isoformat(),
+        "tags": tags or [],
+        "qiba_pitch": "适合放入资料库，暂不建议单独成文。",
+        "priority_score": score,
+        "is_duplicate": False,
+    }
 
 
 def main() -> int:
@@ -140,6 +156,50 @@ def main() -> int:
             }
             for key, value in samples.items()
         },
+    }
+
+    learning_resource_guard = top_pick_item(
+        "Generic grammar listening tip",
+        "learning_resource",
+        60,
+        [],
+        "A short English grammar and listening tip for learners.",
+    )
+    strong_learning_resource = top_pick_item(
+        "Students use AI literacy projects in school",
+        "learning_resource",
+        65,
+        ["AI教育"],
+        "Students build AI literacy projects in middle school.",
+    )
+    students_ai_only = top_pick_item(
+        "Students with Disabilities Praise Assistive Technology Using AI",
+        "learning_resource",
+        42,
+        ["AI", "教育研究"],
+        "Students with disabilities praise assistive technology using AI.",
+    )
+    family_only = top_pick_item(
+        "In Uganda, Cost of Attending School Keeps Children Home",
+        "learning_resource",
+        36,
+        ["教育研究", "儿童与青少年", "家庭教育"],
+        "The cost of attending school keeps children home.",
+    )
+    normal_news = top_pick_item("Regular education news", "ai_education", 50)
+    top_picks = select_top_picks([learning_resource_guard, strong_learning_resource, students_ai_only, family_only, normal_news], limit=5)
+    top_titles = {item["title"] for item in top_picks}
+    assert "Generic grammar listening tip" not in top_titles, top_picks
+    assert "Students use AI literacy projects in school" in top_titles, top_picks
+    assert "Students with Disabilities Praise Assistive Technology Using AI" not in top_titles, top_picks
+    assert "In Uganda, Cost of Attending School Keeps Children Home" not in top_titles, top_picks
+    assert "Regular education news" in top_titles, top_picks
+    results["learning_resource_top20_guard"] = {
+        "blocked": "Generic grammar listening tip" not in top_titles,
+        "strong_tag_allowed": "Students use AI literacy projects in school" in top_titles,
+        "students_ai_only_blocked": "Students with Disabilities Praise Assistive Technology Using AI" not in top_titles,
+        "family_only_blocked": "In Uganda, Cost of Attending School Keeps Children Home" not in top_titles,
+        "non_learning_resource_unaffected": "Regular education news" in top_titles,
     }
 
     print(json.dumps(results, ensure_ascii=False, indent=2))
