@@ -16,7 +16,8 @@ DOCS_DIR = ROOT / "docs"
 KEYWORDS_FILE = ROOT / "keywords.yml"
 REPORT_TZ = ZoneInfo("Asia/Shanghai")
 TOP_PICK_LIMIT = 20
-MAX_TOP_PICKS_PER_SOURCE = 5
+MAX_TOP_PICKS_PER_SOURCE = 3
+MAX_SUPPLEMENTAL_EDUCATION_MEDIA_TOP_PICKS = 5
 TOP20_FILE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})_top20\.json$")
 
 
@@ -31,6 +32,8 @@ PRIORITY_SOURCES = {
     "Stanford HAI": 24,
     "Harvard Graduate School of Education": 24,
     "EdWorkingPapers": 23,
+    "Google for Education Blog": 20,
+    "Microsoft Education Blog": 20,
     "MIT Technology Review": 21,
     "Quanta Magazine": 20,
     "Bloomberg Technology": 20,
@@ -41,9 +44,41 @@ PRIORITY_SOURCES = {
 MEDIA_SOURCES = {
     "The Verge AI": 13,
     "TechCrunch AI": 12,
+    "EdSurge": 8,
+    "The 74": 4,
+    "Inside Higher Ed": 4,
+    "Times Higher Education": 4,
     "Ars Technica": 11,
     "Wired": 11,
 }
+SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES = {"The 74", "Inside Higher Ed", "Times Higher Education"}
+EDUCATION_MEDIA_SOURCES = {"EdSurge"} | SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES
+SUPPLEMENTAL_TOP_PICK_TAGS = {
+    "AI时代学生画像",
+    "AI教育",
+    "学生Builder",
+    "未来学习",
+    "项目制学习",
+    "家庭教育",
+    "亲子教育",
+    "K12教育",
+    "教育公平",
+    "学习能力",
+    "科技教育",
+    "心理健康",
+    "阅读",
+    "数学",
+    "屏幕时间",
+}
+LOCAL_POLICY_STRONG_EXEMPTION_TAGS = {
+    "AI时代学生画像",
+    "AI教育",
+    "学生Builder",
+    "未来学习",
+    "项目制学习",
+    "科技教育",
+}
+LOCAL_POLICY_BROAD_EXEMPTION_TAGS = SUPPLEMENTAL_TOP_PICK_TAGS - LOCAL_POLICY_STRONG_EXEMPTION_TAGS
 
 THEME_KEYWORDS = [
     "ai",
@@ -81,7 +116,20 @@ THEME_KEYWORDS = [
 
 AI_KEYWORDS = ["ai", "artificial intelligence", "chatgpt", "openai", "generative ai", "model", "coding agent"]
 EDUCATION_KEYWORDS = ["education", "learning", "student", "school", "children", "teen", "ai tutor", "science education", "math", "tutoring", "skills"]
-FIT_TAGS = {"教育研究", "AI教育", "儿童与青少年", "学习科学", "家庭教育", "媒介素养", "屏幕时间", "未来职业", "美国高校", "公办家庭可读", "教育热点"}
+FIT_TAGS = {
+    "教育研究",
+    "AI教育",
+    "儿童与青少年",
+    "学习科学",
+    "家庭教育",
+    "媒介素养",
+    "屏幕时间",
+    "未来职业",
+    "美国高校",
+    "公办家庭可读",
+    "教育热点",
+}
+HIGH_VALUE_EDUCATION_TAGS = {"AI时代学生画像", "学生Builder", "未来学习", "项目制学习"}
 FAMILY_IMPACT_TAGS = {"OpenAI", "Google", "Microsoft", "Meta", "Apple", "Amazon", "NVIDIA", "科技巨头"}
 DOWNRANK_KEYWORDS = [
     "podcast",
@@ -103,6 +151,528 @@ DOWNRANK_KEYWORDS = [
     "i/o",
 ]
 ENTERPRISE_ONLY_KEYWORDS = ["enterprise", "developer", "coding agent", "sandbox", "infrastructure", "data center", "gpu", "partnership", "partners with", "cloud", "builders"]
+AI_STUDENT_SUBJECT_SIGNALS = [
+    "student",
+    "students",
+    "high school",
+    "college",
+    "university",
+    "campus",
+    "class of",
+    "cohort",
+    "fellows",
+    "young people",
+    "young leaders",
+    "teenagers",
+    "undergraduate",
+    "graduate",
+    "student innovators",
+    "young builders",
+    "学生",
+    "大学生",
+    "高中生",
+    "青年",
+    "年轻人",
+    "校园",
+    "毕业生",
+    "下一代",
+    "入选者",
+    "榜单",
+    "学生创新者",
+]
+AI_STUDENT_TECH_SIGNALS = [
+    "ai",
+    "artificial intelligence",
+    "chatgpt",
+    "generative ai",
+    "llm",
+    "agents",
+    "model",
+    "openai",
+    "deepmind",
+    "anthropic",
+    "microsoft",
+    "google",
+    "AI",
+    "人工智能",
+    "ChatGPT",
+    "大模型",
+    "生成式AI",
+    "智能体",
+    "OpenAI",
+    "DeepMind",
+    "Anthropic",
+    "微软",
+    "谷歌",
+]
+AI_STUDENT_PROJECT_SIGNALS = [
+    "build",
+    "create",
+    "research",
+    "discover",
+    "solve",
+    "prototype",
+    "grant",
+    "fellowship",
+    "award",
+    "selected",
+    "named",
+    "cohort",
+    "project",
+    "innovation",
+    "social impact",
+    "real-world problems",
+    "创造",
+    "开发",
+    "研究",
+    "发现",
+    "解决",
+    "项目",
+    "资助",
+    "奖学金",
+    "入选",
+    "榜单",
+    "创新",
+    "社会影响",
+    "真实问题",
+    "解决真实问题",
+]
+AI_STUDENT_STRONG_ACTION_SIGNALS = [
+    "students build",
+    "students create",
+    "students developed",
+    "students are using AI to",
+    "students use AI to solve",
+    "using AI to solve real-world problems",
+    "student researchers",
+    "student innovators",
+    "young builders",
+    "young AI leaders",
+    "selected students",
+    "student fellows",
+    "AI fellows",
+    "student grants",
+    "students received grants",
+    "students discover",
+    "students research",
+    "students launch projects",
+    "students solve real-world problems",
+    "ChatGPT Futures",
+    "Class of",
+    "学生开发",
+    "学生创造",
+    "学生用AI解决",
+    "学生用人工智能解决",
+    "学生研究者",
+    "学生创新者",
+    "学生项目",
+    "学生获得资助",
+    "学生入选",
+    "学生榜单",
+    "青年AI领导者",
+    "年轻AI建设者",
+    "学生发现",
+    "学生研究",
+    "学生做真实项目",
+    "学生解决真实问题",
+]
+AI_EDU_TOOL_NEWS_KEYWORDS = [
+    "AI tutor",
+    "AI math tutor",
+    "AI teaching assistant",
+    "AI learning app",
+    "edtech company launches",
+    "education technology company launches",
+    "AI classroom tool",
+    "AI homework helper",
+    "personalized learning platform",
+    "adaptive learning platform",
+    "AI-powered learning platform",
+    "AI study app",
+    "AI test prep",
+    "K-12 AI tutor",
+    "AI tutoring product",
+    "AI家教",
+    "AI数学家教",
+    "AI学习机",
+    "AI教育工具",
+    "AI课堂工具",
+    "AI作业助手",
+    "AI刷题",
+    "AI题库",
+    "AI自适应学习",
+    "AI个性化学习平台",
+    "AI学习App",
+    "AI教培产品",
+    "AI培训产品",
+    "AI助教产品",
+]
+AI_EDU_TOOL_CONTEXT_KEYWORDS = ["company", "startup", "platform", "product", "launches", "launched", "introduces", "edtech", "公司", "平台", "产品", "发布", "推出"]
+EDUCATION_MEDIA_STRONG_RELEVANCE_KEYWORDS = [
+    "ai",
+    "artificial intelligence",
+    "generative ai",
+    "chatgpt",
+    "ai literacy",
+    "future of learning",
+    "future skills",
+    "student project",
+    "student innovation",
+    "project-based learning",
+    "real-world problem",
+    "skills",
+    "literacy",
+    "creativity",
+    "critical thinking",
+    "parents",
+    "parenting",
+    "children",
+    "kids",
+    "k-12",
+    "elementary",
+    "middle school",
+    "high school",
+    "homework",
+    "screen time",
+    "college admissions pressure",
+    "tutoring",
+    "test prep",
+    "assessment",
+    "reading",
+    "writing",
+    "math",
+    "stem",
+    "mental health",
+    "gifted",
+    "career readiness",
+    "AI",
+    "人工智能",
+    "生成式AI",
+    "ChatGPT",
+    "AI素养",
+    "未来学习",
+    "未来技能",
+    "学生项目",
+    "学生创新",
+    "项目制学习",
+    "真实问题",
+    "能力",
+    "素养",
+    "创造力",
+    "批判性思维",
+    "家长",
+    "父母",
+    "孩子",
+    "儿童",
+    "中小学",
+    "作业",
+    "屏幕时间",
+    "升学压力",
+    "教培",
+    "考试",
+    "测评",
+    "阅读",
+    "写作",
+    "数学",
+    "STEM",
+    "心理健康",
+    "拔尖",
+    "职业准备",
+]
+EDUCATION_MEDIA_NOISE_KEYWORDS = [
+    "tuition",
+    "commencement",
+    "president",
+    "board",
+    "trustees",
+    "admissions",
+    "strike",
+    "faculty",
+    "state funding",
+    "charter",
+    "lawsuit",
+    "superintendent",
+    "district budget",
+    "school board",
+    "campus police",
+    "athletics",
+    "enrollment management",
+    "collective bargaining",
+    "tenure",
+    "donor",
+    "alumni",
+    "ranking",
+    "accreditation",
+    "higher ed finance",
+    "学费",
+    "毕业典礼",
+    "校长任命",
+    "董事会",
+    "招生办公室",
+    "罢工",
+    "教师工会",
+    "州拨款",
+    "特许学校",
+    "诉讼",
+    "学区预算",
+    "校董会",
+    "校园警察",
+    "校友",
+    "排名",
+    "认证",
+    "高校财政",
+    "捐赠人",
+]
+LOCAL_US_EDUCATION_POLICY_NOISE_KEYWORDS = [
+    "tuition",
+    "state funding",
+    "federal funding",
+    "district budget",
+    "school board",
+    "board meeting",
+    "superintendent",
+    "trustees",
+    "charter school policy",
+    "voucher policy",
+    "lawsuit",
+    "court ruling",
+    "strike",
+    "union",
+    "collective bargaining",
+    "faculty contract",
+    "campus police",
+    "president appointment",
+    "college president",
+    "university president",
+    "admissions office",
+    "enrollment management",
+    "accreditation",
+    "ranking",
+    "donor",
+    "alumni",
+    "commencement",
+    "graduation ceremony",
+    "public school funding",
+    "public schools funding",
+    "state legislature",
+    "education bill",
+    "local district",
+    "county school",
+    "school district",
+    "feds",
+    "federal money",
+    "new money for public school",
+    "funds",
+    "funding",
+    "closures",
+    "waitlists",
+    "学费",
+    "州拨款",
+    "联邦拨款",
+    "学区预算",
+    "校董会",
+    "学校董事会",
+    "学区会议",
+    "教育局会议",
+    "特许学校政策",
+    "教育券",
+    "诉讼",
+    "法院裁决",
+    "罢工",
+    "教师工会",
+    "集体谈判",
+    "教师合同",
+    "校园警察",
+    "校长任命",
+    "高校校长",
+    "招生办公室",
+    "招生管理",
+    "认证",
+    "排名",
+    "捐赠人",
+    "校友",
+    "毕业典礼",
+    "公立学校拨款",
+    "州议会",
+    "教育法案",
+    "地方学区",
+    "县学校",
+    "学区治理",
+]
+LOCAL_POLICY_EXEMPTION_PARENT_CHILD_SIGNALS = [
+    "parents",
+    "parenting",
+    "children",
+    "kids",
+    "k-12",
+    "elementary",
+    "middle school",
+    "high school",
+    "homework",
+    "screen time",
+    "家长",
+    "父母",
+    "孩子",
+    "儿童",
+    "中小学",
+    "小学",
+    "初中",
+    "高中",
+    "作业",
+    "屏幕时间",
+]
+LOCAL_POLICY_EXEMPTION_LEARNING_SIGNALS = [
+    "reading",
+    "writing",
+    "math",
+    "stem",
+    "learning skills",
+    "critical thinking",
+    "creativity",
+    "assessment",
+    "tutoring",
+    "test prep",
+    "gifted",
+    "mental health",
+    "阅读",
+    "写作",
+    "数学",
+    "STEM",
+    "学习能力",
+    "批判性思维",
+    "创造力",
+    "测评",
+    "教培",
+    "考试",
+    "拔尖",
+    "心理健康",
+]
+LOCAL_POLICY_EXEMPTION_FUTURE_AI_SIGNALS = [
+    "ai",
+    "artificial intelligence",
+    "chatgpt",
+    "generative ai",
+    "ai literacy",
+    "future of learning",
+    "future skills",
+    "career readiness",
+    "AI",
+    "人工智能",
+    "ChatGPT",
+    "生成式AI",
+    "AI素养",
+    "未来学习",
+    "未来技能",
+    "职业准备",
+]
+GENERAL_TECH_RESERVE_NOISE_KEYWORDS = [
+    "ai agent for taxes",
+    "tax agent",
+    "tax agents",
+    "enterprise ai tool",
+    "coding agent",
+    "codex",
+    "enterprise engineering",
+    "engineering with codex",
+    "developer tool",
+    "api update",
+    "cloud tool",
+    "productivity tool",
+    "workplace automation",
+    "business automation",
+    "stock trading",
+    "trade stocks",
+    "trading agent",
+    "finance agent",
+    "smart bird feeder",
+    "smart home gadget",
+    "wearable gadget",
+    "camera gadget",
+    "robot vacuum",
+    "ai gadget",
+    "consumer electronics",
+    "protein design tool",
+    "protein-design tool",
+    "protein-design tools",
+    "lab automation",
+    "biotech platform",
+    "materials discovery",
+    "chemistry model",
+    "drug discovery platform",
+    "报税AI",
+    "税务智能体",
+    "企业AI工具",
+    "编程智能体",
+    "开发者工具",
+    "API更新",
+    "云服务工具",
+    "办公自动化",
+    "企业自动化",
+    "智能喂鸟器",
+    "智能家居小工具",
+    "可穿戴设备",
+    "摄像头小工具",
+    "扫地机器人",
+    "AI小玩意",
+    "消费电子",
+    "蛋白设计工具",
+    "实验室自动化",
+    "生物技术平台",
+    "材料发现",
+    "化学模型",
+    "药物发现平台",
+]
+GENERAL_TECH_EDUCATION_TRANSLATION_SIGNALS = [
+    "students",
+    "student",
+    "children",
+    "kids",
+    "parents",
+    "parenting",
+    "school",
+    "k-12",
+    "classroom",
+    "homework",
+    "learning",
+    "education",
+    "ai literacy",
+    "future of learning",
+    "student project",
+    "project-based learning",
+    "critical thinking",
+    "creativity",
+    "math",
+    "reading",
+    "writing",
+    "screen time",
+    "mental health",
+    "college admissions",
+    "career readiness",
+    "学生",
+    "孩子",
+    "儿童",
+    "家长",
+    "父母",
+    "学校",
+    "中小学",
+    "课堂",
+    "作业",
+    "学习",
+    "教育",
+    "AI素养",
+    "未来学习",
+    "学生项目",
+    "项目制学习",
+    "批判性思维",
+    "创造力",
+    "数学",
+    "阅读",
+    "写作",
+    "屏幕时间",
+    "心理健康",
+    "升学",
+    "职业准备",
+]
 
 
 def load_keyword_rules() -> dict:
@@ -200,6 +770,56 @@ def has_any(text: str, keywords: list[str]) -> bool:
     return any(keyword_matches(text, keyword) for keyword in keywords)
 
 
+def is_ai_student_builder_topic(item: dict, tags: list[str], text: str | None = None) -> bool:
+    text = text or f"{item.get('title', '')} {item.get('summary', '')} {' '.join(tags)}"
+    tag_set = set(tags)
+    has_strong_student_action = has_any(text, AI_STUDENT_STRONG_ACTION_SIGNALS)
+    is_tool_product_news = has_any(text, AI_EDU_TOOL_NEWS_KEYWORDS) and has_any(text, AI_EDU_TOOL_CONTEXT_KEYWORDS)
+    if is_tool_product_news and not has_strong_student_action:
+        return False
+
+    has_student_subject = has_any(text, AI_STUDENT_SUBJECT_SIGNALS) or bool(tag_set & {"AI时代学生画像", "学生Builder"})
+    has_ai_signal = has_any(text, AI_STUDENT_TECH_SIGNALS)
+    has_project_signal = has_any(text, AI_STUDENT_PROJECT_SIGNALS) or bool(tag_set & {"项目制学习"})
+    if not (has_student_subject and has_ai_signal and has_project_signal and has_strong_student_action):
+        return False
+
+    matched_groups = sum(
+        [
+            has_student_subject,
+            has_ai_signal,
+            has_project_signal,
+        ]
+    )
+    if matched_groups == 3:
+        return True
+    return matched_groups >= 2 and bool(tag_set & {"AI时代学生画像", "学生Builder"})
+
+
+def ai_student_builder_bonus(item: dict, tags: list[str], text: str) -> int:
+    tag_set = set(tags)
+    if not is_ai_student_builder_topic(item, tags, text):
+        return 0
+
+    matched_groups = sum(
+        [
+            has_any(text, AI_STUDENT_SUBJECT_SIGNALS) or bool(tag_set & {"AI时代学生画像", "学生Builder"}),
+            has_any(text, AI_STUDENT_TECH_SIGNALS),
+            has_any(text, AI_STUDENT_PROJECT_SIGNALS) or bool(tag_set & {"项目制学习"}),
+        ]
+    )
+    bonus = 0
+    if matched_groups == 3:
+        bonus += 8
+    elif matched_groups >= 2 and bool(tag_set & {"AI时代学生画像", "学生Builder"}):
+        bonus += 5
+    if has_any(text, ["class of", "cohort", "fellows", "young leaders", "student innovators", "chatgpt futures"]):
+        bonus += 3
+    if has_any(text, ["grant", "fellowship", "selected", "award", "$10,000 grant"]):
+        bonus += 2
+    return bonus
+
+
 def detect_gartner_field(text: str) -> str:
     match = re.search(r"Magic Quadrant for ([^,.;]+)", text, re.IGNORECASE)
     if match:
@@ -294,6 +914,10 @@ def build_story_angle(item: dict, tags: list[str]) -> str:
             "屏幕时间",
             "未来职业",
             "AI教育",
+            "AI时代学生画像",
+            "学生Builder",
+            "未来学习",
+            "项目制学习",
         }
     ) or has_any(text, ["student", "learning", "school", "teacher", "children", "teen", "screen time", "education"])
 
@@ -320,6 +944,13 @@ def build_qiba_pitch(item: dict, tags: list[str], priority_score: int) -> str:
     summary = clean_text(item.get("summary", ""))
     text = f"{title} {summary}"
     tag_set = set(tags)
+
+    if (
+        "AI时代学生画像" in tag_set
+        or {"AI教育", "学生Builder"} <= tag_set
+        or is_ai_student_builder_topic(item, tags, text)
+    ):
+        return compact_chinese("这条新闻可以转化为七爸选题：AI时代好学生画像正在变化。重点不是孩子会不会使用 AI 工具，而是能不能用 AI 解决真实问题、做出真实项目。适合延展到孩子该不该学 AI、项目制学习、英文资料检索和跨学科能力。", 120)
 
     if has_any(text, ["olympiad", "math problems"]):
         return compact_chinese("适合写成教育选题，角度是“顶尖数学题库开放后，孩子怎样用 AI 和公开资源做深度学习”。可讨论题库、竞赛训练和自学能力，也提醒家长关注理解过程而不是刷题数量。", 120)
@@ -429,9 +1060,98 @@ def downrank_penalty(title: str, summary: str) -> int:
     return min(penalty, 25)
 
 
+def has_education_media_relevance(text: str, tags: list[str]) -> bool:
+    return bool(set(tags) & ({"AI教育", "屏幕时间", "家庭教育", "儿童与青少年", "未来职业"} | HIGH_VALUE_EDUCATION_TAGS)) or has_any(
+        text,
+        EDUCATION_MEDIA_STRONG_RELEVANCE_KEYWORDS,
+    )
+
+
+def is_education_media_noise(item: dict, source: str, tags: list[str], text: str) -> bool:
+    if source not in EDUCATION_MEDIA_SOURCES:
+        return False
+    return has_any(text, EDUCATION_MEDIA_NOISE_KEYWORDS)
+
+
+def is_local_us_education_policy_noise(item: dict, source: str, tags: list[str], text: str) -> bool:
+    if source not in SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES:
+        return False
+    return has_any(text, LOCAL_US_EDUCATION_POLICY_NOISE_KEYWORDS)
+
+
+def education_media_penalty(item: dict, tags: list[str]) -> int:
+    source = item.get("source", "")
+    if source not in EDUCATION_MEDIA_SOURCES:
+        return 0
+    text = f"{item.get('title', '')} {item.get('summary', '')} {' '.join(tags)}"
+    penalty = 0
+    if not has_education_media_relevance(text, tags):
+        penalty += 12 if source in SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES else 8
+    if is_education_media_noise(item, source, tags, text):
+        penalty += 10
+    return min(penalty, 24)
+
+
+def has_local_policy_noise_exemption(item: dict, tags: list[str], text: str) -> bool:
+    tag_set = set(tags)
+    if tag_set & LOCAL_POLICY_STRONG_EXEMPTION_TAGS:
+        return True
+    matched_groups = sum(
+        [
+            has_any(text, LOCAL_POLICY_EXEMPTION_PARENT_CHILD_SIGNALS),
+            has_any(text, LOCAL_POLICY_EXEMPTION_LEARNING_SIGNALS),
+            has_any(text, LOCAL_POLICY_EXEMPTION_FUTURE_AI_SIGNALS),
+        ]
+    )
+    if matched_groups >= 2:
+        return True
+    if tag_set & LOCAL_POLICY_BROAD_EXEMPTION_TAGS:
+        return matched_groups >= 1 and has_any(text, ["method", "practice", "classroom", "learning", "homework", "screen time", "mental health", "reading", "writing", "math", "AI", "人工智能", "方法", "课堂", "学习", "作业", "屏幕时间", "心理健康", "阅读", "写作", "数学"])
+    score = int(item.get("priority_score") or 0)
+    pitch = item.get("qiba_pitch", "")
+    return score >= 82 and has_any(pitch, ["适合写成", "适合七点半爸爸主稿", "可以转化为七爸选题", "主稿"])
+
+
+def is_general_tech_reserve_noise(item: dict, source: str, tags: list[str], text: str) -> bool:
+    return has_any(text, GENERAL_TECH_RESERVE_NOISE_KEYWORDS)
+
+
+def general_tech_reserve_can_enter_top20(item: dict) -> bool:
+    source = item.get("source", "")
+    tags = item.get("tags", [])
+    text = f"{item.get('title', '')} {item.get('summary', '')} {' '.join(tags)}"
+    score = int(item.get("priority_score") or 0)
+    pitch = item.get("qiba_pitch", "")
+    if source == "The Verge AI":
+        if set(tags) & SUPPLEMENTAL_TOP_PICK_TAGS:
+            return True
+        if score >= 82 and has_any(pitch, ["适合写成", "适合七点半爸爸主稿", "可以转化为七爸选题", "主稿"]):
+            return True
+        return has_any(text, GENERAL_TECH_EDUCATION_TRANSLATION_SIGNALS) and not has_any(text, GENERAL_TECH_RESERVE_NOISE_KEYWORDS)
+    if not is_general_tech_reserve_noise(item, source, tags, text):
+        return True
+    if set(tags) & SUPPLEMENTAL_TOP_PICK_TAGS:
+        return True
+    if has_any(text, GENERAL_TECH_EDUCATION_TRANSLATION_SIGNALS):
+        return True
+    return score >= 82 and has_any(pitch, ["适合写成", "适合七点半爸爸主稿", "可以转化为七爸选题", "主稿"])
+
+
+def supplemental_education_media_can_enter_top20(item: dict) -> bool:
+    source = item.get("source", "")
+    if source not in SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES:
+        return True
+    score = int(item.get("priority_score") or 0)
+    tags = item.get("tags", [])
+    text = f"{item.get('title', '')} {item.get('summary', '')} {' '.join(tags)}"
+    if is_local_us_education_policy_noise(item, source, tags, text):
+        return has_local_policy_noise_exemption(item, tags, text)
+    return score >= 75 or has_education_media_relevance(text, tags) or bool(set(tags) & SUPPLEMENTAL_TOP_PICK_TAGS)
+
+
 def has_qiba_signal(title: str, summary: str, tags: list[str]) -> bool:
     text = f"{title} {summary}"
-    return bool(set(tags) & FIT_TAGS) or has_any(
+    return bool(set(tags) & (FIT_TAGS | HIGH_VALUE_EDUCATION_TAGS)) or has_any(
         text,
         ["education", "learning", "student", "school", "children", "teen", "parent", "family", "screen time", "media literacy", "ai tutor"],
     )
@@ -445,12 +1165,15 @@ def is_enterprise_only(title: str, summary: str, tags: list[str]) -> bool:
 def calculate_priority_score(item: dict, tags: list[str], now: datetime) -> int:
     title = clean_text(item.get("title", ""))
     summary = clean_text(item.get("summary", ""))
+    text = f"{title} {summary} {' '.join(tags)}"
     score = (
         source_priority(item.get("source", ""))
         + theme_priority(title, summary, tags)
         + qiba_fit_priority(title, summary, tags)
         + recency_priority(item.get("published_at", ""), now)
         - downrank_penalty(title, summary)
+        - education_media_penalty(item, tags)
+        + ai_student_builder_bonus(item, tags, text)
     )
     if not has_qiba_signal(title, summary, tags):
         score = min(score, 58)
@@ -605,23 +1328,29 @@ def select_top_picks(items: list[dict], limit: int = TOP_PICK_LIMIT) -> list[dic
     ranked = sorted(best_by_key.values(), key=lambda item: (item["priority_score"], item.get("published_at", "")), reverse=True)
     selected: list[dict] = []
     source_counts: dict[str, int] = {}
+    supplemental_education_media_count = 0
     for item in ranked:
         source = item.get("source", "")
-        if source_counts.get(source, 0) >= MAX_TOP_PICKS_PER_SOURCE:
+        score = int(item.get("priority_score") or 0)
+        is_high_score = score >= 80
+        if not general_tech_reserve_can_enter_top20(item):
+            continue
+        if not supplemental_education_media_can_enter_top20(item):
+            continue
+        if not is_high_score and source_counts.get(source, 0) >= MAX_TOP_PICKS_PER_SOURCE:
+            continue
+        if (
+            not is_high_score
+            and source in SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES
+            and supplemental_education_media_count >= MAX_SUPPLEMENTAL_EDUCATION_MEDIA_TOP_PICKS
+        ):
             continue
         selected.append(item)
         source_counts[source] = source_counts.get(source, 0) + 1
+        if source in SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES:
+            supplemental_education_media_count += 1
         if len(selected) == limit:
             return selected
-
-    if len(selected) < limit:
-        selected_links = {item["link"] for item in selected}
-        for item in ranked:
-            if item["link"] in selected_links:
-                continue
-            selected.append(item)
-            if len(selected) == limit:
-                break
     return selected
 
 

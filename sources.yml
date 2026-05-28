@@ -17,11 +17,27 @@ sources:
     region: US
     notes: Google official AI topic RSS.
 
+  - name: Google for Education Blog
+    url: https://blog.google/products-and-platforms/products/education/rss/
+    category: ai_education
+    region: US
+    priority: high
+    weight: 3
+    notes: Verified Google Learning & Education RSS; useful for classroom AI, student innovation, AI literacy, and future learning signals.
+
   - name: Microsoft AI Blog
     url: https://blogs.microsoft.com/ai/feed/
     category: tech_giant
     region: US
     notes: Microsoft official AI blog RSS.
+
+  - name: Microsoft Education Blog
+    url: https://www.microsoft.com/en-us/education/blog/feed/
+    category: ai_education
+    region: US
+    priority: high
+    weight: 3
+    notes: Verified RSS feed for Microsoft Education Blog; useful for Copilot education, AI literacy, school and student cases.
 
   - name: Meta AI Blog
     url: https://ai.meta.com/blog/rss/
@@ -83,8 +99,144 @@ sources:
     region: US
     notes: Public AI category RSS from TechCrunch.
 
+  - name: EdSurge
+    url: https://www.edsurge.com/articles_rss
+    category: education_technology
+    region: US
+    priority: medium
+    weight: 2
+    notes: Verified public RSS; useful for edtech, AI in education, classroom tools, student projects, and future learning signals.
+
+  - name: The 74
+    url: https://www.the74million.org/feed/
+    category: education_media
+    region: US
+    priority: supplemental
+    weight: 1
+    notes: Verified public RSS; useful for K-12 education policy, school change, students, teachers, and public education context.
+
+  - name: Inside Higher Ed
+    url: https://www.insidehighered.com/rss.xml
+    category: higher_education
+    region: US
+    priority: supplemental
+    weight: 1
+    notes: Verified public RSS; useful for higher education, AI in universities, students, campuses, and institutional change.
+
   - name: Bloomberg Technology
     url: ""
     category: high_tech
     region: US
     notes: "Optional/TODO: Bloomberg Technology RSS address not confirmed here. Add only after confirming a stable public RSS feed; avoid paywalled article scraping."
+
+ai_student_builder_signal_sources:
+  purpose: Monitor high-value AI education signals, student AI projects, young builder profiles, future learning, higher education AI changes, and tech-company education signals.
+  priority_domains:
+    - name: OpenAI Official
+      domains:
+        - openai.com/news/
+        - openai.com/index/
+      priority: high
+      weight: 4
+      notes: Watch for ChatGPT Futures, AI literacy, education programs, student grants, and young builder profiles.
+
+    - name: Google DeepMind
+      domains:
+        - deepmind.google
+        - deepmind.google/blog/
+      priority: high
+      weight: 3
+      notes: Watch for AI research, young researchers, education projects, and social impact work.
+
+    - name: Anthropic
+      domains:
+        - anthropic.com/news
+        - anthropic.com/research
+      priority: high
+      weight: 3
+      notes: No stable RSS verified here; watch for Claude, AI safety, education, research programs, and builder signals.
+
+    - name: Microsoft Education
+      domains:
+        - educationblog.microsoft.com
+        - microsoft.com/en-us/education
+        - blogs.microsoft.com
+      priority: high
+      weight: 3
+      notes: Watch for AI in education, Copilot education, school and student cases.
+
+    - name: Google for Education
+      domains:
+        - edu.google.com
+        - blog.google/outreach-initiatives/education/
+        - blog.google/technology/ai/
+      priority: high
+      weight: 3
+      notes: Watch for AI education, classroom AI, student innovation, and future learning.
+
+    - name: Stanford HAI
+      domains:
+        - hai.stanford.edu/news
+        - hai.stanford.edu
+      priority: high
+      weight: 3
+      notes: Watch for human-centered AI, education, student research, and society-facing AI work.
+
+    - name: MIT News AI
+      domains:
+        - news.mit.edu/topic/artificial-intelligence2
+        - news.mit.edu
+      priority: high
+      weight: 3
+      notes: Watch for AI research, student projects, learning, and future work signals.
+
+    - name: Harvard Graduate School of Education
+      domains:
+        - gse.harvard.edu/news
+        - gse.harvard.edu
+      priority: medium
+      weight: 2
+      notes: No stable RSS verified here; watch for learning science, AI in education, schools, and family education relevance.
+
+  watch_domains:
+    - name: EdSurge
+      domains:
+        - edsurge.com
+      priority: medium
+      weight: 2
+      notes: Education technology and AI education trend source; RSS verified separately in sources.
+
+    - name: The 74
+      domains:
+        - the74million.org
+      priority: supplemental
+      weight: 1
+      notes: K-12 education media source; RSS verified separately in sources. Use as supplemental context unless the article clearly matches AI, student, family, K-12, future learning, skills, literacy, or project-based learning signals.
+
+    - name: Inside Higher Ed
+      domains:
+        - insidehighered.com
+      priority: supplemental
+      weight: 1
+      notes: Higher education media source; RSS verified separately in sources. Use as supplemental context unless the article clearly matches AI, students, future learning, skills, literacy, or family-translatable education signals.
+
+    - name: Times Higher Education
+      domains:
+        - timeshighereducation.com
+      priority: supplemental
+      weight: 1
+      notes: Candidate higher education source; RSS was not verified because the tested feed returned 403.
+
+    - name: OECD Education
+      domains:
+        - oecd.org/education
+      priority: medium
+      weight: 2
+      notes: Candidate education policy source; keep for macro trends, AI education, future skills, and youth development. RSS was not verified because tested feeds returned 403.
+
+    - name: World Economic Forum Education and AI
+      domains:
+        - weforum.org
+      priority: medium
+      weight: 2
+      notes: Candidate global education and AI source; keep for macro trends, AI education, future skills, and youth development. RSS was not verified because tested feed returned 403.

@@ -827,31 +827,309 @@ tags:
     label: AI教育
     english_keywords:
       - ai education
+      - ai literacy
+      - ai in education
+      - ai in higher education
+      - generative ai in education
+      - future of learning
+      - ai learning
+      - ai teaching
+      - using AI to solve real-world problems
+      - young builders using AI
+      - students and young builders using AI
       - ai tutor
       - tutoring ai
+      - ai tutors
+      - ai curriculum
+      - ai classroom
+      - ai education future
       - edtech
       - personalized learning
       - adaptive learning
     chinese_keywords:
+      - 人工智能教育
       - AI教育
+      - AI素养
+      - 生成式AI教育
       - AI家教
+      - AI课程
+      - AI课堂
+      - 未来学习
+      - 教育中的AI
+      - 大学AI教育
+      - 中小学AI教育
       - 智能辅导
       - 教育科技
       - 个性化学习
       - 自适应学习
     keywords:
       - ai education
+      - ai literacy
+      - ai in education
+      - ai in higher education
+      - generative ai in education
+      - future of learning
+      - ai learning
+      - ai teaching
+      - using AI to solve real-world problems
+      - young builders using AI
+      - students and young builders using AI
       - ai tutor
       - tutoring ai
+      - ai tutors
+      - ai curriculum
+      - ai classroom
+      - ai education future
       - edtech
       - personalized learning
       - adaptive learning
+      - 人工智能教育
       - AI教育
+      - AI素养
+      - 生成式AI教育
       - AI家教
+      - AI课程
+      - AI课堂
+      - 未来学习
+      - 教育中的AI
+      - 大学AI教育
+      - 中小学AI教育
       - 智能辅导
       - 教育科技
       - 个性化学习
       - 自适应学习
+
+  ai_student_profile:
+    label: AI时代学生画像
+    english_keywords:
+      - ChatGPT Futures
+      - Class of 2026
+      - Class of 2027
+      - next generation of AI leaders
+      - AI-native students
+      - student builders
+      - young builders
+      - young AI leaders
+      - student innovators
+      - AI fellows
+      - AI fellowship
+      - AI cohort
+      - AI grant students
+      - AI student grants
+      - students using AI
+      - students build with AI
+      - students using AI to solve real-world problems
+      - students solve real-world problems with AI
+      - college students AI
+      - university students AI
+      - high school AI research
+      - student researchers AI
+      - AI for social impact students
+    chinese_keywords:
+      - ChatGPT未来
+      - 下一代AI领导者
+      - AI时代学生
+      - AI原住民
+      - 学生用AI
+      - 学生用人工智能
+      - 年轻AI创业者
+      - 年轻AI领导者
+      - AI学生项目
+      - AI学生创新
+      - AI奖学金
+      - AI资助学生
+      - 大学生AI项目
+      - 高中生AI研究
+      - 学生AI研究
+      - AI时代好学生
+      - AI时代牛娃
+      - AI时代人才画像
+      - 学生用AI解决真实问题
+    keywords:
+      - ChatGPT Futures
+      - Class of 2026
+      - Class of 2027
+      - next generation of AI leaders
+      - AI-native students
+      - student builders
+      - young builders
+      - young AI leaders
+      - student innovators
+      - AI fellows
+      - AI fellowship
+      - AI cohort
+      - AI grant students
+      - AI student grants
+      - students using AI
+      - students build with AI
+      - students using AI to solve real-world problems
+      - students solve real-world problems with AI
+      - college students AI
+      - university students AI
+      - high school AI research
+      - student researchers AI
+      - AI for social impact students
+      - ChatGPT未来
+      - 下一代AI领导者
+      - AI时代学生
+      - AI原住民
+      - 学生用AI
+      - 学生用人工智能
+      - 年轻AI创业者
+      - 年轻AI领导者
+      - AI学生项目
+      - AI学生创新
+      - AI奖学金
+      - AI资助学生
+      - 大学生AI项目
+      - 高中生AI研究
+      - 学生AI研究
+      - AI时代好学生
+      - AI时代牛娃
+      - AI时代人才画像
+      - 学生用AI解决真实问题
+
+  student_builder:
+    label: 学生Builder
+    english_keywords:
+      - student builders
+      - young builders
+      - student makers
+      - student founders
+      - young founders
+      - student creators
+      - student innovators
+      - students build
+      - students create
+      - students launch
+      - students prototype
+    chinese_keywords:
+      - 学生Builder
+      - 学生创造者
+      - 学生创新者
+      - 学生开发者
+      - 学生项目
+      - 青少年创造者
+      - 年轻创业者
+      - 学生创业
+      - 学生做项目
+      - 学生真实项目
+    keywords:
+      - student builders
+      - young builders
+      - student makers
+      - student founders
+      - young founders
+      - student creators
+      - student innovators
+      - students build
+      - students create
+      - students launch
+      - students prototype
+      - 学生Builder
+      - 学生创造者
+      - 学生创新者
+      - 学生开发者
+      - 学生项目
+      - 青少年创造者
+      - 年轻创业者
+      - 学生创业
+      - 学生做项目
+      - 学生真实项目
+
+  future_learning:
+    label: 未来学习
+    english_keywords:
+      - future of learning
+      - future of education
+      - learning in the AI age
+      - AI age learning
+      - new model of learning
+      - learning with AI
+      - young builders using AI
+      - students and young builders using AI
+      - using AI to solve real-world problems
+      - skills for the AI age
+    chinese_keywords:
+      - AI时代学习
+      - 未来学习
+      - 未来教育
+      - AI时代教育
+      - AI时代能力
+      - AI时代技能
+      - 孩子未来能力
+      - 下一代学习
+      - 学习方式变化
+    keywords:
+      - future of learning
+      - future of education
+      - learning in the AI age
+      - AI age learning
+      - new model of learning
+      - learning with AI
+      - young builders using AI
+      - students and young builders using AI
+      - using AI to solve real-world problems
+      - skills for the AI age
+      - AI时代学习
+      - 未来学习
+      - 未来教育
+      - AI时代教育
+      - AI时代能力
+      - AI时代技能
+      - 孩子未来能力
+      - 下一代学习
+      - 学习方式变化
+
+  project_based_learning:
+    label: 项目制学习
+    english_keywords:
+      - project-based learning
+      - PBL
+      - real-world projects
+      - real-world problem solving
+      - real-world problems
+      - solve real-world problems
+      - using AI to solve real-world problems
+      - hands-on projects
+      - student projects
+      - capstone project
+      - research project
+      - social impact project
+    chinese_keywords:
+      - 项目制学习
+      - 项目式学习
+      - 真实项目
+      - 真实问题
+      - 解决真实问题
+      - 学生项目
+      - 研究项目
+      - 跨学科项目
+      - 社会影响项目
+      - 动手项目
+    keywords:
+      - project-based learning
+      - PBL
+      - real-world projects
+      - real-world problem solving
+      - real-world problems
+      - solve real-world problems
+      - using AI to solve real-world problems
+      - hands-on projects
+      - student projects
+      - capstone project
+      - research project
+      - social impact project
+      - 项目制学习
+      - 项目式学习
+      - 真实项目
+      - 真实问题
+      - 解决真实问题
+      - 学生项目
+      - 研究项目
+      - 跨学科项目
+      - 社会影响项目
+      - 动手项目
 
   parent_child_communication:
     label: 亲子沟通
@@ -1134,6 +1412,17 @@ directions:
     - 这条新闻是否适合延展为屏幕时间或数字生活选题？
   future_career:
     - 这条新闻是否能帮助家长理解未来职业和技能变化？
+  ai_student_profile:
+    - 这条新闻是否呈现了 AI 时代学生的新能力画像？
+    - 学生是否在用 AI 解决真实问题，而不只是使用工具？
+  ai_education:
+    - 这条新闻能否解释 AI 素养、AI 课程或未来学习变化？
+  student_builder:
+    - 学生是否从学习者变成创造者、开发者或项目发起者？
+  future_learning:
+    - 这条新闻是否能帮助家长理解 AI 时代的学习方式变化？
+  project_based_learning:
+    - 这条新闻是否适合延展为项目制学习或跨学科实践选题？
   us_university:
     - 美国高校的研究或政策变化是否值得跟踪？
   tech_giant:

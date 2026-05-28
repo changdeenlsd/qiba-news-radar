@@ -1,20 +1,225 @@
 [
   {
-    "title": "Bringing AI-driven protein-design tools to biologists everywhere",
-    "link": "https://news.mit.edu/2026/bringing-ai-driven-protein-design-tools-everywhere-0417",
-    "source": "MIT News",
-    "published_at": "2026-04-17T04:00:00+00:00",
-    "summary": "Founded by Tristan Bepler PhD ’20 and former MIT professor Tim Lu PhD ’07, OpenProtein.AI offers researchers open-source models and other tools for protein engineering.",
+    "title": "Start learning with Google’s new AI Educator Series.",
+    "link": "https://blog.google/products-and-platforms/products/education/ai-educator-series/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-05-13T17:00:00+00:00",
+    "summary": "Free AI literacy training is available to all 6 million K-12 and higher education teachers across the U.S.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "美国高校",
+      "科技巨头",
+      "Google",
+      "AI教育"
+    ],
+    "normalized_title": "start learning with google s new ai educator series",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成文章，角度应从家长能感知的变化切入：学校、学习工具、孩子能力培养或未来职业。正文需要补充家庭或课堂场景，避免写成普通科技新闻摘要。 可作为早间选题会的辅助判断。",
+    "priority_score": 74,
+    "recommendation_level": "可写",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Unlock AI learning with Hour of AI for Computer Science Education Week",
+    "link": "https://www.microsoft.com/en-us/education/blog/2025/12/unlock-ai-learning-with-hour-of-ai-for-computer-science-education-week/",
+    "source": "Microsoft Education Blog",
+    "published_at": "2025-12-01T14:00:00+00:00",
+    "summary": "Join Hour of AI during CS Ed Week 2025—get lessons and resources from Microsoft Education to spark curiosity and create AI learning experiences. The post Unlock AI learning with Hour of AI for Computer Science Education Week appeared first on Microsoft Education Blog.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "科技巨头",
+      "Microsoft",
+      "Science",
+      "AI教育"
+    ],
+    "normalized_title": "unlock ai learning with hour of ai for computer science education week",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成文章，角度应从家长能感知的变化切入：学校、学习工具、孩子能力培养或未来职业。正文需要补充家庭或课堂场景，避免写成普通科技新闻摘要。 可作为早间选题会的辅助判断。",
+    "priority_score": 66,
+    "recommendation_level": "可收藏",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Microsoft Elevate Washington: World-class AI for every student and teacher, right here at home",
+    "link": "https://blogs.microsoft.com/on-the-issues/2025/10/09/microsoft-elevate-washington/",
+    "source": "Microsoft Education Blog",
+    "published_at": "2025-10-18T00:40:00+00:00",
+    "summary": "Learn how Microsoft Elevate Washington is putting educators and students first—equipping them with skills to thrive as AI reshapes our world. The post Microsoft Elevate Washington: World-class AI for every student and teacher, right here at home appeared first on Microsoft Education Blog.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "科技巨头",
+      "未来职业",
+      "Microsoft"
+    ],
+    "normalized_title": "microsoft elevate washington world class ai for every student and teacher right here at home",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成主稿，角度可定为“AI 家教真的能帮孩子学数学吗”。重点解释工具如何提升练习反馈、信心和学习效率，同时提醒家长别把陪伴、诊断和鼓励完全交给系统。 可作为早间选题会的辅助判断。",
+    "priority_score": 66,
+    "recommendation_level": "可收藏",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Building data-empowered higher education institutions",
+    "link": "https://www.microsoft.com/en-us/education/blog/2025/10/building-data-empowered-higher-education-institutions/",
+    "source": "Microsoft Education Blog",
+    "published_at": "2025-10-22T16:00:00+00:00",
+    "summary": "Discover how Microsoft Fabric in higher education helps unify data, scale AI, and drive agility. Download the free Data-Empowered Institution e-book. The post Building data-empowered higher education institutions appeared first on Microsoft Education Blog.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "美国高校",
+      "科技巨头",
+      "Microsoft"
+    ],
+    "normalized_title": "building data empowered higher education institutions",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 64,
+    "recommendation_level": "可收藏",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Expanding AI literacy to Catholic-school classrooms nationwide.",
+    "link": "https://blog.google/products-and-platforms/products/education/catholic-school-ai-literacy/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-04-07T16:00:00+00:00",
+    "summary": "The new Google Educator Group will make AI training available to 146,000 educators who will in turn serve 1.6 million students.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "科技巨头",
+      "Google",
+      "AI教育"
+    ],
+    "normalized_title": "expanding ai literacy to catholic school classrooms nationwide",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成主稿，角度可定为“AI 家教真的能帮孩子学数学吗”。重点解释工具如何提升练习反馈、信心和学习效率，同时提醒家长别把陪伴、诊断和鼓励完全交给系统。 可作为早间选题会的辅助判断。",
+    "priority_score": 62,
+    "recommendation_level": "可收藏",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Screen Time Concerns Lead to Backlash Against Edtech Vetting Process",
+    "link": "https://www.edsurge.com/news/2026-05-07-screen-time-concerns-lead-to-backlash-against-edtech-vetting-process",
+    "source": "EdSurge",
+    "published_at": "2026-05-07T20:07:40+00:00",
+    "summary": "SCHOOL SOFTWARE SCRUTINY: Legislators have pushed back against cellphones in the classroom but are now focused on ensuring school software on devices ...",
+    "tags": [
+      "教育研究",
+      "屏幕时间",
+      "AI教育"
+    ],
+    "normalized_title": "screen time concerns lead to backlash against edtech vetting process",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入媒介素养资料库，观察 AI 内容、娱乐产品和公共讨论如何影响青少年数字生活。若没有儿童、学校或家庭冲突案例支撑，不建议单独成文，可等待更贴近家长的案例。",
+    "priority_score": 58,
+    "recommendation_level": "可收藏",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？",
+      "这条新闻是否适合延展为屏幕时间或数字生活选题？"
+    ]
+  },
+  {
+    "title": "Putting educators at the center of AI learning",
+    "link": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/putting-educators-at-the-center-of-ai-learning/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-05-05T01:00:00+00:00",
+    "summary": "A collage of photos showcasing community engagement and professional events, including a workshop presentation, a woman outdoors near a bridge, a large group meeting, and a professional group photo in front of a Google sign.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "科技巨头",
+      "Google",
+      "AI教育"
+    ],
+    "normalized_title": "putting educators at the center of ai learning",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 58,
+    "recommendation_level": "可收藏",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "The AI Hype Index: AI gets booed in graduation season",
+    "link": "https://www.technologyreview.com/2026/05/28/1138053/the-ai-hype-index-ai-gets-booed-in-graduation-season/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-28T09:51:11+00:00",
+    "summary": "It is one thing to say AI will change the world. It is another to expect the class of 2026 to applaud it. In fact, when former Google CEO Eric Schmidt told University of Arizona graduates that their task is to help shape AI, he was met with a resounding chorus of boos. “I can&#8230;",
     "tags": [
       "AI",
       "美国高校",
-      "MIT"
+      "科技巨头",
+      "Google",
+      "AI时代学生画像"
     ],
-    "normalized_title": "bringing ai driven protein design tools to biologists everywhere",
-    "zh_summary": "这项研究围绕AI 模型、智能体或技术应用展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
-    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
-    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
-    "priority_score": 40,
+    "normalized_title": "the ai hype index ai gets booed in graduation season",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "这条新闻可以转化为七爸选题：AI时代好学生画像正在变化。重点不是孩子会不会使用 AI 工具，而是能不能用 AI 解决真实问题、做出真实项目。适合延展到孩子该不该学 AI、项目制学习、英文资料检索和跨学科能力。",
+    "priority_score": 49,
     "recommendation_level": "观察中",
     "is_top_pick": true,
     "is_duplicate": false,
@@ -27,19 +232,153 @@
     ]
   },
   {
-    "title": "Building self-improving tax agents with Codex",
-    "link": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
-    "source": "OpenAI Blog",
-    "published_at": "2026-05-27T07:00:00+00:00",
-    "summary": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
+    "title": "New Survey of Head Start Providers in 7 States Charts ICE’s Negative Impact",
+    "link": "https://www.the74million.org/zero2eight/new-survey-of-head-start-providers-in-7-states-charts-ices-negative-impact/",
+    "source": "The 74",
+    "published_at": "2026-05-28T10:30:00+00:00",
+    "summary": "This April, the parent of a Head Start student in Washington state went to an immigration office to turn in his paperwork. While there, he was detained. As of last week, the father still hadn’t been released and his child stopped attending school. The preschooler’s prolonged absence was related by D",
     "tags": [
-      "科技巨头",
-      "OpenAI"
+      "教育研究",
+      "儿童与青少年",
+      "家庭教育"
     ],
-    "normalized_title": "building self improving tax agents with codex",
-    "zh_summary": "Codex 的应用案例显示，AI 编程工具正在从个人辅助走向团队协作和软件交付流程。",
-    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
-    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "normalized_title": "new survey of head start providers in 7 states charts ice s negative impact",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 48,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？"
+    ]
+  },
+  {
+    "title": "Opinion: Schools Must Do the Hard Work If High-Dosage Tutoring Is to Help Every Student",
+    "link": "https://www.the74million.org/article/schools-must-do-the-hard-work-if-high-dosage-tutoring-is-to-help-every-student/",
+    "source": "The 74",
+    "published_at": "2026-05-26T16:30:00+00:00",
+    "summary": "There is a temptation in education to abandon projects rapidly and instead chase a new solution as a magic bullet for improving student outcomes. Too often, when an investment doesn’t have an instant payoff, it’s abandoned for the next shiny thing. New programs, new technology, new slogans, each pro",
+    "tags": [
+      "教育研究",
+      "学习科学",
+      "教育热点"
+    ],
+    "normalized_title": "opinion schools must do the hard work if high dosage tutoring is to help every student",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 44,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？",
+      "这条新闻能否帮助读者理解孩子如何学习？"
+    ]
+  },
+  {
+    "title": "3 Things to Know About Trump’s Higher Education Grant Competitions",
+    "link": "https://www.insidehighered.com/news/government/student-aid-policy/2026/05/28/3-things-know-about-trumps-higher-ed-grant",
+    "source": "Inside Higher Ed",
+    "published_at": "2026-05-28T07:00:00+00:00",
+    "summary": "3 Things to Know About Trump’s Higher Education Grant Competitions jessica.blake@… Thu, 05/28/2026 - 03:00 AM Policy experts say Trump’s use of grant competitions to advance policy priorities like workforce development and returning education to the states is legal but could create obstacles for cer",
+    "tags": [
+      "教育研究",
+      "美国高校",
+      "未来职业"
+    ],
+    "normalized_title": "3 things to know about trump s higher education grant competitions",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 42,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？",
+      "美国高校的研究或政策变化是否值得跟踪？"
+    ]
+  },
+  {
+    "title": "A New Blueprint for Construction Training",
+    "link": "https://www.insidehighered.com/news/student-success/life-after-college/2026/05/28/new-blueprint-construction-training",
+    "source": "Inside Higher Ed",
+    "published_at": "2026-05-28T07:00:00+00:00",
+    "summary": "A New Blueprint for Construction Training Joshua.Bay Thu, 05/28/2026 - 03:00 AM Southeast Technical College’s new home-building lab gives skilled trades students hands-on training tied to regional workforce needs. Byline(s) Joshua Bay",
+    "tags": [
+      "教育研究",
+      "美国高校",
+      "未来职业"
+    ],
+    "normalized_title": "a new blueprint for construction training",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 42,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？",
+      "美国高校的研究或政策变化是否值得跟踪？"
+    ]
+  },
+  {
+    "title": "What Makes Edtech Work for Students [Infographic]",
+    "link": "https://www.edsurge.com/news/2026-04-15-what-makes-edtech-work-for-students-infographic",
+    "source": "EdSurge",
+    "published_at": "2026-04-15T16:55:00+00:00",
+    "summary": "Even the most well-intentioned edtech can fall short if it does not meet students where they are. After several years studying the usability of edtech ...",
+    "tags": [
+      "教育研究",
+      "AI教育"
+    ],
+    "normalized_title": "what makes edtech work for students infographic",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 40,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？",
+      "这条新闻能否解释 AI 素养、AI 课程或未来学习变化？"
+    ]
+  },
+  {
+    "title": "L.A. Unified Students Who Get Real-World Job Training Are Also Better Prepared for College",
+    "link": "https://www.the74million.org/article/l-a-unified-students-who-get-real-world-job-training-are-also-better-prepared-for-college/",
+    "source": "The 74",
+    "published_at": "2026-05-23T16:30:00+00:00",
+    "summary": "When a patient at Los Angeles General Medical Center experienced a medical emergency, Brandon Maldonado grabbed an intercom and called a “code blue” to bring immediate help from emergency hospital staff.&#160; The Bravo Medical Magnet High School senior had trained for such emergencies through Los A",
+    "tags": [
+      "教育研究",
+      "美国高校",
+      "未来职业"
+    ],
+    "normalized_title": "l a unified students who get real world job training are also better prepared for college",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "可写成未来职业观察，角度是“AI 和自动化正在改变年轻人的工作机会”。适合连接升学、专业选择和职业准备，但需要补充中国家庭能理解的行业案例，避免停留在海外职场新闻。",
     "priority_score": 38,
     "recommendation_level": "观察中",
     "is_top_pick": true,
@@ -48,7 +387,8 @@
     "first_seen_date": "",
     "allow_repeat": false,
     "directions": [
-      "科技巨头的新动作会如何影响教育和内容创作？"
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？",
+      "美国高校的研究或政策变化是否值得跟踪？"
     ]
   },
   {
@@ -103,19 +443,21 @@
     ]
   },
   {
-    "title": "Election information and safeguards in 2026",
-    "link": "https://openai.com/index/election-safeguards-2026",
-    "source": "OpenAI Blog",
-    "published_at": "2026-05-27T00:00:00+00:00",
-    "summary": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
+    "title": "Latest Canvas Attack Shows Schools Still Struggle With Cybersecurity",
+    "link": "https://www.edsurge.com/news/2026-05-12-latest-canvas-attack-shows-schools-still-struggle-with-cybersecurity",
+    "source": "EdSurge",
+    "published_at": "2026-05-12T18:29:33+00:00",
+    "summary": "A cyberattack against one of the world’s largest digital education platforms has forced attention onto the vulnerability of U.S. schools’ data. ...",
     "tags": [
-      "AI"
+      "教育研究",
+      "学习科学",
+      "媒介素养"
     ],
-    "normalized_title": "election information and safeguards in 2026",
-    "zh_summary": "OpenAI相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
-    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
-    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
-    "priority_score": 34,
+    "normalized_title": "latest canvas attack shows schools still struggle with cybersecurity",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 36,
     "recommendation_level": "观察中",
     "is_top_pick": true,
     "is_duplicate": false,
@@ -123,8 +465,8 @@
     "first_seen_date": "",
     "allow_repeat": false,
     "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？",
+      "这条新闻能否帮助读者理解孩子如何学习？"
     ]
   },
   {
@@ -153,94 +495,17 @@
     ]
   },
   {
-    "title": "Robinhood will let your AI agent trade stocks and make (or lose) lots of money",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/938095/robinhood-ai-agent-stock-trading",
-    "source": "The Verge AI",
-    "published_at": "2026-05-27T14:36:10+00:00",
-    "summary": "Robinhood is opening its trading platform to AI agents. In an announcement on Wednesday, Robinhood says traders can now create a separate account for an AI agent and add a specific amount of money, allowing the agent to buy and sell stocks across the market. The company pitches the feature as a way ",
+    "title": "Climate tech companies are going public. What’s next?",
+    "link": "https://www.technologyreview.com/2026/05/28/1138067/climate-tech-ipos/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-28T10:00:00+00:00",
+    "summary": "This year, there’s been a wave of notable energy companies going public via IPO in the US. The solar and battery company Solv Energy went public in February, to the tune of $6 billion. X-energy, which is building small modular nuclear reactors, did the same in April, and its stocks surged on its fir",
     "tags": [
-      "AI",
-      "媒介素养"
+      "观察"
     ],
-    "normalized_title": "robinhood will let your ai agent trade stocks and make or lose lots of money",
-    "zh_summary": "The Verge相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
-    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
-    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
-    "priority_score": 33,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
-    "title": "This smart bird feeder captures more of my backyard drama",
-    "link": "https://www.theverge.com/tech/937628/coolfly-aura-smart-bird-feeder-review",
-    "source": "The Verge AI",
-    "published_at": "2026-05-27T14:00:00+00:00",
-    "summary": "Since moving to South Carolina's Lowcountry, I've been spellbound by the myriad of beautiful birds that share the coast with us - ospreys raising their babies in towering nests beside the road to my daughter's school, roseate spoonbills wading in the marsh on my morning walks, eagles circling over m",
-    "tags": [
-      "教育研究"
-    ],
-    "normalized_title": "this smart bird feeder captures more of my backyard drama",
-    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
-    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
-    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
-    "priority_score": 33,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "这条新闻对学习方式、学校教育或家庭教育有什么启发？"
-    ]
-  },
-  {
-    "title": "Improving understanding with language",
-    "link": "https://news.mit.edu/2026/improving-understanding-language-olivia-honeycutt-0501",
-    "source": "MIT News",
-    "published_at": "2026-05-01T04:00:00+00:00",
-    "summary": "MIT senior Olivia Honeycutt investigates how the ways we communicate can shape our views of the world.",
-    "tags": [
-      "美国高校",
-      "MIT"
-    ],
-    "normalized_title": "improving understanding with language",
+    "normalized_title": "climate tech companies are going public what s next",
     "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
     "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
-    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
-    "priority_score": 32,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "美国高校的研究或政策变化是否值得跟踪？"
-    ]
-  },
-  {
-    "title": "AI tried to bury this politician — now people have actually heard of him",
-    "link": "https://www.theverge.com/policy/937650/ai-alex-bores-openai-anthropic-ny12",
-    "source": "The Verge AI",
-    "published_at": "2026-05-27T15:40:00+00:00",
-    "summary": "By the time that the Democratic primary for New York's 12th congressional district wraps up in June, Anthropic and OpenAI will have spent millions on their battle over the political future of AI: who gets to regulate it, or who will be punished for trying to regulate it. But the real winner of their",
-    "tags": [
-      "AI",
-      "科技巨头",
-      "OpenAI"
-    ],
-    "normalized_title": "ai tried to bury this politician now people have actually heard of him",
-    "zh_summary": "The Verge相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
-    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
     "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
     "priority_score": 31,
     "recommendation_level": "观察中",
@@ -250,60 +515,7 @@
     "first_seen_date": "",
     "allow_repeat": false,
     "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
-    "title": "The Pope isn’t AGI-pilled",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/937933/pope-ai-encyclical-tech-industry-reactions",
-    "source": "The Verge AI",
-    "published_at": "2026-05-27T12:00:00+00:00",
-    "summary": "On Monday, Pope Leo XIV unveiled an encyclical letter addressing the societal implications of artificial intelligence. The letter, titled Magnifica Humanitas, warned that the \"use of AI is never a purely technical matter: when it enters processes that affect people's lives, it touches on rights, opp",
-    "tags": [
-      "AI"
-    ],
-    "normalized_title": "the pope isn t agi pilled",
-    "zh_summary": "The Verge相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
-    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
-    "qiba_pitch": "适合放入媒介素养资料库，观察 AI 内容、娱乐产品和公共讨论如何影响青少年数字生活。若没有儿童、学校或家庭冲突案例支撑，不建议单独成文，可等待更贴近家长的案例。",
-    "priority_score": 31,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
-    "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
-    "link": "https://openai.com/index/cisco",
-    "source": "OpenAI Blog",
-    "published_at": "2026-05-27T11:00:00+00:00",
-    "summary": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation.",
-    "tags": [
-      "AI",
-      "科技巨头",
-      "OpenAI"
-    ],
-    "normalized_title": "cisco and openai redefine enterprise engineering with codex",
-    "zh_summary": "Codex 的应用案例显示，AI 编程工具正在从个人辅助走向团队协作和软件交付流程。",
-    "story_angle": "更适合做趋势观察或资料储备，关注 AI 工具从技术圈进入企业级市场；不建议直接作为七点半爸爸主稿。",
-    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
-    "priority_score": 30,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
+      "是否可以发展成一篇面向公众号读者的选题线索？"
     ]
   },
   {
@@ -321,192 +533,6 @@
     "zh_summary": "MIT相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
     "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
     "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
-    "priority_score": 29,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
-    "title": "Reduce friction and latency for long-running jobs with Webhooks in Gemini API",
-    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/event-driven-webhooks/",
-    "source": "Google AI Blog",
-    "published_at": "2026-05-04T15:30:00+00:00",
-    "summary": "Gemini API",
-    "tags": [
-      "Google"
-    ],
-    "normalized_title": "reduce friction and latency for long running jobs with webhooks in gemini api",
-    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
-    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
-    "qiba_pitch": "可写成未来职业观察，角度是“AI 和自动化正在改变年轻人的工作机会”。适合连接升学、专业选择和职业准备，但需要补充中国家庭能理解的行业案例，避免停留在海外职场新闻。",
-    "priority_score": 29,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "是否可以发展成一篇面向公众号读者的选题线索？"
-    ]
-  },
-  {
-    "title": "Join the new AI Agents Vibe Coding Course from Google and Kaggle",
-    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/",
-    "source": "Google AI Blog",
-    "published_at": "2026-04-27T13:00:00+00:00",
-    "summary": "A web next to a laptop",
-    "tags": [
-      "AI",
-      "科技巨头",
-      "Google"
-    ],
-    "normalized_title": "join the new ai agents vibe coding course from google and kaggle",
-    "zh_summary": "Google相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
-    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
-    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
-    "priority_score": 29,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
-    "title": "A conversation with Kevin Scott: What’s next in AI",
-    "link": "https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/",
-    "source": "Microsoft AI Blog",
-    "published_at": "2022-12-06T17:29:09+00:00",
-    "summary": "The post A conversation with Kevin Scott: What’s next in AI appeared first on The AI Blog.",
-    "tags": [
-      "AI",
-      "科技巨头",
-      "Microsoft"
-    ],
-    "normalized_title": "a conversation with kevin scott what s next in ai",
-    "zh_summary": "Microsoft相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
-    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
-    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
-    "priority_score": 29,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
-    "title": "From Hot Wheels to handling content: How brands are using Microsoft AI to be more productive and imaginative",
-    "link": "https://blogs.microsoft.com/ai/from-hot-wheels-to-handling-content-how-brands-are-using-microsoft-ai-to-be-more-productive-and-imaginative/",
-    "source": "Microsoft AI Blog",
-    "published_at": "2022-10-12T16:00:02+00:00",
-    "summary": "The post From Hot Wheels to handling content: How brands are using Microsoft AI to be more productive and imaginative appeared first on The AI Blog.",
-    "tags": [
-      "AI",
-      "科技巨头",
-      "Microsoft"
-    ],
-    "normalized_title": "from hot wheels to handling content how brands are using microsoft ai to be more productive and imaginative",
-    "zh_summary": "Microsoft相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
-    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
-    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
-    "priority_score": 29,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
-    "title": "Microsoft open sources its ‘farm of the future’ toolkit",
-    "link": "https://blogs.microsoft.com/ai/microsoft-open-sources-its-farm-of-the-future-toolkit/",
-    "source": "Microsoft AI Blog",
-    "published_at": "2022-10-06T14:58:15+00:00",
-    "summary": "The post Microsoft open sources its ‘farm of the future’ toolkit appeared first on The AI Blog.",
-    "tags": [
-      "AI",
-      "科技巨头",
-      "Microsoft"
-    ],
-    "normalized_title": "microsoft open sources its farm of the future toolkit",
-    "zh_summary": "Microsoft相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
-    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
-    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
-    "priority_score": 29,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
-    "title": "How data and AI will transform contact centres for financial services",
-    "link": "https://cloudblogs.microsoft.com/industry-blog/en-gb/financial-services/2022/07/25/how-data-and-ai-will-transform-contact-centres-for-financial-services/",
-    "source": "Microsoft AI Blog",
-    "published_at": "2022-07-25T14:49:33+00:00",
-    "summary": "The post How data and AI will transform contact centres for financial services appeared first on The AI Blog.",
-    "tags": [
-      "AI",
-      "科技巨头",
-      "Microsoft"
-    ],
-    "normalized_title": "how data and ai will transform contact centres for financial services",
-    "zh_summary": "Microsoft相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
-    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
-    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
-    "priority_score": 29,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
-    "title": "AI-equipped drones study dolphins on the edge of extinction",
-    "link": "https://news.microsoft.com/apac/features/ai-drones-dolphins-maui63/",
-    "source": "Microsoft AI Blog",
-    "published_at": "2022-07-21T14:50:33+00:00",
-    "summary": "The post AI-equipped drones study dolphins on the edge of extinction appeared first on The AI Blog.",
-    "tags": [
-      "AI",
-      "科技巨头",
-      "Microsoft"
-    ],
-    "normalized_title": "ai equipped drones study dolphins on the edge of extinction",
-    "zh_summary": "这项研究围绕AI 模型、智能体或技术应用展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
-    "story_angle": "适合作为教育研究或科技背景资料，暂不急着写主稿；可积累为解释学习科学、AI 影响教育的证据线索。",
-    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
     "priority_score": 29,
     "recommendation_level": "观察中",
     "is_top_pick": true,
