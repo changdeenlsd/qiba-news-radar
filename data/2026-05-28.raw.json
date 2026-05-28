@@ -1,5 +1,165 @@
 [
   {
+    "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+    "link": "https://openai.com/index/cisco",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-27T11:00:00+00:00",
+    "summary": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Building self-improving tax agents with Codex",
+    "link": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-27T07:00:00+00:00",
+    "summary": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Warp’s big bet on building open source with GPT-5.5",
+    "link": "https://openai.com/index/warp",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-27T00:00:00+00:00",
+    "summary": "Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Election information and safeguards in 2026",
+    "link": "https://openai.com/index/election-safeguards-2026",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-27T00:00:00+00:00",
+    "summary": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
+    "source_category": "ai"
+  },
+  {
+    "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+    "link": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-25T00:00:00+00:00",
+    "summary": "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.",
+    "source_category": "ai"
+  },
+  {
+    "title": "How Virgin Atlantic ships faster with Codex",
+    "link": "https://openai.com/index/virgin-atlantic",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-22T00:00:00+00:00",
+    "summary": "How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holiday travel deadline, reaching near-total unit test coverage and zero P1 defects.",
+    "source_category": "ai"
+  },
+  {
+    "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+    "link": "https://openai.com/index/gartner-2026-agentic-coding-leader",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-22T00:00:00+00:00",
+    "summary": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.",
+    "source_category": "ai"
+  },
+  {
+    "title": "AdventHealth advances whole-person care with OpenAI",
+    "link": "https://openai.com/index/adventhealth",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-21T12:00:00+00:00",
+    "summary": "AdventHealth is using ChatGPT for Healthcare to streamline workflows, reduce administrative burden, and return more time to patient care.",
+    "source_category": "ai"
+  },
+  {
+    "title": "How Ramp engineers accelerate code review with Codex",
+    "link": "https://openai.com/index/ramp",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-20T00:00:00+00:00",
+    "summary": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours.",
+    "source_category": "ai"
+  },
+  {
+    "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+    "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-20T00:00:00+00:00",
+    "summary": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics.",
+    "source_category": "ai"
+  },
+  {
+    "title": "The next phase of OpenAI’s Education for Countries",
+    "link": "https://openai.com/index/the-next-phase-of-education-for-countries",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-20T00:00:00+00:00",
+    "summary": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Introducing OpenAI for Singapore",
+    "link": "https://openai.com/index/introducing-openai-for-singapore",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-19T20:30:00+00:00",
+    "summary": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
+    "link": "https://openai.com/index/advancing-content-provenance",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-19T10:45:00+00:00",
+    "summary": "OpenAI advances AI content provenance with Content Credentials, SynthID, and a verification tool to help people identify and trust AI-generated media.",
+    "source_category": "ai"
+  },
+  {
+    "title": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
+    "link": "https://openai.com/index/dell-codex-enterprise-partnership",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-18T10:00:00+00:00",
+    "summary": "OpenAI and Dell partner to bring Codex to hybrid and on-premise environments, helping enterprises deploy AI coding agents securely across data and workflows.",
+    "source_category": "ai"
+  },
+  {
+    "title": "OpenAI and Malta partner to bring ChatGPT Plus to all citizens",
+    "link": "https://openai.com/index/malta-chatgpt-plus-partnership",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-16T00:00:00+00:00",
+    "summary": "OpenAI and Malta partner to expand AI access, offering ChatGPT Plus and training to help citizens build practical AI skills and use AI responsibly.",
+    "source_category": "ai"
+  },
+  {
+    "title": "How data science teams use Codex",
+    "link": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-15T00:00:00+00:00",
+    "summary": "See how data science teams can use Codex to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Databricks brings GPT-5.5 to enterprise agent workflows",
+    "link": "https://openai.com/index/databricks",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-15T00:00:00+00:00",
+    "summary": "Databricks uses GPT-5.5 for enterprise agent workflows after the model set a new state of the art on the OfficeQA Pro benchmark.",
+    "source_category": "ai"
+  },
+  {
+    "title": "A new personal finance experience in ChatGPT",
+    "link": "https://openai.com/index/personal-finance-chatgpt",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-15T00:00:00+00:00",
+    "summary": "Preview a new personal finance experience in ChatGPT for Pro users in the U.S. Securely connect your financial accounts and get AI-powered insights and guidance grounded in your financial context, goals, and priorities.",
+    "source_category": "ai"
+  },
+  {
+    "title": "How sales teams use Codex",
+    "link": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-15T00:00:00+00:00",
+    "summary": "See how sales teams can use Codex to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from real work inputs.",
+    "source_category": "ai"
+  },
+  {
+    "title": "How business operations teams use Codex",
+    "link": "https://openai.com/academy/codex-for-work/how-business-operations-teams-use-codex",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-15T00:00:00+00:00",
+    "summary": "See how business operations teams can use Codex to create initiative briefs, strategy updates, leadership decision packets, progress updates, and more from real work inputs.",
+    "source_category": "ai"
+  },
+  {
     "title": "Catch up on the Dialogues stage at Google I/O 2026.",
     "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
     "source": "Google AI Blog",
@@ -800,6 +960,14 @@
     "source_category": "us_university"
   },
   {
+    "title": "The Download: climate tech goes public and the AI Hype Index returns",
+    "link": "https://www.technologyreview.com/2026/05/28/1138085/the-download-climate-tech-ipos-ai-hype-index/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-28T12:10:00+00:00",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Climate tech companies are going public. What’s next? Solar and battery company Solv Energy went public in February, hitting a $6 billion valuation. X-energy, which builds small modular nuclear reactors, followed&#8230;",
+    "source_category": "high_tech"
+  },
+  {
     "title": "Climate tech companies are going public. What’s next?",
     "link": "https://www.technologyreview.com/2026/05/28/1138067/climate-tech-ipos/",
     "source": "MIT Technology Review",
@@ -869,14 +1037,6 @@
     "source": "MIT Technology Review",
     "published_at": "2026-05-22T10:00:00+00:00",
     "summary": "During Tuesday’s Google I/O keynote, Demis Hassabis, the CEO of Google DeepMind, proclaimed that we are currently “standing in the foothills of the singularity.” It was a striking statement—the singularity is the theoretical future moment when AI rapidly exceeds human intelligence and dramatically transforms the world. But what struck me as I listened in the&#8230;",
-    "source_category": "high_tech"
-  },
-  {
-    "title": "The Enhanced Games fit right in with the rest of 2026’s longevity vibes",
-    "link": "https://www.technologyreview.com/2026/05/22/1137753/the-enhanced-games-fit-right-in-with-the-rest-of-2026s-longevity-vibes/",
-    "source": "MIT Technology Review",
-    "published_at": "2026-05-22T09:00:00+00:00",
-    "summary": "This Sunday, a group of 42 athletes will gather in Las Vegas to compete in a somewhat unusual sporting competition. Participants in the inaugural Enhanced Games are being encouraged to take performance-enhancing drugs. The goal is to “push the boundaries of human performance.” The games’ organizers have said that competitors will only be taking substances that&#8230;",
     "source_category": "high_tech"
   },
   {
@@ -1112,19 +1272,19 @@
     "source_category": "ai"
   },
   {
-    "title": "Robinhood now lets your AI agents trade stocks",
-    "link": "https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/",
-    "source": "TechCrunch AI",
-    "published_at": "2026-05-27T12:30:00+00:00",
-    "summary": "While these agents would be able to read and analyze users' portfolios to come up with trading strategies and suggest investments, they'll only be able to access the pre-loaded balance in the dedicated wallet to place orders.",
-    "source_category": "ai"
-  },
-  {
     "title": "Tech CEOs are apparently suffering from AI psychosis",
     "link": "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/",
     "source": "TechCrunch AI",
     "published_at": "2026-05-27T12:30:00+00:00",
     "summary": "\"CEOs are uniquely prone to AI psychosis,\" Box CEO Aaron Levie opines. Maybe that explains the almost religious belief in AI productivity gains.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Robinhood now lets your AI agents trade stocks",
+    "link": "https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-27T12:30:00+00:00",
+    "summary": "While these agents would be able to read and analyze users' portfolios to come up with trading strategies and suggest investments, they'll only be able to access the pre-loaded balance in the dedicated wallet to place orders.",
     "source_category": "ai"
   },
   {

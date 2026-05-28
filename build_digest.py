@@ -16,9 +16,12 @@ DOCS_DIR = ROOT / "docs"
 KEYWORDS_FILE = ROOT / "keywords.yml"
 REPORT_TZ = ZoneInfo("Asia/Shanghai")
 TOP_PICK_LIMIT = 20
+RESOURCE_PICK_LIMIT = 5
+RESOURCE_MIN_SCORE = 65
 MAX_TOP_PICKS_PER_SOURCE = 3
 MAX_SUPPLEMENTAL_EDUCATION_MEDIA_TOP_PICKS = 5
 TOP20_FILE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})_top20\.json$")
+RESOURCE_FILE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})_resources\.json$")
 
 
 PRIORITY_SOURCES = {
@@ -673,6 +676,161 @@ GENERAL_TECH_EDUCATION_TRANSLATION_SIGNALS = [
     "升学",
     "职业准备",
 ]
+RESOURCE_POSITIVE_TAGS = {
+    "七爸干货资源",
+    "免费学习资源",
+    "AI认知资源",
+    "数学学习资源",
+    "英语学习资源",
+    "STEM资源",
+    "阅读写作资源",
+    "互动学习游戏",
+    "题库/挑战资源",
+    "公开课程",
+    "权威教育资源",
+    "中文学习资源",
+    "繁体中文教育资源",
+}
+RESOURCE_NOISE_TAGS = {"教培广告", "课程销售", "留资引流", "普通科技工具", "企业培训", "纯营销发布"}
+RESOURCE_INTENT_KEYWORDS = [
+    "free learning resources",
+    "public learning resource",
+    "open educational resource",
+    "interactive learning game",
+    "interactive ai game",
+    "ai literacy game",
+    "ai literacy resource",
+    "student toolkit",
+    "teacher toolkit",
+    "curriculum resource",
+    "worksheet",
+    "worksheets",
+    "problem bank",
+    "challenge problems",
+    "problem set",
+    "olympiad problem set",
+    "english reading resource",
+    "graded reading materials",
+    "vocabulary practice",
+    "open course",
+    "museum education resource",
+    "university learning resource",
+    "learning activity",
+    "science activity",
+    "engineering challenge",
+    "学习资源",
+    "免费学习资源",
+    "公開學習資源",
+    "公开课",
+    "题库",
+    "題庫",
+    "挑战",
+    "挑戰",
+    "AI启蒙",
+    "人工智能素养",
+    "英语分级阅读",
+    "英文閱讀",
+    "数学挑战",
+    "數學挑戰",
+    "博物馆教育资源",
+]
+RESOURCE_LEARNING_CONTEXT_KEYWORDS = [
+    "student",
+    "students",
+    "children",
+    "kids",
+    "teen",
+    "aged",
+    "k-12",
+    "middle school",
+    "high school",
+    "teacher",
+    "classroom",
+    "curriculum",
+    "learning",
+    "education",
+    "practice",
+    "problem solving",
+    "esl",
+    "efl",
+    "学生",
+    "孩子",
+    "儿童",
+    "青少年",
+    "中小学",
+    "教师",
+    "课堂",
+    "课程",
+    "学习",
+    "练习",
+    "閱讀",
+]
+RESOURCE_HARD_NOISE_KEYWORDS = [
+    "limited-time paid",
+    "paid bootcamp",
+    "bootcamp",
+    "sign up for a consultation",
+    "book a consultation",
+    "request a sales demo",
+    "leave your phone number",
+    "enterprise workflow automation",
+    "productivity platform",
+    "developer productivity tool",
+    "office automation tool",
+    "enterprise training",
+    "corporate learning platform",
+    "sponsored",
+    "marketing campaign",
+    "训练营",
+    "限时报名",
+    "预约咨询",
+    "添加顾问",
+    "加微信",
+    "留资",
+    "企业工作流",
+    "办公效率工具",
+    "开发者效率工具",
+    "企业培训",
+    "营销活动",
+]
+RESOURCE_CREDIBLE_KEYWORDS = [
+    "university",
+    "mit",
+    "stanford",
+    "harvard",
+    "google",
+    "microsoft",
+    "openai",
+    "museum",
+    "library",
+    "official",
+    "nonprofit",
+    "foundation",
+    "公益",
+    "官方",
+    "大学",
+    "博物馆",
+    "图书馆",
+    "教育机构",
+]
+RESOURCE_RECENT_KEYWORDS = [
+    "new",
+    "launch",
+    "launched",
+    "introduces",
+    "updated",
+    "recently",
+    "newly",
+    "2026",
+    "2025",
+    "新上线",
+    "发布",
+    "推出",
+    "近期更新",
+    "近期被讨论",
+    "最近",
+]
+RESOURCE_CLASSIC_KEYWORDS = ["classic", "many years ago", "old", "archive", "经典资源", "多年未更新", "很久以前"]
 
 
 def load_keyword_rules() -> dict:
@@ -1306,6 +1464,19 @@ def build_archive_index(data_dir: Path) -> tuple[list[dict], dict[str, list[dict
             "top20File": f"data/{date_text}_top20.json",
             "count": len(top_items),
         }
+        resources_file = data_dir / f"{date_text}_resources.json"
+        resources_md_file = data_dir / f"{date_text}_resources.md"
+        if resources_file.exists():
+            try:
+                resources = json.loads(resources_file.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                resources = []
+            entry["resourcesFile"] = f"data/{date_text}_resources.json"
+            entry["resourcesMarkdownFile"] = f"data/{date_text}_resources.md"
+            entry["resourceCount"] = len(resources)
+        elif resources_md_file.exists():
+            entry["resourcesMarkdownFile"] = f"data/{date_text}_resources.md"
+            entry["resourceCount"] = 0
         if total_count is not None:
             entry["totalCount"] = total_count
         if duplicate_count is not None:
@@ -1354,7 +1525,282 @@ def select_top_picks(items: list[dict], limit: int = TOP_PICK_LIMIT) -> list[dic
     return selected
 
 
-def build_digest() -> tuple[Path, Path, Path, Path]:
+def item_text(item: dict, tags: list[str]) -> str:
+    return f"{item.get('title', '')} {item.get('summary', '')} {' '.join(tags)}"
+
+
+def is_recent_enough_for_resource(item: dict, text: str) -> bool:
+    if has_any(text, RESOURCE_RECENT_KEYWORDS):
+        return True
+    published = parse_published_at(item.get("published_at", ""))
+    if not published:
+        return False
+    now = datetime.now(timezone.utc)
+    if not published.tzinfo:
+        published = published.replace(tzinfo=timezone.utc)
+    return (now - published.astimezone(timezone.utc)).days <= 90
+
+
+def is_learning_resource_candidate(item: dict, tags: list[str], text: str) -> bool:
+    tag_set = set(tags)
+    if tag_set & RESOURCE_NOISE_TAGS:
+        return False
+    if has_any(text, RESOURCE_HARD_NOISE_KEYWORDS):
+        return False
+    if has_any(text, ["copyright", "pirated", "网盘", "盗版"]):
+        return False
+    has_resource_intent = bool(tag_set & RESOURCE_POSITIVE_TAGS) or has_any(text, RESOURCE_INTENT_KEYWORDS)
+    has_learning_context = has_any(text, RESOURCE_LEARNING_CONTEXT_KEYWORDS)
+    if not (has_resource_intent and has_learning_context):
+        return False
+    if has_any(text, RESOURCE_CLASSIC_KEYWORDS) and not has_any(text, ["recently discussed", "recently rediscovered", "近期被讨论", "近期再发现"]):
+        return False
+    if not is_recent_enough_for_resource(item, text):
+        return False
+    if has_any(text, ["enterprise", "workflow automation", "productivity platform", "developer tool"]) and not has_learning_context:
+        return False
+    return True
+
+
+def classify_resource_subject(item: dict, tags: list[str], text: str) -> str:
+    tag_set = set(tags)
+    if "AI认知资源" in tag_set or has_any(text, ["ai literacy", "interactive ai game", "artificial intelligence", "AI启蒙", "人工智能素养"]):
+        return "AI认知"
+    if "数学学习资源" in tag_set or has_any(text, ["math challenge", "mathematics", "problem bank", "olympiad", "数学", "數學"]):
+        return "数学学习"
+    if "英语学习资源" in tag_set or has_any(text, ["english reading", "graded reading", "vocabulary practice", "esl", "efl", "英语", "英文閱讀"]):
+        return "英语学习"
+    if "阅读写作资源" in tag_set or has_any(text, ["reading resource", "writing worksheet", "literacy", "阅读", "写作", "語文"]):
+        return "语文/阅读写作"
+    if has_any(text, ["physics", "物理"]):
+        return "物理"
+    if has_any(text, ["chemistry", "化学", "化學"]):
+        return "化学"
+    if "STEM资源" in tag_set or has_any(text, ["stem", "science activity", "engineering challenge", "科学", "工程"]):
+        return "科学/STEM"
+    if has_any(text, ["history", "humanities", "历史", "人文"]):
+        return "历史/人文"
+    if has_any(text, ["debate", "speech", "辩论", "表达"]):
+        return "辩论/表达"
+    if has_any(text, ["sport", "fitness", "体育", "运动"]):
+        return "体育/运动"
+    return "综合学习"
+
+
+def classify_resource_region(item: dict, tags: list[str], text: str) -> str:
+    raw_text = f"{item.get('title', '')} {item.get('summary', '')} {item.get('source', '')}"
+    if "繁体中文教育资源" in tags or has_any(raw_text, ["Taiwan", "Hong Kong", "Traditional Chinese", "臺灣", "香港", "繁體", "英文閱讀", "數學"]):
+        return "繁体中文"
+    if "中文学习资源" in tags or has_any(raw_text, ["简体中文", "中国学生", "语文", "公开课", "题库", "AI启蒙", "英语分级阅读"]):
+        return "简体中文"
+    return "英文世界"
+
+
+def classify_resource_type(item: dict, tags: list[str], text: str) -> str:
+    if "互动学习游戏" in tags or has_any(text, ["interactive game", "learning game", "simulation", "互动", "游戏"]) or (has_any(text, ["interactive"]) and has_any(text, ["game"])):
+        return "互动游戏"
+    if has_any(text, ["olympiad", "contest", "competition", "竞赛", "奧賽", "奥数"]):
+        return "竞赛资源"
+    if "题库/挑战资源" in tags or has_any(text, ["problem bank", "challenge problems", "problem set", "quiz", "题库", "挑战"]):
+        return "题库"
+    if "公开课程" in tags or has_any(text, ["open course", "online course", "公开课", "开放课程"]):
+        return "公开课"
+    if has_any(text, ["worksheet", "worksheets", "练习册", "工作纸"]):
+        return "练习册"
+    if has_any(text, ["reading material", "graded reading", "reading resource", "阅读材料", "分级阅读"]):
+        return "阅读材料"
+    if has_any(text, ["video course", "视频课程", "影片課程"]):
+        return "视频课程"
+    if has_any(text, ["project activity", "project-based", "项目活动", "專題活動"]):
+        return "项目活动"
+    if has_any(text, ["experiment", "lab activity", "实验", "實驗"]):
+        return "实验活动"
+    if has_any(text, ["toolkit", "工具包"]):
+        return "工具包"
+    if has_any(text, ["database", "repository", "资料库", "資料庫"]):
+        return "资料库"
+    if has_any(text, ["course", "curriculum", "课程", "課程"]):
+        return "课程"
+    return "资料库"
+
+
+def classify_resource_freshness(item: dict, tags: list[str], text: str) -> str:
+    if has_any(text, ["recently rediscovered", "classic resource recently", "经典资源近期再发现", "近期再发现"]):
+        return "经典资源近期再发现"
+    if has_any(text, ["recently discussed", "recent discussion", "近期被讨论"]):
+        return "近期被讨论"
+    if has_any(text, ["updated", "new version", "近期更新", "更新"]):
+        return "近期更新"
+    if has_any(text, ["new", "launch", "launched", "introduces", "新上线", "发布", "推出"]):
+        return "新上线"
+    if has_any(text, RESOURCE_CLASSIC_KEYWORDS):
+        return "经典资源"
+    return "近期更新" if is_recent_enough_for_resource(item, text) else "经典资源"
+
+
+def classify_resource_age_range(item: dict, tags: list[str], text: str) -> str:
+    match = re.search(r"aged?\s+(\d{1,2})\s*[–-]\s*(\d{1,2})", text, re.IGNORECASE)
+    if match:
+        return f"{match.group(1)}–{match.group(2)}岁"
+    if has_any(text, ["k-12", "middle school", "high school", "中小学"]):
+        return "中小学"
+    if has_any(text, ["elementary", "primary school", "小学"]):
+        return "小学"
+    if has_any(text, ["teen", "middle school", "初中"]):
+        return "初中"
+    if has_any(text, ["high school", "高中"]):
+        return "高中"
+    if has_any(text, ["parent", "teacher", "教师", "家长"]):
+        return "家长/教师"
+    return "学生/家长"
+
+
+def classify_resource_free_or_paid(item: dict, tags: list[str], text: str) -> str:
+    if has_any(text, ["partial free", "freemium", "部分免费", "部分免費"]):
+        return "部分免费"
+    if has_any(text, ["paid", "subscription", "tuition", "付费", "收費", "收费"]):
+        return "付费"
+    if "免费学习资源" in tags or has_any(text, ["free", "open educational", "public learning", "免费", "免費", "公开"]):
+        return "免费"
+    return "未知"
+
+
+def build_resource_reason(item: dict, tags: list[str], text: str) -> str:
+    subject = classify_resource_subject(item, tags, text)
+    resource_type = classify_resource_type(item, tags, text)
+    if subject == "AI认知":
+        return compact_chinese(f"这是可直接打开使用的{resource_type}，适合帮助孩子把 AI 从概念变成可体验、可讨论的学习对象。", 110)
+    if subject == "数学学习":
+        return compact_chinese(f"这是面向问题解决的{resource_type}，适合作为数学自学、挑战题训练或竞赛兴趣启蒙材料。", 110)
+    if subject == "英语学习":
+        return compact_chinese(f"这是偏实用的{resource_type}，适合中国学生做分级阅读、词汇练习或 ESL/EFL 场景下的输入训练。", 110)
+    return compact_chinese(f"这是有明确学习入口的{resource_type}，适合家长或教师筛选后转给孩子做拓展学习。", 110)
+
+
+def build_resource_qiba_angle(item: dict, tags: list[str], text: str) -> str:
+    subject = classify_resource_subject(item, tags, text)
+    if subject == "AI认知":
+        return compact_chinese("七爸写法可从“孩子不是背 AI 概念，而是通过小游戏理解 AI 如何解决真实问题”切入，落到家庭 AI 启蒙。", 120)
+    if subject == "数学学习":
+        return compact_chinese("七爸写法可从“好题库不是刷题机器，而是训练孩子如何思考问题”切入，强调过程、复盘和自学能力。", 120)
+    if subject == "英语学习":
+        return compact_chinese("七爸写法可从“中国孩子学英语缺的不是 App，而是可持续阅读输入和词汇练习材料”切入。", 120)
+    return compact_chinese("七爸写法可从“今天发现一个可以立刻用的学习资源”切入，说明适合谁、怎么用、不要怎么用。", 120)
+
+
+def score_learning_resource(item: dict, tags: list[str], text: str) -> int:
+    if not is_learning_resource_candidate(item, tags, text):
+        return 0
+    subject = classify_resource_subject(item, tags, text)
+    freshness = classify_resource_freshness(item, tags, text)
+    score = 0
+
+    resource_shape_hits = sum(
+        [
+            has_any(text, RESOURCE_INTENT_KEYWORDS),
+            has_any(text, ["interactive", "game", "problem", "worksheet", "course", "toolkit", "activity", "题库", "课程", "练习"]),
+            has_any(text, RESOURCE_LEARNING_CONTEXT_KEYWORDS),
+        ]
+    )
+    score += min(10 + resource_shape_hits * 5, 25)
+
+    if item.get("source") in PRIORITY_SOURCES or has_any(text, RESOURCE_CREDIBLE_KEYWORDS) or "权威教育资源" in tags:
+        score += 20
+    elif item.get("source") in EDUCATION_MEDIA_SOURCES:
+        score += 12
+    else:
+        score += 8
+
+    if freshness == "新上线":
+        score += 20
+    elif freshness in {"近期更新", "近期被讨论", "经典资源近期再发现"}:
+        score += 16
+    else:
+        score += 6
+
+    if has_any(text, ["parent", "parents", "Chinese students", "student", "students", "teacher", "家长", "中国学生", "学生"]):
+        score += 15
+    else:
+        score += 8
+
+    if subject in {"AI认知", "数学学习", "英语学习"}:
+        score += 10
+    elif subject in {"科学/STEM", "语文/阅读写作"}:
+        score += 7
+    else:
+        score += 5
+
+    score += 5
+
+    free_or_paid = classify_resource_free_or_paid(item, tags, text)
+    if free_or_paid == "免费":
+        score += 5
+    elif free_or_paid == "部分免费":
+        score += 2
+    elif free_or_paid == "付费":
+        score -= 18
+    else:
+        score += 1
+    if set(tags) & RESOURCE_NOISE_TAGS or has_any(text, RESOURCE_HARD_NOISE_KEYWORDS):
+        score -= 40
+    return max(0, min(100, score))
+
+
+def build_resource_item(item: dict) -> dict:
+    tags = item.get("tags", [])
+    text = item_text(item, tags)
+    score = score_learning_resource(item, tags, text)
+    return {
+        "title": item.get("title", ""),
+        "source": item.get("source", ""),
+        "url": item.get("link", ""),
+        "subject": classify_resource_subject(item, tags, text),
+        "region": classify_resource_region(item, tags, text),
+        "age_range": classify_resource_age_range(item, tags, text),
+        "resource_type": classify_resource_type(item, tags, text),
+        "free_or_paid": classify_resource_free_or_paid(item, tags, text),
+        "freshness": classify_resource_freshness(item, tags, text),
+        "why_useful": build_resource_reason(item, tags, text),
+        "qiba_angle": build_resource_qiba_angle(item, tags, text),
+        "score": score,
+        "summary": item.get("summary", ""),
+        "tags": tags,
+        "published_at": item.get("published_at", ""),
+        "is_resource_pick": False,
+    }
+
+
+def select_daily_resources(items: list[dict], limit: int = RESOURCE_PICK_LIMIT) -> list[dict]:
+    candidates = []
+    for item in items:
+        resource = build_resource_item(item)
+        if resource["score"] >= RESOURCE_MIN_SCORE:
+            candidates.append(resource)
+    candidates.sort(key=lambda resource: (resource["score"], resource.get("published_at", "")), reverse=True)
+
+    selected: list[dict] = []
+    selected_urls: set[str] = set()
+    classic_count = 0
+    for resource in candidates:
+        url = resource.get("url", "")
+        if url in selected_urls:
+            continue
+        is_classic = resource["freshness"] == "经典资源"
+        if is_classic:
+            continue
+        if resource["freshness"] == "经典资源近期再发现":
+            if classic_count >= 1:
+                continue
+            classic_count += 1
+        resource["is_resource_pick"] = True
+        selected.append(resource)
+        selected_urls.add(url)
+        if len(selected) == limit:
+            break
+    return selected
+
+
+def build_digest() -> tuple[Path, Path, Path, Path, Path, Path]:
     rules = load_keyword_rules()
     raw_file = latest_raw_file()
     date_text = raw_file.name.replace(".raw.json", "")
@@ -1404,25 +1850,30 @@ def build_digest() -> tuple[Path, Path, Path, Path]:
         item["is_top_pick"] = item["link"] in top_links
     top_items = [item for item in digest_items if item["is_top_pick"]]
     top_items.sort(key=lambda item: (item["priority_score"], item.get("published_at", "")), reverse=True)
+    resource_items = select_daily_resources(digest_items)
 
     json_file = DATA_DIR / f"{date_text}.json"
     md_file = DATA_DIR / f"{date_text}.md"
     top_json_file = DATA_DIR / f"{date_text}_top20.json"
     top_md_file = DATA_DIR / f"{date_text}_top20.md"
+    resources_json_file = DATA_DIR / f"{date_text}_resources.json"
+    resources_md_file = DATA_DIR / f"{date_text}_resources.md"
     archive_index_file = DATA_DIR / "archive_index.json"
     json_file.write_text(json.dumps(digest_items, ensure_ascii=False, indent=2), encoding="utf-8")
     md_file.write_text(render_markdown(date_text, digest_items, "七爸新闻雷达｜完整线索"), encoding="utf-8")
     top_json_file.write_text(json.dumps(top_items, ensure_ascii=False, indent=2), encoding="utf-8")
     top_md_file.write_text(render_markdown(date_text, top_items, "七爸新闻雷达｜今日精选 Top 20"), encoding="utf-8")
+    resources_json_file.write_text(json.dumps(resource_items, ensure_ascii=False, indent=2), encoding="utf-8")
+    resources_md_file.write_text(render_resources_markdown(date_text, resource_items), encoding="utf-8")
     archive_index, archive_data = build_archive_index(DATA_DIR)
     archive_index_file.write_text(json.dumps(archive_index, ensure_ascii=False, indent=2), encoding="utf-8")
-    render_html(date_text, top_items, len(digest_items), duplicate_count, archive_index, archive_data)
+    render_html(date_text, top_items, resource_items, len(digest_items), duplicate_count, archive_index, archive_data)
     print(f"History top20 files found: {len(seen_items['history_files'])}")
     print(f"History top20 files used: {len(seen_items['used_history_files'])}")
     print(f"History top20 items collected: {seen_items['item_count']}")
     print(f"Filtered duplicate candidates: {duplicate_count}")
     print(f"Updated archive index: {archive_index_file}")
-    return json_file, md_file, top_json_file, top_md_file
+    return json_file, md_file, top_json_file, top_md_file, resources_json_file, resources_md_file
 
 
 def render_markdown(date_text: str, items: list[dict], title: str) -> str:
@@ -1450,6 +1901,32 @@ def render_markdown(date_text: str, items: list[dict], title: str) -> str:
     return "\n".join(lines)
 
 
+def render_resources_markdown(date_text: str, resources: list[dict]) -> str:
+    lines = ["# 七爸新闻雷达｜今日干货资源", "", f"日期：{date_text}", f"数量：{len(resources)}", ""]
+    if not resources:
+        lines.append("今日暂无高置信干货资源。")
+        return "\n".join(lines)
+    for index, resource in enumerate(resources, start=1):
+        lines.extend(
+            [
+                f"## {index}. {resource['title']}",
+                f"- 来源：{resource['source']}",
+                f"- 科目：{resource['subject']}",
+                f"- 来源区域：{resource['region']}",
+                f"- 年龄段：{resource['age_range']}",
+                f"- 资源类型：{resource['resource_type']}",
+                f"- 免费/付费：{resource['free_or_paid']}",
+                f"- 新鲜度：{resource['freshness']}",
+                f"- 资源分数：{resource['score']}",
+                f"- 链接：{resource['url']}",
+                f"- 推荐理由：{resource['why_useful']}",
+                f"- 七爸写法：{resource['qiba_angle']}",
+                "",
+            ]
+        )
+    return "\n".join(lines)
+
+
 def script_json(data: object) -> str:
     return json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 
@@ -1457,6 +1934,7 @@ def script_json(data: object) -> str:
 def render_html(
     date_text: str,
     items: list[dict],
+    resources: list[dict],
     total_count: int,
     duplicate_count: int,
     archive_index: list[dict],
@@ -1468,6 +1946,7 @@ def render_html(
         ("可写成文章", [item for item in items if 65 <= item["priority_score"] <= 79]),
         ("资料储备", [item for item in items if item["priority_score"] < 65]),
     ]
+    resource_section = render_resources_section(resources)
     grouped_sections = "\n".join(render_group(title, group_items) for title, group_items in groups)
     shortage_notice = ""
     if len(items) < TOP_PICK_LIMIT:
@@ -1496,10 +1975,12 @@ def render_html(
     .group-count {{ color: #6b7280; font-size: 14px; white-space: nowrap; }}
     .empty {{ background: #ffffff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 18px; color: #6b7280; }}
     .item {{ background: #ffffff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 18px; margin-bottom: 16px; }}
+    .resource-item {{ border-left: 4px solid #0f766e; }}
     .meta {{ color: #6b7280; font-size: 14px; margin: 8px 0; }}
     .score-row {{ display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0; color: #374151; font-size: 14px; }}
     .score-pill {{ background: #ecfdf5; color: #065f46; border-radius: 999px; padding: 4px 10px; font-weight: 600; }}
     .level-pill {{ background: #fff7ed; color: #9a3412; border-radius: 999px; padding: 4px 10px; font-weight: 600; }}
+    .resource-pill {{ background: #f0fdfa; color: #115e59; border-radius: 999px; padding: 4px 10px; font-weight: 600; }}
     .tags {{ display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }}
     .tag {{ background: #eef2ff; color: #3730a3; border-radius: 999px; padding: 3px 9px; font-size: 13px; }}
     .news-section {{ border-top: 1px solid #eef0f3; margin-top: 14px; padding-top: 12px; }}
@@ -1521,6 +2002,7 @@ def render_html(
     <p class="notice" id="archive-notice">{shortage_notice.replace('<p class="notice">', '').replace('</p>', '')}</p>
   </header>
   <main id="digest-content">
+    {resource_section}
     {grouped_sections}
   </main>
   <script id="archive-index-data" type="application/json">{archive_index_json}</script>
@@ -1551,6 +2033,40 @@ def render_html(
         ["可写成文章", items.filter((item) => Number(item.priority_score || 0) >= 65 && Number(item.priority_score || 0) <= 79)],
         ["资料储备", items.filter((item) => Number(item.priority_score || 0) < 65)],
       ];
+    }}
+
+    function renderResourceCard(resource) {{
+      return `<article class="item resource-item">
+  <h2>${{escapeHtml(resource.title || "")}}</h2>
+  <p class="meta">${{escapeHtml(resource.subject || "")}}｜${{escapeHtml(resource.region || "")}}｜${{escapeHtml(resource.age_range || "")}}｜${{escapeHtml(resource.resource_type || "")}}｜${{escapeHtml(resource.freshness || "")}}</p>
+  <div class="score-row">
+    <span class="resource-pill">资源分数：${{escapeHtml(resource.score ?? "")}}</span>
+    <span class="level-pill">${{escapeHtml(resource.free_or_paid || "未知")}}</span>
+  </div>
+  <section class="news-section">
+    <h3>推荐理由</h3>
+    <p>${{escapeHtml(resource.why_useful || "暂无推荐理由")}}</p>
+  </section>
+  <section class="news-section">
+    <h3>七爸写法</h3>
+    <p>${{escapeHtml(resource.qiba_angle || "暂无七爸写法")}}</p>
+  </section>
+  <section class="news-section">
+    <h3>链接</h3>
+    <p><a href="${{escapeHtml(resource.url || "#")}}" target="_blank" rel="noopener noreferrer">打开资源</a></p>
+  </section>
+</article>`;
+    }}
+
+    function renderResourcesSection(resources) {{
+      const body = resources.length ? resources.map(renderResourceCard).join("") : '<p class="empty">今日暂无高置信干货资源。</p>';
+      return `<section class="group">
+  <div class="group-header">
+    <h2>今日干货资源</h2>
+    <span class="group-count">${{resources.length}} 条</span>
+  </div>
+  ${{body}}
+</section>`;
     }}
 
     function renderCard(item) {{
@@ -1599,9 +2115,24 @@ def render_html(
       noticeEl.textContent = items.length < {TOP_PICK_LIMIT} ? `今日去重后不足20条，实际显示 ${{items.length}} 条。` : "";
     }}
 
-    function renderArchive(entry, items) {{
+    async function loadArchiveResources(entry) {{
+      if (!entry.resourcesFile) return [];
+      const cacheKey = `${{entry.date}}:resources`;
+      if (archiveCache[cacheKey]) return archiveCache[cacheKey];
+      try {{
+        const response = await fetch(`../${{entry.resourcesFile}}`, {{ cache: "no-store" }});
+        if (!response.ok) throw new Error("resources file not found");
+        const resources = await response.json();
+        archiveCache[cacheKey] = resources;
+        return resources;
+      }} catch (error) {{
+        return [];
+      }}
+    }}
+
+    function renderArchive(entry, items, resources) {{
       updateMeta(entry, items);
-      contentEl.innerHTML = groupItems(items).map(([title, group]) => renderGroup(title, group)).join("");
+      contentEl.innerHTML = renderResourcesSection(resources) + groupItems(items).map(([title, group]) => renderGroup(title, group)).join("");
       dateSelect.value = entry.date;
       const url = new URL(window.location.href);
       url.searchParams.set("date", entry.date);
@@ -1643,7 +2174,8 @@ def render_html(
       if (!entry) return;
       try {{
         const items = await loadArchiveItems(entry);
-        renderArchive(entry, items);
+        const resources = await loadArchiveResources(entry);
+        renderArchive(entry, items, resources);
       }} catch (error) {{
         noticeEl.textContent = "该日期归档加载失败，请检查 data 文件是否存在。";
       }}
@@ -1678,6 +2210,41 @@ def render_group(title: str, items: list[dict]) -> str:
 </section>"""
 
 
+def render_resources_section(resources: list[dict]) -> str:
+    cards = "\n".join(render_resource_card(resource) for resource in resources)
+    body = cards or '<p class="empty">今日暂无高置信干货资源。</p>'
+    return f"""<section class="group">
+  <div class="group-header">
+    <h2>今日干货资源</h2>
+    <span class="group-count">{len(resources)} 条</span>
+  </div>
+  {body}
+</section>"""
+
+
+def render_resource_card(resource: dict) -> str:
+    return f"""<article class="item resource-item">
+  <h2>{escape(resource['title'])}</h2>
+  <p class="meta">{escape(resource['subject'])}｜{escape(resource['region'])}｜{escape(resource['age_range'])}｜{escape(resource['resource_type'])}｜{escape(resource['freshness'])}</p>
+  <div class="score-row">
+    <span class="resource-pill">资源分数：{resource['score']}</span>
+    <span class="level-pill">{escape(resource['free_or_paid'])}</span>
+  </div>
+  <section class="news-section">
+    <h3>推荐理由</h3>
+    <p>{escape(resource.get('why_useful') or '暂无推荐理由')}</p>
+  </section>
+  <section class="news-section">
+    <h3>七爸写法</h3>
+    <p>{escape(resource.get('qiba_angle') or '暂无七爸写法')}</p>
+  </section>
+  <section class="news-section">
+    <h3>链接</h3>
+    <p><a href="{escape(resource['url'])}" target="_blank" rel="noopener noreferrer">打开资源</a></p>
+  </section>
+</article>"""
+
+
 def render_card(item: dict) -> str:
     tags = "".join(f'<span class="tag">{escape(tag)}</span>' for tag in item["tags"])
     return f"""<article class="item">
@@ -1705,9 +2272,10 @@ def render_card(item: dict) -> str:
 
 
 def main() -> None:
-    json_file, md_file, top_json_file, top_md_file = build_digest()
+    json_file, md_file, top_json_file, top_md_file, resources_json_file, resources_md_file = build_digest()
     print(f"Saved digest to {json_file} and {md_file}")
     print(f"Saved top picks to {top_json_file} and {top_md_file}")
+    print(f"Saved resources to {resources_json_file} and {resources_md_file}")
     print(f"Updated {DOCS_DIR / 'index.html'}")
 
 

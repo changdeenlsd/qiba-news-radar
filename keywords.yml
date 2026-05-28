@@ -1245,6 +1245,480 @@ tags:
       - 研究发现
       - 长期观察
 
+  qiba_learning_resource:
+    label: 七爸干货资源
+    english_keywords:
+      - free learning resources
+      - public learning resource
+      - student toolkit
+      - teacher toolkit
+      - curriculum resource
+      - learning activity
+      - classroom resource
+    chinese_keywords:
+      - 学习资源
+      - 公开学习资源
+      - 学生工具包
+      - 教师工具包
+      - 课程资源
+      - 学习活动
+      - 教学资源
+    keywords:
+      - free learning resources
+      - public learning resource
+      - student toolkit
+      - teacher toolkit
+      - curriculum resource
+      - learning activity
+      - classroom resource
+      - 学习资源
+      - 公开学习资源
+      - 学生工具包
+      - 教师工具包
+      - 课程资源
+      - 学习活动
+      - 教学资源
+
+  free_learning_resource:
+    label: 免费学习资源
+    english_keywords:
+      - free learning resources
+      - free educational resources
+      - open educational resource
+      - public learning resource
+      - free student resource
+    chinese_keywords:
+      - 免费学习资源
+      - 免费教育资源
+      - 开放教育资源
+      - 公开学习资源
+      - 免費學習資源
+    keywords:
+      - free learning resources
+      - free educational resources
+      - open educational resource
+      - public learning resource
+      - free student resource
+      - 免费学习资源
+      - 免费教育资源
+      - 开放教育资源
+      - 公开学习资源
+      - 免費學習資源
+
+  ai_literacy_resource:
+    label: AI认知资源
+    english_keywords:
+      - interactive AI game
+      - AI literacy game
+      - AI literacy resource
+      - AI education resource
+      - artificial intelligence toolkit
+      - AI curriculum
+    chinese_keywords:
+      - AI启蒙
+      - AI素养资源
+      - 人工智能素养
+      - 人工智能教育资源
+      - 人工智能課程
+    keywords:
+      - interactive AI game
+      - AI literacy game
+      - AI literacy resource
+      - AI education resource
+      - artificial intelligence toolkit
+      - AI curriculum
+      - AI启蒙
+      - AI素养资源
+      - 人工智能素养
+      - 人工智能教育资源
+      - 人工智能課程
+
+  math_learning_resource:
+    label: 数学学习资源
+    english_keywords:
+      - math challenge
+      - mathematics challenge
+      - problem bank
+      - Olympiad problem set
+      - math problem set
+      - mathematical resources
+    chinese_keywords:
+      - 数学挑战
+      - 數學挑戰
+      - 数学题库
+      - 數學題庫
+      - 奥数题集
+      - 数学资源
+    keywords:
+      - math challenge
+      - mathematics challenge
+      - problem bank
+      - Olympiad problem set
+      - math problem set
+      - mathematical resources
+      - 数学挑战
+      - 數學挑戰
+      - 数学题库
+      - 數學題庫
+      - 奥数题集
+      - 数学资源
+
+  english_learning_resource:
+    label: 英语学习资源
+    english_keywords:
+      - English reading resource
+      - graded reading materials
+      - vocabulary practice
+      - ESL worksheet
+      - EFL worksheet
+      - English learning resource
+    chinese_keywords:
+      - 英语分级阅读
+      - 英文閱讀
+      - 英语阅读资源
+      - 英文学习资源
+      - 词汇练习
+    keywords:
+      - English reading resource
+      - graded reading materials
+      - vocabulary practice
+      - ESL worksheet
+      - EFL worksheet
+      - English learning resource
+      - 英语分级阅读
+      - 英文閱讀
+      - 英语阅读资源
+      - 英文学习资源
+      - 词汇练习
+
+  stem_resource:
+    label: STEM资源
+    english_keywords:
+      - STEM resource
+      - science activity
+      - engineering challenge
+      - coding activity
+      - museum education resource
+    chinese_keywords:
+      - STEM资源
+      - 科学活动
+      - 工程挑战
+      - 编程活动
+      - 博物馆教育资源
+    keywords:
+      - STEM resource
+      - science activity
+      - engineering challenge
+      - coding activity
+      - museum education resource
+      - STEM资源
+      - 科学活动
+      - 工程挑战
+      - 编程活动
+      - 博物馆教育资源
+
+  reading_writing_resource:
+    label: 阅读写作资源
+    english_keywords:
+      - reading resource
+      - writing resource
+      - writing worksheet
+      - reading comprehension resource
+      - literacy toolkit
+    chinese_keywords:
+      - 阅读资源
+      - 写作资源
+      - 作文练习
+      - 阅读理解资源
+      - 語文資源
+    keywords:
+      - reading resource
+      - writing resource
+      - writing worksheet
+      - reading comprehension resource
+      - literacy toolkit
+      - 阅读资源
+      - 写作资源
+      - 作文练习
+      - 阅读理解资源
+      - 語文資源
+
+  interactive_learning_game:
+    label: 互动学习游戏
+    english_keywords:
+      - interactive learning game
+      - interactive AI game
+      - educational game for students
+      - learning simulation
+      - interactive activity
+    chinese_keywords:
+      - 互动学习游戏
+      - 互動學習遊戲
+      - 教育游戏
+      - 学习模拟
+      - 互动活动
+    keywords:
+      - interactive learning game
+      - interactive AI game
+      - educational game for students
+      - learning simulation
+      - interactive activity
+      - 互动学习游戏
+      - 互動學習遊戲
+      - 教育游戏
+      - 学习模拟
+      - 互动活动
+
+  challenge_problem_resource:
+    label: 题库/挑战资源
+    english_keywords:
+      - problem bank
+      - challenge problems
+      - problem set
+      - Olympiad problem set
+      - quiz challenge
+    chinese_keywords:
+      - 题库
+      - 題庫
+      - 挑战题
+      - 挑戰題
+      - 竞赛题
+    keywords:
+      - problem bank
+      - challenge problems
+      - problem set
+      - Olympiad problem set
+      - quiz challenge
+      - 题库
+      - 題庫
+      - 挑战题
+      - 挑戰題
+      - 竞赛题
+
+  open_course:
+    label: 公开课程
+    english_keywords:
+      - open course
+      - public course
+      - free online course
+      - open classroom
+      - university learning resource
+    chinese_keywords:
+      - 公开课
+      - 公開課
+      - 开放课程
+      - 免费在线课程
+      - 大学学习资源
+    keywords:
+      - open course
+      - public course
+      - free online course
+      - open classroom
+      - university learning resource
+      - 公开课
+      - 公開課
+      - 开放课程
+      - 免费在线课程
+      - 大学学习资源
+
+  authoritative_education_resource:
+    label: 权威教育资源
+    english_keywords:
+      - museum education resource
+      - university learning resource
+      - library learning resource
+      - official education resource
+      - nonprofit education resource
+    chinese_keywords:
+      - 博物馆教育资源
+      - 大学学习资源
+      - 图书馆学习资源
+      - 官方教育资源
+      - 公益教育资源
+    keywords:
+      - museum education resource
+      - university learning resource
+      - library learning resource
+      - official education resource
+      - nonprofit education resource
+      - 博物馆教育资源
+      - 大学学习资源
+      - 图书馆学习资源
+      - 官方教育资源
+      - 公益教育资源
+
+  chinese_learning_resource:
+    label: 中文学习资源
+    english_keywords:
+      - Chinese learning resource
+      - Chinese language learning resource
+    chinese_keywords:
+      - 中文学习资源
+      - 语文学习资源
+      - 简体中文学习资源
+      - 中国学生资源
+    keywords:
+      - Chinese learning resource
+      - Chinese language learning resource
+      - 中文学习资源
+      - 语文学习资源
+      - 简体中文学习资源
+      - 中国学生资源
+
+  traditional_chinese_education_resource:
+    label: 繁体中文教育资源
+    english_keywords:
+      - Taiwan education resource
+      - Hong Kong education resource
+      - Traditional Chinese learning resource
+    chinese_keywords:
+      - 繁体中文教育资源
+      - 繁體中文教育資源
+      - 台湾教育资源
+      - 臺灣教育資源
+      - 香港教育資源
+    keywords:
+      - Taiwan education resource
+      - Hong Kong education resource
+      - Traditional Chinese learning resource
+      - 繁体中文教育资源
+      - 繁體中文教育資源
+      - 台湾教育资源
+      - 臺灣教育資源
+      - 香港教育資源
+
+  tutoring_ad_noise:
+    label: 教培广告
+    english_keywords:
+      - tutoring ad
+      - test prep ad
+      - paid tutoring promotion
+      - tutoring company promotion
+    chinese_keywords:
+      - 教培广告
+      - 培训广告
+      - 补课广告
+      - 试听课广告
+    keywords:
+      - tutoring ad
+      - test prep ad
+      - paid tutoring promotion
+      - tutoring company promotion
+      - 教培广告
+      - 培训广告
+      - 补课广告
+      - 试听课广告
+
+  course_sales_noise:
+    label: 课程销售
+    english_keywords:
+      - limited-time paid course
+      - enroll now
+      - course discount
+      - paid bootcamp
+    chinese_keywords:
+      - 课程销售
+      - 限时报名
+      - 课程优惠
+      - 付费训练营
+    keywords:
+      - limited-time paid course
+      - enroll now
+      - course discount
+      - paid bootcamp
+      - 课程销售
+      - 限时报名
+      - 课程优惠
+      - 付费训练营
+
+  lead_capture_noise:
+    label: 留资引流
+    english_keywords:
+      - sign up for a consultation
+      - book a consultation
+      - leave your phone number
+      - request a sales demo
+    chinese_keywords:
+      - 留资引流
+      - 预约咨询
+      - 添加顾问
+      - 加微信领取
+    keywords:
+      - sign up for a consultation
+      - book a consultation
+      - leave your phone number
+      - request a sales demo
+      - 留资引流
+      - 预约咨询
+      - 添加顾问
+      - 加微信领取
+
+  generic_tech_tool_noise:
+    label: 普通科技工具
+    english_keywords:
+      - enterprise workflow automation
+      - productivity platform
+      - office automation tool
+      - developer productivity tool
+    chinese_keywords:
+      - 普通科技工具
+      - 企业工作流自动化
+      - 办公效率工具
+      - 开发者效率工具
+    keywords:
+      - enterprise workflow automation
+      - productivity platform
+      - office automation tool
+      - developer productivity tool
+      - 普通科技工具
+      - 企业工作流自动化
+      - 办公效率工具
+      - 开发者效率工具
+
+  enterprise_training_noise:
+    label: 企业培训
+    english_keywords:
+      - enterprise training
+      - workforce training platform
+      - corporate learning platform
+      - employee training
+    chinese_keywords:
+      - 企业培训
+      - 员工培训
+      - 企业学习平台
+      - 职场培训
+    keywords:
+      - enterprise training
+      - workforce training platform
+      - corporate learning platform
+      - employee training
+      - 企业培训
+      - 员工培训
+      - 企业学习平台
+      - 职场培训
+
+  marketing_release_noise:
+    label: 纯营销发布
+    english_keywords:
+      - sponsored resource
+      - marketing campaign
+      - promotional launch
+      - brand campaign
+    chinese_keywords:
+      - 纯营销发布
+      - 赞助推广
+      - 品牌营销
+      - 营销活动
+    keywords:
+      - sponsored resource
+      - marketing campaign
+      - promotional launch
+      - brand campaign
+      - 纯营销发布
+      - 赞助推广
+      - 品牌营销
+      - 营销活动
+
 importance:
   must_read:
     label: 必看

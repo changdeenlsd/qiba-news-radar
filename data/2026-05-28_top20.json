@@ -470,6 +470,31 @@
     ]
   },
   {
+    "title": "Election information and safeguards in 2026",
+    "link": "https://openai.com/index/election-safeguards-2026",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-27T00:00:00+00:00",
+    "summary": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
+    "tags": [
+      "AI"
+    ],
+    "normalized_title": "election information and safeguards in 2026",
+    "zh_summary": "OpenAI相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 34,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
     "title": "Solving the “Whac-a-mole dilemma”: A smarter way to debias AI vision models",
     "link": "https://news.mit.edu/2026/smarter-way-to-debias-ai-vision-models-0429",
     "source": "MIT News",
@@ -516,33 +541,6 @@
     "allow_repeat": false,
     "directions": [
       "是否可以发展成一篇面向公众号读者的选题线索？"
-    ]
-  },
-  {
-    "title": "The Download: keeping up with AI, and the future of IVF",
-    "link": "https://www.technologyreview.com/2026/05/27/1138048/the-download-ai-future-ivf-technology/",
-    "source": "MIT Technology Review",
-    "published_at": "2026-05-27T12:10:00+00:00",
-    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Stay on top of what’s going on in AI this summer Here at MIT Technology Review, we understand exactly how relentless the pace of news from the world o",
-    "tags": [
-      "AI",
-      "美国高校",
-      "MIT"
-    ],
-    "normalized_title": "the download keeping up with ai and the future of ivf",
-    "zh_summary": "MIT相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
-    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
-    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
-    "priority_score": 29,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
     ]
   }
 ]

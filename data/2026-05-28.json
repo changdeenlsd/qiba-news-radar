@@ -1,5 +1,518 @@
 [
   {
+    "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+    "link": "https://openai.com/index/cisco",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-27T11:00:00+00:00",
+    "summary": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "cisco and openai redefine enterprise engineering with codex",
+    "zh_summary": "Codex 的应用案例显示，AI 编程工具正在从个人辅助走向团队协作和软件交付流程。",
+    "story_angle": "更适合做趋势观察或资料储备，关注 AI 工具从技术圈进入企业级市场；不建议直接作为七点半爸爸主稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Building self-improving tax agents with Codex",
+    "link": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-27T07:00:00+00:00",
+    "summary": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
+    "tags": [
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "building self improving tax agents with codex",
+    "zh_summary": "Codex 的应用案例显示，AI 编程工具正在从个人辅助走向团队协作和软件交付流程。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 34,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "科技巨头的新动作会如何影响教育和内容创作？"
+    ]
+  },
+  {
+    "title": "Warp’s big bet on building open source with GPT-5.5",
+    "link": "https://openai.com/index/warp",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-27T00:00:00+00:00",
+    "summary": "Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows.",
+    "tags": [
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "warp s big bet on building open source with gpt 5 5",
+    "zh_summary": "OpenAI相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "科技巨头的新动作会如何影响教育和内容创作？"
+    ]
+  },
+  {
+    "title": "Election information and safeguards in 2026",
+    "link": "https://openai.com/index/election-safeguards-2026",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-27T00:00:00+00:00",
+    "summary": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
+    "tags": [
+      "AI"
+    ],
+    "normalized_title": "election information and safeguards in 2026",
+    "zh_summary": "OpenAI相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 34,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+    "link": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-25T00:00:00+00:00",
+    "summary": "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.",
+    "tags": [
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "openai grupo folha and grupo uol announce strategic content partnership",
+    "zh_summary": "OpenAI与外部机构达成合作，核心看点是内容、技术或渠道资源被接入 AI 产品和服务生态。",
+    "story_angle": "更适合做趋势观察或资料储备，关注 AI 工具从技术圈进入企业级市场；不建议直接作为七点半爸爸主稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 22,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "科技巨头的新动作会如何影响教育和内容创作？"
+    ]
+  },
+  {
+    "title": "How Virgin Atlantic ships faster with Codex",
+    "link": "https://openai.com/index/virgin-atlantic",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-22T00:00:00+00:00",
+    "summary": "How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holiday travel deadline, reaching near-total unit test coverage and zero P1 defects.",
+    "tags": [
+      "观察"
+    ],
+    "normalized_title": "how virgin atlantic ships faster with codex",
+    "zh_summary": "Codex 的应用案例显示，AI 编程工具正在从个人辅助走向团队协作和软件交付流程。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+    "link": "https://openai.com/index/gartner-2026-agentic-coding-leader",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-22T00:00:00+00:00",
+    "summary": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "openai named a leader in enterprise coding agents by gartner",
+    "zh_summary": "OpenAI被 Gartner 评为企业级 AI 编程智能体领域领导者，重点信号是相关能力正在进入企业级采购和规模化部署阶段。",
+    "story_angle": "更适合做趋势观察或资料储备，关注 AI 工具从技术圈进入企业级市场；不建议直接作为七点半爸爸主稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 22,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "AdventHealth advances whole-person care with OpenAI",
+    "link": "https://openai.com/index/adventhealth",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-21T12:00:00+00:00",
+    "summary": "AdventHealth is using ChatGPT for Healthcare to streamline workflows, reduce administrative burden, and return more time to patient care.",
+    "tags": [
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "adventhealth advances whole person care with openai",
+    "zh_summary": "相关机构正在把 OpenAI 能力接入具体业务场景，重点是用 AI 改造服务流程和知识处理方式。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 34,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": true,
+    "duplicate_reason": "same_link",
+    "first_seen_date": "2026-05-26",
+    "allow_repeat": false,
+    "directions": [
+      "科技巨头的新动作会如何影响教育和内容创作？"
+    ]
+  },
+  {
+    "title": "How Ramp engineers accelerate code review with Codex",
+    "link": "https://openai.com/index/ramp",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-20T00:00:00+00:00",
+    "summary": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours.",
+    "tags": [
+      "OpenAI"
+    ],
+    "normalized_title": "how ramp engineers accelerate code review with codex",
+    "zh_summary": "Codex 的应用案例显示，AI 编程工具正在从个人辅助走向团队协作和软件交付流程。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 30,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": true,
+    "duplicate_reason": "same_link",
+    "first_seen_date": "2026-05-27",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+    "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-20T00:00:00+00:00",
+    "summary": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "an openai model has disproved a central conjecture in discrete geometry",
+    "zh_summary": "这项研究围绕AI 模型、智能体或技术应用展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 38,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": true,
+    "duplicate_reason": "same_link",
+    "first_seen_date": "2026-05-26",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "The next phase of OpenAI’s Education for Countries",
+    "link": "https://openai.com/index/the-next-phase-of-education-for-countries",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-20T00:00:00+00:00",
+    "summary": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "the next phase of openai s education for countries",
+    "zh_summary": "OpenAI与外部机构达成合作，核心看点是内容、技术或渠道资源被接入 AI 产品和服务生态。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成文章，角度可定为“AI 素养会不会成为下一代基础能力”。可从国家、大学和平台都在推动 AI 教育切入，落到普通家庭如何启蒙、如何避免只学工具不学判断力。",
+    "priority_score": 68,
+    "recommendation_level": "可收藏",
+    "is_top_pick": false,
+    "is_duplicate": true,
+    "duplicate_reason": "same_link",
+    "first_seen_date": "2026-05-26",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Introducing OpenAI for Singapore",
+    "link": "https://openai.com/index/introducing-openai-for-singapore",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-19T20:30:00+00:00",
+    "summary": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "introducing openai for singapore",
+    "zh_summary": "OpenAI与外部机构达成合作，核心看点是内容、技术或渠道资源被接入 AI 产品和服务生态。",
+    "story_angle": "更适合做趋势观察或资料储备，关注 AI 工具从技术圈进入企业级市场；不建议直接作为七点半爸爸主稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 22,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
+    "link": "https://openai.com/index/advancing-content-provenance",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-19T10:45:00+00:00",
+    "summary": "OpenAI advances AI content provenance with Content Credentials, SynthID, and a verification tool to help people identify and trust AI-generated media.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "advancing content provenance for a safer more transparent ai ecosystem",
+    "zh_summary": "OpenAI发布或更新了相关产品能力，重点在 AI 工具、平台功能或技术基础设施的持续演进。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 34,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": true,
+    "duplicate_reason": "same_link",
+    "first_seen_date": "2026-05-26",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
+    "link": "https://openai.com/index/dell-codex-enterprise-partnership",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-18T10:00:00+00:00",
+    "summary": "OpenAI and Dell partner to bring Codex to hybrid and on-premise environments, helping enterprises deploy AI coding agents securely across data and workflows.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "openai and dell partner to bring codex to hybrid and on premise enterprise environments",
+    "zh_summary": "Codex 的应用案例显示，AI 编程工具正在从个人辅助走向团队协作和软件交付流程。",
+    "story_angle": "更适合做趋势观察或资料储备，关注 AI 工具从技术圈进入企业级市场；不建议直接作为七点半爸爸主稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 22,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "OpenAI and Malta partner to bring ChatGPT Plus to all citizens",
+    "link": "https://openai.com/index/malta-chatgpt-plus-partnership",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-16T00:00:00+00:00",
+    "summary": "OpenAI and Malta partner to expand AI access, offering ChatGPT Plus and training to help citizens build practical AI skills and use AI responsibly.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "未来职业",
+      "OpenAI"
+    ],
+    "normalized_title": "openai and malta partner to bring chatgpt plus to all citizens",
+    "zh_summary": "OpenAI相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成主稿，角度可定为“AI 家教真的能帮孩子学数学吗”。重点解释工具如何提升练习反馈、信心和学习效率，同时提醒家长别把陪伴、诊断和鼓励完全交给系统。 可作为早间选题会的辅助判断。",
+    "priority_score": 58,
+    "recommendation_level": "可收藏",
+    "is_top_pick": false,
+    "is_duplicate": true,
+    "duplicate_reason": "same_link",
+    "first_seen_date": "2026-05-26",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "How data science teams use Codex",
+    "link": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-15T00:00:00+00:00",
+    "summary": "See how data science teams can use Codex to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs.",
+    "tags": [
+      "Science"
+    ],
+    "normalized_title": "how data science teams use codex",
+    "zh_summary": "Codex 的应用案例显示，AI 编程工具正在从个人辅助走向团队协作和软件交付流程。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "Databricks brings GPT-5.5 to enterprise agent workflows",
+    "link": "https://openai.com/index/databricks",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-15T00:00:00+00:00",
+    "summary": "Databricks uses GPT-5.5 for enterprise agent workflows after the model set a new state of the art on the OfficeQA Pro benchmark.",
+    "tags": [
+      "OpenAI"
+    ],
+    "normalized_title": "databricks brings gpt 5 5 to enterprise agent workflows",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "更适合做趋势观察或资料储备，关注 AI 工具从技术圈进入企业级市场；不建议直接作为七点半爸爸主稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 22,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "A new personal finance experience in ChatGPT",
+    "link": "https://openai.com/index/personal-finance-chatgpt",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-15T00:00:00+00:00",
+    "summary": "Preview a new personal finance experience in ChatGPT for Pro users in the U.S. Securely connect your financial accounts and get AI-powered insights and guidance grounded in your financial context, goals, and priorities.",
+    "tags": [
+      "AI",
+      "OpenAI"
+    ],
+    "normalized_title": "a new personal finance experience in chatgpt",
+    "zh_summary": "OpenAI相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 22,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "How sales teams use Codex",
+    "link": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-15T00:00:00+00:00",
+    "summary": "See how sales teams can use Codex to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from real work inputs.",
+    "tags": [
+      "观察"
+    ],
+    "normalized_title": "how sales teams use codex",
+    "zh_summary": "Codex 的应用案例显示，AI 编程工具正在从个人辅助走向团队协作和软件交付流程。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "How business operations teams use Codex",
+    "link": "https://openai.com/academy/codex-for-work/how-business-operations-teams-use-codex",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-15T00:00:00+00:00",
+    "summary": "See how business operations teams can use Codex to create initiative briefs, strategy updates, leadership decision packets, progress updates, and more from real work inputs.",
+    "tags": [
+      "观察"
+    ],
+    "normalized_title": "how business operations teams use codex",
+    "zh_summary": "Codex 的应用案例显示，AI 编程工具正在从个人辅助走向团队协作和软件交付流程。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
     "title": "Catch up on the Dialogues stage at Google I/O 2026.",
     "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
     "source": "Google AI Blog",
@@ -2651,6 +3164,31 @@
     ]
   },
   {
+    "title": "The Download: climate tech goes public and the AI Hype Index returns",
+    "link": "https://www.technologyreview.com/2026/05/28/1138085/the-download-climate-tech-ipos-ai-hype-index/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-28T12:10:00+00:00",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Climate tech companies are going public. What’s next? Solar and battery company Solv Energy went public in February, hitting a $6 billion valuation. X",
+    "tags": [
+      "AI"
+    ],
+    "normalized_title": "the download climate tech goes public and the ai hype index returns",
+    "zh_summary": "MIT相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 19,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
     "title": "Climate tech companies are going public. What’s next?",
     "link": "https://www.technologyreview.com/2026/05/28/1138067/climate-tech-ipos/",
     "source": "MIT Technology Review",
@@ -2718,9 +3256,9 @@
     "zh_summary": "MIT相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
     "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
     "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
-    "priority_score": 29,
+    "priority_score": 25,
     "recommendation_level": "观察中",
-    "is_top_pick": true,
+    "is_top_pick": false,
     "is_duplicate": false,
     "duplicate_reason": "",
     "first_seen_date": "",
@@ -2887,30 +3425,6 @@
     "directions": [
       "AI 产品和研究有哪些新进展？",
       "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
-    "title": "The Enhanced Games fit right in with the rest of 2026’s longevity vibes",
-    "link": "https://www.technologyreview.com/2026/05/22/1137753/the-enhanced-games-fit-right-in-with-the-rest-of-2026s-longevity-vibes/",
-    "source": "MIT Technology Review",
-    "published_at": "2026-05-22T09:00:00+00:00",
-    "summary": "This Sunday, a group of 42 athletes will gather in Las Vegas to compete in a somewhat unusual sporting competition. Participants in the inaugural Enhanced Games are being encouraged to take performance-enhancing drugs. The goal is to “push the boundaries of human performance.” The games’ organizers ",
-    "tags": [
-      "观察"
-    ],
-    "normalized_title": "the enhanced games fit right in with the rest of 2026 s longevity vibes",
-    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
-    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
-    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
-    "priority_score": 23,
-    "recommendation_level": "观察中",
-    "is_top_pick": false,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "是否可以发展成一篇面向公众号读者的选题线索？"
     ]
   },
   {
@@ -3176,7 +3690,7 @@
     "zh_summary": "The Verge相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
     "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
     "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
-    "priority_score": 27,
+    "priority_score": 23,
     "recommendation_level": "观察中",
     "is_top_pick": false,
     "is_duplicate": false,
@@ -3201,7 +3715,7 @@
     "zh_summary": "The Verge相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
     "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
     "qiba_pitch": "适合放入媒介素养资料库，观察 AI 内容、娱乐产品和公共讨论如何影响青少年数字生活。若没有儿童、学校或家庭冲突案例支撑，不建议单独成文，可等待更贴近家长的案例。",
-    "priority_score": 31,
+    "priority_score": 27,
     "recommendation_level": "观察中",
     "is_top_pick": false,
     "is_duplicate": false,
@@ -3648,15 +4162,15 @@
     ]
   },
   {
-    "title": "Robinhood now lets your AI agents trade stocks",
-    "link": "https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/",
+    "title": "Tech CEOs are apparently suffering from AI psychosis",
+    "link": "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/",
     "source": "TechCrunch AI",
     "published_at": "2026-05-27T12:30:00+00:00",
-    "summary": "While these agents would be able to read and analyze users' portfolios to come up with trading strategies and suggest investments, they'll only be able to access the pre-loaded balance in the dedicated wallet to place orders.",
+    "summary": "\"CEOs are uniquely prone to AI psychosis,\" Box CEO Aaron Levie opines. Maybe that explains the almost religious belief in AI productivity gains.",
     "tags": [
       "AI"
     ],
-    "normalized_title": "robinhood now lets your ai agents trade stocks",
+    "normalized_title": "tech ceos are apparently suffering from ai psychosis",
     "zh_summary": "TechCrunch相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
     "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
     "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
@@ -3673,15 +4187,15 @@
     ]
   },
   {
-    "title": "Tech CEOs are apparently suffering from AI psychosis",
-    "link": "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/",
+    "title": "Robinhood now lets your AI agents trade stocks",
+    "link": "https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/",
     "source": "TechCrunch AI",
     "published_at": "2026-05-27T12:30:00+00:00",
-    "summary": "\"CEOs are uniquely prone to AI psychosis,\" Box CEO Aaron Levie opines. Maybe that explains the almost religious belief in AI productivity gains.",
+    "summary": "While these agents would be able to read and analyze users' portfolios to come up with trading strategies and suggest investments, they'll only be able to access the pre-loaded balance in the dedicated wallet to place orders.",
     "tags": [
       "AI"
     ],
-    "normalized_title": "tech ceos are apparently suffering from ai psychosis",
+    "normalized_title": "robinhood now lets your ai agents trade stocks",
     "zh_summary": "TechCrunch相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
     "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
     "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",

@@ -3,8 +3,11 @@
     "date": "2026-05-28",
     "top20File": "data/2026-05-28_top20.json",
     "count": 20,
-    "totalCount": 195,
-    "duplicateCount": 25
+    "resourcesFile": "data/2026-05-28_resources.json",
+    "resourcesMarkdownFile": "data/2026-05-28_resources.md",
+    "resourceCount": 0,
+    "totalCount": 215,
+    "duplicateCount": 31
   },
   {
     "date": "2026-05-27",
