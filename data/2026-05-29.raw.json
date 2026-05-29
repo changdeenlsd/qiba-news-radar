@@ -1,5 +1,13 @@
 [
   {
+    "title": "Strengthening societal resilience with Rosalind Biodefense",
+    "link": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-29T03:00:00+00:00",
+    "summary": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.",
+    "source_category": "ai"
+  },
+  {
     "title": "How Endava builds an agentic organization with Codex",
     "link": "https://openai.com/index/endava",
     "source": "OpenAI Blog",
@@ -13,6 +21,14 @@
     "source": "OpenAI Blog",
     "published_at": "2026-05-28T00:00:00+00:00",
     "summary": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations.",
+    "source_category": "ai"
+  },
+  {
+    "title": "MUFG aims to become AI-native with OpenAI",
+    "link": "https://openai.com/index/mufg",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-28T00:00:00+00:00",
+    "summary": "MUFG uses ChatGPT Enterprise to build an AI-native organization, improve workflows, and deliver new AI-powered financial services at scale.",
     "source_category": "ai"
   },
   {
@@ -80,19 +96,19 @@
     "source_category": "ai"
   },
   {
-    "title": "How Ramp engineers accelerate code review with Codex",
-    "link": "https://openai.com/index/ramp",
-    "source": "OpenAI Blog",
-    "published_at": "2026-05-20T00:00:00+00:00",
-    "summary": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours.",
-    "source_category": "ai"
-  },
-  {
     "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
     "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
     "source": "OpenAI Blog",
     "published_at": "2026-05-20T00:00:00+00:00",
     "summary": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics.",
+    "source_category": "ai"
+  },
+  {
+    "title": "How Ramp engineers accelerate code review with Codex",
+    "link": "https://openai.com/index/ramp",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-20T00:00:00+00:00",
+    "summary": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours.",
     "source_category": "ai"
   },
   {
@@ -136,28 +152,20 @@
     "source_category": "ai"
   },
   {
-    "title": "Databricks brings GPT-5.5 to enterprise agent workflows",
-    "link": "https://openai.com/index/databricks",
+    "title": "How business operations teams use Codex",
+    "link": "https://openai.com/academy/codex-for-work/how-business-operations-teams-use-codex",
     "source": "OpenAI Blog",
     "published_at": "2026-05-15T00:00:00+00:00",
-    "summary": "Databricks uses GPT-5.5 for enterprise agent workflows after the model set a new state of the art on the OfficeQA Pro benchmark.",
+    "summary": "See how business operations teams can use Codex to create initiative briefs, strategy updates, leadership decision packets, progress updates, and more from real work inputs.",
     "source_category": "ai"
   },
   {
-    "title": "How data science teams use Codex",
-    "link": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
-    "source": "OpenAI Blog",
-    "published_at": "2026-05-15T00:00:00+00:00",
-    "summary": "See how data science teams can use Codex to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs.",
-    "source_category": "ai"
-  },
-  {
-    "title": "A new personal finance experience in ChatGPT",
-    "link": "https://openai.com/index/personal-finance-chatgpt",
-    "source": "OpenAI Blog",
-    "published_at": "2026-05-15T00:00:00+00:00",
-    "summary": "Preview a new personal finance experience in ChatGPT for Pro users in the U.S. Securely connect your financial accounts and get AI-powered insights and guidance grounded in your financial context, goals, and priorities.",
-    "source_category": "ai"
+    "title": "Check out real-life AI prototypes from the Futures Lab.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-29T12:00:00+00:00",
+    "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp\" />University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work.",
+    "source_category": "tech_giant"
   },
   {
     "title": "Catch up on 12 major I/O 2026 moments",
@@ -312,12 +320,12 @@
     "source_category": "tech_giant"
   },
   {
-    "title": "Join the new AI Agents Vibe Coding Course from Google and Kaggle",
-    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/",
-    "source": "Google AI Blog",
-    "published_at": "2026-04-27T13:00:00+00:00",
-    "summary": "A web next to a laptop",
-    "source_category": "tech_giant"
+    "title": "Check out real-life AI prototypes from the Futures Lab.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-05-29T12:00:00+00:00",
+    "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp\" />University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work.",
+    "source_category": "ai_education"
   },
   {
     "title": "Here's how accessibility tools and Gemini are helping students find independence",
@@ -469,14 +477,6 @@
     "source": "Google for Education Blog",
     "published_at": "2026-02-13T18:00:00+00:00",
     "summary": "A card-based quiz interface displays the question, \"What main property dictates a star's final state?\" with the answer \"Initial mass\" highlighted as correct.",
-    "source_category": "ai_education"
-  },
-  {
-    "title": "The latest AI news we announced in January",
-    "link": "https://blog.google/innovation-and-ai/products/google-ai-updates-january-2026/",
-    "source": "Google for Education Blog",
-    "published_at": "2026-02-04T16:55:00+00:00",
-    "summary": "mp4 showing a carousel of images including a card reading \"Help that's made for you\"",
     "source_category": "ai_education"
   },
   {
@@ -960,6 +960,30 @@
     "source_category": "us_university"
   },
   {
+    "title": "The Download: unlocking lithium and controlling Ebola",
+    "link": "https://www.technologyreview.com/2026/05/29/1138110/the-download-lithium-extraction-ebola-ai-pope/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-29T12:10:00+00:00",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How a new extraction process could unlock the world’s lithium A new method for extracting lithium could cut costs and emissions from one of the world’s most important materials for EVs&#8230;",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "The deadly Ebola outbreak is proving difficult to control",
+    "link": "https://www.technologyreview.com/2026/05/29/1138093/the-deadly-ebola-outbreak-is-proving-difficult-to-control/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-29T11:19:52+00:00",
+    "summary": "The alert was raised on May 5. Four health-care workers in the Ituri Province of the Democratic Republic of the Congo had died from an unknown illness within four days. Rapid response teams were sent to investigate, and tests at a research center in Kinshasa revealed the culprit: the Bundibugyo virus, one of the viruses&#8230;",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "How the Pope’s Magnifica Humanitas offers a template for individuals to meet the AI moment",
+    "link": "https://www.technologyreview.com/2026/05/29/1138107/how-the-popes-magnifica-humanitas-offers-a-template-for-individuals-to-meet-the-ai-moment/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-29T10:00:00+00:00",
+    "summary": "Pope Leo XIV’s new encyclical on artificial intelligence includes a statement that warrants serious attention from technologists and policymakers: “Technology is never neutral.” Magnifica Humanitas (“Magnificent Humanity”) is a clarion call to all people to act with courage and solidarity as we enter an age already being transformed by artificial intelligence, the greatest change in&#8230;",
+    "source_category": "high_tech"
+  },
+  {
     "title": "How a new extraction process could unlock the world’s lithium",
     "link": "https://www.technologyreview.com/2026/05/28/1138096/lithium-extraction-rock-zero/",
     "source": "MIT Technology Review",
@@ -1016,30 +1040,6 @@
     "source_category": "high_tech"
   },
   {
-    "title": "A reality check on the AI jobs hysteria",
-    "link": "https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/",
-    "source": "MIT Technology Review",
-    "published_at": "2026-05-26T09:00:00+00:00",
-    "summary": "Haven’t you heard? White-collar jobs are going away, decimated by AI. Waves of layoffs in the tech sector (most recently at Coinbase and Meta and Cisco) are said to presage what will soon come for all of us knowledge workers. But before you quit your job as a software developer or financial analyst—or tech journalist—and&#8230;",
-    "source_category": "high_tech"
-  },
-  {
-    "title": "It’s time to address the looming crisis in entry-level work.",
-    "link": "https://www.technologyreview.com/2026/05/26/1137865/its-time-to-address-the-looming-crisis-in-entry-level-work/",
-    "source": "MIT Technology Review",
-    "published_at": "2026-05-26T09:00:00+00:00",
-    "summary": "Artificial intelligence has not so far produced a clean story of mass unemployment. Aggregate employment in developed countries remains broadly stable, and recent assessments have found limited evidence that AI has shifted the headline numbers. But a troubling change may be hiding beneath the surface: the quiet weakening of the first rung of the career&#8230;",
-    "source_category": "high_tech"
-  },
-  {
-    "title": "The Download: coding’s future, the ‘Steroid Olympics,’ and AI-driven science",
-    "link": "https://www.technologyreview.com/2026/05/22/1137845/the-download-coding-future-steroid-olympics-ai-science/",
-    "source": "MIT Technology Review",
-    "published_at": "2026-05-22T12:10:00+00:00",
-    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Anthropic’s Code with Claude showed off coding’s future—whether you like it or not At Anthropic’s developer event in London this week, Code with Claude, attendees were asked if they’d shipped code&#8230;",
-    "source_category": "high_tech"
-  },
-  {
     "title": "How We See the Beautiful, Violent Sun",
     "link": "https://www.quantamagazine.org/how-we-see-the-beautiful-violent-sun-20260528/",
     "source": "Quanta Magazine",
@@ -1078,6 +1078,30 @@
     "published_at": "2026-05-20T14:50:37+00:00",
     "summary": "Grothendieck is revered in the world of math; outside of it, he’s known for his unusual life, if he’s known at all. But what were his actual mathematical contributions?            <p>The post <a href=\"https://www.quantamagazine.org/how-alexander-grothendieck-revolutionized-20th-century-mathematics-20260520/\" target=\"_blank\">How Alexander Grothendieck Revolutionized 20th-Century Mathematics</a> first appeared on <a href=\"https://www.quantamagazine.org\" target=\"_blank\">Quanta Magazine</a></p>",
     "source_category": "science"
+  },
+  {
+    "title": "Jony Ive’s funky Ferrari",
+    "link": "https://www.theverge.com/podcast/939589/ferrari-luce-jony-ive-vergecast",
+    "source": "The Verge AI",
+    "published_at": "2026-05-29T12:25:12+00:00",
+    "summary": "Most people will never own, drive, or even sit inside a Ferrari Luce. (If you can, or do… hit us up.) There's still no question that Ferrari's first electric vehicle is one of the most interesting, surprising cars of the year. With a decidedly un-Ferrari look, and lots of new technology and designs courtesy of [&#8230;]",
+    "source_category": "ai"
+  },
+  {
+    "title": "This AI startup will clean your home for free to train future robots",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning",
+    "source": "The Verge AI",
+    "published_at": "2026-05-29T11:58:40+00:00",
+    "summary": "AI training startup Shift wants to clean your home for free. The catch - because, despite what its website says, there's always a catch - is that it will record cleaners as they scrub, vacuum, dust, tidy, and wash, and use that footage to train robots. Shift announced the unusual offer on social media on [&#8230;]",
+    "source_category": "ai"
+  },
+  {
+    "title": "Adobe’s conversational AI agent is a mediocre design intern",
+    "link": "https://www.theverge.com/tech/939686/adobes-conversational-ai-agent-is-a-mediocre-design-intern",
+    "source": "The Verge AI",
+    "published_at": "2026-05-29T10:00:00+00:00",
+    "summary": "AI image tools rarely make me feel like I'm part of the creative process. They are, after all, mostly designed so that people with no design experience can type in a few words and get back a usable result. So I was pleasantly surprised by Adobe's latest take on an AI image assistant: It's a [&#8230;]",
+    "source_category": "ai"
   },
   {
     "title": "Microsoft 365 Copilot gets a speed boost and cleaner design",
@@ -1136,27 +1160,11 @@
     "source_category": "ai"
   },
   {
-    "title": "YouTube will let you ask AI to make a custom video feed",
-    "link": "https://www.theverge.com/streaming/938759/youtube-custom-ai-feed-prompt-availability",
-    "source": "The Verge AI",
-    "published_at": "2026-05-28T08:49:07+00:00",
-    "summary": "YouTube is launching a new AI feature that creates a personalized video feed based on descriptions of what you want to watch. In its announcement, YouTube says custom content feeds can be built around your specific interests, moods, or favorite topics, which you can then pin to the top of your YouTube homepage - making [&#8230;]",
-    "source_category": "ai"
-  },
-  {
-    "title": "AI tried to bury this politician — now people have actually heard of him",
-    "link": "https://www.theverge.com/policy/937650/ai-alex-bores-openai-anthropic-ny12",
-    "source": "The Verge AI",
-    "published_at": "2026-05-27T15:40:00+00:00",
-    "summary": "By the time that the Democratic primary for New York's 12th congressional district wraps up in June, Anthropic and OpenAI will have spent millions on their battle over the political future of AI: who gets to regulate it, or who will be punished for trying to regulate it. But the real winner of their feud [&#8230;]",
-    "source_category": "ai"
-  },
-  {
-    "title": "Robinhood will let your AI agent trade stocks and make (or lose) lots of money",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/938095/robinhood-ai-agent-stock-trading",
-    "source": "The Verge AI",
-    "published_at": "2026-05-27T14:36:10+00:00",
-    "summary": "Robinhood is opening its trading platform to AI agents. In an announcement on Wednesday, Robinhood says traders can now create a separate account for an AI agent and add a specific amount of money, allowing the agent to buy and sell stocks across the market. The company pitches the feature as a way for traders [&#8230;]",
+    "title": "This chip startup just raised $135M on a bet that AI’s biggest bottleneck isn’t compute — it’s memory",
+    "link": "https://techcrunch.com/2026/05/29/xcena-secures-135m-at-570m-valuation-betting-on-memory-as-ais-real-bottleneck/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-29T12:00:00+00:00",
+    "summary": "South Korean chip startup Xcena is betting that AI's real bottleneck is not compute, but memory.",
     "source_category": "ai"
   },
   {
@@ -1309,14 +1317,6 @@
     "source": "TechCrunch AI",
     "published_at": "2026-05-27T20:10:00+00:00",
     "summary": "Snowflake has signed a new, enormous five-year deal with Amazon to secure chips for AI usage. Nvidia is once again being put on notice.",
-    "source_category": "ai"
-  },
-  {
-    "title": "Payroll startup Remote says it grew revenue 50% per employee without adding headcount",
-    "link": "https://techcrunch.com/2026/05/27/payroll-startup-remote-says-it-grew-revenue-50-per-employee-without-adding-headcount/",
-    "source": "TechCrunch AI",
-    "published_at": "2026-05-27T19:39:45+00:00",
-    "summary": "Payroll service provider Remote recently surpassed $300 million in annual recurring revenue (ARR) and became cash-flow positive, thanks to a 50% increase in revenue per employee resulting from AI adoption.",
     "source_category": "ai"
   },
   {
@@ -1480,6 +1480,22 @@
     "source_category": "education_technology"
   },
   {
+    "title": "New Documentary Traces Groundbreaking Career of ‘Sesame Street’ Star",
+    "link": "https://www.the74million.org/zero2eight/new-documentary-traces-groundbreaking-career-of-sesame-street-star/",
+    "source": "The 74",
+    "published_at": "2026-05-29T10:30:00+00:00",
+    "summary": "To several generations of TV viewers, actor Sonia Manzano is “the nation’s tía,” their friendly neighbor Maria from Sesame Street. She originated the character in 1971 and spent the next 44 years developing the role through nearly 4,000 episodes, teaching millions of children how to read, write, sing, dance, grieve and be better friends. But [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "The First School Year Under a Texas Law Targeting LGBTQ+ Students",
+    "link": "https://www.the74million.org/article/the-first-school-year-under-a-texas-law-targeting-lgbtq-students/",
+    "source": "The 74",
+    "published_at": "2026-05-29T10:00:00+00:00",
+    "summary": "This piece was published in partnership with The 19th, a nonprofit newsroom reporting on gender, politics, policy and power.&#160; Adrian Moore was sharing a blanket with his friends, watching the sun come up over Morton Ranch High School before the first day of his senior year. Parents and teachers milled among the teenagers, overseeing the [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
     "title": "More Megachurches Want To Be Your Alma Mater",
     "link": "https://www.the74million.org/article/more-megachurches-want-to-be-your-alma-mater/",
     "source": "The 74",
@@ -1624,99 +1640,83 @@
     "source_category": "education_media"
   },
   {
-    "title": "Fixing America’s Crumbling School Infrastructure is Centerpiece of Congressional Campaign",
-    "link": "https://www.the74million.org/article/fixing-americas-crumbling-school-infrastructure-is-centerpiece-of-congressional-campaign/",
-    "source": "The 74",
-    "published_at": "2026-05-24T10:30:00+00:00",
-    "summary": "America’s schools are crumbling. There’s black mold in buildings in Alaska and Maine. Classrooms in New Jersey and Texas lack proper heating and cooling. And there are persistent plumbing problems in Idaho and Pennsylvania. America’s aging school infrastructure is by one measure a nearly $90 billion problem. Federal leaders have acknowledged it since at least [&#8230;]",
-    "source_category": "education_media"
-  },
-  {
-    "title": "L.A. Unified Students Who Get Real-World Job Training Are Also Better Prepared for College",
-    "link": "https://www.the74million.org/article/l-a-unified-students-who-get-real-world-job-training-are-also-better-prepared-for-college/",
-    "source": "The 74",
-    "published_at": "2026-05-23T16:30:00+00:00",
-    "summary": "When a patient at Los Angeles General Medical Center experienced a medical emergency, Brandon Maldonado grabbed an intercom and called a “code blue” to bring immediate help from emergency hospital staff.&#160; The Bravo Medical Magnet High School senior had trained for such emergencies through Los Angeles Unified’s patient care pathway — one of several career [&#8230;]",
-    "source_category": "education_media"
-  },
-  {
-    "title": "3 Things to Know About Trump’s Higher Education Grant Competitions",
-    "link": "https://www.insidehighered.com/news/government/student-aid-policy/2026/05/28/3-things-know-about-trumps-higher-ed-grant",
+    "title": "Graduation Speakers on Musicals, Humiliation and, Yes, AI",
+    "link": "https://www.insidehighered.com/news/students/2026/05/29/highlights-2026-commencement-addresses",
     "source": "Inside Higher Ed",
-    "published_at": "2026-05-28T07:00:00+00:00",
-    "summary": "<span>3 Things to Know About Trump’s Higher Education Grant Competitions</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"A photo illustration of a 100 dollar bill puppet on strings being manipulated by a hand. \" height=\"800\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/Puppeting_money_on_strings.jpg\" width=\"1200\" />\n\n</div>\n      \n<span><span>jessica.blake@…</span></span>\n\n<span><time datetime=\"2026-05-28T03:00:00-04:00\" title=\"Thursday, May 28, 2026 - 03:00 AM\">Thu, 05/28/2026 - 03:00 AM</time>\n</span>\n<p>Policy experts say Trump’s use of grant competitions to advance policy priorities like workforce development and returning education to the states is legal but could create obstacles for certain applicants.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/jessica-blake\" hreflang=\"en\">Jessica Blake</a></div>\n              </div>\n      </div>",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>Graduation Speakers on Musicals, Humiliation and, Yes, AI</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"A smiling Sean Evans speaking at a UIUC podium with orange seats behind him.\" height=\"760\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/sean%20evans.jpg\" width=\"1140\" />\n\n</div>\n      \n<span><span>Johanna Alonso</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n<p>From Hugh Jackman to Malika Andrews, speakers celebrated 2026 graduates with stories about forging their own paths and growing from failure.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/johanna-alonso\" hreflang=\"en\">Johanna Alonso</a></div>\n              </div>\n      </div>",
     "source_category": "higher_education"
   },
   {
-    "title": "A New Blueprint for Construction Training",
-    "link": "https://www.insidehighered.com/news/student-success/life-after-college/2026/05/28/new-blueprint-construction-training",
+    "title": "Students Rethink Campus Move-Out Waste",
+    "link": "https://www.insidehighered.com/news/student-success/college-experience/2026/05/29/students-rethink-campus-move-out-waste",
     "source": "Inside Higher Ed",
-    "published_at": "2026-05-28T07:00:00+00:00",
-    "summary": "<span>A New Blueprint for Construction Training</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"Southeast Technical College is expanding experiential learning opportunities through its new Wells Fargo Homebuilding Lab.\" height=\"1200\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/BDK02023-web.jpg\" width=\"1800\" />\n\n</div>\n      \n<span><span>Joshua.Bay</span></span>\n\n<span><time datetime=\"2026-05-28T03:00:00-04:00\" title=\"Thursday, May 28, 2026 - 03:00 AM\">Thu, 05/28/2026 - 03:00 AM</time>\n</span>\n<p>Southeast Technical College’s new home-building lab gives skilled trades students hands-on training tied to regional workforce needs.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/joshua-bay\" hreflang=\"en\">Joshua Bay</a></div>\n              </div>\n      </div>",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>Students Rethink Campus Move-Out Waste</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"The student-led sustainability initiative encourages students to donate items at pods placed throughout campus.\" height=\"1920\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/IMG_6945_1_3500x2625.jpg\" width=\"2560\" />\n\n</div>\n      \n<span><span>Joshua.Bay</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n<p>The University of San Diego’s EcoExit initiative turns discarded dorm items into free resources for incoming students.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/joshua-bay\" hreflang=\"en\">Joshua Bay</a></div>\n              </div>\n      </div>",
     "source_category": "higher_education"
   },
   {
-    "title": "Alger to Resign From American U to Become America 250 Fellow",
-    "link": "https://www.insidehighered.com/news/quick-takes/2026/05/28/alger-resign-american-u-become-america-250-fellow",
+    "title": "Why I Created the National AI Equity Lab",
+    "link": "https://www.insidehighered.com/opinion/columns/resident-scholar/2026/05/29/why-i-created-national-ai-equity-lab",
     "source": "Inside Higher Ed",
-    "published_at": "2026-05-28T07:00:00+00:00",
-    "summary": "<span>Alger to Resign From American U to Become America 250 Fellow</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"Library and Learning Resources Center at American University\" height=\"686\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/GettyImages-1189385931.jpg\" width=\"1024\" />\n\n</div>\n      \n<span><span>Katherine Knott</span></span>\n\n<span><time datetime=\"2026-05-28T03:00:00-04:00\" title=\"Thursday, May 28, 2026 - 03:00 AM\">Thu, 05/28/2026 - 03:00 AM</time>\n</span>\n\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/katherine-knott\" hreflang=\"en\">Katherine Knott</a></div>\n              </div>\n      </div>",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>Why I Created the National AI Equity Lab</span>\n\n<span><span>Sara Brady</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n<p>I&nbsp;see it as my civic duty to ensure that the proliferation of artificial intelligence does not further exacerbate existing inequities in our society.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/shaun-harper\" hreflang=\"en\">Shaun Harper</a></div>\n              </div>\n      </div>",
     "source_category": "higher_education"
   },
   {
-    "title": "Rural Students Made It to Campus. Now What?",
-    "link": "https://www.insidehighered.com/opinion/columns/editors-note/2026/05/28/rural-students-made-it-campus-now-what",
+    "title": "White House Aims to Establish Political Oversight of Federal Grants",
+    "link": "https://www.insidehighered.com/news/government/science-research-policy/2026/05/29/omb-proposes-rules-establishing-political",
     "source": "Inside Higher Ed",
-    "published_at": "2026-05-28T07:00:00+00:00",
-    "summary": "<span>Rural Students Made It to Campus. Now What?</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"Editor's Note logo\" height=\"528\" src=\"https://www.insidehighered.com/sites/default/files/2025-09/image%20%283%29.png\" width=\"795\" />\n\n</div>\n      \n<span><span>sara.custer@in…</span></span>\n\n<span><time datetime=\"2026-05-28T03:00:00-04:00\" title=\"Thursday, May 28, 2026 - 03:00 AM\">Thu, 05/28/2026 - 03:00 AM</time>\n</span>\n<p>Rural students have specific needs, but many colleges don’t have the tools or vocabulary to support their success. That gap could cost institutions enrollments and public trust.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/sara-custer\" hreflang=\"en\">Sara Custer</a></div>\n              </div>\n      </div>",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>White House Aims to Establish Political Oversight of Federal Grants</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"U.S. President Donald Trump takes questions from reporters during a Cabinet meeting in the Cabinet Room of the White House on May 27, 2026 in Washington, DC. \" height=\"800\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/Trump_GettyImages-2278476003_edit.jpg\" width=\"1200\" />\n\n</div>\n      \n<span><span>Ryan Quinn</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n<p><span>The Office of Management and Budget published long-expected proposed rules for how federal agencies must carry out Trump’s order to put “senior appointees” in charge of deciding who gets funded. The proposal also ends an effort to cap indirect cost rates.</span></p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/ryan-quinn\" hreflang=\"en\">Ryan Quinn</a></div>\n              </div>\n      </div>",
     "source_category": "higher_education"
   },
   {
-    "title": "What the Education Department Projects for Workforce Pell",
-    "link": "https://www.insidehighered.com/news/government/student-aid-policy/2026/05/28/ed-projects-nearly-200k-will-receive-workforce-pell",
+    "title": "The Strengthening Institutions Program Grows at MSIs’ Expense",
+    "link": "https://www.insidehighered.com/news/government/politics-elections/2026/05/29/strengthening-institutions-program-grows-msis-expense",
     "source": "Inside Higher Ed",
-    "published_at": "2026-05-28T07:00:00+00:00",
-    "summary": "<span>What the Education Department Projects for Workforce Pell</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"Young male apprentice connecting the wires in the distribution board under supervision of a senior electrician.\" height=\"800\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/Man_Worker_Wire_Connection_GettyImages-1218720446_edit.jpg\" width=\"1200\" />\n\n</div>\n      \n<span><span>Sara Weissman</span></span>\n\n<span><time datetime=\"2026-05-28T03:00:00-04:00\" title=\"Thursday, May 28, 2026 - 03:00 AM\">Thu, 05/28/2026 - 03:00 AM</time>\n</span>\n<p>The Education Department estimates Workforce Pell could benefit over 100,000 students in the second year of the program. Experts say implementation will start slow but ramp up.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/sara-weissman\" hreflang=\"en\">Sara Weissman</a></div>\n              </div>\n      </div>",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>The Strengthening Institutions Program Grows at MSIs’ Expense</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"A photo illustration of a person pouring one jar of coins labeled &quot;MSI&quot; into another jar labeled &quot;SIP.&quot;\" height=\"800\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/Money_Jars_MSI_to_SIP.jpg\" width=\"1200\" />\n\n</div>\n      \n<span><span>Sara Weissman</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n<p>The Trump administration gutted minority-serving institution grants again, dropping the windfall on a capacity-building program for underresourced institutions. MSIs may be able to get some of that funding, advocates say, but it’s still a blow.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/sara-weissman\" hreflang=\"en\">Sara Weissman</a></div>\n              </div>\n      </div>",
     "source_category": "higher_education"
   },
   {
-    "title": "Judge Overturns West Point Restriction on Civilian Faculty Speech",
-    "link": "https://www.insidehighered.com/news/quick-takes/2026/05/28/west-point-restriction-civilian-faculty-speech-overturned",
+    "title": "Hundreds of Math Professors Ask UC to Bring Back SAT/ACT Requirements",
+    "link": "https://www.insidehighered.com/news/faculty/learning-assessment/2026/05/29/hundreds-math-professors-ask-uc-bring-back-satact",
     "source": "Inside Higher Ed",
-    "published_at": "2026-05-28T07:00:00+00:00",
-    "summary": "<span>Judge Overturns West Point Restriction on Civilian Faculty Speech</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"President Donald Trump arrives to deliver the commencement address at the 2025 graduation ceremony at the US Military Academy West Point.\" height=\"800\" src=\"https://www.insidehighered.com/sites/default/files/2025-06/Trump_West_Point_GettyImages-2216132158_edit.jpg\" width=\"1200\" />\n\n</div>\n      \n<span><span>Ryan Quinn</span></span>\n\n<span><time datetime=\"2026-05-28T03:00:00-04:00\" title=\"Thursday, May 28, 2026 - 03:00 AM\">Thu, 05/28/2026 - 03:00 AM</time>\n</span>\n\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/ryan-quinn\" hreflang=\"en\">Ryan Quinn</a></div>\n              </div>\n      </div>",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>Hundreds of Math Professors Ask UC to Bring Back SAT/ACT Requirements</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"A photo illustration of a bubble test sheet with a pencil hovering over a set of bubble labeled &quot;SAT.&quot;\" height=\"800\" src=\"https://www.insidehighered.com/sites/default/files/2026-04/Test_Bubbles_SAT.jpg\" width=\"1200\" />\n\n</div>\n      \n<span><span>Emma Whitford</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/emma-whitford\" hreflang=\"en\">Emma Whitford</a></div>\n              </div>\n      </div>",
     "source_category": "higher_education"
   },
   {
-    "title": "Columbia College Chicago Pauses Sabbaticals for 2nd Year",
-    "link": "https://www.insidehighered.com/news/quick-takes/2026/05/28/columbia-college-chicago-pauses-faculty-sabbaticals-again",
+    "title": "European Academics Shun U.S. Business Conference Over Trump Fears",
+    "link": "https://www.insidehighered.com/news/faculty/2026/05/29/european-academics-shun-us-business-conference",
     "source": "Inside Higher Ed",
-    "published_at": "2026-05-28T07:00:00+00:00",
-    "summary": "<span>Columbia College Chicago Pauses Sabbaticals for 2nd Year</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"Exterior view of the Art and Design Building of Columbia College Chicago in Chicago, Illinois.\" height=\"802\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/Columbia_College_Chicago_GettyImages-949618932_edit.jpg\" width=\"1200\" />\n\n</div>\n      \n<span><span>Susan H. Greenberg</span></span>\n\n<span><time datetime=\"2026-05-28T03:00:00-04:00\" title=\"Thursday, May 28, 2026 - 03:00 AM\">Thu, 05/28/2026 - 03:00 AM</time>\n</span>\n\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/node/4397\" hreflang=\"en\">Susan H. Greenberg</a></div>\n              </div>\n      </div>",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>European Academics Shun U.S. Business Conference Over Trump Fears</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"The U.S. Capitol building behind a chain-link fence\" height=\"413\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/istock-2187129454.jpg\" width=\"620\" />\n\n</div>\n      \n<span><span>Susan H. Greenberg</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n<p>Going forward, the Academy of Management will move its annual meeting as attendees stay at home this year owing to visa worries and opposition to the president’s research policies.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/seher-asaf-times-higher-education\" hreflang=\"en\">Seher Asaf for Times Higher Education </a></div>\n              </div>\n      </div>",
     "source_category": "higher_education"
   },
   {
-    "title": "Don’t Follow Harvard on Grade Caps",
-    "link": "https://www.insidehighered.com/opinion/views/2026/05/28/dont-follow-harvard-grade-caps-opinion",
+    "title": "Spanberger Removes Virginia Tech Rector",
+    "link": "https://www.insidehighered.com/news/quick-takes/2026/05/29/spanberger-removes-virginia-tech-rector",
     "source": "Inside Higher Ed",
-    "published_at": "2026-05-28T07:00:00+00:00",
-    "summary": "<span>Don’t Follow Harvard on Grade Caps</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"An &quot;A&quot; grade, written in red and circled, on a lined sheet of paper.\" height=\"1413\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/GettyImages-1016537132.jpg\" width=\"2122\" />\n\n</div>\n      \n<span><span>Elizabeth Redden</span></span>\n\n<span><time datetime=\"2026-05-28T03:00:00-04:00\" title=\"Thursday, May 28, 2026 - 03:00 AM\">Thu, 05/28/2026 - 03:00 AM</time>\n</span>\n<p>The evidence suggests that limiting the number of A&nbsp;grades is not the way to go.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/chad-m-topaz\" hreflang=\"en\">Chad M. Topaz</a></div>\n              </div>\n      </div>",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>Spanberger Removes Virginia Tech Rector</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"A photo of Abigail Spanberger speaking.\" height=\"683\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/GettyImages-2262916031.jpg\" width=\"1024\" />\n\n</div>\n      \n<span><span>Josh Moody</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/node/4229\" hreflang=\"en\">Josh Moody</a></div>\n              </div>\n      </div>",
     "source_category": "higher_education"
   },
   {
-    "title": "3 Questions for Instructional Designer Nicole Sanderson",
-    "link": "https://www.insidehighered.com/opinion/columns/learning-innovation/2026/05/28/3-questions-instructional-designer-nicole-sanderson",
+    "title": "A New Version of the Resource Curse",
+    "link": "https://www.insidehighered.com/opinion/columns/confessions-community-college-dean/2026/05/29/new-version-resource-curse",
     "source": "Inside Higher Ed",
-    "published_at": "2026-05-28T07:00:00+00:00",
-    "summary": "<span>3 Questions for Instructional Designer Nicole Sanderson</span>\n\n<span><span>joshua.m.kim@d…</span></span>\n\n<span><time datetime=\"2026-05-28T03:00:00-04:00\" title=\"Thursday, May 28, 2026 - 03:00 AM\">Thu, 05/28/2026 - 03:00 AM</time>\n</span>\n<p><span>On career paths and superpowers.</span></p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/node/7486\" hreflang=\"en\">Joshua Kim</a></div>\n              </div>\n      </div>",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>A New Version of the Resource Curse</span>\n\n<span><span>Sara Brady</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n<p>What does whale oil have to do with the value of the U.S. dollar?</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/matt-reed\" hreflang=\"en\">Matt Reed</a></div>\n              </div>\n      </div>",
     "source_category": "higher_education"
   },
   {
-    "title": "Clemson Taps Michigan State President",
-    "link": "https://www.insidehighered.com/news/governance/executive-leadership/2026/05/27/clemson-taps-michigan-state-president",
+    "title": "NSF Freezes New Funding for 4 Institutions",
+    "link": "https://www.insidehighered.com/news/quick-takes/2026/05/29/nsf-freezes-new-funding-4-institutions",
     "source": "Inside Higher Ed",
-    "published_at": "2026-05-27T18:18:40+00:00",
-    "summary": "<span>Clemson Taps Michigan State President</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"A photo illustration of faceless presidents on a football field being looked at by recruiters in the stands. \" height=\"800\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/Scouting_College_Presidents.jpg\" width=\"1200\" />\n\n</div>\n      \n<span><span>Josh Moody</span></span>\n\n<span><time datetime=\"2026-05-27T14:18:40-04:00\" title=\"Wednesday, May 27, 2026 - 02:18 PM\">Wed, 05/27/2026 - 02:18 PM</time>\n</span>\n<p>Clemson poached Michigan State’s Kevin Guskiewicz, who noted board dysfunction in his parting message. His exit comes shortly after he was offered a $1&nbsp;million raise to stay.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/node/4229\" hreflang=\"en\">Josh Moody</a></div>\n              </div>\n      </div>",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>NSF Freezes New Funding for 4 Institutions</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"National Science Foundation Logo\" height=\"800\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/NSF_logo_wide.jpg\" width=\"1200\" />\n\n</div>\n      \n<span><span>jessica.blake@…</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/jessica-blake\" hreflang=\"en\">Jessica Blake</a></div>\n              </div>\n      </div>",
     "source_category": "higher_education"
   },
   {
