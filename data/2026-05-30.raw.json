@@ -1,0 +1,2042 @@
+[
+  {
+    "title": "Boston Children’s uses AI to unlock new diagnoses",
+    "link": "https://openai.com/index/boston-childrens-hospital",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-29T12:00:00+00:00",
+    "summary": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases.",
+    "source_category": "ai"
+  },
+  {
+    "title": "How Braintrust turns customer requests into code with Codex",
+    "link": "https://openai.com/index/braintrust",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-29T12:00:00+00:00",
+    "summary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Strengthening societal resilience with Rosalind Biodefense",
+    "link": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-29T03:00:00+00:00",
+    "summary": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.",
+    "source_category": "ai"
+  },
+  {
+    "title": "A shared playbook for trustworthy third party evaluations",
+    "link": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-29T00:00:00+00:00",
+    "summary": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems.",
+    "source_category": "ai"
+  },
+  {
+    "title": "How Endava builds an agentic organization with Codex",
+    "link": "https://openai.com/index/endava",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-28T12:00:00+00:00",
+    "summary": "Learn how Endava uses Codex to build an agentic organization, accelerating software delivery and reducing requirements analysis from weeks to hours.",
+    "source_category": "ai"
+  },
+  {
+    "title": "OpenAI’s Frontier Governance Framework",
+    "link": "https://openai.com/index/openai-frontier-governance-framework",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-28T00:00:00+00:00",
+    "summary": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations.",
+    "source_category": "ai"
+  },
+  {
+    "title": "MUFG aims to become AI-native with OpenAI",
+    "link": "https://openai.com/index/mufg",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-28T00:00:00+00:00",
+    "summary": "MUFG uses ChatGPT Enterprise to build an AI-native organization, improve workflows, and deliver new AI-powered financial services at scale.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+    "link": "https://openai.com/index/cisco",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-27T11:00:00+00:00",
+    "summary": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Building self-improving tax agents with Codex",
+    "link": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-27T07:00:00+00:00",
+    "summary": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Election information and safeguards in 2026",
+    "link": "https://openai.com/index/election-safeguards-2026",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-27T00:00:00+00:00",
+    "summary": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency",
+    "source_category": "ai"
+  },
+  {
+    "title": "Warp’s big bet on building open source with GPT-5.5",
+    "link": "https://openai.com/index/warp",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-27T00:00:00+00:00",
+    "summary": "Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows.",
+    "source_category": "ai"
+  },
+  {
+    "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+    "link": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-25T00:00:00+00:00",
+    "summary": "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.",
+    "source_category": "ai"
+  },
+  {
+    "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+    "link": "https://openai.com/index/gartner-2026-agentic-coding-leader",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-22T00:00:00+00:00",
+    "summary": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.",
+    "source_category": "ai"
+  },
+  {
+    "title": "How Virgin Atlantic ships faster with Codex",
+    "link": "https://openai.com/index/virgin-atlantic",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-22T00:00:00+00:00",
+    "summary": "How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holiday travel deadline, reaching near-total unit test coverage and zero P1 defects.",
+    "source_category": "ai"
+  },
+  {
+    "title": "AdventHealth advances whole-person care with OpenAI",
+    "link": "https://openai.com/index/adventhealth",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-21T12:00:00+00:00",
+    "summary": "AdventHealth is using ChatGPT for Healthcare to streamline workflows, reduce administrative burden, and return more time to patient care.",
+    "source_category": "ai"
+  },
+  {
+    "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+    "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-20T00:00:00+00:00",
+    "summary": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics.",
+    "source_category": "ai"
+  },
+  {
+    "title": "The next phase of OpenAI’s Education for Countries",
+    "link": "https://openai.com/index/the-next-phase-of-education-for-countries",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-20T00:00:00+00:00",
+    "summary": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes.",
+    "source_category": "ai"
+  },
+  {
+    "title": "How Ramp engineers accelerate code review with Codex",
+    "link": "https://openai.com/index/ramp",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-20T00:00:00+00:00",
+    "summary": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Introducing OpenAI for Singapore",
+    "link": "https://openai.com/index/introducing-openai-for-singapore",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-19T20:30:00+00:00",
+    "summary": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
+    "link": "https://openai.com/index/advancing-content-provenance",
+    "source": "OpenAI Blog",
+    "published_at": "2026-05-19T10:45:00+00:00",
+    "summary": "OpenAI advances AI content provenance with Content Credentials, SynthID, and a verification tool to help people identify and trust AI-generated media.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-29T19:00:00+00:00",
+    "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp\" />We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-29T17:30:00+00:00",
+    "summary": "Gemini Omni & Gemini 3.5 hero",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "Check out real-life AI prototypes from the Futures Lab.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-29T12:00:00+00:00",
+    "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp\" />University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work.",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "Catch up on 12 major I/O 2026 moments",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-28T15:00:00+00:00",
+    "summary": "The colorful I/O logo against a black background, surrounded by stills from the I/O keynote",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "Catch up on the Dialogues stage at Google I/O 2026.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-22T18:00:00+00:00",
+    "summary": "Alphabet CEO Sundar Pichai in conversation on the I/O 2026 Dialogues stage",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "We’re announcing new community investments in Missouri.",
+    "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-20T20:40:00+00:00",
+    "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp\" />We’re helping build the state’s next-generation workforce and investing in energy programs.",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "100 things we announced at I/O 2026",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-20T19:30:00+00:00",
+    "summary": "Image with the words \"Ready, Set, I/O\" and a colorful Gemini logo",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "A new experiment brings better group meetings to Google Beam",
+    "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-beam-group-meetings/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-20T16:45:00+00:00",
+    "summary": "A small group meeting featuring two in-room participants and three participants on-screen.",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "How AI Mode is changing the way people search in the U.S.",
+    "link": "https://blog.google/products-and-platforms/products/search/ai-mode-us-insights/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-19T17:45:00+00:00",
+    "summary": "A graphic features the text \"How people are using AI Mode in the U.S.\" surrounded by colorful, stylized illustrations of a pencil, planet, banana, gift box, cursor, gamepad, and lipstick on a light blue background.",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "New ways to create and get things done in Google Workspace",
+    "link": "https://blog.google/products-and-platforms/products/workspace/workspace-updates/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-19T17:45:00+00:00",
+    "summary": "Google Workspace",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "I/O 2026: Welcome to the agentic Gemini era",
+    "link": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-19T17:45:00+00:00",
+    "summary": "a series of colorful icons representing Google I/O against a black background",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "Gemini 3.5: frontier intelligence with action",
+    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-19T17:45:00+00:00",
+    "summary": "Gemini 3.5 text and multi-colored star icon on an abstract blue background.",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "A new era for AI Search",
+    "link": "https://blog.google/products-and-platforms/products/search/search-io-2026/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-19T17:45:00+00:00",
+    "summary": "Text that reads \"The best of a search engine with the best of AI\"",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "Everything new in our Google AI subscriptions, fresh from I/O 2026",
+    "link": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-19T17:45:00+00:00",
+    "summary": "The image shows colorful icons. The copy reads: More magic in one plan. More power, more perks, same price.",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "I/O 2026",
+    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-19T17:45:00+00:00",
+    "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Collection-Hero.gif\" />At Google I/O 2026, we shared how we’re making AI more helpful for everyone. See everything we announced.",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "The new AI-powered Google Finance is expanding to Europe.",
+    "link": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-11T06:00:00+00:00",
+    "summary": "A screenshot of the AI-powered experience on Google Finance.",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "See what happens when creative legends use AI to make ads for small businesses.",
+    "link": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-08T15:00:00+00:00",
+    "summary": "black and white card with headshots of susan credle, jayonta jenkins and tiffany rolfe",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "5 gardening tips you can try right in Search",
+    "link": "https://blog.google/products-and-platforms/products/search/gardening-tips/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-06T16:00:00+00:00",
+    "summary": "An abstract background featuring soft, stippled illustrations of flowers and a butterfly in a bright palette of blue, green, and red. In the center of the image is a white circle containing a magnifying glass.",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-05T16:00:00+00:00",
+    "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/futurevisionxprize_social.max-600x600.format-webp.webp\" />Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "The latest AI news we announced in April 2026",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/",
+    "source": "Google AI Blog",
+    "published_at": "2026-05-04T17:00:00+00:00",
+    "summary": "mp4 featuring an underwater video and a mobile AI video mockup.",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "Check out real-life AI prototypes from the Futures Lab.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-05-29T12:00:00+00:00",
+    "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp\" />University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work.",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Here's how accessibility tools and Gemini are helping students find independence",
+    "link": "https://blog.google/products-and-platforms/devices/chromebooks/face-control/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-05-21T16:00:00+00:00",
+    "summary": "The photo and video show Liam Alfonso Dansereau, a seventh-grade student in Alberta, Canada, with mobility differences.",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Measuring the impact of AI on teaching and learning",
+    "link": "https://blog.google/products-and-platforms/products/education/measuring-the-impact-of-ai-on-teaching-and-learning/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-05-19T07:00:00+00:00",
+    "summary": "Image of children at laptops in a classroom",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Partnering with UNICEF to support innovation in education across the globe",
+    "link": "https://blog.google/products-and-platforms/products/education/partnering-with-unicef-to-support-innovation-in-education-across-the-globe/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-05-19T07:00:00+00:00",
+    "summary": "Teacher leaning over two students to show them something on a computer.",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "From policy to practice: supporting the future of AI in education",
+    "link": "https://blog.google/products-and-platforms/products/education/ai-policy-guidance-labs/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-05-15T08:00:00+00:00",
+    "summary": "Two people look at a computer",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Start learning with Google’s new AI Educator Series.",
+    "link": "https://blog.google/products-and-platforms/products/education/ai-educator-series/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-05-13T17:00:00+00:00",
+    "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Googles_new_AI_Educator_Series_.max-600x600.format-webp.webp\" />Free AI literacy training is available to all 6 million K-12 and higher education teachers across the U.S.",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Digitize your paper notes with Gemini.",
+    "link": "https://blog.google/innovation-and-ai/products/gemini-app/digitize-notes-gemini-study-guide/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-05-11T16:00:00+00:00",
+    "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini-Study-Guide-social.max-600x600.format-webp.webp\" />Gemini can turn hundreds of pages of notes into study guides or flashcards — or organize a semester’s worth of learning.",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "This Teacher Appreciation Week, we’re celebrating educators who made a difference in our lives.",
+    "link": "https://blog.google/products-and-platforms/products/education/teacher-appreciation-week-videos/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-05-07T16:00:00+00:00",
+    "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/celebrating_educators_social.max-600x600.format-webp.webp\" />To celebrate Teacher Appreciation Week, Googlers thanked the educators who inspired them to try new things.",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Celebrating educators’ creativity this Teacher Appreciation Week",
+    "link": "https://blog.google/products-and-platforms/products/education/teacher-appreciation-week-2026/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-05-05T16:00:00+00:00",
+    "summary": "A teacher smiles next to a student in a classroom full of instruments.",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Putting educators at the center of AI learning",
+    "link": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/putting-educators-at-the-center-of-ai-learning/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-05-05T01:00:00+00:00",
+    "summary": "A collage of photos showcasing community engagement and professional events, including a workshop presentation, a woman outdoors near a bridge, a large group meeting, and a professional group photo in front of a Google sign.",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "How educators can help students reach their full potential",
+    "link": "https://blog.google/products-and-platforms/products/education/teacher-of-the-year-2026/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-04-21T13:00:00+00:00",
+    "summary": "A video about Leon Smith",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "From test prep to graduation, our latest AI tools support learners",
+    "link": "https://blog.google/products-and-platforms/products/education/ai-tools-programs-educators/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-04-13T08:00:00+00:00",
+    "summary": "An abstract infographic on a dark background illustrating the interconnected Google ecosystem. At the center is a large, glowing Gemini icon within a white circle, acting as a central hub.  Connected to this hub via a network of multicolored lines are",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "6 easy ways to study for finals with Gemini",
+    "link": "https://blog.google/products-and-platforms/products/education/gemini-finals-study-tips/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-04-10T13:00:00+00:00",
+    "summary": "A stylized illustration of a woman wearing teal headphones, smiling while working on a laptop at a desk. The background features abstract UI elements of Gemini tools.",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "How 400+ campuses are putting AI to work",
+    "link": "https://blog.google/products-and-platforms/products/education/google-ai-accelerator/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-04-09T16:00:00+00:00",
+    "summary": "A man looks at a computer smiling",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Expanding AI literacy to Catholic-school classrooms nationwide.",
+    "link": "https://blog.google/products-and-platforms/products/education/catholic-school-ai-literacy/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-04-07T16:00:00+00:00",
+    "summary": "The new Google Educator Group will make AI training available to 146,000 educators who will in turn serve 1.6 million students.",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Our AI Literacy Day recap: putting educators in the lead",
+    "link": "https://blog.google/products-and-platforms/products/education/ai-literacy-tools-certifications/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-04-01T16:00:00+00:00",
+    "summary": "3 rows of teachers posing as a group at the NYCPS AI Literacy event",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Enabling Gemini for Education across all Malaysian public universities",
+    "link": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/gemini-malaysia-universities/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-03-08T18:00:00+00:00",
+    "summary": "A group of people posing for a photo on a stage at an event titled \"Bengkel Kepimpinan AI\" (AI Leadership Workshop). The image shows men and women standing in a line.",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Our day with the National Teachers of the Year at the Googleplex",
+    "link": "https://blog.google/products-and-platforms/products/education/national-teachers-day-2026-googleplex/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-03-04T17:00:00+00:00",
+    "summary": "A large group of teachers smiling for a selfie image capture, linking to a YouTube video",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Our commitment to make AI training available to all 6 million U.S. educators",
+    "link": "https://blog.google/products-and-platforms/products/education/teacher-ai-literacy-training/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-02-23T12:00:00+00:00",
+    "summary": "An image of a teacher instructing a student on her laptop.",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "5 ways Gemini can help students work smarter",
+    "link": "https://blog.google/products-and-platforms/products/education/gemini-features-for-students/",
+    "source": "Google for Education Blog",
+    "published_at": "2026-02-13T18:00:00+00:00",
+    "summary": "A card-based quiz interface displays the question, \"What main property dictates a star's final state?\" with the answer \"Initial mass\" highlighted as correct.",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "A conversation with Kevin Scott: What’s next in AI",
+    "link": "https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/",
+    "source": "Microsoft AI Blog",
+    "published_at": "2022-12-06T17:29:09+00:00",
+    "summary": "<p>The post <a href=\"https://blogs.microsoft.com/ai/a-conversation-with-kevin-scott-whats-next-in-ai/\">A conversation with Kevin Scott: What’s next in AI</a> appeared first on <a href=\"https://blogs.microsoft.com/ai\">The AI Blog</a>.</p>",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "From Hot Wheels to handling content: How brands are using Microsoft AI to be more productive and imaginative",
+    "link": "https://blogs.microsoft.com/ai/from-hot-wheels-to-handling-content-how-brands-are-using-microsoft-ai-to-be-more-productive-and-imaginative/",
+    "source": "Microsoft AI Blog",
+    "published_at": "2022-10-12T16:00:02+00:00",
+    "summary": "<p>The post <a href=\"https://blogs.microsoft.com/ai/from-hot-wheels-to-handling-content-how-brands-are-using-microsoft-ai-to-be-more-productive-and-imaginative/\">From Hot Wheels to handling content: How brands are using Microsoft AI to be more productive and imaginative</a> appeared first on <a href=\"https://blogs.microsoft.com/ai\">The AI Blog</a>.</p>",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "Microsoft open sources its ‘farm of the future’ toolkit",
+    "link": "https://blogs.microsoft.com/ai/microsoft-open-sources-its-farm-of-the-future-toolkit/",
+    "source": "Microsoft AI Blog",
+    "published_at": "2022-10-06T14:58:15+00:00",
+    "summary": "<p>The post <a href=\"https://blogs.microsoft.com/ai/microsoft-open-sources-its-farm-of-the-future-toolkit/\">Microsoft open sources its ‘farm of the future’ toolkit</a> appeared first on <a href=\"https://blogs.microsoft.com/ai\">The AI Blog</a>.</p>",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "How data and AI will transform contact centres for financial services",
+    "link": "https://cloudblogs.microsoft.com/industry-blog/en-gb/financial-services/2022/07/25/how-data-and-ai-will-transform-contact-centres-for-financial-services/",
+    "source": "Microsoft AI Blog",
+    "published_at": "2022-07-25T14:49:33+00:00",
+    "summary": "<p>The post <a href=\"https://cloudblogs.microsoft.com/industry-blog/en-gb/financial-services/2022/07/25/how-data-and-ai-will-transform-contact-centres-for-financial-services/\">How data and AI will transform contact centres for financial services</a> appeared first on <a href=\"https://blogs.microsoft.com/ai\">The AI Blog</a>.</p>",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "AI-equipped drones study dolphins on the edge of extinction",
+    "link": "https://news.microsoft.com/apac/features/ai-drones-dolphins-maui63/",
+    "source": "Microsoft AI Blog",
+    "published_at": "2022-07-21T14:50:33+00:00",
+    "summary": "<p>The post <a href=\"https://news.microsoft.com/apac/features/ai-drones-dolphins-maui63/\">AI-equipped drones study dolphins on the edge of extinction</a> appeared first on <a href=\"https://blogs.microsoft.com/ai\">The AI Blog</a>.</p>",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "Online math tutoring service uses AI to help boost students’ skills and confidence",
+    "link": "https://blogs.microsoft.com/ai/eedi-online-math-quiz/",
+    "source": "Microsoft AI Blog",
+    "published_at": "2022-07-13T12:59:50+00:00",
+    "summary": "<p>The post <a href=\"https://blogs.microsoft.com/ai/eedi-online-math-quiz/\">Online math tutoring service uses AI to help boost students’ skills and confidence</a> appeared first on <a href=\"https://blogs.microsoft.com/ai\">The AI Blog</a>.</p>",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "AI-Mimi is building inclusive TV experiences for Deaf and Hard of Hearing user in Japan",
+    "link": "https://blogs.microsoft.com/accessibility/ai-mimi-is-building-inclusive-tv-experiences-for-deaf-and-hard-of-hearing-user-in-japan/",
+    "source": "Microsoft AI Blog",
+    "published_at": "2022-07-06T14:51:23+00:00",
+    "summary": "<p>The post <a href=\"https://blogs.microsoft.com/accessibility/ai-mimi-is-building-inclusive-tv-experiences-for-deaf-and-hard-of-hearing-user-in-japan/\">AI-Mimi is building inclusive TV experiences for Deaf and Hard of Hearing user in Japan</a> appeared first on <a href=\"https://blogs.microsoft.com/ai\">The AI Blog</a>.</p>",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "Microsoft’s framework for building AI systems responsibly",
+    "link": "https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly/",
+    "source": "Microsoft AI Blog",
+    "published_at": "2022-06-21T17:50:03+00:00",
+    "summary": "<p>The post <a href=\"https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly/\">Microsoft’s framework for building AI systems responsibly</a> appeared first on <a href=\"https://blogs.microsoft.com/ai\">The AI Blog</a>.</p>",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "Singapore develops Asia’s first AI-based mobile app for shark and ray fin identification to combat illegal wildlife trade",
+    "link": "https://news.microsoft.com/en-sg/2022/06/08/singapore-develops-asias-first-ai-based-mobile-app-for-shark-and-ray-fin-identification-to-combat-illegal-wildlife-trade/",
+    "source": "Microsoft AI Blog",
+    "published_at": "2022-06-08T21:04:42+00:00",
+    "summary": "<p>The post <a href=\"https://news.microsoft.com/en-sg/2022/06/08/singapore-develops-asias-first-ai-based-mobile-app-for-shark-and-ray-fin-identification-to-combat-illegal-wildlife-trade/\">Singapore develops Asia’s first AI-based mobile app for shark and ray fin identification to combat illegal wildlife trade</a> appeared first on <a href=\"https://blogs.microsoft.com/ai\">The AI Blog</a>.</p>",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "The opportunity at home – can AI drive innovation in personal assistant devices and sign language?",
+    "link": "https://blogs.microsoft.com/accessibility/the-opportunity-at-home-can-ai-drive-innovation-in-personal-assistant-devices-and-sign-language/",
+    "source": "Microsoft AI Blog",
+    "published_at": "2022-05-31T21:06:06+00:00",
+    "summary": "<p>The post <a href=\"https://blogs.microsoft.com/accessibility/the-opportunity-at-home-can-ai-drive-innovation-in-personal-assistant-devices-and-sign-language/\">The opportunity at home – can AI drive innovation in personal assistant devices and sign language?</a> appeared first on <a href=\"https://blogs.microsoft.com/ai\">The AI Blog</a>.</p>",
+    "source_category": "tech_giant"
+  },
+  {
+    "title": "Microsoft Elevate for Educators: Advanced recognition application guide 2026-2027",
+    "link": "https://www.microsoft.com/en-us/education/blog/2026/05/microsoft-elevate-for-educators-advanced-recognition-application-guide-2026-2027/",
+    "source": "Microsoft Education Blog",
+    "published_at": "2026-05-21T15:00:00+00:00",
+    "summary": "<p>Lead with AI. Apply for Microsoft Elevate Educators 2026–2027 and shape the future of learning.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/education/blog/2026/05/microsoft-elevate-for-educators-advanced-recognition-application-guide-2026-2027/\">Microsoft Elevate for Educators: Advanced recognition application guide 2026-2027</a> appeared first on <a href=\"https://www.microsoft.com/en-us/education/blog\">Microsoft Education Blog</a>.</p>",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "AI governance in education: From policy to practice",
+    "link": "https://www.microsoft.com/en-us/education/blog/2026/05/ai-governance-in-education-from-policy-to-practice/",
+    "source": "Microsoft Education Blog",
+    "published_at": "2026-05-18T16:00:00+00:00",
+    "summary": "<p>Explore how IT leaders can build trusted, scalable AI governance in education through integrated platforms, security, and clear policy.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/education/blog/2026/05/ai-governance-in-education-from-policy-to-practice/\">AI governance in education: From policy to practice</a> appeared first on <a href=\"https://www.microsoft.com/en-us/education/blog\">Microsoft Education Blog</a>.</p>",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Study and Learn: AI built for your student",
+    "link": "https://www.microsoft.com/en-us/education/blog/2026/05/study-and-learn-ai-built-for-your-student/",
+    "source": "Microsoft Education Blog",
+    "published_at": "2026-05-13T16:00:00+00:00",
+    "summary": "<p>The Study and Learn agent within Microsoft 365 Copilot gives institutions a learning-focused approach to enabling AI for students.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/education/blog/2026/05/study-and-learn-ai-built-for-your-student/\">Study and Learn: AI built for your student</a> appeared first on <a href=\"https://www.microsoft.com/en-us/education/blog\">Microsoft Education Blog</a>.</p>",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Strengthen security and prepare your institution for AI",
+    "link": "https://www.microsoft.com/en-us/education/blog/2026/05/strengthen-security-and-prepare-your-institution-for-ai/",
+    "source": "Microsoft Education Blog",
+    "published_at": "2026-05-06T16:00:00+00:00",
+    "summary": "<p>If you’re leading technology strategy and implementation, you already know the reality: Your environment is anything but simple. Supporting multiple schools, thousands of users, and a wide range of devices often across aging infrastructure and evolving systems is complex.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/education/blog/2026/05/strengthen-security-and-prepare-your-institution-for-ai/\">Strengthen security and prepare your institution for AI</a> appeared first on <a href=\"https://www.microsoft.com/en-us/education/blog\">Microsoft Education Blog</a>.</p>",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Scale AI safely with Zero Trust security",
+    "link": "https://www.microsoft.com/en-us/education/blog/2026/04/scale-ai-safely-with-zero-trust-security/",
+    "source": "Microsoft Education Blog",
+    "published_at": "2026-04-29T16:00:00+00:00",
+    "summary": "<p>Leaders see opportunities to improve productivity, reduce administrative burden, and support better learning experiences. At the same time, IT teams are asked to move faster without compromising trust.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/education/blog/2026/04/scale-ai-safely-with-zero-trust-security/\">Scale AI safely with Zero Trust security </a> appeared first on <a href=\"https://www.microsoft.com/en-us/education/blog\">Microsoft Education Blog</a>.</p>",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "What’s new in the Microsoft Education AI Toolkit",
+    "link": "https://www.microsoft.com/en-us/education/blog/2026/04/whats-new-in-the-microsoft-education-ai-toolkit/",
+    "source": "Microsoft Education Blog",
+    "published_at": "2026-04-22T16:00:00+00:00",
+    "summary": "<p>Education leaders are scaling responsible AI with the updated Microsoft Education AI Toolkit—now redesigned with practical guidance for moving from pilot to impact.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/education/blog/2026/04/whats-new-in-the-microsoft-education-ai-toolkit/\">What&#8217;s new in the Microsoft Education AI Toolkit</a> appeared first on <a href=\"https://www.microsoft.com/en-us/education/blog\">Microsoft Education Blog</a>.</p>",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "5 insights for education leaders from the 2026 Microsoft Digital Sovereignty Summit",
+    "link": "https://www.microsoft.com/en-us/education/blog/2026/04/5-insights-for-education-leaders-from-the-2026-microsoft-digital-sovereignty-summit/",
+    "source": "Microsoft Education Blog",
+    "published_at": "2026-04-07T16:00:00+00:00",
+    "summary": "<p>Cloud and AI are reshaping how institutions deliver services and prepare students for the workforce, while evolving governance, compliance, and geopolitical pressures are bringing digital sovereignty into sharper focus.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/education/blog/2026/04/5-insights-for-education-leaders-from-the-2026-microsoft-digital-sovereignty-summit/\">5 insights for education leaders from the 2026 Microsoft Digital Sovereignty Summit</a> appeared first on <a href=\"https://www.microsoft.com/en-us/education/blog\">Microsoft Education Blog</a>.</p>",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Safer Internet Day 2026: Helping students become AI‑aware, safe, and smart online",
+    "link": "https://www.microsoft.com/en-us/education/blog/2026/02/safer-internet-day-2026-helping-students-become-ai%e2%80%91aware-safe-and-smart-online/",
+    "source": "Microsoft Education Blog",
+    "published_at": "2026-02-10T16:00:00+00:00",
+    "summary": "<p>Safer Internet Day 2026 highlights how educators, families, and schools can help students become AI aware, safe, and smart online using trusted resources from Microsoft Education.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/education/blog/2026/02/safer-internet-day-2026-helping-students-become-ai%e2%80%91aware-safe-and-smart-online/\">Safer Internet Day 2026: Helping students become AI‑aware, safe, and smart online</a> appeared first on <a href=\"https://www.microsoft.com/en-us/education/blog\">Microsoft Education Blog</a>.</p>",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Introducing Microsoft innovations and programs to support AI-powered teaching and learning",
+    "link": "https://www.microsoft.com/en-us/education/blog/2026/01/introducing-microsoft-innovations-and-programs-to-support-ai-powered-teaching-and-learning/",
+    "source": "Microsoft Education Blog",
+    "published_at": "2026-01-15T16:00:00+00:00",
+    "summary": "<p>Announcing Microsoft Elevate for Educators—helping connect educators with community, professional development, and AI tools to transform teaching.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/education/blog/2026/01/introducing-microsoft-innovations-and-programs-to-support-ai-powered-teaching-and-learning/\">Introducing Microsoft innovations and programs to support AI-powered teaching and learning</a> appeared first on <a href=\"https://www.microsoft.com/en-us/education/blog\">Microsoft Education Blog</a>.</p>",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Unlock AI learning with Hour of AI for Computer Science Education Week",
+    "link": "https://www.microsoft.com/en-us/education/blog/2025/12/unlock-ai-learning-with-hour-of-ai-for-computer-science-education-week/",
+    "source": "Microsoft Education Blog",
+    "published_at": "2025-12-01T14:00:00+00:00",
+    "summary": "<p>Join Hour of AI during CS Ed Week 2025—get lessons and resources from Microsoft Education to spark curiosity and create AI learning experiences.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/education/blog/2025/12/unlock-ai-learning-with-hour-of-ai-for-computer-science-education-week/\">Unlock AI learning with Hour of AI for Computer Science Education Week</a> appeared first on <a href=\"https://www.microsoft.com/en-us/education/blog\">Microsoft Education Blog</a>.</p>",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Solve coding puzzles to survive the night in the new Minecraft Hour of AI",
+    "link": "https://education.minecraft.net/en-us/blog/hour-of-ai-the-first-night",
+    "source": "Microsoft Education Blog",
+    "published_at": "2025-11-12T20:35:00+00:00",
+    "summary": "<p>Join the global Hour of AI with Minecraft Education’s new world, The First Night—discover how AI and AI agents work and how to use them responsibly.</p>\n<p>The post <a href=\"https://education.minecraft.net/en-us/blog/hour-of-ai-the-first-night\">Solve coding puzzles to survive the night in the new Minecraft Hour of AI</a> appeared first on <a href=\"https://www.microsoft.com/en-us/education/blog\">Microsoft Education Blog</a>.</p>",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "Building data-empowered higher education institutions",
+    "link": "https://www.microsoft.com/en-us/education/blog/2025/10/building-data-empowered-higher-education-institutions/",
+    "source": "Microsoft Education Blog",
+    "published_at": "2025-10-22T16:00:00+00:00",
+    "summary": "<p>Discover how Microsoft Fabric in higher education helps unify data, scale AI, and drive agility. Download the free Data-Empowered Institution e-book.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/education/blog/2025/10/building-data-empowered-higher-education-institutions/\">Building data-empowered higher education institutions</a> appeared first on <a href=\"https://www.microsoft.com/en-us/education/blog\">Microsoft Education Blog</a>.</p>",
+    "source_category": "ai_education"
+  },
+  {
+    "title": "NVIDIA Research Advances Robotics From Simulation to the Real World",
+    "link": "https://blogs.nvidia.com/blog/icra-research-robotics-simulation-to-real-world/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-28T13:00:51+00:00",
+    "summary": "Robotics is entering a new phase: moving from controlled demos and scripted automation toward generalizable, reliable embodied autonomy in the real world.  At the International Conference on Robotics and Automation (ICRA), eight of NVIDIA Research’s 28 accepted papers show how simulation-to-real transfer is becoming a foundation for that shift, helping robots perceive, reason, plan and [&#8230;]",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "The Name’s Gaming … Cloud Gaming: ‘007 First Light’ Launches on GeForce NOW",
+    "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-007-first-light-launch/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-28T13:00:37+00:00",
+    "summary": "License to stream, shaken and stirred. GeForce NOW is dialing up the espionage with the launch of 007 First Light, letting members slip into James Bond’s reimagined origin story from almost any device — no tux or preloads required.  For a limited time, the game is included with the purchase of a 12‑month GeForce NOW [&#8230;]",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "AI Factories: The New Infrastructure of Intelligence",
+    "link": "https://blogs.nvidia.com/blog/ai-factories-the-new-infrastructure-of-intelligence/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-27T16:00:36+00:00",
+    "summary": "AI factories are token factories, converting power into intelligence in real time. And as agentic AI scales and autonomous, always-on special agents are deployed in the enterprise, performance per watt and cost per token become the economics that matter.",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "NVIDIA Vera CPU Is ‘Packing a Heavy-Hitting Punch’ Against Competition",
+    "link": "https://blogs.nvidia.com/blog/vera-cpu-phoronix/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-26T21:15:15+00:00",
+    "summary": "The shift to agentic AI creates a new CPU requirement for the AI factory: fast cores, massive memory bandwidth and the ability to sustain high performance when all cores are active. Initial benchmark results published by Phoronix today show that the NVIDIA Vera CPU meets this need. For this first public look, the benchmark scope [&#8230;]",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "NVIDIA GTC Taipei at COMPUTEX: Live Updates on What’s Next in AI",
+    "link": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-21T16:00:17+00:00",
+    "summary": "At NVIDIA GTC Taipei at COMPUTEX, the world’s developers, researchers and industry leaders are converging to dive into the latest breakthroughs shaping every industry, covering topics spanning AI factories and scaling infrastructure to agentic and physical AI and more.",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "License to Stream: ‘007 First Light’ Coming to GeForce NOW With an Ultimate Bundle",
+    "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-007-first-light-ultimate-bundle/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-21T13:00:22+00:00",
+    "summary": "The mission begins now. GeForce NOW is dialing up the action with a blockbuster mix of spy thrills, high-speed racing and member rewards — plus eight new games joining the cloud this week, all ready to stream instantly. Leading the drop: the 007 First Light Ultimate Membership Bundle, which brings a brand-new way to jump [&#8230;]",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "NVIDIA and Google Cloud Empower the Next Wave of AI Builders",
+    "link": "https://blogs.nvidia.com/blog/google-cloud-developer-community-ai-builders/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-19T20:30:09+00:00",
+    "summary": "At this year’s Google I/O conference, NVIDIA and Google Cloud are accelerating the work of more than 100,000 developers in the companies’ joint developer community, which provides curated learning paths, hands-on labs and events that help them build using the full-stack NVIDIA AI platform on Google Cloud.  Launched at Google I/O last year, the community [&#8230;]",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "NVIDIA CEO Jensen Huang at Dell Technologies World: ‘Demand Is Going Parabolic, Utterly Parabolic’",
+    "link": "https://blogs.nvidia.com/blog/dell-technologies-agent-enterprise-ai/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-18T22:28:59+00:00",
+    "summary": "Agentic AI inference at one-tenth the cost per token with NVIDIA Vera Rubin NVL72. Agent sandboxes run 50% faster on NVIDIA Vera than traditional CPUs — while enterprise data queries are up to 3x faster with the Vera CPU. And 5,000 enterprises like Lilly, Samsung and Honeywell are running AI workloads on Dell AI Factories [&#8230;]",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "Vera Arrives: NVIDIA’s First CPU Built for Agents Lands at Top AI Labs",
+    "link": "https://blogs.nvidia.com/blog/vera-cpu-delivery/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-18T21:48:17+00:00",
+    "summary": "The first NVIDIA Vera CPUs arrived at three of the world's leading AI labs on Friday — Anthropic in San Francisco, OpenAI in Mission Bay, SpaceXAI in Palo Alto — followed by a delivery to Oracle Cloud Infrastructure in Santa Clara on Monday. NVIDIA Vice President of Hyperscale and High-Performance Computing Ian Buck hand-delivered them.",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "Sea You in the Cloud: ‘Subnautica 2’ Early Access Dives Onto GeForce NOW",
+    "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-subnautica-2/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-14T13:00:08+00:00",
+    "summary": "Editor&#8217;s note: The Gaijin single sign-on feature is now up and running. Dive masks on — Subnautica 2 is making a splash on GeForce NOW day-and-date with launch, so members can plunge into the title’s brand-new alien ocean from almost any device. It leads 11 new games joining the cloud this week. A limited-time HITMAN [&#8230;]",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "NVIDIA, Ineffable Intelligence Team Up to Build the Future of Reinforcement Learning Infrastructure",
+    "link": "https://blogs.nvidia.com/blog/ineffable-intelligence-reinforcement-learning-infrastructure/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-13T13:00:57+00:00",
+    "summary": "Reinforcement-learning agents — AI systems that learn by trial and error — can convert computation into new knowledge. That’s the focus of a new engineering-level collaboration between NVIDIA and Ineffable Intelligence, the London-based AI lab founded by AlphaGo architect David Silver in the wake of Ineffable’s emergence from stealth last week. “The next frontier of [&#8230;]",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "Hermes Unlocks Self-Improving AI Agents, Powered by NVIDIA RTX PCs and DGX Spark",
+    "link": "https://blogs.nvidia.com/blog/rtx-ai-garage-hermes-agent-dgx-spark/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-13T13:00:10+00:00",
+    "summary": "Agentic AI is changing the way users get work done. Following the success of OpenClaw, the community is embracing new open source agentic frameworks. The latest is Hermes Agent, which crossed 140,000 GitHub stars in under three months.",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "NVIDIA and SAP Bring Trust to Specialized Agents",
+    "link": "https://blogs.nvidia.com/blog/sap-specialized-agents/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-12T12:30:56+00:00",
+    "summary": "Announced today at SAP Sapphire — where NVIDIA founder and CEO Jensen Huang joined  SAP CEO Christian Klein’s keynote by video — SAP and NVIDIA’s expanded collaboration helps enterprises run specialized agents with security and governance controls.",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "‘Your Career Starts at the Beginning of the AI Revolution,’ NVIDIA CEO Tells Graduates",
+    "link": "https://blogs.nvidia.com/blog/nvidia-ceo-carnegie-mellon-commencement-address/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-10T22:00:50+00:00",
+    "summary": "“You are entering the world at an extraordinary moment,” NVIDIA founder and CEO Jensen Huang told graduates as he delivered the keynote address at Carnegie Mellon University&#8217;s 128th commencement ceremony on Sunday. “A new industry is being born. A new era of science and discovery is beginning.” “No generation has entered the world with more [&#8230;]",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "Powering the Next American Century: US Energy Secretary Chris Wright and NVIDIA’s Ian Buck on the Genesis Mission",
+    "link": "https://blogs.nvidia.com/blog/energy-secretary-chris-wright-ian-buck/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-07T19:14:38+00:00",
+    "summary": "AI will help build the energy it needs. That’s the case U.S. Energy Secretary Chris Wright and NVIDIA Vice President of Hyperscale and High-Performance Computing Ian Buck made Thursday morning at the SCSP AI+ Expo. The 30-minute fireside chat, moderated by SCSP president Ylli Bajraktari, was called “Powering the Next American Century.” Their argument: American [&#8230;]",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "Linked and Loaded: Gaijin Single Sign-On Now Available on GeForce NOW",
+    "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-gaijin-sso/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-07T13:00:27+00:00",
+    "summary": "Less typing, more tanking. Faster logins mean more time in the gaming action — and this week provides GeForce NOW members with a smoother path straight into the battlefield. Cloud gaming is all about instant access to titles across devices, and the latest GeForce NOW update removes another layer for members jumping into their Gaijin [&#8230;]",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "NVIDIA Spectrum-X — the Open, AI-Native Ethernet Fabric — Sets the Standard for Gigascale AI, Now With MRC",
+    "link": "https://blogs.nvidia.com/blog/spectrum-x-ethernet-mrc/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-06T11:30:20+00:00",
+    "summary": "The race to build the world’s most powerful AI factories demands networking that keeps pace with the ambitions of AI itself.  NVIDIA Spectrum-X Ethernet scale-out infrastructure stands at the forefront of that race as the most advanced AI networking technology available today, deployed by industry leaders who can’t afford to compromise on performance, resilience or [&#8230;]",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "NVIDIA and ServiceNow Partner on New Autonomous AI Agents for Enterprises",
+    "link": "https://blogs.nvidia.com/blog/servicenow-autonomous-ai-agents-enterprises/",
+    "source": "NVIDIA Blog",
+    "published_at": "2026-05-05T17:00:40+00:00",
+    "summary": "Enterprise AI has learned to generate. It has learned to reason. Now companies are asking the next question: How should AI act? Early agent systems have shown what’s possible, moving beyond simple prompts to take on more complex tasks. The next step is bringing those capabilities into enterprise environments — where agents must operate with [&#8230;]",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "Media Advisory: MIT to establish regional quantum hub",
+    "link": "https://news.mit.edu/2026/media-advisory-mit-establish-regional-quantum-hub",
+    "source": "MIT News",
+    "published_at": "2026-05-28T16:00:00+00:00",
+    "summary": "With $25 million investment from the Commonwealth of Massachusetts, MIT to build a new shared-use facility to serve as a statewide quantum toolbox.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Technology usually creates jobs for young, skilled workers. Will AI do the same?",
+    "link": "https://news.mit.edu/2026/technology-creates-jobs-young-skilled-workers-ai-0521",
+    "source": "MIT News",
+    "published_at": "2026-05-21T04:00:00+00:00",
+    "summary": "A new study of the postwar U.S. shows which kinds of workers historically filled new tech-enabled jobs.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Building AI models that understand chemical principles",
+    "link": "https://news.mit.edu/2026/building-ai-models-with-chemical-principles-connor-coley-0520",
+    "source": "MIT News",
+    "published_at": "2026-05-20T04:00:00+00:00",
+    "summary": "Connor Coley works at the interface of chemistry and machine learning, to discover and design new drug compounds.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Justin Solomon appointed associate dean of engineering education",
+    "link": "https://news.mit.edu/2026/justin-solomon-appointed-associate-dean-engineering-education-0519",
+    "source": "MIT News",
+    "published_at": "2026-05-19T21:10:00+00:00",
+    "summary": "MIT faculty member in electrical engineering and computer science to focus on innovation in engineering education and new pedagogical approaches.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Two from MIT named 2026 Knight-Hennessy Scholars",
+    "link": "https://news.mit.edu/2026/knight-hennessy-scholars-0514",
+    "source": "MIT News",
+    "published_at": "2026-05-14T20:55:00+00:00",
+    "summary": "The prestigious fellowship funds graduate studies at Stanford University.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Q&A: Expanding MIT’s global reach through Universal Learning",
+    "link": "https://news.mit.edu/2026/qa-expanding-mit-global-reach-through-universal-learning-0512",
+    "source": "MIT News",
+    "published_at": "2026-05-12T15:00:00+00:00",
+    "summary": "Dimitris Bertsimas and Megan Mitchell discuss the motivation behind Universal Learning, and what sets the new MIT Open Learning educational initiative apart.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Universal AI is “a pathway to AI fluency that’s accessible and approachable to anyone, anywhere”",
+    "link": "https://news.mit.edu/2026/universal-ai-pathway-to-ai-fluency-accessible-to-anyone-0512",
+    "source": "MIT News",
+    "published_at": "2026-05-12T15:00:00+00:00",
+    "summary": "New AI education program from MIT Open Learning debuts with AI-powered personalization and a free introductory course for learners everywhere.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Study: Firms often use automation to control certain workers’ wages",
+    "link": "https://news.mit.edu/2026/study-firms-often-use-automation-control-certain-workers-wages-0507",
+    "source": "MIT News",
+    "published_at": "2026-05-07T04:00:00+00:00",
+    "summary": "MIT economists found US companies tend to target employees earning a “wage premium,” which increases inequality but not necessarily productivity.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Games people — and machines — play: Untangling strategic reasoning to advance AI",
+    "link": "https://news.mit.edu/2026/untangling-strategic-reasoning-to-advance-ai-gabriele-farina-0505",
+    "source": "MIT News",
+    "published_at": "2026-05-05T21:00:00+00:00",
+    "summary": "Assistant Professor Gabriele Farina mines the foundations of decision-making in complex multi-agent scenarios.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Beacon Biosignals is mapping the brain during sleep",
+    "link": "https://news.mit.edu/2026/beacon-biosignals-maps-brain-during-sleep-0501",
+    "source": "MIT News",
+    "published_at": "2026-05-01T04:00:00+00:00",
+    "summary": "Founded by Jake Donoghue PhD ’19 and former MIT researcher Jarrett Revels, the company is creating an AI-driven platform to help diagnose and treat disease.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Improving understanding with language",
+    "link": "https://news.mit.edu/2026/improving-understanding-language-olivia-honeycutt-0501",
+    "source": "MIT News",
+    "published_at": "2026-05-01T04:00:00+00:00",
+    "summary": "MIT senior Olivia Honeycutt investigates how the ways we communicate can shape our views of the world.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Making the case for curiosity-driven science",
+    "link": "https://news.mit.edu/2026/making-case-curiosity-driven-science",
+    "source": "MIT News",
+    "published_at": "2026-04-30T04:00:00+00:00",
+    "summary": "President Sally Kornbluth spoke in front of a packed crowd about growing challenges to the U.S. research ecosystem as funding for America’s top research universities becomes increasingly strained.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Solving the “Whac-a-mole dilemma”: A smarter way to debias AI vision models",
+    "link": "https://news.mit.edu/2026/smarter-way-to-debias-ai-vision-models-0429",
+    "source": "MIT News",
+    "published_at": "2026-04-29T21:40:00+00:00",
+    "summary": "A new debiasing technique called WRING avoids creating or amplifying biases that can occur with existing debiasing approaches.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "The MIT-IBM Computing Research Lab launches to shape the future of AI and quantum computing",
+    "link": "https://news.mit.edu/2026/mit-ibm-computing-research-lab-launches-0429",
+    "source": "MIT News",
+    "published_at": "2026-04-29T10:00:00+00:00",
+    "summary": "Building on a long-standing MIT–IBM collaboration, the new lab will chart the convergence of AI, algorithms, and quantum computing.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Enabling privacy-preserving AI training on everyday devices",
+    "link": "https://news.mit.edu/2026/enabling-privacy-preserving-ai-training-everyday-devices-0429",
+    "source": "MIT News",
+    "published_at": "2026-04-29T04:00:00+00:00",
+    "summary": "A new method could bring more accurate and efficient AI models to high-stakes applications like health care and finance, even in under-resourced settings.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "A faster way to estimate AI power consumption",
+    "link": "https://news.mit.edu/2026/faster-way-to-estimate-ai-power-consumption-0427",
+    "source": "MIT News",
+    "published_at": "2026-04-27T04:00:00+00:00",
+    "summary": "The “EnergAIzer” method generates reliable results in seconds, enabling data center operators to efficiently allocate resources and reduce wasted energy.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "MIT scientists build the world’s largest collection of Olympiad-level math problems, and open it to everyone",
+    "link": "https://news.mit.edu/2026/mit-scientists-build-worlds-largest-collection-olympiad-level-math-problems-open-0424",
+    "source": "MIT News",
+    "published_at": "2026-04-24T17:00:00+00:00",
+    "summary": "New dataset of 30,000-plus competition math problems from 47 countries gives AI researchers a harder test — and students worldwide a better training ground.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Teaching AI models to say “I’m not sure”",
+    "link": "https://news.mit.edu/2026/teaching-ai-models-to-say-im-not-sure-0422",
+    "source": "MIT News",
+    "published_at": "2026-04-22T19:15:00+00:00",
+    "summary": "A new training method improves the reliability of AI confidence estimates without sacrificing performance, addressing a root cause of hallucination in reasoning models.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Jacob Andreas and Brett McGuire named Edgerton Award winners",
+    "link": "https://news.mit.edu/2026/jacob-andreas-brett-mcguire-edgerton-award-winners-0417",
+    "source": "MIT News",
+    "published_at": "2026-04-17T13:40:00+00:00",
+    "summary": "The associate professors of EECS and chemistry, respectively, are honored for exceptional contributions to teaching, research, and service at MIT.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "Bringing AI-driven protein-design tools to biologists everywhere",
+    "link": "https://news.mit.edu/2026/bringing-ai-driven-protein-design-tools-everywhere-0417",
+    "source": "MIT News",
+    "published_at": "2026-04-17T04:00:00+00:00",
+    "summary": "Founded by Tristan Bepler PhD ’20 and former MIT professor Tim Lu PhD ’07, OpenProtein.AI offers researchers open-source models and other tools for protein engineering.",
+    "source_category": "us_university"
+  },
+  {
+    "title": "The Download: unlocking lithium and controlling Ebola",
+    "link": "https://www.technologyreview.com/2026/05/29/1138110/the-download-lithium-extraction-ebola-ai-pope/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-29T12:10:00+00:00",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How a new extraction process could unlock the world’s lithium A new method for extracting lithium could cut costs and emissions from one of the world’s most important materials for EVs&#8230;",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "The deadly Ebola outbreak is proving difficult to control",
+    "link": "https://www.technologyreview.com/2026/05/29/1138093/the-deadly-ebola-outbreak-is-proving-difficult-to-control/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-29T11:19:52+00:00",
+    "summary": "The alert was raised on May 5. Four health-care workers in the Ituri Province of the Democratic Republic of the Congo had died from an unknown illness within four days. Rapid response teams were sent to investigate, and tests at a research center in Kinshasa revealed the culprit: the Bundibugyo virus, one of the viruses&#8230;",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "How the Pope’s Magnifica Humanitas offers a template for individuals to meet the AI moment",
+    "link": "https://www.technologyreview.com/2026/05/29/1138107/how-the-popes-magnifica-humanitas-offers-a-template-for-individuals-to-meet-the-ai-moment/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-29T10:00:00+00:00",
+    "summary": "Pope Leo XIV’s new encyclical on artificial intelligence includes a statement that warrants serious attention from technologists and policymakers: “Technology is never neutral.” Magnifica Humanitas (“Magnificent Humanity”) is a clarion call to all people to act with courage and solidarity as we enter an age already being transformed by artificial intelligence, the greatest change in&#8230;",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "How a new extraction process could unlock the world’s lithium",
+    "link": "https://www.technologyreview.com/2026/05/28/1138096/lithium-extraction-rock-zero/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-28T18:01:00+00:00",
+    "summary": "Researchers say they’ve found a new way to extract lithium, a crucial metal used in the lithium-ion batteries that power electric vehicles and energy storage arrays. This new technique could be more environmentally friendly and cheaper than existing ones.&#160; The research was published today in Science, and a startup called Rock Zero is working to&#8230;",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "The Download: climate tech goes public and the AI Hype Index returns",
+    "link": "https://www.technologyreview.com/2026/05/28/1138085/the-download-climate-tech-ipos-ai-hype-index/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-28T12:10:00+00:00",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Climate tech companies are going public. What’s next? Solar and battery company Solv Energy went public in February, hitting a $6 billion valuation. X-energy, which builds small modular nuclear reactors, followed&#8230;",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "Climate tech companies are going public. What’s next?",
+    "link": "https://www.technologyreview.com/2026/05/28/1138067/climate-tech-ipos/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-28T10:00:00+00:00",
+    "summary": "This year, there’s been a wave of notable energy companies going public via IPO in the US. The solar and battery company Solv Energy went public in February, to the tune of $6 billion. X-energy, which is building small modular nuclear reactors, did the same in April, and its stocks surged on its first day&#8230;",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "The AI Hype Index: AI gets booed in graduation season",
+    "link": "https://www.technologyreview.com/2026/05/28/1138053/the-ai-hype-index-ai-gets-booed-in-graduation-season/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-28T09:51:11+00:00",
+    "summary": "It is one thing to say AI will change the world. It is another to expect the class of 2026 to applaud it. In fact, when former Google CEO Eric Schmidt told University of Arizona graduates that their task is to help shape AI, he was met with a resounding chorus of boos. “I can&#8230;",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "The Download: keeping up with AI, and the future of IVF",
+    "link": "https://www.technologyreview.com/2026/05/27/1138048/the-download-ai-future-ivf-technology/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-27T12:10:00+00:00",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Stay on top of what’s going on in AI this summer Here at MIT Technology Review, we understand exactly how relentless the pace of news from the world of artificial intelligence&#8230;",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "Rethinking organizational design in the age of agentic AI",
+    "link": "https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-26T14:54:10+00:00",
+    "summary": "Amid rapidly growing adoption of enterprise-level AI agents, there’s a disconnect emerging between ambition and execution.&#160; Although 85% of organizations say they want to be agentic within the next three years, 76% say their current operations and infrastructure can’t support that change. They cite a lack of readiness across people, processes, and workflows.&#160; The sticky&#8230;",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "The Download: puncturing the AI jobs panic",
+    "link": "https://www.technologyreview.com/2026/05/26/1138028/the-download-ai-jobs-data/",
+    "source": "MIT Technology Review",
+    "published_at": "2026-05-26T12:10:00+00:00",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A reality check on the AI jobs hysteria Despite the growing hysteria over AI’s threat to white-collar jobs, there’s still scant evidence that the technology has had a large-scale impact on&#8230;",
+    "source_category": "high_tech"
+  },
+  {
+    "title": "Key Chemistry Question Answered, No Quantum Computer Required",
+    "link": "https://www.quantamagazine.org/key-chemistry-question-answered-no-quantum-computer-required-20260529/",
+    "source": "Quanta Magazine",
+    "published_at": "2026-05-29T13:54:11+00:00",
+    "summary": "Do we need quantum computers to fully understand complex chemical reactions? A new result, decades in the making, shows the surprising power of ordinary “classical” machines.            <p>The post <a href=\"https://www.quantamagazine.org/key-chemistry-question-answered-no-quantum-computer-required-20260529/\" target=\"_blank\">Key Chemistry Question Answered, No Quantum Computer Required</a> first appeared on <a href=\"https://www.quantamagazine.org\" target=\"_blank\">Quanta Magazine</a></p>",
+    "source_category": "science"
+  },
+  {
+    "title": "How We See the Beautiful, Violent Sun",
+    "link": "https://www.quantamagazine.org/how-we-see-the-beautiful-violent-sun-20260528/",
+    "source": "Quanta Magazine",
+    "published_at": "2026-05-28T14:16:52+00:00",
+    "summary": "Over hundreds of years, increasingly sophisticated instruments have revealed — and continue to reveal — the secrets of our star.            <p>The post <a href=\"https://www.quantamagazine.org/how-we-see-the-beautiful-violent-sun-20260528/\" target=\"_blank\">How We See the Beautiful, Violent Sun</a> first appeared on <a href=\"https://www.quantamagazine.org\" target=\"_blank\">Quanta Magazine</a></p>",
+    "source_category": "science"
+  },
+  {
+    "title": "When Quiet Undersea Volcanoes Turn Disruptive",
+    "link": "https://www.quantamagazine.org/when-quiet-undersea-volcanoes-turn-disruptive-20260526/",
+    "source": "Quanta Magazine",
+    "published_at": "2026-05-26T15:29:26+00:00",
+    "summary": "Earth’s largest volcanic system, hidden in mountain chains under the sea, has long been assumed to erupt only quietly. The shallow seafloor off Iceland tells another story.            <p>The post <a href=\"https://www.quantamagazine.org/when-quiet-undersea-volcanoes-turn-disruptive-20260526/\" target=\"_blank\">When Quiet Undersea Volcanoes Turn Disruptive</a> first appeared on <a href=\"https://www.quantamagazine.org\" target=\"_blank\">Quanta Magazine</a></p>",
+    "source_category": "science"
+  },
+  {
+    "title": "How Ecotypes Harbor the Genetic Memory of a Species’ Past",
+    "link": "https://www.quantamagazine.org/how-ecotypes-harbor-the-genetic-memory-of-a-species-past-20260521/",
+    "source": "Quanta Magazine",
+    "published_at": "2026-05-21T14:48:20+00:00",
+    "summary": "Evolutionary biologists are uncovering genomic mechanisms that allow populations to adapt quickly to different, hyperlocal habitats without splitting into new species.            <p>The post <a href=\"https://www.quantamagazine.org/how-ecotypes-harbor-the-genetic-memory-of-a-species-past-20260521/\" target=\"_blank\">How Ecotypes Harbor the Genetic Memory of a Species’ Past</a> first appeared on <a href=\"https://www.quantamagazine.org\" target=\"_blank\">Quanta Magazine</a></p>",
+    "source_category": "science"
+  },
+  {
+    "title": "Two Researchers Are Rebuilding Mathematics From the Ground Up",
+    "link": "https://www.quantamagazine.org/two-researchers-are-rebuilding-mathematics-from-the-ground-up-20260520/",
+    "source": "Quanta Magazine",
+    "published_at": "2026-05-20T14:52:19+00:00",
+    "summary": "By replacing the most fundamental concept in topology, Peter Scholze and Dustin Clausen are taking the first step in a far bigger program to understand why numbers behave the way they do.            <p>The post <a href=\"https://www.quantamagazine.org/two-researchers-are-rebuilding-mathematics-from-the-ground-up-20260520/\" target=\"_blank\">Two Researchers Are Rebuilding Mathematics From the Ground Up</a> first appeared on <a href=\"https://www.quantamagazine.org\" target=\"_blank\">Quanta Magazine</a></p>",
+    "source_category": "science"
+  },
+  {
+    "title": "Tech companies desperately want to film you doing chores",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/940007/ai-companies-will-pay-for-robot-training-data",
+    "source": "The Verge AI",
+    "published_at": "2026-05-29T17:37:43+00:00",
+    "summary": "This week, an AI training startup called Shift said it would clean New Yorkers' homes for free. It has plans to expand into other cities as well, including London, and looking around my flat, I get the appeal. But there's a catch. There's always a catch. In exchange for the cleaning, Shift wants footage of [&#8230;]",
+    "source_category": "ai"
+  },
+  {
+    "title": "Jony Ive’s funky Ferrari",
+    "link": "https://www.theverge.com/podcast/939589/ferrari-luce-jony-ive-vergecast",
+    "source": "The Verge AI",
+    "published_at": "2026-05-29T12:25:12+00:00",
+    "summary": "Most people will never own, drive, or even sit inside a Ferrari Luce. (If you can, or do… hit us up.) There's still no question that Ferrari's first electric vehicle is one of the most interesting, surprising cars of the year. With a decidedly un-Ferrari look, and lots of new technology and designs courtesy of [&#8230;]",
+    "source_category": "ai"
+  },
+  {
+    "title": "This AI startup will clean your home for free to train future robots",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning",
+    "source": "The Verge AI",
+    "published_at": "2026-05-29T11:58:40+00:00",
+    "summary": "AI training startup Shift wants to clean your home for free. The catch - because, despite what its website says, there's always a catch - is that it will record cleaners as they scrub, vacuum, dust, tidy, and wash, and use that footage to train robots. Shift announced the unusual offer on social media on [&#8230;]",
+    "source_category": "ai"
+  },
+  {
+    "title": "Adobe’s conversational AI agent is a mediocre design intern",
+    "link": "https://www.theverge.com/tech/939686/adobes-conversational-ai-agent-is-a-mediocre-design-intern",
+    "source": "The Verge AI",
+    "published_at": "2026-05-29T10:00:00+00:00",
+    "summary": "AI image tools rarely make me feel like I'm part of the creative process. They are, after all, mostly designed so that people with no design experience can type in a few words and get back a usable result. So I was pleasantly surprised by Adobe's latest take on an AI image assistant: It's a [&#8230;]",
+    "source_category": "ai"
+  },
+  {
+    "title": "Microsoft 365 Copilot gets a speed boost and cleaner design",
+    "link": "https://www.theverge.com/tech/939273/microsoft-365-copilot-redesign",
+    "source": "The Verge AI",
+    "published_at": "2026-05-28T20:14:07+00:00",
+    "summary": "Microsoft is launching a revamped version of Microsoft 365 Copilot, offering a cleaner design that the company claims loads twice as fast. As part of this update, Copilot will provide more reliable and structured responses that are easier to scan, according to Microsoft. The redesign, which is rolling out across desktop and mobile devices, comes [&#8230;]",
+    "source_category": "ai"
+  },
+  {
+    "title": "Claude’s new model is more ‘honest’ when it messes up",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/939094/anthropic-claude-4-8-opus-honesty-effort",
+    "source": "The Verge AI",
+    "published_at": "2026-05-28T17:00:00+00:00",
+    "summary": "Anthropic is releasing Claude Opus 4.8 on Thursday, and the company is touting the model's \"honesty.\" According to Anthropic, it trains \"all [its] models to be honest - for instance, to avoid making claims that they can't support.\" But it notes that \"a general problem with AI models is that they sometimes jump to conclusions, [&#8230;]",
+    "source_category": "ai"
+  },
+  {
+    "title": "A $2,000 AI-generated film will make its debut at Tribeca",
+    "link": "https://www.theverge.com/entertainment/939067/ai-film-dreams-of-violets-tribeca",
+    "source": "The Verge AI",
+    "published_at": "2026-05-28T16:08:45+00:00",
+    "summary": "Next month's Tribeca Festival will include the premiere of an AI-generated film: Dreams of Violets. The 75-minute film is a fictional dramatization of the Iranian government's mass killing of protestors in January, with the people and images fully created by AI, as reported earlier by The Hollywood Reporter. Dreams of Violets cost $2,000 to make [&#8230;]",
+    "source_category": "ai"
+  },
+  {
+    "title": "YouTube takes baby steps to being a real podcast app",
+    "link": "https://www.theverge.com/streaming/939051/youtube-premium-podcast-features",
+    "source": "The Verge AI",
+    "published_at": "2026-05-28T16:05:00+00:00",
+    "summary": "New features coming to YouTube could make it better for listening to podcasts, rolling out to Premium subscribers starting today on Android and coming later to iOS. A new \"on-the-go mode\" shifts YouTube into an audio-first layout, with larger, simplified playback buttons, a still image in place of the video, and a timeline showing video [&#8230;]",
+    "source_category": "ai"
+  },
+  {
+    "title": "These new iOS 27 renders hint at Siri’s big redesign",
+    "link": "https://www.theverge.com/tech/938915/ios-27-siri-renders-bloomberg",
+    "source": "The Verge AI",
+    "published_at": "2026-05-28T14:33:31+00:00",
+    "summary": "Apple's long-awaited Siri overhaul, expected to arrive in iOS 27, might look a lot like ChatGPT with a splash of Liquid Glass. Renders from Bloomberg offer a preview of iOS 27, including the new app and chat interface for Siri. The renders are \"based on information viewed by Bloomberg and people with knowledge of [Apple's] [&#8230;]",
+    "source_category": "ai"
+  },
+  {
+    "title": "CNN sues Perplexity over ‘verbatim’ copycat articles",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/938893/cnn-perplexity-ai-copyright-lawsuit",
+    "source": "The Verge AI",
+    "published_at": "2026-05-28T14:08:36+00:00",
+    "summary": "CNN has filed a lawsuit against Perplexity, claiming that the startup's AI tools generate \"verbatim\" copies of its work, as reported earlier by CNN. The lawsuit, filed in a New York court on Thursday, also alleges that Perplexity provides users with information locked behind CNN's subscription. Perplexity, which offers an AI \"answer\" engine along with [&#8230;]",
+    "source_category": "ai"
+  },
+  {
+    "title": "Coders are refusing to work without AI — and that could come back to bite them",
+    "link": "https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-29T22:14:22+00:00",
+    "summary": "While AI is helping coders produce code faster, it may not be producing better code, researchers warn. And that could cause problems down the road for them.",
+    "source_category": "ai"
+  },
+  {
+    "title": "So you’ve heard these AI terms and nodded along; let’s fix that",
+    "link": "https://techcrunch.com/2026/05/29/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-29T18:49:19+00:00",
+    "summary": "The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
+    "source_category": "ai"
+  },
+  {
+    "title": "What happens when companies become too AI-pilled?",
+    "link": "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-29T17:57:05+00:00",
+    "summary": "The people deciding that AI can replace your job are also the ones least likely to understand what your job truly involves, according to Box founder Aaron Levie, who pointed to this as an example of &#8220;AI psychosis.” Indeed, ClickUp recently cut 22% of its workforce for AI agents, tech layoffs in 2026 are already nearly matching all of 2025, [&#8230;]",
+    "source_category": "ai"
+  },
+  {
+    "title": "After Nvidia’s $20B not-acqui-hire, AI chip startup Groq reportedly raising $650M",
+    "link": "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-29T17:27:13+00:00",
+    "summary": "Chipmaker Groq is looking to raise $650 million in internal funding as it pivots from hardware to focus more on AI inference, the process of refining the way AI models respond to prompted requests, per Axios.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Cognition’s Scott Wu says AI coding agents shouldn’t replace humans",
+    "link": "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-29T16:13:47+00:00",
+    "summary": "Cognition makes Devin, the first and arguably most successful AI coding agent. But famed coder Wu says it isn't designed to supplant human programmers.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Today is the last day to apply to speak at TechCrunch Disrupt 2026",
+    "link": "https://techcrunch.com/2026/05/29/today-is-the-last-day-to-apply-to-speak-at-techcrunch-disrupt-2026/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-29T14:15:00+00:00",
+    "summary": "Submit your session topic before today ends for a chance to speak at TechCrunch Disrupt 2026. Apply now to share your insight and help shape the conversations defining the tech industry.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Final 24 hours to save up to $410 on your TechCrunch Disrupt 2026 ticket",
+    "link": "https://techcrunch.com/2026/05/29/final-24-hours-to-save-up-to-410-on-your-techcrunch-disrupt-2026-ticket/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-29T14:00:00+00:00",
+    "summary": "You now have until tonight at 11:59 p.m. PT to lock in Early Bird savings of up to $410 for TechCrunch Disrupt 2026 before prices increase. Join 10,000+ tech leaders in October for one of the most anticipated tech events of the year. Register now.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Does your CEO have AI psychosis? Aaron Levie thinks most of them do.",
+    "link": "https://techcrunch.com/podcast/does-your-ceo-have-ai-psychosis-aaron-levie-thinks-most-of-them-do/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-29T14:00:00+00:00",
+    "summary": "The people deciding that AI can replace your job are also the ones least likely to understand what your job truly involves, according to Box founder Aaron Levie, who pointed to this as an example of &#8220;AI psychosis.” Indeed, ClickUp recently cut 22% of its workforce for AI agents, tech layoffs in 2026 are already nearly matching all of 2025, [&#8230;]",
+    "source_category": "ai"
+  },
+  {
+    "title": "Kiwibit’s AI-powered bird feeder is my new backyard buddy",
+    "link": "https://techcrunch.com/2026/05/29/kiwibits-ai-powered-bird-feeder-is-my-new-backyard-buddy/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-29T13:00:00+00:00",
+    "summary": "If you're looking for a fun way to connect with nature while collecting bird species on an app like Pokémon, give this smart feeder a try.",
+    "source_category": "ai"
+  },
+  {
+    "title": "This chip startup just raised $135M on a bet that AI’s biggest bottleneck isn’t compute — it’s memory",
+    "link": "https://techcrunch.com/2026/05/29/xcena-secures-135m-at-570m-valuation-betting-on-memory-as-ais-real-bottleneck/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-29T12:00:00+00:00",
+    "summary": "South Korean chip startup XCENA is betting that AI's real bottleneck is not compute, but memory.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Glean’s top line crosses $300M as AI budget cutting becomes its major selling point",
+    "link": "https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-29T00:44:37+00:00",
+    "summary": "The enterprise AI search startup tripled its annual revenue even as tech giants entered the category.",
+    "source_category": "ai"
+  },
+  {
+    "title": "The internet is being rebuilt for machines",
+    "link": "https://techcrunch.com/2026/05/28/the-internet-is-being-rebuilt-for-machines/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-28T21:24:01+00:00",
+    "summary": "As AI agents move from experiments to production, AWS, Cloudflare, and others are redesigning cloud infrastructure for a future dominated by machine-generated internet traffic instead of human users.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Asana acquires no-code agent-builder StackAI",
+    "link": "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-28T20:06:07+00:00",
+    "summary": "Asana will incorporate StackAI into its growing suite of AI workflow tools.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Anthropic raises $65 billion, nears $1T valuation ahead of IPO",
+    "link": "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-28T18:52:51+00:00",
+    "summary": "Anthropic has closed a $65 billion Series H round at a $965 billion post-money valuation, marking what could be the AI startup's final private fundraise before a highly anticipated IPO.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Just like gold and oil, we’ll soon be able to trade AI token futures",
+    "link": "https://techcrunch.com/2026/05/28/just-like-gold-and-oil-well-soon-be-able-to-trade-ai-token-futures/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-28T18:32:25+00:00",
+    "summary": "Large exchanges are designing derivative products around AI tokens, which are increasingly being considered less a computational output and more a raw material input, like electricity or bandwidth.",
+    "source_category": "ai"
+  },
+  {
+    "title": "In just 3 weeks, StrictlyVC is coming to Los Angeles",
+    "link": "https://techcrunch.com/2026/05/28/in-just-3-weeks-strictlyvc-is-coming-to-los-angeles/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-28T17:30:00+00:00",
+    "summary": "StrictlyVC Los Angeles is on June 18. Join for meaningful networking and fireside chats with leaders from Mach Industries, Shinkei Systems, and more. Register today.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Anthropic releases Opus 4.8 with new ‘dynamic workflow’ tool",
+    "link": "https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-28T17:00:09+00:00",
+    "summary": "The new Opus model comes with a tool called Dynamic Workflows, for coordinating swarms of subagents.",
+    "source_category": "ai"
+  },
+  {
+    "title": "How long is Anthropic’s lease with SpaceX? Opinions vary",
+    "link": "https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-28T15:36:00+00:00",
+    "summary": "Elon Musk is publicly reframing xAI’s massive Anthropic compute deal as short-term and cancellable, despite SpaceX’s own S-1 filing describing payments through May 2029.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Sesame, the conversational AI startup from Oculus founders, launches its iOS app",
+    "link": "https://techcrunch.com/2026/05/28/sesame-the-conversational-ai-startup-from-oculus-founders-launches-its-ios-app/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-28T15:35:43+00:00",
+    "summary": "Sesame’s new iOS app brings its conversational AI agents to the public, offering more natural back-and-forth interactions designed to feel less like traditional chatbots and more like talking to a person.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Sneak peek at new Siri app reveals Apple’s plans to take on ChatGPT and more",
+    "link": "https://techcrunch.com/2026/05/28/sneak-peek-at-new-siri-app-reveals-apples-plans-to-take-on-chatgpt-and-more/",
+    "source": "TechCrunch AI",
+    "published_at": "2026-05-28T14:45:13+00:00",
+    "summary": "New renders offer a closer look at Apple’s planned AI overhaul for iOS 27, including a redesigned Siri experience and standalone Siri app.",
+    "source_category": "ai"
+  },
+  {
+    "title": "Why College Degrees Matter in the Age of AI",
+    "link": "https://www.edsurge.com/news/2026-05-28-why-college-degrees-matter-in-the-age-of-ai",
+    "source": "EdSurge",
+    "published_at": "2026-05-28T21:26:59+00:00",
+    "summary": "Technical skills are changing rapidly. A college education teaches students something more durable.",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "Recess Took a Break in Some Schools. A Push is On to Bring It Back.",
+    "link": "https://www.edsurge.com/news/2026-05-27-recess-took-a-break-in-some-schools-a-push-is-on-to-bring-it-back",
+    "source": "EdSurge",
+    "published_at": "2026-05-27T20:01:57+00:00",
+    "summary": "Why a push to bring back mandated recess, even for older students, is sweeping across the nation.",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "Surgeon General Advisory Wants Kids to Live ‘Beyond the Confines of Screens’",
+    "link": "https://www.edsurge.com/news/2026-05-21-surgeon-general-advisory-wants-kids-to-live-beyond-the-confines-of-screens",
+    "source": "EdSurge",
+    "published_at": "2026-05-21T20:34:04+00:00",
+    "summary": "\"As kids get older, it's still important for adults to monitor the level of content and what is being offered to them.\"",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "VR Gives North Dakota Kids an Early Career Jump Start",
+    "link": "https://www.edsurge.com/news/2026-05-20-vr-gives-north-dakota-kids-an-early-career-jump-start",
+    "source": "EdSurge",
+    "published_at": "2026-05-20T19:35:36+00:00",
+    "summary": "North Dakota students will be able to head to the top of a wind turbine, scrub in alongside emergency room doctors and work next to mechanics -- all ...",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "Amid School Techlash, Accessibility Advocates Worry About Exclusion",
+    "link": "https://www.edsurge.com/news/2026-05-19-amid-school-techlash-accessibility-advocates-worry-about-exclusion",
+    "source": "EdSurge",
+    "published_at": "2026-05-19T16:50:41+00:00",
+    "summary": "Keri Rodrigues, a mother of five boys, knows the value of screens. For her boys, four of whom receive school accommodations, screens serve a practical ...",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "The Pandemic Hindered English Learners' Literacy. This Ohio District Is Turning the Tide.",
+    "link": "https://www.edsurge.com/news/2026-05-13-the-pandemic-hindered-english-learners-literacy-this-ohio-district-is-turning-the-tide",
+    "source": "EdSurge",
+    "published_at": "2026-05-14T00:43:32+00:00",
+    "summary": "&quot;We want to help the students continue to thrive, and really everything that we're thinking about with our student services is equitable learning ...",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "Latest Canvas Attack Shows Schools Still Struggle With Cybersecurity",
+    "link": "https://www.edsurge.com/news/2026-05-12-latest-canvas-attack-shows-schools-still-struggle-with-cybersecurity",
+    "source": "EdSurge",
+    "published_at": "2026-05-12T18:29:33+00:00",
+    "summary": "A cyberattack against one of the world’s largest digital education platforms has forced attention onto the vulnerability of U.S. schools’ data. ...",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "LGBTQ+ Youth Mental Health Is Suffering, but Schools Are Poised to Help",
+    "link": "https://www.edsurge.com/news/2026-05-08-lgbtq-youth-mental-health-is-suffering-but-schools-are-poised-to-help",
+    "source": "EdSurge",
+    "published_at": "2026-05-08T23:30:50+00:00",
+    "summary": "“One of the most important findings is that when adults, institutions, and communities become more affirming, the suicide risk of LGBTQ+ young people ...",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "Screen Time Concerns Lead to Backlash Against Edtech Vetting Process",
+    "link": "https://www.edsurge.com/news/2026-05-07-screen-time-concerns-lead-to-backlash-against-edtech-vetting-process",
+    "source": "EdSurge",
+    "published_at": "2026-05-07T20:07:40+00:00",
+    "summary": "SCHOOL SOFTWARE SCRUTINY: Legislators have pushed back against cellphones in the classroom but are now focused on ensuring school software on devices ...",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "ISTE+ASCD Names 2026-27 Voices of Change Fellows",
+    "link": "https://www.edsurge.com/news/2026-05-06-iste-ascd-names-2026-27-voices-of-change-fellows",
+    "source": "EdSurge",
+    "published_at": "2026-05-06T12:00:00+00:00",
+    "summary": "Six educators from across the country are joining the 2026-27 ISTE+ASCD Voices of Change Fellowship to share how schools are navigating AI, digital ...",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "Educators: Why Are You Thinking of Leaving the Field?",
+    "link": "https://www.edsurge.com/news/2026-05-05-educators-why-are-you-thinking-of-leaving-the-field",
+    "source": "EdSurge",
+    "published_at": "2026-05-05T18:47:02+00:00",
+    "summary": "EdSurge wants to hear from educators who have recently left or plan to leave their jobs for another sector.",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "Global Math Gains for Girls Are Slipping, Report Finds",
+    "link": "https://www.edsurge.com/news/2026-05-01-girls-around-the-globe-are-losing-gains-in-math-data-shows",
+    "source": "EdSurge",
+    "published_at": "2026-05-01T08:00:00+00:00",
+    "summary": "The global math gender gap: “Whatever we do, the action we take to address the issue must start quite early and must be very targeted.”",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "Quality Concerns Remain as States Invest More Than Ever in Preschool Programs",
+    "link": "https://www.edsurge.com/news/2026-04-30-quality-concerns-remain-as-states-invest-more-than-ever-in-preschool-programs",
+    "source": "EdSurge",
+    "published_at": "2026-04-30T16:21:04+00:00",
+    "summary": "A new report found states hit an all-time high for both spending and enrollment, but the quality of the programs remains a concern.",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "I Built Radical Possibility in Schools — and It Nearly Broke Me",
+    "link": "https://www.edsurge.com/news/2026-04-29-i-built-radical-possibility-in-schools-and-it-nearly-broke-me",
+    "source": "EdSurge",
+    "published_at": "2026-04-29T08:00:00+00:00",
+    "summary": "What does it mean to “save your own life” in education? Former Voices of Change fellow Dee Watson reflects on burnout, resistance and radical ...",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "Districts Relying More on Data to Identify Gifted Students",
+    "link": "https://www.edsurge.com/news/2026-04-23-districts-relying-more-on-data-to-identify-gifted-students",
+    "source": "EdSurge",
+    "published_at": "2026-04-23T08:02:00+00:00",
+    "summary": "Schools are finding new, data-driven ways to re-approach gifted and talented programs -- with a focus on inclusivity.",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "Returning to What it Means to Make School Human Again",
+    "link": "https://www.edsurge.com/news/2026-04-22-returning-to-what-it-means-to-make-school-human-again",
+    "source": "EdSurge",
+    "published_at": "2026-04-22T08:00:00+00:00",
+    "summary": "After years of disruption, what does it mean to make schools human again? One educator reflects on moving from demoralization to renewal and why ...",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "DOJ Extends Website Accessibility Deadline. Will It Help Schools Get Ready?",
+    "link": "https://www.edsurge.com/news/2026-04-21-doj-extends-website-accessibility-deadline-will-it-help-schools-get-ready",
+    "source": "EdSurge",
+    "published_at": "2026-04-21T08:00:00+00:00",
+    "summary": "The federal government punted enforcement for website and mobile app accessibility. But will schools just end up in the same place later on?",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "The Digital Accessibility Deadline Is Here. Schools Aren’t Ready.",
+    "link": "https://www.edsurge.com/news/2026-04-16-the-digital-accessibility-deadline-is-here-schools-aren-t-ready",
+    "source": "EdSurge",
+    "published_at": "2026-04-16T11:00:00+00:00",
+    "summary": "A major digital accessibility deadline that impacts schools and vendors is here. Schools aren’t ready.",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "What Makes Edtech Work for Students [Infographic]",
+    "link": "https://www.edsurge.com/news/2026-04-15-what-makes-edtech-work-for-students-infographic",
+    "source": "EdSurge",
+    "published_at": "2026-04-15T16:55:00+00:00",
+    "summary": "Even the most well-intentioned edtech can fall short if it does not meet students where they are. After several years studying the usability of edtech ...",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "Teaching Showed Me Education Isn’t the Great Equalizer",
+    "link": "https://www.edsurge.com/news/2026-04-15-teaching-showed-me-education-isn-t-the-great-equalizer",
+    "source": "EdSurge",
+    "published_at": "2026-04-15T12:55:09+00:00",
+    "summary": "What I once believed about schools shifted when I saw how deeply students’ lives outside the classroom shape their opportunities.",
+    "source_category": "education_technology"
+  },
+  {
+    "title": "Teacher Surprises His Students with NYC Flight",
+    "link": "https://www.the74million.org/article/teacher-surprises-his-students-with-nyc-flight/",
+    "source": "The 74",
+    "published_at": "2026-05-29T20:48:45+00:00",
+    "summary": "Luke Weston, an elementary school teacher and private plane pilot, surprised two of his students with an unforgettable flight up the Hudson River to catch spectacular views of Manhattan.",
+    "source_category": "education_media"
+  },
+  {
+    "title": "Do You Know These Words From the Spelling Bee’s Final Round?",
+    "link": "https://www.the74million.org/article/do-you-know-these-words-from-the-spelling-bee-winners-final-round/",
+    "source": "The 74",
+    "published_at": "2026-05-29T19:22:54+00:00",
+    "summary": "",
+    "source_category": "education_media"
+  },
+  {
+    "title": "Texas Examines Use of National Teacher Certification for Incentive Pay",
+    "link": "https://www.the74million.org/article/texas-examines-use-of-national-teacher-certification-for-incentive-pay/",
+    "source": "The 74",
+    "published_at": "2026-05-29T18:30:00+00:00",
+    "summary": "Danielle Minnis can demonstrate what putting students first looks like after 20 years in the classroom, bolstered by rigorous self-evaluation. If children fall asleep during a lesson, change the pacing. If a kid with dyslexia feels humiliated reading aloud to peers, do not force them to do it. If 60% of the class passes the [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "University of Cambridge-Backed Courses to Expand in Indiana High Schools via Grant Funding",
+    "link": "https://www.the74million.org/article/university-of-cambridge-backed-courses-to-expand-in-indiana-high-schools-via-grant-funding/",
+    "source": "The 74",
+    "published_at": "2026-05-29T16:30:00+00:00",
+    "summary": "Before 2024, students at Whiteland High School seeking advanced curriculum could already choose between Advanced Placement and dual credit courses. So when school officials considered adding a new curriculum backed by the University of Cambridge in 2024, they wanted to address the needs of a specific subset of students: the community’s growing population of non-English [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "Opinion: The Teacher Shortage Crisis Has a Hidden Solution: Invest in Mentor Teachers",
+    "link": "https://www.the74million.org/article/the-teacher-shortage-crisis-has-a-hidden-solution-invest-in-mentor-teachers/",
+    "source": "The 74",
+    "published_at": "2026-05-29T14:30:00+00:00",
+    "summary": "When my mentor teacher, Marie Gironda, passed away earlier this year, hundreds of her former students filled the room to honor her. They came from across generations, many now professionals, parents and community leaders, each carrying a version of the same story: Marie changed my life. She taught for more than 40 years in the [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "New Documentary Traces Groundbreaking Career of ‘Sesame Street’ Star",
+    "link": "https://www.the74million.org/zero2eight/new-documentary-traces-groundbreaking-career-of-sesame-street-star/",
+    "source": "The 74",
+    "published_at": "2026-05-29T10:30:00+00:00",
+    "summary": "To several generations of TV viewers, actor Sonia Manzano is “the nation’s tía,” their friendly neighbor Maria from Sesame Street. She originated the character in 1971 and spent the next 44 years developing the role through nearly 4,000 episodes, teaching millions of children how to read, write, sing, dance, grieve and be better friends. But [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "The First School Year Under a Texas Law Targeting LGBTQ+ Students",
+    "link": "https://www.the74million.org/article/the-first-school-year-under-a-texas-law-targeting-lgbtq-students/",
+    "source": "The 74",
+    "published_at": "2026-05-29T10:00:00+00:00",
+    "summary": "This piece was published in partnership with The 19th, a nonprofit newsroom reporting on gender, politics, policy and power.&#160; Adrian Moore was sharing a blanket with his friends, watching the sun come up over Morton Ranch High School before the first day of his senior year. Parents and teachers milled among the teenagers, overseeing the [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "More Megachurches Want To Be Your Alma Mater",
+    "link": "https://www.the74million.org/article/more-megachurches-want-to-be-your-alma-mater/",
+    "source": "The 74",
+    "published_at": "2026-05-28T18:30:00+00:00",
+    "summary": "In the heart of the Bible Belt, a small Methodist college graduated its final class in May 2024, shutting its doors after 168 years. Birmingham-Southern College in Birmingham, Alabama, was a Christian private liberal arts school that counted among its graduates members of Congress, famous musicians, Pulitzer Prize winners and the former executive editor of [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "Gov. Landry: Teachers Will Avoid Pay Cut, but Not Where He Will Find the Money",
+    "link": "https://www.the74million.org/article/gov-landry-teachers-will-avoid-pay-cut-but-not-where-he-will-find-the-money/",
+    "source": "The 74",
+    "published_at": "2026-05-28T16:30:00+00:00",
+    "summary": "Gov. Jeff Landry was adamant Tuesday that Louisiana public school teachers would not see a pay cut in the upcoming school year, but he did not specify where he would find the tens of millions of dollars needed to avoid it. “I think the teachers deserve certainty. They deserve stability. They deserve respect and a [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "Opinion: In School Funding Ruling, NC’s Highest Court Walks Away From Its Duty to Kids",
+    "link": "https://www.the74million.org/article/in-school-funding-ruling-ncs-highest-court-walks-away-from-its-duty-to-kids/",
+    "source": "The 74",
+    "published_at": "2026-05-28T14:30:00+00:00",
+    "summary": "Last month, the North Carolina Supreme Court threw out a three-decade-old legal framework that required the state to ensure the poorest school districts have the same type of opportunities that the wealthiest have. This latest decision in the Leandro case effectively removes judicial enforcement of the state’s constitutional obligation to provide every child with a [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "To Help Teens Get More Sleep, Experts Push for Later School Start Times",
+    "link": "https://www.the74million.org/article/to-help-teens-get-more-sleep-experts-push-for-later-school-start-times/",
+    "source": "The 74",
+    "published_at": "2026-05-28T12:30:00+00:00",
+    "summary": "Madi Watkins, 16, usually goes to bed around midnight and wakes up around 8:15 a.m. Her friends who attend school a few towns over have to wake up over three hours earlier. There’s a good reason for the difference. Watkins and her classmates at Mount Desert Island High School start school at an unusual time [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "New Survey of Head Start Providers in 7 States Charts ICE’s Negative Impact",
+    "link": "https://www.the74million.org/zero2eight/new-survey-of-head-start-providers-in-7-states-charts-ices-negative-impact/",
+    "source": "The 74",
+    "published_at": "2026-05-28T10:30:00+00:00",
+    "summary": "This April, the parent of a Head Start student in Washington state went to an immigration office to turn in his paperwork. While there, he was detained. As of last week, the father still hadn’t been released and his child stopped attending school. The preschooler’s prolonged absence was related by Decca Calloway, the executive director [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "4 Kansas School Districts Plan Legal Action Against State for Underfunding Public Education",
+    "link": "https://www.the74million.org/article/4-kansas-school-districts-plan-legal-action-against-state-for-underfunding-public-education/",
+    "source": "The 74",
+    "published_at": "2026-05-27T18:30:00+00:00",
+    "summary": "TOPEKA, Kan. — Four Johnson County public school districts want to sue the state of Kansas for more than 15 years of inadequate special education funding. The districts formed the Kansas Public School Funding Coalition and are seeking legal counsel, they announced in a Wednesday press release. The coalition aims to secure adequate general and [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "Opinion: A New Digital Divide: College Search in the Age of Social Media",
+    "link": "https://www.the74million.org/article/a-new-digital-divide-college-search-in-the-age-of-social-media/",
+    "source": "The 74",
+    "published_at": "2026-05-27T16:30:00+00:00",
+    "summary": "Gen X got information about college from dense guidebooks. Millennials got its information from Google and college websites. Where are Gen Z and Gen Alpha looking for this information? Over the past few decades, the internet has increased teenagers’ access to information about their options after graduation. Theoretically, this could lead to more equitable outcomes [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "Opinion: Feds Are Offering New Money for Public School Kids. Why Would Dems Turn It Down?",
+    "link": "https://www.the74million.org/article/feds-are-offering-new-money-for-public-school-kids-why-would-dems-turn-it-down/",
+    "source": "The 74",
+    "published_at": "2026-05-27T14:30:00+00:00",
+    "summary": "In deciding to opt New York into the federal scholarship tax credit program, Gov. Kathy Hochul did something most Democrats have been unwilling to do of late: choose students and families over district-run schools and the special interests invested in keeping them intact. As the second Democratic governor to break from party orthodoxy and embrace [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "What Do Parents With Young Children Want? A New National Survey Offers a Glimpse",
+    "link": "https://www.the74million.org/zero2eight/what-do-parents-with-young-children-want-a-new-national-survey-offers-a-glimpse/",
+    "source": "The 74",
+    "published_at": "2026-05-27T13:01:00+00:00",
+    "summary": "A majority of parents with young children do not have the work or childcare arrangements that they want, with their biggest concern being the lack of quality time with their children, according to a new report published by the New Practice Lab at New America.&#160; This mismatch between families’ current realities and ideal scenarios begins [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "Trump Plan Would Phase Out Rural Ed Fund; District Leaders Say It’s ‘Vital’",
+    "link": "https://www.the74million.org/article/trump-plan-would-phase-out-rural-ed-fund-district-leaders-say-its-vital/",
+    "source": "The 74",
+    "published_at": "2026-05-27T10:30:00+00:00",
+    "summary": "On the shores of Lake Ontario in northern New York, the 430-student Sackets Harbor Central School District depends on Rick Bice, the technology coordinator, to keep the internet on.&#160; “We wouldn&#8217;t be able to function as an organization without him,” said Superintendent Jennifer Gaffney. “A lot of what students, teachers and our office staff do [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "Whiteville City Schools in North Carolina Unites Around Literacy Gains",
+    "link": "https://www.the74million.org/article/whiteville-city-schools-in-north-carolina-unites-around-literacy-gains/",
+    "source": "The 74",
+    "published_at": "2026-05-26T18:30:00+00:00",
+    "summary": "“Small district. Big impact.” It’s more than a motto for the curriculum team at Whiteville City Schools, it’s a daily commitment in action. In a district where professional connections and a unified vision drive collaboration, that mindset is translating into meaningful gains in early literacy. By prioritizing alignment, consistency, and strong collaboration across schools, Whiteville [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "Opinion: Schools Must Do the Hard Work If High-Dosage Tutoring Is to Help Every Student",
+    "link": "https://www.the74million.org/article/schools-must-do-the-hard-work-if-high-dosage-tutoring-is-to-help-every-student/",
+    "source": "The 74",
+    "published_at": "2026-05-26T16:30:00+00:00",
+    "summary": "There is a temptation in education to abandon projects rapidly and instead chase a new solution as a magic bullet for improving student outcomes. Too often, when an investment doesn’t have an instant payoff, it’s abandoned for the next shiny thing. New programs, new technology, new slogans, each promising to fix what came before it. [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "Indiana Charters Show More Academic Growth Post-COVID Than Traditional Public Schools",
+    "link": "https://www.the74million.org/article/indiana-charters-show-more-academic-growth-post-covid-than-traditional-public-schools/",
+    "source": "The 74",
+    "published_at": "2026-05-26T14:30:00+00:00",
+    "summary": "Indiana’s charter school students have experienced greater academic growth in the years following the pandemic than their peers in traditional public schools, according to a new preliminary analysis. The study from eight researchers posted through Brown University’s Annenberg Institute also found that the gains were particularly pronounced for Black and Hispanic students, and for those [&#8230;]",
+    "source_category": "education_media"
+  },
+  {
+    "title": "Graduation Speakers on Musicals, Humiliation and, Yes, AI",
+    "link": "https://www.insidehighered.com/news/students/2026/05/29/highlights-2026-commencement-addresses",
+    "source": "Inside Higher Ed",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>Graduation Speakers on Musicals, Humiliation and, Yes, AI</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"A smiling Sean Evans speaking at a UIUC podium with orange seats behind him.\" height=\"760\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/sean%20evans.jpg\" width=\"1140\" />\n\n</div>\n      \n<span><span>Johanna Alonso</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n<p>From Hugh Jackman to Malika Andrews, speakers celebrated 2026 graduates with stories about forging their own paths and growing from failure.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/johanna-alonso\" hreflang=\"en\">Johanna Alonso</a></div>\n              </div>\n      </div>",
+    "source_category": "higher_education"
+  },
+  {
+    "title": "Students Rethink Campus Move-Out Waste",
+    "link": "https://www.insidehighered.com/news/student-success/college-experience/2026/05/29/students-rethink-campus-move-out-waste",
+    "source": "Inside Higher Ed",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>Students Rethink Campus Move-Out Waste</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"The student-led sustainability initiative encourages students to donate items at pods placed throughout campus.\" height=\"1920\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/IMG_6945_1_3500x2625.jpg\" width=\"2560\" />\n\n</div>\n      \n<span><span>Joshua.Bay</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n<p>The University of San Diego’s EcoExit initiative turns discarded dorm items into free resources for incoming students.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/joshua-bay\" hreflang=\"en\">Joshua Bay</a></div>\n              </div>\n      </div>",
+    "source_category": "higher_education"
+  },
+  {
+    "title": "Why I Created the National AI Equity Lab",
+    "link": "https://www.insidehighered.com/opinion/columns/resident-scholar/2026/05/29/why-i-created-national-ai-equity-lab",
+    "source": "Inside Higher Ed",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>Why I Created the National AI Equity Lab</span>\n\n<span><span>Sara Brady</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n<p>I&nbsp;see it as my civic duty to ensure that the proliferation of artificial intelligence does not further exacerbate existing inequities in our society.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/shaun-harper\" hreflang=\"en\">Shaun Harper</a></div>\n              </div>\n      </div>",
+    "source_category": "higher_education"
+  },
+  {
+    "title": "White House Aims to Establish Political Oversight of Federal Grants",
+    "link": "https://www.insidehighered.com/news/government/science-research-policy/2026/05/29/omb-proposes-rules-establishing-political",
+    "source": "Inside Higher Ed",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>White House Aims to Establish Political Oversight of Federal Grants</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"U.S. President Donald Trump takes questions from reporters during a Cabinet meeting in the Cabinet Room of the White House on May 27, 2026 in Washington, DC. \" height=\"800\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/Trump_GettyImages-2278476003_edit.jpg\" width=\"1200\" />\n\n</div>\n      \n<span><span>Ryan Quinn</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n<p><span>The Office of Management and Budget published long-expected proposed rules for how federal agencies must carry out Trump’s order to put “senior appointees” in charge of deciding who gets funded. The proposal also ends an effort to cap indirect cost rates.</span></p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/ryan-quinn\" hreflang=\"en\">Ryan Quinn</a></div>\n              </div>\n      </div>",
+    "source_category": "higher_education"
+  },
+  {
+    "title": "The Strengthening Institutions Program Grows at MSIs’ Expense",
+    "link": "https://www.insidehighered.com/news/government/politics-elections/2026/05/29/strengthening-institutions-program-grows-msis-expense",
+    "source": "Inside Higher Ed",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>The Strengthening Institutions Program Grows at MSIs’ Expense</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"A photo illustration of a person pouring one jar of coins labeled &quot;MSI&quot; into another jar labeled &quot;SIP.&quot;\" height=\"800\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/Money_Jars_MSI_to_SIP.jpg\" width=\"1200\" />\n\n</div>\n      \n<span><span>Sara Weissman</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n<p>The Trump administration gutted minority-serving institution grants again, dropping the windfall on a capacity-building program for underresourced institutions. MSIs may be able to get some of that funding, advocates say, but it’s still a blow.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/sara-weissman\" hreflang=\"en\">Sara Weissman</a></div>\n              </div>\n      </div>",
+    "source_category": "higher_education"
+  },
+  {
+    "title": "Hundreds of Math Professors Ask UC to Bring Back SAT/ACT Requirements",
+    "link": "https://www.insidehighered.com/news/faculty/learning-assessment/2026/05/29/hundreds-math-professors-ask-uc-bring-back-satact",
+    "source": "Inside Higher Ed",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>Hundreds of Math Professors Ask UC to Bring Back SAT/ACT Requirements</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"A photo illustration of a bubble test sheet with a pencil hovering over a set of bubble labeled &quot;SAT.&quot;\" height=\"800\" src=\"https://www.insidehighered.com/sites/default/files/2026-04/Test_Bubbles_SAT.jpg\" width=\"1200\" />\n\n</div>\n      \n<span><span>Emma Whitford</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/emma-whitford\" hreflang=\"en\">Emma Whitford</a></div>\n              </div>\n      </div>",
+    "source_category": "higher_education"
+  },
+  {
+    "title": "European Academics Shun U.S. Business Conference Over Trump Fears",
+    "link": "https://www.insidehighered.com/news/faculty/2026/05/29/european-academics-shun-us-business-conference",
+    "source": "Inside Higher Ed",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>European Academics Shun U.S. Business Conference Over Trump Fears</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"The U.S. Capitol building behind a chain-link fence\" height=\"413\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/istock-2187129454.jpg\" width=\"620\" />\n\n</div>\n      \n<span><span>Susan H. Greenberg</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n<p>Going forward, the Academy of Management will move its annual meeting as attendees stay at home this year owing to visa worries and opposition to the president’s research policies.</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/seher-asaf-times-higher-education\" hreflang=\"en\">Seher Asaf for Times Higher Education </a></div>\n              </div>\n      </div>",
+    "source_category": "higher_education"
+  },
+  {
+    "title": "Spanberger Removes Virginia Tech Rector",
+    "link": "https://www.insidehighered.com/news/quick-takes/2026/05/29/spanberger-removes-virginia-tech-rector",
+    "source": "Inside Higher Ed",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>Spanberger Removes Virginia Tech Rector</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"A photo of Abigail Spanberger speaking.\" height=\"683\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/GettyImages-2262916031.jpg\" width=\"1024\" />\n\n</div>\n      \n<span><span>Josh Moody</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/node/4229\" hreflang=\"en\">Josh Moody</a></div>\n              </div>\n      </div>",
+    "source_category": "higher_education"
+  },
+  {
+    "title": "A New Version of the Resource Curse",
+    "link": "https://www.insidehighered.com/opinion/columns/confessions-community-college-dean/2026/05/29/new-version-resource-curse",
+    "source": "Inside Higher Ed",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>A New Version of the Resource Curse</span>\n\n<span><span>Sara Brady</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n<p>What does whale oil have to do with the value of the U.S. dollar?</p>\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/matt-reed\" hreflang=\"en\">Matt Reed</a></div>\n              </div>\n      </div>",
+    "source_category": "higher_education"
+  },
+  {
+    "title": "NSF Freezes New Funding for 4 Institutions",
+    "link": "https://www.insidehighered.com/news/quick-takes/2026/05/29/nsf-freezes-new-funding-4-institutions",
+    "source": "Inside Higher Ed",
+    "published_at": "2026-05-29T07:00:00+00:00",
+    "summary": "<span>NSF Freezes New Funding for 4 Institutions</span>\n\n            <div class=\"field field--name-field-featured-image field--type-entity-reference field--label-hidden field__item\">  <img alt=\"National Science Foundation Logo\" height=\"800\" src=\"https://www.insidehighered.com/sites/default/files/2026-05/NSF_logo_wide.jpg\" width=\"1200\" />\n\n</div>\n      \n<span><span>jessica.blake@…</span></span>\n\n<span><time datetime=\"2026-05-29T03:00:00-04:00\" title=\"Friday, May 29, 2026 - 03:00 AM\">Fri, 05/29/2026 - 03:00 AM</time>\n</span>\n\n  <div class=\"field field--name-field-authors field--type-entity-reference field--label-inline clearfix\">\n    <div class=\"field__label\">Byline(s)</div>\n          <div class=\"field__items\">\n              <div class=\"field__item\"><a href=\"https://www.insidehighered.com/author/jessica-blake\" hreflang=\"en\">Jessica Blake</a></div>\n              </div>\n      </div>",
+    "source_category": "higher_education"
+  },
+  {
+    "title": "Learning English with English Clubs",
+    "link": "https://learningenglish.voanews.com/a/learning-english-with-english-clubs-starting-and-organizing-your-club/3947928.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2025-03-18T22:00:20+00:00",
+    "summary": "English Clubs are great tools for learning English.  Here are tips on how to start and organize your club.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Images Can Help You Retain Vocabulary",
+    "link": "https://learningenglish.voanews.com/a/images-can-help-you-retain-vocabulary/5651046.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2025-03-11T22:00:12+00:00",
+    "summary": "On this Education Tips, we will discuss three methods for retaining vocabulary with the help of imagery. The methods include the use of pictures, mnemonics keywords and word maps.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Raise Your English Level with More Vocabulary",
+    "link": "https://learningenglish.voanews.com/a/raise-your-english-level-with-more-vocabulary/7148252.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2025-02-18T22:25:00+00:00",
+    "summary": "Some studies have shown that for learners to fully understand a written work, they need to know 95 percent or more of the words in it. That means that if there are only five or more words you do not know in a 100-word text, you might not really understand it!",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "How to Write a Good Email",
+    "link": "https://learningenglish.voanews.com/a/how-to-write-a-good-email/5649722.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2025-02-04T22:05:17+00:00",
+    "summary": "Writing a good email can mean the difference between someone reading it and getting a response and someone ignoring it.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Scientists with Disabilities Seek Changes to Improve their Work",
+    "link": "https://learningenglish.voanews.com/a/scientists-with-disabilities-seek-changes-to-improve-their-work/7949154.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2025-01-28T22:05:00+00:00",
+    "summary": "Researchers with disabilities often face barriers that others do not. A recent outing in Southern California gave a group of disabled researchers a chance to discuss how they face their problems and aim for good results.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Scientists with Disabilities Seek Changes to Improve their Work",
+    "link": "https://learningenglish.voanews.com/a/7953195.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2025-01-28T16:40:01+00:00",
+    "summary": "",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Make a Memory Palace to Improve Your English",
+    "link": "https://learningenglish.voanews.com/a/improve-your-english-with-a-memory-palace/5855771.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2025-01-21T22:06:11+00:00",
+    "summary": "Sherlock Holmes is an imaginary private detective created by British writer Arthur Conan Doyle in the late 1880s. One of Sherlock Holmes’ great skills is a powerful memory. In a recent BBC television series, the character uses a memory technique called a “mind palace” or “memory palace.”",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Students with Disabilities Praise Assistive Technology Using AI",
+    "link": "https://learningenglish.voanews.com/a/students-with-disabilities-praise-assistive-technology-using-ai/7926297.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2025-01-14T22:05:00+00:00",
+    "summary": "Artificial intelligence (AI) is being used to help students with visual, speech, language and hearing disabilities. Schools in the United States are developing methods for how to use AI and are trying out new applications.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Learn New Skills with Microcredentials",
+    "link": "https://learningenglish.voanews.com/a/learn-new-skills-with-microcredentials-/7908673.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2025-01-07T22:05:00+00:00",
+    "summary": "When four years is too long to wait for learning a job skill, taking short courses that award microcredentials may help with getting a job.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Learn New Skills with Microcredentials",
+    "link": "https://learningenglish.voanews.com/a/7927270.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2025-01-07T15:37:15+00:00",
+    "summary": "",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Students with Disabilities Praise Assistive Technology Using AI",
+    "link": "https://learningenglish.voanews.com/a/7926298.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2025-01-06T20:11:33+00:00",
+    "summary": "",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Start New Year by Setting Reasonable Learning Goals",
+    "link": "https://learningenglish.voanews.com/a/start-the-new-year-by-setting-reasonable-learning-goals-/3637982.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2024-12-31T22:05:45+00:00",
+    "summary": "A good way to start the new year is setting reasonable goals for learning English. Learn how goals help guide language learners and give them reasons to continue studying a language.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "In Uganda, Cost of Attending School Keeps Children Home",
+    "link": "https://learningenglish.voanews.com/a/in-uganda-cost-of-attending-school-keeps-children-home/7899165.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2024-12-17T22:05:00+00:00",
+    "summary": "The World Bank says African countries south of the Sahara Desert have the highest rates of children out of school. In Uganda, parents say school costs are high, and they increase for many reasons. Schools regularly ask for additional money to pay for different projects.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "In Uganda, Cost of Attending School Keeps Children Home",
+    "link": "https://learningenglish.voanews.com/a/7900415.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2024-12-13T17:32:45+00:00",
+    "summary": "",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Learning How to Ask Questions",
+    "link": "https://learningenglish.voanews.com/a/education-tips-improve-critical-thinking-ask-questions/3303557.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2024-12-10T22:05:48+00:00",
+    "summary": "Suzanne Meyer says that students need to practice question-asking activities. Question-asking activities help students to become better language learners. By practicing question-asking activities, students can improve their language skills and develop critical thinking skills.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Tips for Better Writing",
+    "link": "https://learningenglish.voanews.com/a/tips-for-better-writing/2453053.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2024-12-03T22:05:29+00:00",
+    "summary": "Everyone struggles with writing, however there are ways to ease your struggle when working on an essay or paper for class. Jennifer Ahern-Dodson, assistant professor of the Practice in Writing Studies at Duke University is here with some tips.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Improve Your Pronunciation By 'Shadowing' Others",
+    "link": "https://learningenglish.voanews.com/a/improve-your-english-pronunciation-shadowing-others/3339007.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2024-11-26T22:05:40+00:00",
+    "summary": "Many English learners who want to improve the way they pronounce words often think about how to make specific sounds. But English learners can better improve their pronunciation by shadowing – matching the rise and fall of a native speaker’s voice.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Learn about US Presidential Campaigns",
+    "link": "https://learningenglish.voanews.com/a/learn-about-us-presidential-campaigns/7711392.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2024-07-25T22:05:00+00:00",
+    "summary": "Every four years, the United States holds an election for the President in November. In the summer before the election, the political parties meet to nominate their candidates and tell the voters about their policies. Use this to learn or teach the expressions you might hear during an election year.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Learn about US Presidential Campaigns",
+    "link": "https://learningenglish.voanews.com/a/7711487.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2024-07-24T19:48:30+00:00",
+    "summary": "",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Use a Language Corpus to Improve Your Vocabulary",
+    "link": "https://learningenglish.voanews.com/a/use-a-language-corpus-to-improve-your-vocabulary/7189316.html",
+    "source": "VOA Learning English - Education Tips",
+    "published_at": "2023-07-22T22:03:33+00:00",
+    "summary": "A language corpus is a powerful tool that can help learners improve their understanding and use of vocabulary. This article focuses on COCA, the Corpus of Contemporary American English.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Grammar Games at Home: Jeopardy",
+    "link": "https://learningenglish.voanews.com/a/grammar-games-at-home-part-1-jeopardy/5345471.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-03-20T22:05:17+00:00",
+    "summary": "With so many people stuck at home, Everyday Grammar will be offering ideas for games that you can play with your family or housemates to practice your English. Today's game is Jeopardy.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Common Adverbs in Conversation: Amplifiers, Downtoners",
+    "link": "https://learningenglish.voanews.com/a/amplifiers-downtoners/3714862.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-03-13T22:05:15+00:00",
+    "summary": "In this Everyday Grammar program, we examine some of the most important adverbs that you will hear in everyday speech. There is even a special name for them. They are called amplifiers and downtoners.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Words Come and Go in English",
+    "link": "https://learningenglish.voanews.com/a/8008295.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-03-12T17:08:14+00:00",
+    "summary": "",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Adverb and Adjective Choices in Conversation",
+    "link": "https://learningenglish.voanews.com/a/adverbs-and-adjectives/3702382.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-03-06T22:05:22+00:00",
+    "summary": "In today's Everyday Grammar, we will study how conversational grammar differs from written and formal grammatical structures. Americans often use adjective forms in place of adverbs. Americans also may use an adverb but choose not to say an –ly ending.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Reviewing Your Birthday Message",
+    "link": "https://learningenglish.voanews.com/a/reviewing-your-birthday-message/6724744.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-02-27T22:05:00+00:00",
+    "summary": "In this week's Everyday Grammar, we revisit a birthday message from a listener.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Reviewing Your Birthday Message",
+    "link": "https://learningenglish.voanews.com/a/7987362.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-02-25T15:34:34+00:00",
+    "summary": "",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Describing Your Birthday",
+    "link": "https://learningenglish.voanews.com/a/describing-your-birthday/6705484.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-02-20T22:05:25+00:00",
+    "summary": "In this week’s Everyday Grammar, we talk about how to describe our birthdays.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Describing Your Birthday",
+    "link": "https://learningenglish.voanews.com/a/7979758.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-02-18T23:14:45+00:00",
+    "summary": "",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Academic Writing: Common Sentence Patterns, Part Four",
+    "link": "https://learningenglish.voanews.com/a/everyday-grammar-common-sentence-patterns-part-4/3499292.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-02-13T22:00:00+00:00",
+    "summary": "English has many patterns. Learning and mastering these patterns can help you improve your writing and speaking skills. Today's common pattern is the transitive verb pattern. There are several types of transitive verbs, but they all have one thing in common: a direct object.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Academic Writing: Common Sentence Patterns, Part Three",
+    "link": "https://learningenglish.voanews.com/a/everyday-grammar-common-sentence-patterns-part-3/3488629.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-02-06T22:05:00+00:00",
+    "summary": "What are intransitive verbs and how are they used? Find out in the third part of our series about common sentence patterns in the English language.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Academic Writing: Common Sentence Patterns, Part Three",
+    "link": "https://learningenglish.voanews.com/a/7961555.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-02-04T14:46:39+00:00",
+    "summary": "",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Academic Writing: Common Sentence Patterns, Part Two",
+    "link": "https://learningenglish.voanews.com/a/academic-writing-common-patterns-part-two-everyday-grammar/3997498.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-01-30T22:05:00+00:00",
+    "summary": "In this week's report, we are going to explore one pattern that is commonly used in academic writing. Academic writers often use it to judge an idea. The structure we are exploring starts with a noun followed by a \"that clause.\"",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Academic Writing: Common Sentence Patterns, Part One",
+    "link": "https://learningenglish.voanews.com/a/everyday-grammar-common-patterns/3988378.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-01-23T22:05:41+00:00",
+    "summary": "Today on Everyday Grammar, we explore two grammatical structures that you will see often in academic writing. These structures are used to evaluate ideas and evaluate actions.  Although common in academic writing, you might not want to use these structures in other types of writing.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Studying Sentence Patterns to Improve Your Writing, Part Two",
+    "link": "https://learningenglish.voanews.com/a/studying-sentence-patterns-to-improve-writing-part-2/3459324.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-01-16T22:05:00+00:00",
+    "summary": "This week, we give you more information about a common sentence pattern in English: the linking verb pattern. Learning how to use linking verb patterns will help you improve your writing. You can think about creative ways to use them, or you can learn to recognize when you use them too often.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Studying Sentence Patterns to Improve Your Writing, Part One",
+    "link": "https://learningenglish.voanews.com/a/studying-patterns-to-improve-your-writting-part-one/3427791.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-01-09T22:05:02+00:00",
+    "summary": "The English language has many patterns. By learning and understanding common sentence patterns, English learners can improve their writing skills.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Questions, Answers about Holiday Activities",
+    "link": "https://learningenglish.voanews.com/a/questions-answers-about-holiday-activities/6904240.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-01-02T22:05:48+00:00",
+    "summary": "In today's report, we explore questions and answers about holiday activities.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Studying Sentence Patterns to Improve Your Writing, Part Two",
+    "link": "https://learningenglish.voanews.com/a/7919940.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-01-02T20:28:54+00:00",
+    "summary": "",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Studying Sentence Patterns to Improve Your Writing, Part One",
+    "link": "https://learningenglish.voanews.com/a/7921270.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2025-01-02T14:30:54+00:00",
+    "summary": "",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Grammar for Making New Year’s Resolutions",
+    "link": "https://learningenglish.voanews.com/a/grammar-for-making-new-year-s-resolutions/5226829.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2024-12-26T22:05:49+00:00",
+    "summary": "Though we may celebrate the New Year holiday on different dates, people from many cultures make New Year’s resolutions. On today’s Everyday Grammar, we will show you how to talk about resolutions in English.",
+    "source_category": "learning_resource"
+  },
+  {
+    "title": "Grammar and Christmas",
+    "link": "https://learningenglish.voanews.com/a/everyday-grammar-and-christmas/4172368.html",
+    "source": "VOA Learning English - Everyday Grammar",
+    "published_at": "2024-12-19T22:05:56+00:00",
+    "summary": "Christmas is full of pleasant surprises and surprising disappointments. Americans use certain words to show these emotions. Common examples include \"even,\" \"still,\" and \"actually.\"",
+    "source_category": "learning_resource"
+  }
+]
