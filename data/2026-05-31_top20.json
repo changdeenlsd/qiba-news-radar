@@ -415,31 +415,6 @@
     ]
   },
   {
-    "title": "Climate tech companies are going public. What’s next?",
-    "link": "https://www.technologyreview.com/2026/05/28/1138067/climate-tech-ipos/",
-    "source": "MIT Technology Review",
-    "source_category": "high_tech",
-    "published_at": "2026-05-28T10:00:00+00:00",
-    "summary": "This year, there’s been a wave of notable energy companies going public via IPO in the US. The solar and battery company Solv Energy went public in February, to the tune of $6 billion. X-energy, which is building small modular nuclear reactors, did the same in April, and its stocks surged on its fir",
-    "tags": [
-      "观察"
-    ],
-    "normalized_title": "climate tech companies are going public what s next",
-    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
-    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
-    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
-    "priority_score": 27,
-    "recommendation_level": "观察中",
-    "is_top_pick": true,
-    "is_duplicate": false,
-    "duplicate_reason": "",
-    "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "是否可以发展成一篇面向公众号读者的选题线索？"
-    ]
-  },
-  {
     "title": "Meta is reportedly developing an AI pendant",
     "link": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/",
     "source": "TechCrunch AI",
@@ -546,6 +521,33 @@
     "allow_repeat": false,
     "directions": [
       "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "LGBTQ+ Youth Mental Health Is Suffering, but Schools Are Poised to Help",
+    "link": "https://www.edsurge.com/news/2026-05-08-lgbtq-youth-mental-health-is-suffering-but-schools-are-poised-to-help",
+    "source": "EdSurge",
+    "source_category": "education_technology",
+    "published_at": "2026-05-08T23:30:50+00:00",
+    "summary": "“One of the most important findings is that when adults, institutions, and communities become more affirming, the suicide risk of LGBTQ+ young people ...",
+    "tags": [
+      "教育研究",
+      "儿童与青少年",
+      "亲子沟通"
+    ],
+    "normalized_title": "lgbtq youth mental health is suffering but schools are poised to help",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？"
     ]
   }
 ]
