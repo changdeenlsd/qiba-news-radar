@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-06-04",
+    "top20File": "data/2026-06-04_top20.json",
+    "count": 20,
+    "resourcesFile": "data/2026-06-04_resources.json",
+    "resourcesMarkdownFile": "data/2026-06-04_resources.md",
+    "resourceCount": 0,
+    "totalCount": 254,
+    "duplicateCount": 121
+  },
+  {
     "date": "2026-06-03",
     "top20File": "data/2026-06-03_top20.json",
     "count": 20,
