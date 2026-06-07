@@ -1,0 +1,322 @@
+[
+  {
+    "title": "Opinion: How Time Spent Out of School Can Help Boost Attendance and Academic Success",
+    "link": "https://www.the74million.org/article/how-time-spent-out-of-school-can-help-boost-attendance-and-academic-success/",
+    "source": "The 74",
+    "source_category": "education_media",
+    "published_at": "2026-06-06T10:30:00+00:00",
+    "summary": "Chronic absenteeism is one of the most persistent challenges facing schools today. A student is considered chronically absent after missing 10% of the school year, about 18 days in most districts. According to SchoolStatus, the U.S. rate of chronic absenteeism stood at 23.5% in 2024. Schools have re",
+    "tags": [
+      "教育研究",
+      "学习科学",
+      "家庭教育",
+      "教育热点"
+    ],
+    "normalized_title": "opinion how time spent out of school can help boost attendance and academic success",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 42,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？",
+      "这条新闻能否帮助读者理解孩子如何学习？"
+    ]
+  },
+  {
+    "title": "Artificial Intelligence Is Here To Stay. Are Hawaiʻi Schools Ready?",
+    "link": "https://www.the74million.org/article/artificial-intelligence-is-here-to-stay-are-hawai%ca%bbi-schools-ready/",
+    "source": "The 74",
+    "source_category": "education_media",
+    "published_at": "2026-06-07T10:30:00+00:00",
+    "summary": "For many schools, it’s a race to keep up. Others are leading the pack. And some are unsure what to do with it. Artificial intelligence is playing an increasingly prominent role in Hawaiʻi education, from the recent opening of the state’s first AI-focused charter school to the development of new cour",
+    "tags": [
+      "AI",
+      "教育研究"
+    ],
+    "normalized_title": "artificial intelligence is here to stay are hawaiʻi schools ready",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成主稿，角度可定为“AI 家教真的能帮孩子学数学吗”。重点解释工具如何提升练习反馈、信心和学习效率，同时提醒家长别把陪伴、诊断和鼓励完全交给系统。 可作为早间选题会的辅助判断。",
+    "priority_score": 40,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks",
+    "link": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-06-06T20:32:24+00:00",
+    "summary": "Even with Lockdown Mode, ChatGPT could be still vulnerable to prompt injections, but the goal is to reduce the likelihood that sensitive data gets shared in the process.",
+    "tags": [
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "openai unveils lockdown mode to protect sensitive data from prompt injection attacks",
+    "zh_summary": "OpenAI相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 30,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "科技巨头的新动作会如何影响教育和内容创作？"
+    ]
+  },
+  {
+    "title": "The Trump administration might take an equity stake in OpenAI",
+    "link": "https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-06-06T16:17:21+00:00",
+    "summary": "President Donald Trump said he's discussing deals \"where the American people can benefit from the success of AI.\"",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "the trump administration might take an equity stake in openai",
+    "zh_summary": "OpenAI相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 30,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "NVIDIA, KRAFTON, NC and Reigning ‘League of Legends’ Champions T1 Celebrate RTX Spark at Korea’s PC Bangs",
+    "link": "https://blogs.nvidia.com/blog/krafton-nc-t1-korea-gaming-pc-bang-rtx-spark/",
+    "source": "NVIDIA Blog",
+    "source_category": "high_tech",
+    "published_at": "2026-06-07T07:00:15+00:00",
+    "summary": "At GTC Taipei at COMPUTEX last week, NVIDIA unveiled RTX Spark, the superchip that reinvents Windows PCs for the era of personal AI agents. On the heels of this announcement, NVIDIA founder and CEO Jensen Huang headed to South Korea, where he introduced RTX Spark to the nation’s passionate gaming co",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "屏幕时间",
+      "Microsoft",
+      "NVIDIA"
+    ],
+    "normalized_title": "nvidia krafton nc and reigning league of legends champions t1 celebrate rtx spark at korea s pc bangs",
+    "zh_summary": "NVIDIA相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Sriram Krishnan is leaving his role as White House AI advisor",
+    "link": "https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-06-06T17:42:15+00:00",
+    "summary": "Krishnan is reportedly starting a new institution to continue shaping Trump's AI policy.",
+    "tags": [
+      "AI"
+    ],
+    "normalized_title": "sriram krishnan is leaving his role as white house ai advisor",
+    "zh_summary": "TechCrunch相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "The new AI-powered Google Finance is expanding to Europe.",
+    "link": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe/",
+    "source": "Google AI Blog",
+    "source_category": "tech_giant",
+    "published_at": "2026-05-11T06:00:00+00:00",
+    "summary": "A screenshot of the AI-powered experience on Google Finance.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "Google"
+    ],
+    "normalized_title": "the new ai powered google finance is expanding to europe",
+    "zh_summary": "Google相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 13,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "See what happens when creative legends use AI to make ads for small businesses.",
+    "link": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+    "source": "Google AI Blog",
+    "source_category": "tech_giant",
+    "published_at": "2026-05-08T15:00:00+00:00",
+    "summary": "black and white card with headshots of susan credle, jayonta jenkins and tiffany rolfe",
+    "tags": [
+      "AI"
+    ],
+    "normalized_title": "see what happens when creative legends use ai to make ads for small businesses",
+    "zh_summary": "Google相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 13,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "DOJ Extends Website Accessibility Deadline. Will It Help Schools Get Ready?",
+    "link": "https://www.edsurge.com/news/2026-04-21-doj-extends-website-accessibility-deadline-will-it-help-schools-get-ready",
+    "source": "EdSurge",
+    "source_category": "education_technology",
+    "published_at": "2026-04-21T08:00:00+00:00",
+    "summary": "The federal government punted enforcement for website and mobile app accessibility. But will schools just end up in the same place later on?",
+    "tags": [
+      "教育研究"
+    ],
+    "normalized_title": "doj extends website accessibility deadline will it help schools get ready",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 12,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？"
+    ]
+  },
+  {
+    "title": "Catch up on 12 major I/O 2026 moments",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+    "source": "Google AI Blog",
+    "source_category": "tech_giant",
+    "published_at": "2026-05-28T15:00:00+00:00",
+    "summary": "The colorful I/O logo against a black background, surrounded by stills from the I/O keynote",
+    "tags": [
+      "选题储备"
+    ],
+    "normalized_title": "catch up on 12 major i o 2026 moments",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 9,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "Educators: Why Are You Thinking of Leaving the Field?",
+    "link": "https://www.edsurge.com/news/2026-05-05-educators-why-are-you-thinking-of-leaving-the-field",
+    "source": "EdSurge",
+    "source_category": "education_technology",
+    "published_at": "2026-05-05T18:47:02+00:00",
+    "summary": "EdSurge wants to hear from educators who have recently left or plan to leave their jobs for another sector.",
+    "tags": [
+      "观察"
+    ],
+    "normalized_title": "educators why are you thinking of leaving the field",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "可写成未来职业观察，角度是“AI 和自动化正在改变年轻人的工作机会”。适合连接升学、专业选择和职业准备，但需要补充中国家庭能理解的行业案例，避免停留在海外职场新闻。",
+    "priority_score": 6,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "I’m Trying to Teach Humanity Before It Disappears",
+    "link": "https://www.edsurge.com/news/2026-06-03-i-m-trying-to-teach-humanity-before-it-disappears",
+    "source": "EdSurge",
+    "source_category": "education_technology",
+    "published_at": "2026-06-03T08:00:00+00:00",
+    "summary": "To be an educator and a writer is to inhabit a rollercoaster world of hope; at times, you are filled with the excitement and power of possibilities, ...",
+    "tags": [
+      "观察"
+    ],
+    "normalized_title": "i m trying to teach humanity before it disappears",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 2,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  }
+]
