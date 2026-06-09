@@ -1,0 +1,407 @@
+[
+  {
+    "title": "Learning to lead in a hybrid human-AI enterprise",
+    "link": "https://www.technologyreview.com/2026/06/09/1137830/learning-to-lead-in-a-hybrid-human-ai-enterprise/",
+    "source": "MIT Technology Review",
+    "source_category": "high_tech",
+    "published_at": "2026-06-09T10:20:06+00:00",
+    "summary": "As adoption of AI agents looks set to surge by as much as 300% in the next two years, leadership teams are carefully considering the implications of a hybrid human-AI workforce. Unlike existing enterprise-level automation that relies on manual input, AI agents are capable of autonomously coordinatin",
+    "tags": [
+      "AI",
+      "教育研究",
+      "未来职业"
+    ],
+    "normalized_title": "learning to lead in a hybrid human ai enterprise",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "可写成未来职业观察，角度是“AI 和自动化正在改变年轻人的工作机会”。适合连接升学、专业选择和职业准备，但需要补充中国家庭能理解的行业案例，避免停留在海外职场新闻。",
+    "priority_score": 65,
+    "recommendation_level": "可收藏",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "How Terry Tao Became an Evangelist for AI in Math",
+    "link": "https://www.quantamagazine.org/how-terry-tao-became-an-evangelist-for-ai-in-math-20260608/",
+    "source": "Quanta Magazine",
+    "source_category": "science",
+    "published_at": "2026-06-08T15:17:08+00:00",
+    "summary": "With automated proof-checkers, a problem can be broken up into small chunks, solved bit-by-bit, then reassembled with confidence that every piece is correct. For some, this heralds a new area in mathematical research. The post How Terry Tao Became an Evangelist for AI in Math first appeared on Quant",
+    "tags": [
+      "AI"
+    ],
+    "normalized_title": "how terry tao became an evangelist for ai in math",
+    "zh_summary": "这项研究围绕AI 模型、智能体或技术应用展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
+    "story_angle": "适合作为教育研究或科技背景资料，暂不急着写主稿；可积累为解释学习科学、AI 影响教育的证据线索。",
+    "qiba_pitch": "适合写成主稿，角度可定为“AI 家教真的能帮孩子学数学吗”。重点解释工具如何提升练习反馈、信心和学习效率，同时提醒家长别把陪伴、诊断和鼓励完全交给系统。 可作为早间选题会的辅助判断。",
+    "priority_score": 56,
+    "recommendation_level": "可收藏",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Introducing the OpenAI Economic Research Exchange",
+    "link": "https://openai.com/index/economic-research-exchange",
+    "source": "OpenAI Blog",
+    "source_category": "ai",
+    "published_at": "2026-06-08T00:00:00+00:00",
+    "summary": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "introducing the openai economic research exchange",
+    "zh_summary": "这项研究围绕AI 模型、智能体或技术应用展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
+    "story_angle": "适合作为教育研究或科技背景资料，暂不急着写主稿；可积累为解释学习科学、AI 影响教育的证据线索。",
+    "qiba_pitch": "可写成未来职业观察，角度是“AI 和自动化正在改变年轻人的工作机会”。适合连接升学、专业选择和职业准备，但需要补充中国家庭能理解的行业案例，避免停留在海外职场新闻。",
+    "priority_score": 46,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Confidential submission of draft S-1 to the SEC",
+    "link": "https://openai.com/index/openai-submits-confidential-s-1",
+    "source": "OpenAI Blog",
+    "source_category": "ai",
+    "published_at": "2026-06-08T14:00:00+00:00",
+    "summary": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action.",
+    "tags": [
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "confidential submission of draft s 1 to the sec",
+    "zh_summary": "OpenAI相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 38,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "科技巨头的新动作会如何影响教育和内容创作？"
+    ]
+  },
+  {
+    "title": "Built to benefit everyone: our plan",
+    "link": "https://openai.com/index/built-to-benefit-everyone-our-plan",
+    "source": "OpenAI Blog",
+    "source_category": "ai",
+    "published_at": "2026-06-08T01:30:00+00:00",
+    "summary": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "built to benefit everyone our plan",
+    "zh_summary": "OpenAI相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 38,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "AI Is in Schools. Teachers Are Not Ready.",
+    "link": "http://edsurge-contentful-prod.us-east-1.elasticbeanstalk.com/news/ai-is-in-schools-teachers-are-not-ready",
+    "source": "EdSurge",
+    "source_category": "education_technology",
+    "published_at": "2026-06-08T00:00:00+00:00",
+    "summary": "",
+    "tags": [
+      "AI",
+      "教育研究"
+    ],
+    "normalized_title": "ai is in schools teachers are not ready",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 38,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "David Sinclair plans to test whole-body rejuvenation drugs in the XPrize competition",
+    "link": "https://www.technologyreview.com/2026/06/09/1138545/david-sinclair-plans-to-test-whole-body-rejuvenation-drugs-in-the-xprize-competition/",
+    "source": "MIT Technology Review",
+    "source_category": "high_tech",
+    "published_at": "2026-06-09T10:00:00+00:00",
+    "summary": "The outspoken longevity scientist David Sinclair has been predicting that one day, you’ll go to the doctor and get a prescription that will make you 10 years younger. Now MIT Technology Review has learned that he has plans to launch human tests of an oral &#8220;reprogramming&#8221; drug as part of ",
+    "tags": [
+      "美国高校",
+      "MIT"
+    ],
+    "normalized_title": "david sinclair plans to test whole body rejuvenation drugs in the xprize competition",
+    "zh_summary": "MIT发布或更新了相关产品能力，重点在 AI 工具、平台功能或技术基础设施的持续演进。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 37,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "美国高校的研究或政策变化是否值得跟踪？"
+    ]
+  },
+  {
+    "title": "Five things you need to know about AI",
+    "link": "https://www.technologyreview.com/2026/06/09/1138582/five-things-you-need-to-know-about-ai/",
+    "source": "MIT Technology Review",
+    "source_category": "high_tech",
+    "published_at": "2026-06-09T09:16:45+00:00",
+    "summary": "At SXSW London last week I gave a talk called “Five things you need to know about AI,” in which I shared what I think are the biggest themes in AI right now. I pulled a few things from our first AI10 list, an annual guide to the most important trends in this buzzy world,&#8230;",
+    "tags": [
+      "AI",
+      "选题储备"
+    ],
+    "normalized_title": "five things you need to know about ai",
+    "zh_summary": "MIT相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 35,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Tulsa Charter Network Begins to Bounce Back From Pandemic Decline",
+    "link": "https://www.the74million.org/article/tulsa-charter-network-begins-to-bounce-back-from-pandemic-decline/",
+    "source": "The 74",
+    "source_category": "education_media",
+    "published_at": "2026-06-09T10:30:00+00:00",
+    "summary": "In the first years after Tulsa Honor Academy opened in 2015, founder Elsie Urueta Pollock visited almost every student’s home herself, promising parents that she would help their children be successful. Like them, she’s part of a Latino family from East Tulsa and wanted to give back to the community",
+    "tags": [
+      "教育研究",
+      "儿童与青少年",
+      "家庭教育"
+    ],
+    "normalized_title": "tulsa charter network begins to bounce back from pandemic decline",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 30,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？"
+    ]
+  },
+  {
+    "title": "OpenAI files confidentially for IPO, following Anthropic",
+    "link": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-06-08T21:29:57+00:00",
+    "summary": "The filing comes a little more than a week after its main rival, Anthropic, also filed to go public, ramping up the race between the two AI firms.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "openai files confidentially for ipo following anthropic",
+    "zh_summary": "OpenAI相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 30,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Colleges Backtrack on Pride Month",
+    "link": "https://www.insidehighered.com/news/governance/executive-leadership/2026/06/09/colleges-backtrack-pride-month",
+    "source": "Inside Higher Ed",
+    "source_category": "higher_education",
+    "published_at": "2026-06-09T07:00:00+00:00",
+    "summary": "Colleges Backtrack on Pride Month Josh Moody Tue, 06/09/2026 - 03:00 AM While many colleges are still celebrating Pride Month, a small number have deleted related social media posts, dropped out of local events and stopped flying the rainbow flag. Byline(s) Josh Moody",
+    "tags": [
+      "美国高校",
+      "屏幕时间"
+    ],
+    "normalized_title": "colleges backtrack on pride month",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入媒介素养资料库，观察 AI 内容、娱乐产品和公共讨论如何影响青少年数字生活。若没有儿童、学校或家庭冲突案例支撑，不建议单独成文，可等待更贴近家长的案例。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "美国高校的研究或政策变化是否值得跟踪？",
+      "这条新闻是否适合延展为屏幕时间或数字生活选题？"
+    ]
+  },
+  {
+    "title": "Why Apple’s slow-and-steady AI bet is starting to look pretty smart",
+    "link": "https://techcrunch.com/2026/06/08/why-apples-slow-and-steady-ai-bet-is-starting-to-look-pretty-smart/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-06-09T01:56:48+00:00",
+    "summary": "Can Apple's new AI glow up put to bed accusations that it's losing an all-important industry race?",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "Apple"
+    ],
+    "normalized_title": "why apple s slow and steady ai bet is starting to look pretty smart",
+    "zh_summary": "TechCrunch相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "As OpenAI files for IPO, Sam Altman’s eye-scanning company is doing layoffs, report says",
+    "link": "https://techcrunch.com/2026/06/08/as-openai-files-for-ipo-sam-altmans-eye-scanning-company-is-doing-layoffs-report-says/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-06-08T22:41:45+00:00",
+    "summary": "Tools for Humanity, Sam Altman's identity verification company, is reportedly struggling to generate revenue and will downsize its staff.",
+    "tags": [
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "as openai files for ipo sam altman s eye scanning company is doing layoffs report says",
+    "zh_summary": "OpenAI发布或更新了相关产品能力，重点在 AI 工具、平台功能或技术基础设施的持续演进。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "科技巨头的新动作会如何影响教育和内容创作？"
+    ]
+  },
+  {
+    "title": "Opinion: How a Student Health Bill Got Tangled in Kansas Politics",
+    "link": "https://www.the74million.org/article/how-a-student-health-bill-got-tangled-in-kansas-politics/",
+    "source": "The 74",
+    "source_category": "education_media",
+    "published_at": "2026-06-08T16:30:00+00:00",
+    "summary": "Just weeks after Kansas lawmakers passed legislation promoting daily recess and physical fitness in K-12 schools, Democratic Gov. Laura Kelly vetoed the measure. Speaking in the Statehouse, she told reporters that she supported the concept of increasing physical activity — but argued that the State ",
+    "tags": [
+      "教育研究"
+    ],
+    "normalized_title": "opinion how a student health bill got tangled in kansas politics",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 22,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？"
+    ]
+  },
+  {
+    "title": "Everything new in our Google AI subscriptions, fresh from I/O 2026",
+    "link": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/",
+    "source": "Google AI Blog",
+    "source_category": "tech_giant",
+    "published_at": "2026-05-19T17:45:00+00:00",
+    "summary": "The image shows colorful icons. The copy reads: More magic in one plan. More power, more perks, same price.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "Google"
+    ],
+    "normalized_title": "everything new in our google ai subscriptions fresh from i o 2026",
+    "zh_summary": "Google相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 4,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  }
+]
