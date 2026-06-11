@@ -1,0 +1,542 @@
+[
+  {
+    "title": "Microsoft, like, totally gets why students are booing AI-pilled graduation speakers",
+    "link": "https://www.theverge.com/news/947831/college-speakers-booed-ai-microsoft",
+    "source": "The Verge AI",
+    "source_category": "ai",
+    "published_at": "2026-06-10T17:45:11+00:00",
+    "summary": "New college graduates around the country have been booing and heckling commencement speakers who hype up AI. Microsoft would like everyone to talk it out. In a blog post running more than 3,100 words, Microsoft vice chair and president Brad Smith addressed the recent spate of viral clips from gradua",
+    "tags": [
+      "AI",
+      "教育研究",
+      "美国高校",
+      "科技巨头",
+      "Google",
+      "Microsoft"
+    ],
+    "normalized_title": "microsoft like totally gets why students are booing ai pilled graduation speakers",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成主稿，角度可定为“AI 家教真的能帮孩子学数学吗”。重点解释工具如何提升练习反馈、信心和学习效率，同时提醒家长别把陪伴、诊断和鼓励完全交给系统。 可作为早间选题会的辅助判断。",
+    "priority_score": 69,
+    "recommendation_level": "可收藏",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Opinion: New NAEP Report Shows Learning Progress Has Stalled. Here’s What to Do About It",
+    "link": "https://www.the74million.org/article/new-naep-report-shows-learning-progress-has-stalled-heres-what-to-do-about-it/",
+    "source": "The 74",
+    "source_category": "education_media",
+    "published_at": "2026-06-10T18:52:00+00:00",
+    "summary": "If you&#8217;re a parent who has felt, in the last few years, that something has changed in your child&#8217;s relationship with learning and school, you are not imagining it.&#160; The Nation&#8217;s Report Card released Long-Term Trend assessment data this morning, and the findings are mixed. Whil",
+    "tags": [
+      "教育研究",
+      "儿童与青少年",
+      "家庭教育",
+      "选题储备"
+    ],
+    "normalized_title": "opinion new naep report shows learning progress has stalled here s what to do about it",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 52,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？"
+    ]
+  },
+  {
+    "title": "A Delaware School Once Felt Like a ‘Prison.’ Now It’s a National Model",
+    "link": "https://www.the74million.org/article/a-delaware-school-once-felt-like-a-prison-now-its-a-national-model/",
+    "source": "The 74",
+    "source_category": "education_media",
+    "published_at": "2026-06-11T12:30:00+00:00",
+    "summary": "For years, many teachers at Frederick Douglass Elementary School didn’t know the names of all their students.&#160; Those were dark years before principal Carol Leveilee arrived at the Seaford, Delaware school. Kids were never greeted by staff when they entered the building. It was a familiar sight ",
+    "tags": [
+      "教育研究",
+      "儿童与青少年"
+    ],
+    "normalized_title": "a delaware school once felt like a prison now it s a national model",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 48,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？"
+    ]
+  },
+  {
+    "title": "NVIDIA Accelerates Google DeepMind’s DiffusionGemma for Local AI",
+    "link": "https://blogs.nvidia.com/blog/rtx-ai-garage-local-gemma-diffusion/",
+    "source": "NVIDIA Blog",
+    "source_category": "high_tech",
+    "published_at": "2026-06-10T16:15:20+00:00",
+    "summary": "Today, Google DeepMind released DiffusionGemma — an experimental open model built for exceptionally fast text generation. NVIDIA has optimized DiffusionGemma to run even faster across NVIDIA GeForce RTX GPUs, the NVIDIA RTX PRO platform and NVIDIA DGX Spark systems, from local PCs to the cloud. Rath",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "媒介素养",
+      "Google",
+      "DeepMind",
+      "NVIDIA"
+    ],
+    "normalized_title": "nvidia accelerates google deepmind s diffusiongemma for local ai",
+    "zh_summary": "Google DeepMind相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 46,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
+    "link": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+    "source": "OpenAI Blog",
+    "source_category": "ai",
+    "published_at": "2026-06-11T00:00:00+00:00",
+    "summary": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "supporting europe s work in ensuring a trustworthy ai ecosystem",
+    "zh_summary": "OpenAI发布或更新了相关产品能力，重点在 AI 工具、平台功能或技术基础设施的持续演进。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 42,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Job titles of the future: Nature’s drug designer",
+    "link": "https://www.technologyreview.com/2026/06/11/1138502/job-titles-natures-drug-designer-tim-cernak/",
+    "source": "MIT Technology Review",
+    "source_category": "high_tech",
+    "published_at": "2026-06-11T10:00:00+00:00",
+    "summary": "In 2018, after nearly two decades working in Big Pharma, chemist Tim Cernak was ready to put his skills to a new use.&#160; For Merck, he’d developed precision therapies for cancer, HIV, and diabetes that could target disease while minimizing harm to healthy cells. But as a lifelong nature lover, he",
+    "tags": [
+      "未来职业",
+      "Nature"
+    ],
+    "normalized_title": "job titles of the future nature s drug designer",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 41,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻是否能帮助家长理解未来职业和技能变化？"
+    ]
+  },
+  {
+    "title": "There Are 2 Types of Grade Inflation. Students’ Learning & Earnings Are at Risk",
+    "link": "https://www.the74million.org/article/there-are-2-types-of-grade-inflation-students-learning-earnings-are-at-risk/",
+    "source": "The 74",
+    "source_category": "education_media",
+    "published_at": "2026-06-11T14:30:00+00:00",
+    "summary": "What’s the harm of a little grade inflation? After all, the kids are happy. The parents are proud. And the administrators are satisfied, with more students making progress toward graduation. Of course, if students don’t fully master the content in a given class, they may struggle to succeed in the n",
+    "tags": [
+      "教育研究",
+      "儿童与青少年",
+      "家庭教育"
+    ],
+    "normalized_title": "there are 2 types of grade inflation students learning earnings are at risk",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 40,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？"
+    ]
+  },
+  {
+    "title": "How memory tools can make AI models worse",
+    "link": "https://techcrunch.com/2026/06/10/how-memory-tools-can-make-ai-models-worse/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-06-10T16:11:08+00:00",
+    "summary": "New research suggests that AI memory systems can degrade model performance and encourage sycophantic tendencies.",
+    "tags": [
+      "AI",
+      "学习科学"
+    ],
+    "normalized_title": "how memory tools can make ai models worse",
+    "zh_summary": "这项研究围绕AI 模型、智能体或技术应用展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 40,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Google DeepMind is worried about what happens when millions of agents start to interact",
+    "link": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
+    "source": "MIT Technology Review",
+    "source_category": "high_tech",
+    "published_at": "2026-06-11T11:00:45+00:00",
+    "summary": "Google DeepMind is funding research into the potential dangers of situations where millions of different AI agents interact with each other online. According to Rohin Shah, who directs the company’s AGI safety and alignment research, the mass-market arrival of agents that can carry out tasks without",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "Google",
+      "DeepMind"
+    ],
+    "normalized_title": "google deepmind is worried about what happens when millions of agents start to interact",
+    "zh_summary": "这项研究围绕AI 模型、智能体或技术应用展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
+    "story_angle": "适合作为教育研究或科技背景资料，暂不急着写主稿；可积累为解释学习科学、AI 影响教育的证据线索。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 39,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "For Robotaxis, Safety Must Be Built In, Not Bolted On",
+    "link": "https://blogs.nvidia.com/blog/halos-os-robotaxi-safety/",
+    "source": "NVIDIA Blog",
+    "source_category": "high_tech",
+    "published_at": "2026-06-10T19:00:12+00:00",
+    "summary": "A car pulls up to the curb. The app says, “Your ride is here.” No one’s in the driver’s seat. For people who live in one of the dozens of cities now hosting robotaxi services, this is already a reality. The robotaxi industry has moved from prototype milestones to commercial operations, with an expan",
+    "tags": [
+      "观察"
+    ],
+    "normalized_title": "for robotaxis safety must be built in not bolted on",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 32,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "Inside soccer’s data renaissance",
+    "link": "https://www.technologyreview.com/2026/06/11/1138506/inside-soccer-data-renaissance-jesse-davis/",
+    "source": "MIT Technology Review",
+    "source_category": "high_tech",
+    "published_at": "2026-06-11T10:00:00+00:00",
+    "summary": "Imagine tuning in to the opening kickoff of a World Cup match and seeing a player intentionally send the ball all the way down the pitch and right out of bounds on the opponent’s end. Casual fans might scratch their heads. Where’s the logic in surrendering possession seconds into a game? If you were",
+    "tags": [
+      "观察"
+    ],
+    "normalized_title": "inside soccer s data renaissance",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 31,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "What’s the Future of Gene Editing?",
+    "link": "https://www.quantamagazine.org/whats-the-future-of-gene-editing-20260611/",
+    "source": "Quanta Magazine",
+    "source_category": "science",
+    "published_at": "2026-06-11T13:37:21+00:00",
+    "summary": "In the first episode of the new season of ‘The Joy of Why,’ Nobel Laureate Jennifer Doudna discusses how she discovered CRISPR’s genome-editing power, the breakthroughs and hurdles during its explosive growth, and what lies ahead for this groundbreaking technology. The post What’s the Future of Gene",
+    "tags": [
+      "观察"
+    ],
+    "normalized_title": "what s the future of gene editing",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 30,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "8 University of Michigan–Affiliated Protesters Indicted",
+    "link": "https://www.insidehighered.com/news/quick-takes/2026/06/11/8-university-michigan-affiliated-protesters-indicted",
+    "source": "Inside Higher Ed",
+    "source_category": "higher_education",
+    "published_at": "2026-06-11T07:00:00+00:00",
+    "summary": "8 University of Michigan–Affiliated Protesters Indicted jessica.blake@… Thu, 06/11/2026 - 03:00 AM Byline(s) Jessica Blake",
+    "tags": [
+      "美国高校",
+      "屏幕时间"
+    ],
+    "normalized_title": "8 university of michigan affiliated protesters indicted",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合作为教育研究或科技背景资料，暂不急着写主稿；可积累为解释学习科学、AI 影响教育的证据线索。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 30,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "美国高校的研究或政策变化是否值得跟踪？",
+      "这条新闻是否适合延展为屏幕时间或数字生活选题？"
+    ]
+  },
+  {
+    "title": "PRC-linked influence operations are targeting AI debates in the US",
+    "link": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
+    "source": "OpenAI Blog",
+    "source_category": "ai",
+    "published_at": "2026-06-10T12:00:00+00:00",
+    "summary": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT.",
+    "tags": [
+      "AI",
+      "高科技",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "prc linked influence operations are targeting ai debates in the us",
+    "zh_summary": "OpenAI相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 30,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "DoorDash’s new AI chatbot lets you order with prompts and photos",
+    "link": "https://techcrunch.com/2026/06/11/doordashs-new-ai-chatbot-lets-you-order-with-prompts-and-photos/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-06-11T14:23:43+00:00",
+    "summary": "The new chatbot, called Ask DoorDash, allows users to search the app for what they're looking for in their own words instead of having to scroll through restaurants and stores to build a cart.",
+    "tags": [
+      "AI"
+    ],
+    "normalized_title": "doordash s new ai chatbot lets you order with prompts and photos",
+    "zh_summary": "TechCrunch相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Opendoor’s India exit is fueling a bigger conversation about AI and outsourcing",
+    "link": "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-06-11T04:02:19+00:00",
+    "summary": "The decision comes as India emerges as the world’s largest GCC market.",
+    "tags": [
+      "AI"
+    ],
+    "normalized_title": "opendoor s india exit is fueling a bigger conversation about ai and outsourcing",
+    "zh_summary": "TechCrunch相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "An Early Step on the Long, Strange Road to Photosynthesis",
+    "link": "https://www.quantamagazine.org/an-early-step-on-the-long-strange-road-to-photosynthesis-20260610/",
+    "source": "Quanta Magazine",
+    "source_category": "science",
+    "published_at": "2026-06-10T14:57:19+00:00",
+    "summary": "An ancient lineage of cyanobacteria is helping biologists uncover an early evolutionary stage of the mind-boggling process that turns light into life. The post An Early Step on the Long, Strange Road to Photosynthesis first appeared on Quanta Magazine",
+    "tags": [
+      "观察"
+    ],
+    "normalized_title": "an early step on the long strange road to photosynthesis",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "Stop the Nomenclature Nonsense",
+    "link": "https://www.insidehighered.com/opinion/columns/beyond-transfer/2026/06/11/shared-language-clear-pathways-credits-costs-careers",
+    "source": "Inside Higher Ed",
+    "source_category": "higher_education",
+    "published_at": "2026-06-11T07:00:00+00:00",
+    "summary": "Stop the Nomenclature Nonsense quintina.barne… Thu, 06/11/2026 - 03:00 AM Say what you mean—about credits, supports, pathways, timelines and costs—and mobility, affordability, licensure and workforce connection will finally move in the same direction. Byline(s) Jesse Boeding",
+    "tags": [
+      "未来职业"
+    ],
+    "normalized_title": "stop the nomenclature nonsense",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 20,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻是否能帮助家长理解未来职业和技能变化？"
+    ]
+  },
+  {
+    "title": "The future of AI regulation is courting the strangest, most anxious bedfellows",
+    "link": "https://www.theverge.com/column/947838/washington-ai-network-honors-2026-midterms",
+    "source": "The Verge AI",
+    "source_category": "ai",
+    "published_at": "2026-06-10T17:38:00+00:00",
+    "summary": "Hello and welcome to Regulator, a newsletter for Verge subscribers about tech politics, tech influence, and tech shenanigans in Washington, DC. (If you're not a subscriber, you can get on board here.) We're back after a two-week hiatus, during most of which I was gallivanting in the Netherlands for ",
+    "tags": [
+      "AI",
+      "家庭教育",
+      "社会评论"
+    ],
+    "normalized_title": "the future of ai regulation is courting the strangest most anxious bedfellows",
+    "zh_summary": "The Verge相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 17,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Save Big and Play Bigger: GeForce NOW Summer Sale Brings Major Membership Savings",
+    "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-summer-sale-2026/",
+    "source": "NVIDIA Blog",
+    "source_category": "high_tech",
+    "published_at": "2026-06-11T13:00:17+00:00",
+    "summary": "The GeForce NOW summer sale kicked off today with limited-time savings of up to $70 off a 12-month membership, making now the perfect time to upgrade to get the best of the cloud and see just how far Ultimate gaming can go. PC gamers are driven by one thing: the love of the game. But [&#8230;]",
+    "tags": [
+      "屏幕时间",
+      "NVIDIA"
+    ],
+    "normalized_title": "save big and play bigger geforce now summer sale brings major membership savings",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 13,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻是否适合延展为屏幕时间或数字生活选题？"
+    ]
+  }
+]
