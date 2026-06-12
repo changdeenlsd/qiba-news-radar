@@ -1,0 +1,508 @@
+[
+  {
+    "title": "How Preply combines AI and human tutors to personalize learning",
+    "link": "https://openai.com/index/preply",
+    "source": "OpenAI Blog",
+    "source_category": "ai",
+    "published_at": "2026-06-12T00:00:00+00:00",
+    "summary": "Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exercises.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "how preply combines ai and human tutors to personalize learning",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成文章，角度应从家长能感知的变化切入：学校、学习工具、孩子能力培养或未来职业。正文需要补充家庭或课堂场景，避免写成普通科技新闻摘要。 可作为早间选题会的辅助判断。",
+    "priority_score": 68,
+    "recommendation_level": "可收藏",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "MIT affiliates win 2026 Hertz Foundation Fellowships",
+    "link": "https://news.mit.edu/2026/hertz-foundation-fellowships-0611",
+    "source": "MIT News",
+    "source_category": "us_university",
+    "published_at": "2026-06-11T17:30:00+00:00",
+    "summary": "The fellowships in applied sciences, engineering, and mathematics recognize doctoral students who are pursuing solutions to the most pressing challenges in science and technology.",
+    "tags": [
+      "教育研究",
+      "美国高校",
+      "MIT",
+      "Science"
+    ],
+    "normalized_title": "mit affiliates win 2026 hertz foundation fellowships",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 56,
+    "recommendation_level": "可收藏",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？",
+      "美国高校的研究或政策变化是否值得跟踪？"
+    ]
+  },
+  {
+    "title": "Parents of WPI’s ‘Lost Sons’ Speak Out",
+    "link": "https://www.insidehighered.com/news/students/academics/2026/06/12/parents-worcester-polytechnics-lost-sons-speak-out",
+    "source": "Inside Higher Ed",
+    "source_category": "higher_education",
+    "published_at": "2026-06-12T07:00:00+00:00",
+    "summary": "Parents of WPI’s ‘Lost Sons’ Speak Out kathryn.palmer… Fri, 06/12/2026 - 03:00 AM Eight students at Worcester Polytechnic Institute died by suicide between 2021 and 2025. The university has since taken numerous steps to bolster suicide prevention efforts, but some parents of the dead want WPI to do ",
+    "tags": [
+      "教育研究",
+      "美国高校",
+      "家庭教育"
+    ],
+    "normalized_title": "parents of wpi s lost sons speak out",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 46,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？",
+      "美国高校的研究或政策变化是否值得跟踪？"
+    ]
+  },
+  {
+    "title": "When it comes to predicting people’s preferences, it pays to consider “the power of three”",
+    "link": "https://news.mit.edu/2026/when-predicting-preferences-it-pays-to-consider-power-of-three-0611",
+    "source": "MIT News",
+    "source_category": "us_university",
+    "published_at": "2026-06-11T19:10:00+00:00",
+    "summary": "MIT researchers provide a major upgrade to the nearly century-old idea of random utility models.",
+    "tags": [
+      "美国高校",
+      "MIT"
+    ],
+    "normalized_title": "when it comes to predicting people s preferences it pays to consider the power of three",
+    "zh_summary": "这项研究围绕AI 模型、智能体或技术应用展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 44,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "美国高校的研究或政策变化是否值得跟踪？"
+    ]
+  },
+  {
+    "title": "How Peer Mentors Combat Summer Melt",
+    "link": "https://www.insidehighered.com/news/student-success/college-experience/2026/06/12/how-peer-mentors-combat-summer-melt",
+    "source": "Inside Higher Ed",
+    "source_category": "higher_education",
+    "published_at": "2026-06-12T07:00:00+00:00",
+    "summary": "How Peer Mentors Combat Summer Melt Joshua.Bay Fri, 06/12/2026 - 03:00 AM CUNY’s College Bridge for All, the nation’s largest near-peer advising program, helps students navigate the path from high school to college. Byline(s) Joshua Bay",
+    "tags": [
+      "教育研究",
+      "美国高校"
+    ],
+    "normalized_title": "how peer mentors combat summer melt",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 40,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？",
+      "美国高校的研究或政策变化是否值得跟踪？"
+    ]
+  },
+  {
+    "title": "Jinhua Zhao named head of the Department of Urban Studies and Planning",
+    "link": "https://news.mit.edu/2026/jinhua-zhao-named-head-department-urban-studies-planning-0611",
+    "source": "MIT News",
+    "source_category": "us_university",
+    "published_at": "2026-06-11T20:20:00+00:00",
+    "summary": "An expert in behavioral science and transportation, Zhao combines these studies with AI and public policy to address some of the most urgent challenges facing cities.",
+    "tags": [
+      "AI",
+      "Science"
+    ],
+    "normalized_title": "jinhua zhao named head of the department of urban studies and planning",
+    "zh_summary": "MIT相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 38,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Inside Interoception: The hidden sense of how you feel inside",
+    "link": "https://www.technologyreview.com/2026/06/12/1138833/inside-interoception-brain-body/",
+    "source": "MIT Technology Review",
+    "source_category": "high_tech",
+    "published_at": "2026-06-12T09:00:00+00:00",
+    "summary": "MIT Technology Review&#160;Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next.&#160;You can read more from the series here. Your brain lives in the dark space of your skull. Yet it knows when the wind lifts the hairs on you",
+    "tags": [
+      "美国高校",
+      "MIT",
+      "Science"
+    ],
+    "normalized_title": "inside interoception the hidden sense of how you feel inside",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 37,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "美国高校的研究或政策变化是否值得跟踪？"
+    ]
+  },
+  {
+    "title": "Exclusive: 7 Things to Know About Microschools in 2026",
+    "link": "https://www.the74million.org/article/exclusive-7-things-to-know-about-microschools-in-2026/",
+    "source": "The 74",
+    "source_category": "education_media",
+    "published_at": "2026-06-11T10:30:00+00:00",
+    "summary": "Microschool leaders are predominantly white educators and parents who left traditional public or private schools to build different educational options for kids. But over 40% of those planning to launch new schools in the coming years are Black, according to the latest national report on the growing",
+    "tags": [
+      "教育研究",
+      "儿童与青少年",
+      "家庭教育"
+    ],
+    "normalized_title": "exclusive 7 things to know about microschools in 2026",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 36,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？"
+    ]
+  },
+  {
+    "title": "Deezer’s new tool can identify AI music from Spotify, Apple Music, and others",
+    "link": "https://techcrunch.com/2026/06/11/deezers-new-tool-can-identify-ai-music-from-spotify-apple-music-and-others/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-06-11T16:36:20+00:00",
+    "summary": "Deezer introduced a tool that scans playlists from Spotify, Apple Music, and other platforms to identify AI music.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "媒介素养",
+      "Apple"
+    ],
+    "normalized_title": "deezer s new tool can identify ai music from spotify apple music and others",
+    "zh_summary": "TechCrunch发布或更新了相关产品能力，重点在 AI 工具、平台功能或技术基础设施的持续演进。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入媒介素养资料库，观察 AI 内容、娱乐产品和公共讨论如何影响青少年数字生活。若没有儿童、学校或家庭冲突案例支撑，不建议单独成文，可等待更贴近家长的案例。",
+    "priority_score": 32,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "You do your own time",
+    "link": "https://www.technologyreview.com/2026/06/12/1138518/you-do-your-own-time-fiction/",
+    "source": "MIT Technology Review",
+    "source_category": "high_tech",
+    "published_at": "2026-06-12T10:00:00+00:00",
+    "summary": "There we were, a regular murderers’ row of librarians. Little Jo. Eustace. And me. Turning around in the nave of our library to greet the sound of footsteps, pistols leveled in case whoever was coming in didn’t respect sanctuary. Little Jo had a stack of books under one arm. Eustace was holding the ",
+    "tags": [
+      "观察"
+    ],
+    "normalized_title": "you do your own time",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 31,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "Why “reprogramming” is the buzziest approach to reversing aging right now",
+    "link": "https://www.technologyreview.com/2026/06/12/1138829/reprogramming-buzziest-approach-reversing-aging-right-now/",
+    "source": "MIT Technology Review",
+    "source_category": "high_tech",
+    "published_at": "2026-06-12T09:00:00+00:00",
+    "summary": "Earlier this week, Life Biosciences, a biotech company focused on reversing age-related diseases, announced that it had dosed its first volunteer. A person with glaucoma has had an experimental treatment injected straight into their eyeball. The idea is to try to treat the disease—which can cause vi",
+    "tags": [
+      "观察"
+    ],
+    "normalized_title": "why reprogramming is the buzziest approach to reversing aging right now",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 31,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "Access to Early Care and Education Depends on Where You Live",
+    "link": "https://www.the74million.org/zero2eight/access-to-early-care-and-education-depends-on-where-you-live/",
+    "source": "The 74",
+    "source_category": "education_media",
+    "published_at": "2026-06-12T10:30:00+00:00",
+    "summary": "Despite federal investments in early care and education, access to affordable, high-quality childcare is often determined by which state a family lives in. According to new data, there are wide disparities between states in terms of how much money they’re willing to put into their systems. A lack of",
+    "tags": [
+      "教育研究",
+      "家庭教育"
+    ],
+    "normalized_title": "access to early care and education depends on where you live",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 30,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？"
+    ]
+  },
+  {
+    "title": "Cheaper, faster, and culturally aware, Avataar’s video AI is built for India’s scale",
+    "link": "https://techcrunch.com/2026/06/11/cheaper-faster-and-culturally-aware-avataars-video-ai-is-built-for-indias-scale/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-06-12T04:30:00+00:00",
+    "summary": "Avataar AI's distilled video model is priced at $0.005 for every second of generation",
+    "tags": [
+      "AI"
+    ],
+    "normalized_title": "cheaper faster and culturally aware avataar s video ai is built for india s scale",
+    "zh_summary": "TechCrunch相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 30,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "BBVA puts AI at the core of banking with OpenAI",
+    "link": "https://openai.com/index/bbva",
+    "source": "OpenAI Blog",
+    "source_category": "ai",
+    "published_at": "2026-06-11T00:00:00+00:00",
+    "summary": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide.",
+    "tags": [
+      "AI",
+      "科技巨头",
+      "OpenAI"
+    ],
+    "normalized_title": "bbva puts ai at the core of banking with openai",
+    "zh_summary": "相关机构正在把 OpenAI 能力接入具体业务场景，重点是用 AI 改造服务流程和知识处理方式。",
+    "story_angle": "更适合做趋势观察或资料储备，关注 AI 工具从技术圈进入企业级市场；不建议直接作为七点半爸爸主稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 30,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
+    "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
+    "source": "Google AI Blog",
+    "source_category": "tech_giant",
+    "published_at": "2026-06-11T20:00:00+00:00",
+    "summary": "We’re helping build the state’s next-generation workforce and investing in energy programs.",
+    "tags": [
+      "未来职业"
+    ],
+    "normalized_title": "our new community investments in virginia support local jobs and expand energy affordability",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "可写成未来职业观察，角度是“AI 和自动化正在改变年轻人的工作机会”。适合连接升学、专业选择和职业准备，但需要补充中国家庭能理解的行业案例，避免停留在海外职场新闻。",
+    "priority_score": 27,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻是否能帮助家长理解未来职业和技能变化？"
+    ]
+  },
+  {
+    "title": "Jeff Bezos’s Prometheus raises $12B to build an ‘artificial general engineer’ for the physical world",
+    "link": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-06-12T01:04:38+00:00",
+    "summary": "The new round values the physical AI startup that aims to automate heavy engineering and drug design at $41 billion.",
+    "tags": [
+      "AI"
+    ],
+    "normalized_title": "jeff bezos s prometheus raises 12b to build an artificial general engineer for the physical world",
+    "zh_summary": "TechCrunch相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Transgender Arkansans and Their Families Weigh Moving or Staying in the Face of Restrictions",
+    "link": "https://www.the74million.org/article/transgender-arkansans-and-their-families-weigh-moving-or-staying-in-the-face-of-restrictions/",
+    "source": "The 74",
+    "source_category": "education_media",
+    "published_at": "2026-06-11T16:30:00+00:00",
+    "summary": "Sabrina Jennen’s family has deep roots in Arkansas, but she said moving to Maryland three years ago brought them a sense of safety they didn’t have in the Natural State. The Jennens were one of&#160;four families&#160;who sued Arkansas in 2021 over its law banning gender-affirming healthcare, such a",
+    "tags": [
+      "儿童与青少年",
+      "家庭教育"
+    ],
+    "normalized_title": "transgender arkansans and their families weigh moving or staying in the face of restrictions",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 26,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "What TikTok Is Teaching Future Teachers (That We Aren’t)",
+    "link": "https://edsurge.com/news/what-tiktok-is-teaching-future-teachers-that-we-arent",
+    "source": "EdSurge",
+    "source_category": "education_technology",
+    "published_at": "2026-06-11T00:00:00+00:00",
+    "summary": "",
+    "tags": [
+      "教育研究"
+    ],
+    "normalized_title": "what tiktok is teaching future teachers that we aren t",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 12,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？"
+    ]
+  },
+  {
+    "title": "Recess, Screens, and Absenteeism",
+    "link": "https://edsurge.com/news/recess-screens-and-absenteeism",
+    "source": "EdSurge",
+    "source_category": "education_technology",
+    "published_at": "2026-06-10T00:00:00+00:00",
+    "summary": "",
+    "tags": [
+      "观察"
+    ],
+    "normalized_title": "recess screens and absenteeism",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 6,
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  }
+]
