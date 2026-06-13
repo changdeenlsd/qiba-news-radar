@@ -2771,13 +2771,13 @@ def render_html(
 ) -> None:
     DOCS_DIR.mkdir(exist_ok=True)
     groups = [
-        ("今日必看", [item for item in items if item["priority_score"] >= 80]),
-        ("可写成文章", [item for item in items if 65 <= item["priority_score"] <= 79]),
-        ("资料储备", [item for item in items if item["priority_score"] < 65]),
+        ("今日必看", "top20_must_read", [item for item in items if item["priority_score"] >= 80]),
+        ("可写成文章", "top20_article_candidate", [item for item in items if 65 <= item["priority_score"] <= 79]),
+        ("资料储备", "top20_reference", [item for item in items if item["priority_score"] < 65]),
     ]
-    resource_section = render_resources_section(resources)
-    seasonal_section = render_seasonal_section(seasonal_items)
-    grouped_sections = "\n".join(render_group(title, group_items) for title, group_items in groups)
+    resource_section = render_resources_section(resources, date_text)
+    seasonal_section = render_seasonal_section(seasonal_items, date_text)
+    grouped_sections = "\n".join(render_group(title, section, group_items, date_text) for title, section, group_items in groups)
     shortage_notice = ""
     if len(items) < TOP_PICK_LIMIT:
         shortage_notice = f'<p class="notice">今日去重后不足20条，实际显示 {len(items)} 条。</p>'
@@ -2800,6 +2800,10 @@ def render_html(
     .archive-control {{ max-width: 960px; margin: 16px auto 0; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }}
     .archive-control label {{ color: #374151; font-weight: 600; }}
     .archive-control select {{ min-width: 180px; border: 1px solid #d1d5db; border-radius: 8px; padding: 7px 10px; background: #ffffff; color: #111827; }}
+    .rating-tools {{ max-width: 960px; margin: 14px auto 0; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; color: #374151; }}
+    .rating-tools strong {{ color: #111827; }}
+    .rating-tools button {{ border: 1px solid #d1d5db; border-radius: 8px; background: #ffffff; color: #111827; padding: 7px 10px; cursor: pointer; }}
+    .rating-tools button:hover {{ border-color: #f59e0b; color: #92400e; }}
     .notice {{ max-width: 960px; margin: 10px auto 0; color: #9a3412; font-weight: 600; }}
     .group {{ margin-bottom: 28px; }}
     .group-header {{ display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin: 0 0 12px; border-bottom: 1px solid #e5e7eb; padding-bottom: 8px; }}
@@ -2818,6 +2822,13 @@ def render_html(
     .seasonal-pill {{ background: #fffbeb; color: #92400e; border-radius: 999px; padding: 4px 10px; font-weight: 600; }}
     .tags {{ display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }}
     .tag {{ background: #eef2ff; color: #3730a3; border-radius: 999px; padding: 3px 9px; font-size: 13px; }}
+    .rating-widget {{ display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 10px 0 12px; color: #6b7280; font-size: 14px; }}
+    .rating-label {{ font-weight: 600; color: #374151; }}
+    .rating-stars {{ display: inline-flex; gap: 2px; }}
+    .rating-star {{ border: 0; background: transparent; color: #d1d5db; cursor: pointer; font-size: 22px; line-height: 1; padding: 1px 2px; }}
+    .rating-star.is-selected,
+    .rating-star.is-preview {{ color: #f59e0b; }}
+    .rating-status {{ min-width: 48px; color: #92400e; font-weight: 600; }}
     .news-section {{ border-top: 1px solid #eef0f3; margin-top: 14px; padding-top: 12px; }}
     .news-section h3 {{ margin: 0 0 6px; font-size: 15px; line-height: 1.4; color: #111827; }}
     .news-section p {{ margin: 0; line-height: 1.7; }}
@@ -2833,6 +2844,12 @@ def render_html(
     <div class="archive-control">
       <label for="archive-date">选择日报日期</label>
       <select id="archive-date" aria-label="选择日报日期"></select>
+    </div>
+    <div class="rating-tools" aria-label="选题评分工具">
+      <strong>选题评分</strong>
+      <span id="rating-summary">已记录 0 条评分</span>
+      <button type="button" id="export-ratings">导出评分 JSON</button>
+      <button type="button" id="clear-ratings">清空本地评分</button>
     </div>
     <p class="notice" id="archive-notice">{shortage_notice.replace('<p class="notice">', '').replace('</p>', '')}</p>
   </header>
@@ -2857,6 +2874,11 @@ def render_html(
     const metaEl = document.getElementById("archive-meta");
     const noticeEl = document.getElementById("archive-notice");
     const contentEl = document.getElementById("digest-content");
+    const ratingSummaryEl = document.getElementById("rating-summary");
+    const exportRatingsBtn = document.getElementById("export-ratings");
+    const clearRatingsBtn = document.getElementById("clear-ratings");
+    const ratingStorageKey = "qiba_topic_ratings_v1";
+    const ratingAppVersion = "rating-localstorage-v1";
 
     function escapeHtml(value) {{
       return String(value ?? "")
@@ -2872,15 +2894,169 @@ def render_html(
       return `${{path}}${{sep}}v=${{Date.now()}}`;
     }}
 
+    function hashRatingKey(input) {{
+      let hash = 5381;
+      for (let index = 0; index < input.length; index += 1) {{
+        hash = ((hash << 5) + hash) + input.charCodeAt(index);
+        hash |= 0;
+      }}
+      return `qiba_${{Math.abs(hash).toString(36)}}`;
+    }}
+
+    function getRatingStore() {{
+      try {{
+        const raw = localStorage.getItem(ratingStorageKey);
+        if (!raw) throw new Error("empty rating store");
+        const store = JSON.parse(raw);
+        if (!store || typeof store !== "object" || !store.items) throw new Error("invalid rating store");
+        return store;
+      }} catch (error) {{
+        return {{
+          app: "qiba-news-radar",
+          version: ratingAppVersion,
+          updated_at: "",
+          items: {{}},
+        }};
+      }}
+    }}
+
+    function saveRatingStore(store) {{
+      store.updated_at = new Date().toISOString();
+      localStorage.setItem(ratingStorageKey, JSON.stringify(store));
+    }}
+
+    function makeItemId(item, section, pageDate) {{
+      const url = item.url || item.link || "";
+      const identity = url ? `${{section}}|${{pageDate}}|${{url}}` : `${{section}}|${{pageDate}}|${{item.title || ""}}|${{item.source || ""}}`;
+      return hashRatingKey(identity);
+    }}
+
+    function normalizeRatingPayload(item, section, pageDate, rating) {{
+      const itemId = makeItemId(item, section, pageDate);
+      return {{
+        rating_id: `${{itemId}}:${{Date.now()}}`,
+        rated_at: new Date().toISOString(),
+        page_date: pageDate,
+        section,
+        item_id: itemId,
+        title: item.title || "",
+        source: item.source || "",
+        url: item.url || item.link || "",
+        rating,
+        tags: Array.isArray(item.tags) ? item.tags : [],
+        priority_score: item.priority_score ?? null,
+        resource_score: item.resource_score ?? item.score ?? null,
+        seasonal_score: item.seasonal_score ?? null,
+        content_type: item.content_type || item.resource_type || "",
+        topic_type: item.topic_type || "",
+        seasonal_window: item.seasonal_window || "",
+        summary: item.summary || item.why_useful || item.seasonal_reason || "",
+        qiba_pitch: item.qiba_pitch || item.qiba_angle || item.seasonal_qiba_angle || "",
+        user_note: "",
+        app_version: ratingAppVersion,
+      }};
+    }}
+
+    function getStoredRating(itemId) {{
+      const store = getRatingStore();
+      return store.items[itemId]?.rating || 0;
+    }}
+
+    function setStoredRating(payload) {{
+      const store = getRatingStore();
+      store.items[payload.item_id] = payload;
+      saveRatingStore(store);
+    }}
+
+    function removeStoredRating(itemId) {{
+      const store = getRatingStore();
+      delete store.items[itemId];
+      saveRatingStore(store);
+    }}
+
+    function renderRatingWidget(item, section, pageDate) {{
+      const itemId = makeItemId(item, section, pageDate);
+      const payload = normalizeRatingPayload(item, section, pageDate, 0);
+      const payloadJson = escapeHtml(JSON.stringify(payload));
+      const stars = [1, 2, 3, 4, 5].map((value) => `<button type="button" class="rating-star" data-rating-value="${{value}}" aria-label="${{value}} 星">★</button>`).join("");
+      return `<div class="rating-widget" data-item-id="${{escapeHtml(itemId)}}" data-rating-payload="${{payloadJson}}">
+  <span class="rating-label">我的评分</span>
+  <span class="rating-stars" role="group" aria-label="选题打星">${{stars}}</span>
+  <span class="rating-status">未评分</span>
+</div>`;
+    }}
+
+    function applyRatingToWidget(widget, rating) {{
+      widget.querySelectorAll(".rating-star").forEach((star) => {{
+        const value = Number(star.dataset.ratingValue || 0);
+        star.classList.remove("is-preview");
+        star.classList.toggle("is-selected", value <= rating);
+        star.setAttribute("aria-pressed", value <= rating ? "true" : "false");
+      }});
+      const status = widget.querySelector(".rating-status");
+      if (status) status.textContent = rating ? `${{rating}} 星` : "未评分";
+    }}
+
+    function previewRatingWidget(widget, rating) {{
+      widget.querySelectorAll(".rating-star").forEach((star) => {{
+        const value = Number(star.dataset.ratingValue || 0);
+        star.classList.toggle("is-preview", value <= rating);
+        star.classList.toggle("is-selected", false);
+      }});
+      const status = widget.querySelector(".rating-status");
+      if (status) status.textContent = `${{rating}} 星`;
+    }}
+
+    function refreshRatingWidgets() {{
+      document.querySelectorAll(".rating-widget").forEach((widget) => {{
+        applyRatingToWidget(widget, getStoredRating(widget.dataset.itemId));
+      }});
+      updateRatingSummary();
+    }}
+
+    function updateRatingSummary() {{
+      const store = getRatingStore();
+      const count = Object.keys(store.items || {{}}).length;
+      if (ratingSummaryEl) ratingSummaryEl.textContent = `已记录 ${{count}} 条评分`;
+    }}
+
+    function exportRatings() {{
+      const store = getRatingStore();
+      const ratings = Object.values(store.items || {{}});
+      const payload = {{
+        exported_at: new Date().toISOString(),
+        app: "qiba-news-radar",
+        version: ratingAppVersion,
+        count: ratings.length,
+        ratings,
+      }};
+      const blob = new Blob([JSON.stringify(payload, null, 2)], {{ type: "application/json" }});
+      const url = URL.createObjectURL(blob);
+      const today = new Date().toISOString().slice(0, 10);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `qiba-topic-ratings-${{today}}.json`;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    }}
+
+    function clearRatings() {{
+      if (!window.confirm("确定要清空本地所有评分吗？此操作不可恢复。")) return;
+      localStorage.removeItem(ratingStorageKey);
+      refreshRatingWidgets();
+    }}
+
     function groupItems(items) {{
       return [
-        ["今日必看", items.filter((item) => Number(item.priority_score || 0) >= 80)],
-        ["可写成文章", items.filter((item) => Number(item.priority_score || 0) >= 65 && Number(item.priority_score || 0) <= 79)],
-        ["资料储备", items.filter((item) => Number(item.priority_score || 0) < 65)],
+        ["今日必看", "top20_must_read", items.filter((item) => Number(item.priority_score || 0) >= 80)],
+        ["可写成文章", "top20_article_candidate", items.filter((item) => Number(item.priority_score || 0) >= 65 && Number(item.priority_score || 0) <= 79)],
+        ["资料储备", "top20_reference", items.filter((item) => Number(item.priority_score || 0) < 65)],
       ];
     }}
 
-    function renderResourceCard(resource) {{
+    function renderResourceCard(resource, pageDate) {{
       return `<article class="item resource-item">
   <h2>${{escapeHtml(resource.title || "")}}</h2>
   <p class="meta">${{escapeHtml(resource.subject || "")}}｜${{escapeHtml(resource.region || "")}}｜${{escapeHtml(resource.age_range || "")}}｜${{escapeHtml(resource.resource_type || "")}}｜${{escapeHtml(resource.freshness || "")}}</p>
@@ -2888,6 +3064,7 @@ def render_html(
     <span class="resource-pill">资源分数：${{escapeHtml(resource.score ?? "")}}</span>
     <span class="level-pill">${{escapeHtml(resource.free_or_paid || "未知")}}</span>
   </div>
+  ${{renderRatingWidget(resource, "daily_resource", pageDate)}}
   <section class="news-section">
     <h3>推荐理由</h3>
     <p>${{escapeHtml(resource.why_useful || "暂无推荐理由")}}</p>
@@ -2903,8 +3080,8 @@ def render_html(
 </article>`;
     }}
 
-    function renderResourcesSection(resources) {{
-      const body = resources.length ? resources.map(renderResourceCard).join("") : '<p class="empty">今日暂无高置信干货资源。</p>';
+    function renderResourcesSection(resources, pageDate) {{
+      const body = resources.length ? resources.map((resource) => renderResourceCard(resource, pageDate)).join("") : '<p class="empty">今日暂无高置信干货资源。</p>';
       return `<section class="group">
   <div class="group-header">
     <h2>今日干货资源</h2>
@@ -2914,7 +3091,7 @@ def render_html(
 </section>`;
     }}
 
-    function renderSeasonalCard(item) {{
+    function renderSeasonalCard(item, pageDate) {{
       const year = item.original_year ? ` · ${{escapeHtml(item.original_year)}}` : "";
       return `<article class="item seasonal-item">
   <h2><a href="${{escapeHtml(item.url || "#")}}" target="_blank" rel="noopener noreferrer">${{escapeHtml(item.title || "")}}</a></h2>
@@ -2923,6 +3100,7 @@ def render_html(
     <span class="seasonal-pill">时令分数：${{escapeHtml(item.seasonal_score ?? "")}}</span>
     <span class="level-pill">${{escapeHtml(item.topic_type || "seasonal_current")}}</span>
   </div>
+  ${{renderRatingWidget(item, "weekly_seasonal", pageDate)}}
   <section class="news-section">
     <h3>推荐理由</h3>
     <p>${{escapeHtml(item.seasonal_reason || "暂无推荐理由")}}</p>
@@ -2938,9 +3116,9 @@ def render_html(
 </article>`;
     }}
 
-    function renderSeasonalSection(seasonalItems) {{
+    function renderSeasonalSection(seasonalItems, pageDate) {{
       const warning = seasonalItems.length && seasonalItems.length < {SEASONAL_TARGET_COUNT} ? '<p class="notice">本周时令链接不足 3 条，需补充 evergreen_seasonal.yml 或扩展 seasonal sources。</p>' : "";
-      const body = seasonalItems.length ? seasonalItems.map(renderSeasonalCard).join("") + warning : '<p class="empty">本周暂无高置信时令链接。建议补充 evergreen_seasonal.yml 或扩展 seasonal sources。</p>';
+      const body = seasonalItems.length ? seasonalItems.map((item) => renderSeasonalCard(item, pageDate)).join("") + warning : '<p class="empty">本周暂无高置信时令链接。建议补充 evergreen_seasonal.yml 或扩展 seasonal sources。</p>';
       return `<section class="group">
   <div class="group-header">
     <h2>本周时令选题</h2>
@@ -2951,7 +3129,7 @@ def render_html(
 </section>`;
     }}
 
-    function renderCard(item) {{
+    function renderCard(item, section, pageDate) {{
       const tags = (item.tags || []).map((tag) => `<span class="tag">${{escapeHtml(tag)}}</span>`).join("");
       return `<article class="item">
   <h2><a href="${{escapeHtml(item.link)}}" target="_blank" rel="noopener noreferrer">${{escapeHtml(item.title)}}</a></h2>
@@ -2960,6 +3138,7 @@ def render_html(
     <span class="score-pill">优先级分数：${{escapeHtml(item.priority_score ?? "")}}</span>
     <span class="level-pill">推荐级别：${{escapeHtml(item.recommendation_level || "")}}</span>
   </div>
+  ${{renderRatingWidget(item, section, pageDate)}}
   <div class="tags">${{tags}}</div>
   <p>${{escapeHtml(item.summary || "暂无摘要")}}</p>
   <section class="news-section">
@@ -2977,8 +3156,8 @@ def render_html(
 </article>`;
     }}
 
-    function renderGroup(title, items) {{
-      const body = items.length ? items.map(renderCard).join("") : '<p class="empty">暂无</p>';
+    function renderGroup(title, section, items, pageDate) {{
+      const body = items.length ? items.map((item) => renderCard(item, section, pageDate)).join("") : '<p class="empty">暂无</p>';
       return `<section class="group">
   <div class="group-header">
     <h2>${{escapeHtml(title)}}</h2>
@@ -3033,11 +3212,12 @@ def render_html(
       resources = Array.isArray(resources) ? resources : (embeddedResourcesData[entry.date] || []);
       seasonalItems = Array.isArray(seasonalItems) ? seasonalItems : (embeddedSeasonalData[entry.date] || []);
       updateMeta(entry, items);
-      contentEl.innerHTML = renderResourcesSection(resources) + renderSeasonalSection(seasonalItems) + groupItems(items).map(([title, group]) => renderGroup(title, group)).join("");
+      contentEl.innerHTML = renderResourcesSection(resources, entry.date) + renderSeasonalSection(seasonalItems, entry.date) + groupItems(items).map(([title, section, group]) => renderGroup(title, section, group, entry.date)).join("");
       dateSelect.value = entry.date;
       const url = new URL(window.location.href);
       url.searchParams.set("date", entry.date);
       window.history.replaceState(null, "", url);
+      refreshRatingWidgets();
     }}
 
     async function loadArchiveIndex() {{
@@ -3091,7 +3271,52 @@ def render_html(
       await showDate(requestedDate || archiveIndex[0]?.date);
     }}
 
+    contentEl.addEventListener("click", (event) => {{
+      const star = event.target.closest(".rating-star");
+      if (!star) return;
+      const widget = star.closest(".rating-widget");
+      if (!widget) return;
+      try {{
+        const itemId = widget.dataset.itemId;
+        const clickedRating = Number(star.dataset.ratingValue || 0);
+        const currentRating = getStoredRating(itemId);
+        const nextRating = clickedRating > currentRating ? clickedRating : clickedRating - 1;
+        if (nextRating <= 0) {{
+          removeStoredRating(itemId);
+          applyRatingToWidget(widget, 0);
+        }} else {{
+          const payload = JSON.parse(widget.dataset.ratingPayload || "{{}}");
+          payload.rating = nextRating;
+          payload.rated_at = new Date().toISOString();
+          payload.rating_id = `${{itemId}}:${{Date.now()}}`;
+          setStoredRating(payload);
+          applyRatingToWidget(widget, nextRating);
+        }}
+        updateRatingSummary();
+      }} catch (error) {{
+        console.warn("Rating update failed", error);
+      }}
+    }});
+
+    contentEl.addEventListener("mouseover", (event) => {{
+      const star = event.target.closest(".rating-star");
+      if (!star) return;
+      const widget = star.closest(".rating-widget");
+      if (!widget) return;
+      previewRatingWidget(widget, Number(star.dataset.ratingValue || 0));
+    }});
+
+    contentEl.addEventListener("mouseout", (event) => {{
+      const widget = event.target.closest(".rating-widget");
+      if (!widget) return;
+      if (event.relatedTarget && widget.contains(event.relatedTarget)) return;
+      applyRatingToWidget(widget, getStoredRating(widget.dataset.itemId));
+    }});
+
+    exportRatingsBtn?.addEventListener("click", exportRatings);
+    clearRatingsBtn?.addEventListener("click", clearRatings);
     dateSelect.addEventListener("change", () => showDate(dateSelect.value));
+    refreshRatingWidgets();
     initArchiveBrowser();
   </script>
 </body>
@@ -3100,8 +3325,8 @@ def render_html(
     (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
 
 
-def render_group(title: str, items: list[dict]) -> str:
-    cards = "\n".join(render_card(item) for item in items)
+def render_group(title: str, section: str, items: list[dict], date_text: str) -> str:
+    cards = "\n".join(render_card(item, section, date_text) for item in items)
     body = cards or '<p class="empty">暂无</p>'
     return f"""<section class="group">
   <div class="group-header">
@@ -3112,8 +3337,8 @@ def render_group(title: str, items: list[dict]) -> str:
 </section>"""
 
 
-def render_resources_section(resources: list[dict]) -> str:
-    cards = "\n".join(render_resource_card(resource) for resource in resources)
+def render_resources_section(resources: list[dict], date_text: str) -> str:
+    cards = "\n".join(render_resource_card(resource, date_text) for resource in resources)
     body = cards or '<p class="empty">今日暂无高置信干货资源。</p>'
     return f"""<section class="group">
   <div class="group-header">
@@ -3124,8 +3349,8 @@ def render_resources_section(resources: list[dict]) -> str:
 </section>"""
 
 
-def render_seasonal_section(seasonal_items: list[dict]) -> str:
-    cards = "\n".join(render_seasonal_card(item) for item in seasonal_items)
+def render_seasonal_section(seasonal_items: list[dict], date_text: str) -> str:
+    cards = "\n".join(render_seasonal_card(item, date_text) for item in seasonal_items)
     warning = ""
     if seasonal_items and len(seasonal_items) < SEASONAL_TARGET_COUNT:
         warning = '<p class="notice">本周时令链接不足 3 条，需补充 evergreen_seasonal.yml 或扩展 seasonal sources。</p>'
@@ -3140,7 +3365,61 @@ def render_seasonal_section(seasonal_items: list[dict]) -> str:
 </section>"""
 
 
-def render_resource_card(resource: dict) -> str:
+def render_static_rating_widget(item: dict, section: str, date_text: str) -> str:
+    url = item.get("url") or item.get("link") or ""
+    identity = f"{section}|{date_text}|{url}" if url else f"{section}|{date_text}|{item.get('title') or ''}|{item.get('source') or ''}"
+    item_id = f"qiba_{to_base36(abs(djb2_hash(identity)))}"
+    payload = {
+        "rating_id": "",
+        "rated_at": "",
+        "page_date": date_text,
+        "section": section,
+        "item_id": item_id,
+        "title": item.get("title") or "",
+        "source": item.get("source") or "",
+        "url": url,
+        "rating": 0,
+        "tags": item.get("tags") if isinstance(item.get("tags"), list) else [],
+        "priority_score": item.get("priority_score"),
+        "resource_score": item.get("resource_score", item.get("score")),
+        "seasonal_score": item.get("seasonal_score"),
+        "content_type": item.get("content_type") or item.get("resource_type") or "",
+        "topic_type": item.get("topic_type") or "",
+        "seasonal_window": item.get("seasonal_window") or "",
+        "summary": item.get("summary") or item.get("why_useful") or item.get("seasonal_reason") or "",
+        "qiba_pitch": item.get("qiba_pitch") or item.get("qiba_angle") or item.get("seasonal_qiba_angle") or "",
+        "user_note": "",
+        "app_version": "rating-localstorage-v1",
+    }
+    payload_json = escape(script_json(payload))
+    stars = "".join(f'<button type="button" class="rating-star" data-rating-value="{value}" aria-label="{value} 星">★</button>' for value in range(1, 6))
+    return f"""<div class="rating-widget" data-item-id="{escape(item_id)}" data-rating-payload="{payload_json}">
+  <span class="rating-label">我的评分</span>
+  <span class="rating-stars" role="group" aria-label="选题打星">{stars}</span>
+  <span class="rating-status">未评分</span>
+</div>"""
+
+
+def djb2_hash(value: str) -> int:
+    result = 5381
+    for char in value:
+        result = ((result << 5) + result) + ord(char)
+        result = ((result + 2**31) % 2**32) - 2**31
+    return result
+
+
+def to_base36(value: int) -> str:
+    if value == 0:
+        return "0"
+    digits = "0123456789abcdefghijklmnopqrstuvwxyz"
+    output = ""
+    while value:
+        value, remainder = divmod(value, 36)
+        output = digits[remainder] + output
+    return output
+
+
+def render_resource_card(resource: dict, date_text: str) -> str:
     return f"""<article class="item resource-item">
   <h2>{escape(resource['title'])}</h2>
   <p class="meta">{escape(resource['subject'])}｜{escape(resource['region'])}｜{escape(resource['age_range'])}｜{escape(resource['resource_type'])}｜{escape(resource['freshness'])}</p>
@@ -3148,6 +3427,7 @@ def render_resource_card(resource: dict) -> str:
     <span class="resource-pill">资源分数：{resource['score']}</span>
     <span class="level-pill">{escape(resource['free_or_paid'])}</span>
   </div>
+  {render_static_rating_widget(resource, "daily_resource", date_text)}
   <section class="news-section">
     <h3>推荐理由</h3>
     <p>{escape(resource.get('why_useful') or '暂无推荐理由')}</p>
@@ -3163,7 +3443,7 @@ def render_resource_card(resource: dict) -> str:
 </article>"""
 
 
-def render_seasonal_card(item: dict) -> str:
+def render_seasonal_card(item: dict, date_text: str) -> str:
     year = f" · {escape(str(item.get('original_year')))}" if item.get("original_year") else ""
     return f"""<article class="item seasonal-item">
   <h2><a href="{escape(item['url'])}" target="_blank" rel="noopener noreferrer">{escape(item['title'])}</a></h2>
@@ -3172,6 +3452,7 @@ def render_seasonal_card(item: dict) -> str:
     <span class="seasonal-pill">时令分数：{item['seasonal_score']}</span>
     <span class="level-pill">{escape(item.get('topic_type') or 'seasonal_current')}</span>
   </div>
+  {render_static_rating_widget(item, "weekly_seasonal", date_text)}
   <section class="news-section">
     <h3>推荐理由</h3>
     <p>{escape(item.get('seasonal_reason') or '暂无推荐理由')}</p>
@@ -3187,7 +3468,7 @@ def render_seasonal_card(item: dict) -> str:
 </article>"""
 
 
-def render_card(item: dict) -> str:
+def render_card(item: dict, section: str, date_text: str) -> str:
     tags = "".join(f'<span class="tag">{escape(tag)}</span>' for tag in item["tags"])
     return f"""<article class="item">
   <h2><a href="{escape(item['link'])}" target="_blank" rel="noopener noreferrer">{escape(item['title'])}</a></h2>
@@ -3196,6 +3477,7 @@ def render_card(item: dict) -> str:
     <span class="score-pill">优先级分数：{item['priority_score']}</span>
     <span class="level-pill">推荐级别：{escape(item['recommendation_level'])}</span>
   </div>
+  {render_static_rating_widget(item, section, date_text)}
   <div class="tags">{tags}</div>
   <p>{escape(item['summary'] or '暂无摘要')}</p>
   <section class="news-section">
