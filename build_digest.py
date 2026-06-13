@@ -2783,6 +2783,8 @@ def render_html(
         shortage_notice = f'<p class="notice">今日去重后不足20条，实际显示 {len(items)} 条。</p>'
     archive_index_json = script_json(archive_index)
     archive_data_json = script_json(archive_data)
+    embedded_resources_json = script_json({date_text: resources})
+    embedded_seasonal_json = script_json({date_text: seasonal_items})
     html = f"""<!doctype html>
 <html lang="zh-CN">
 <head>
@@ -2841,9 +2843,13 @@ def render_html(
   </main>
   <script id="archive-index-data" type="application/json">{archive_index_json}</script>
   <script id="archive-items-data" type="application/json">{archive_data_json}</script>
+  <script id="archive-resources-data" type="application/json">{embedded_resources_json}</script>
+  <script id="archive-seasonal-data" type="application/json">{embedded_seasonal_json}</script>
   <script>
     const embeddedArchiveIndex = JSON.parse(document.getElementById("archive-index-data").textContent);
     const embeddedArchiveData = JSON.parse(document.getElementById("archive-items-data").textContent);
+    const embeddedResourcesData = JSON.parse(document.getElementById("archive-resources-data").textContent);
+    const embeddedSeasonalData = JSON.parse(document.getElementById("archive-seasonal-data").textContent);
     let archiveIndex = embeddedArchiveIndex;
     const archiveCache = {{ ...embeddedArchiveData }};
 
@@ -2859,6 +2865,11 @@ def render_html(
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;")
         .replaceAll("'", "&#039;");
+    }}
+
+    function withCacheBust(path) {{
+      const sep = path.includes("?") ? "&" : "?";
+      return `${{path}}${{sep}}v=${{Date.now()}}`;
     }}
 
     function groupItems(items) {{
@@ -2991,12 +3002,13 @@ def render_html(
       const cacheKey = `${{entry.date}}:resources`;
       if (archiveCache[cacheKey]) return archiveCache[cacheKey];
       try {{
-        const response = await fetch(`../${{entry.resourcesFile}}`, {{ cache: "no-store" }});
+        const response = await fetch(withCacheBust(entry.resourcesFile), {{ cache: "no-store" }});
         if (!response.ok) throw new Error("resources file not found");
         const resources = await response.json();
         archiveCache[cacheKey] = resources;
         return resources;
       }} catch (error) {{
+        if (embeddedResourcesData[entry.date]) return embeddedResourcesData[entry.date];
         return [];
       }}
     }}
@@ -3006,17 +3018,20 @@ def render_html(
       const cacheKey = `${{entry.date}}:seasonal`;
       if (archiveCache[cacheKey]) return archiveCache[cacheKey];
       try {{
-        const response = await fetch(`../${{entry.seasonalFile}}`, {{ cache: "no-store" }});
+        const response = await fetch(withCacheBust(entry.seasonalFile), {{ cache: "no-store" }});
         if (!response.ok) throw new Error("seasonal file not found");
         const seasonalItems = await response.json();
         archiveCache[cacheKey] = seasonalItems;
         return seasonalItems;
       }} catch (error) {{
+        if (embeddedSeasonalData[entry.date]) return embeddedSeasonalData[entry.date];
         return [];
       }}
     }}
 
     function renderArchive(entry, items, resources, seasonalItems) {{
+      resources = Array.isArray(resources) ? resources : (embeddedResourcesData[entry.date] || []);
+      seasonalItems = Array.isArray(seasonalItems) ? seasonalItems : (embeddedSeasonalData[entry.date] || []);
       updateMeta(entry, items);
       contentEl.innerHTML = renderResourcesSection(resources) + renderSeasonalSection(seasonalItems) + groupItems(items).map(([title, group]) => renderGroup(title, group)).join("");
       dateSelect.value = entry.date;
@@ -3027,7 +3042,7 @@ def render_html(
 
     async function loadArchiveIndex() {{
       try {{
-        const response = await fetch("../data/archive_index.json", {{ cache: "no-store" }});
+        const response = await fetch(withCacheBust("data/archive_index.json"), {{ cache: "no-store" }});
         if (!response.ok) throw new Error("archive index not found");
         archiveIndex = await response.json();
       }} catch (error) {{
@@ -3038,7 +3053,7 @@ def render_html(
     async function loadArchiveItems(entry) {{
       if (archiveCache[entry.date]) return archiveCache[entry.date];
       try {{
-        const response = await fetch(`../${{entry.top20File}}`, {{ cache: "no-store" }});
+        const response = await fetch(withCacheBust(entry.top20File), {{ cache: "no-store" }});
         if (!response.ok) throw new Error("archive file not found");
         const items = await response.json();
         archiveCache[entry.date] = items;
