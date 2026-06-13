@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from html import escape
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -14,14 +14,23 @@ ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
 DOCS_DIR = ROOT / "docs"
 KEYWORDS_FILE = ROOT / "keywords.yml"
+EVERGREEN_SEASONAL_FILE = ROOT / "evergreen_seasonal.yml"
 REPORT_TZ = ZoneInfo("Asia/Shanghai")
 TOP_PICK_LIMIT = 20
 RESOURCE_PICK_LIMIT = 5
 RESOURCE_MIN_SCORE = 65
+SEASONAL_PICK_LIMIT = 3
+SEASONAL_TARGET_COUNT = 3
+SEASONAL_PERIOD = "weekly"
+SEASONAL_MIN_SCORE = 60
+EVERGREEN_SEASONAL_MIN_SCORE = 75
 MAX_TOP_PICKS_PER_SOURCE = 3
 MAX_SUPPLEMENTAL_EDUCATION_MEDIA_TOP_PICKS = 5
+REPEAT_FALLBACK_MIN_SCORE = 58
+REPEAT_FALLBACK_TAG_MIN_SCORE = 55
 TOP20_FILE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})_top20\.json$")
 RESOURCE_FILE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})_resources\.json$")
+SEASONAL_FILE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})_seasonal\.json$")
 
 
 PRIORITY_SOURCES = {
@@ -142,6 +151,30 @@ FIT_TAGS = {
     "教育热点",
 }
 HIGH_VALUE_EDUCATION_TAGS = {"AI时代学生画像", "学生Builder", "未来学习", "项目制学习"}
+REPEAT_FALLBACK_HIGH_VALUE_TAGS = {
+    "AI教育",
+    "AI时代学生画像",
+    "学生Builder",
+    "未来学习",
+    "项目制学习",
+    "屏幕时间",
+    "心理健康",
+    "家庭教育",
+    "数学学习",
+    "数学",
+    "阅读教育",
+    "阅读",
+}
+REPEAT_FALLBACK_PREFERRED_SOURCES = {
+    "OpenAI Blog",
+    "Google for Education Blog",
+    "Microsoft Education Blog",
+    "MIT News",
+    "EdSurge",
+    "Stanford HAI",
+    "Harvard Graduate School of Education",
+    "Google AI Blog",
+}
 FAMILY_IMPACT_TAGS = {"OpenAI", "Google", "Microsoft", "Meta", "Apple", "Amazon", "NVIDIA", "科技巨头"}
 DOWNRANK_KEYWORDS = [
     "podcast",
@@ -840,6 +873,273 @@ RESOURCE_RECENT_KEYWORDS = [
     "最近",
 ]
 RESOURCE_CLASSIC_KEYWORDS = ["classic", "many years ago", "old", "archive", "经典资源", "多年未更新", "很久以前"]
+SEASONAL_CALENDAR = {
+    "late_may_june": {
+        "ranges": [("05-20", "06-30")],
+        "topics": [
+            "期末考试",
+            "期末复习",
+            "考试焦虑",
+            "错题整理",
+            "暑假规划",
+            "暑假阅读",
+            "暑假书单",
+            "自主阅读",
+            "阅读兴趣",
+            "亲子阅读",
+            "夏令营选择",
+            "儿童运动",
+            "夏季运动",
+            "游泳安全",
+            "亲子游准备",
+            "博物馆教育",
+            "主题乐园",
+            "迪士尼",
+            "美食营",
+            "食育",
+        ],
+    },
+    "july_august": {
+        "ranges": [("07-01", "08-20")],
+        "topics": [
+            "暑假执行",
+            "阅读",
+            "数学保持",
+            "英语输入",
+            "暑假作业",
+            "屏幕时间",
+            "夏季运动",
+            "游泳安全",
+            "户外活动",
+            "近视防控",
+            "旅行学习",
+            "亲子游",
+            "迪士尼",
+            "主题乐园",
+            "博物馆教育",
+            "科技馆",
+            "夏令营",
+            "食育",
+            "美食营",
+            "生活技能",
+        ],
+    },
+    "late_august_september": {
+        "ranges": [("08-21", "09-30")],
+        "topics": ["开学准备", "收心", "学习习惯", "作业补完", "新学期适应", "班级关系", "运动恢复"],
+    },
+    "october": {
+        "ranges": [("10-01", "10-31")],
+        "topics": ["国庆亲子游", "博物馆", "户外活动", "项目学习", "秋季阅读", "运动习惯"],
+    },
+    "november_december": {
+        "ranges": [("11-01", "12-31")],
+        "topics": ["期中考试", "期末复习", "错题整理", "考试压力", "睡眠", "冬季运动", "年度总结", "寒假计划"],
+    },
+    "january_february": {
+        "ranges": [("01-01", "02-28"), ("02-29", "02-29")],
+        "topics": ["寒假计划", "寒假阅读", "春节亲子关系", "压岁钱教育", "屏幕时间", "旅行", "生活技能"],
+    },
+    "march_april": {
+        "ranges": [("03-01", "04-30")],
+        "topics": ["新学期习惯", "春游", "运动", "阅读节", "期中准备", "科学教育", "户外活动"],
+    },
+}
+SEASONAL_TOPIC_KEYWORDS = {
+    "期末考试": ["final exams", "end-of-term", "期末考试", "期末"],
+    "期末复习": ["exam preparation", "review plan", "期末复习", "复习计划", "考前复习"],
+    "考试焦虑": ["test anxiety", "exam stress", "考试焦虑", "考试压力", "考前压力"],
+    "错题整理": ["mistake notebook", "错题整理", "错题本", "错题"],
+    "暑假规划": ["summer plan", "summer planning", "暑假规划", "暑假计划", "暑假作息"],
+    "暑假阅读": ["summer reading", "暑假阅读", "暑期阅读"],
+    "暑假书单": ["summer book list", "required reading", "暑假书单", "学校指定阅读", "名著书单"],
+    "自主阅读": ["independent reading", "reading choice", "student choice", "自主阅读", "孩子自主选书"],
+    "阅读兴趣": ["reading interest", "love of reading", "阅读兴趣", "不读书"],
+    "亲子阅读": ["family reading", "read with children", "亲子阅读"],
+    "夏令营选择": ["summer camp choice", "choose summer camp", "夏令营选择", "营地选择"],
+    "儿童运动": ["children's sports", "children sports", "儿童运动", "孩子运动"],
+    "夏季运动": ["summer sports", "summer exercise", "夏季运动", "暑期运动"],
+    "游泳安全": ["swimming safety", "water safety", "游泳安全", "防溺水"],
+    "亲子游准备": ["family travel preparation", "summer travel preparation", "亲子游准备", "暑假旅行准备"],
+    "博物馆教育": ["museum education", "museum visits", "博物馆教育", "博物馆"],
+    "主题乐园": ["theme park", "主题乐园"],
+    "迪士尼": ["Disney", "迪士尼"],
+    "美食营": ["cooking camp", "food camp", "美食营", "烹饪营"],
+    "食育": ["food education", "nutrition education", "食育", "营养"],
+    "暑假执行": ["summer routine", "summer schedule", "暑假执行", "暑假作息"],
+    "阅读": ["reading habit", "reading", "阅读"],
+    "数学保持": ["math practice", "math maintenance", "数学保持", "数学练习"],
+    "英语输入": ["English input", "English reading", "English listening", "英语输入", "英语听力", "英文阅读"],
+    "暑假作业": ["summer homework", "暑假作业"],
+    "屏幕时间": ["screen time", "屏幕时间"],
+    "户外活动": ["outdoor activities", "outdoor activity", "户外活动"],
+    "近视防控": ["myopia prevention", "vision health", "近视防控", "视力保护"],
+    "旅行学习": ["learning during summer trips", "travel learning", "旅行学习", "旅行中的学习"],
+    "亲子游": ["family travel", "family trip", "亲子游", "暑假旅行"],
+    "科技馆": ["science museum", "科技馆"],
+    "夏令营": ["summer camp", "camp education", "夏令营", "营地教育"],
+    "生活技能": ["life skills", "chores", "生活技能", "家务", "劳动教育"],
+    "开学准备": ["back to school", "school preparation", "开学准备"],
+    "收心": ["back-to-school routine", "收心"],
+    "学习习惯": ["learning habits", "study habits", "学习习惯"],
+    "作业补完": ["finish homework", "作业补完", "补作业"],
+    "新学期适应": ["new semester adjustment", "新学期适应"],
+    "班级关系": ["classroom relationships", "peer relationships", "班级关系", "同伴关系"],
+    "运动恢复": ["exercise routine", "运动恢复"],
+    "国庆亲子游": ["national day family travel", "国庆亲子游"],
+    "博物馆": ["museum", "博物馆"],
+    "项目学习": ["project-based learning", "project learning", "项目学习"],
+    "秋季阅读": ["fall reading", "autumn reading", "秋季阅读"],
+    "运动习惯": ["sports habits", "exercise habits", "运动习惯"],
+    "期中考试": ["midterm exams", "期中考试"],
+    "考试压力": ["exam pressure", "考试压力"],
+    "睡眠": ["sleep", "睡眠"],
+    "冬季运动": ["winter sports", "冬季运动"],
+    "年度总结": ["year-end reflection", "年度总结"],
+    "寒假计划": ["winter holiday plan", "寒假计划"],
+    "寒假阅读": ["winter holiday reading", "寒假阅读"],
+    "春节亲子关系": ["spring festival parenting", "春节亲子关系", "春节亲子"],
+    "压岁钱教育": ["money education", "lucky money", "压岁钱教育", "压岁钱"],
+    "旅行": ["travel with children", "旅行"],
+    "新学期习惯": ["new semester habits", "新学期习惯"],
+    "春游": ["spring outing", "春游"],
+    "运动": ["sports", "exercise", "运动"],
+    "阅读节": ["reading festival", "阅读节"],
+    "期中准备": ["midterm preparation", "期中准备"],
+    "科学教育": ["science education", "科学教育"],
+}
+SEASONAL_PARENT_CHILD_KEYWORDS = [
+    "parents",
+    "parent support",
+    "families",
+    "family",
+    "children",
+    "students",
+    "kids",
+    "k-12",
+    "elementary",
+    "middle school",
+    "school",
+    "家长",
+    "父母",
+    "家庭",
+    "孩子",
+    "儿童",
+    "学生",
+    "中小学",
+    "小学",
+    "初中",
+    "学校",
+    "亲子",
+]
+SEASONAL_DECISION_KEYWORDS = [
+    "plan",
+    "planning",
+    "guide",
+    "how parents can",
+    "choose",
+    "choice",
+    "schedule",
+    "routine",
+    "support",
+    "prepare",
+    "preparation",
+    "计划",
+    "规划",
+    "指南",
+    "选择",
+    "安排",
+    "作息",
+    "支持",
+    "准备",
+    "避坑",
+]
+SEASONAL_GROWTH_KEYWORDS = [
+    "reading",
+    "sports",
+    "exercise",
+    "independence",
+    "life skills",
+    "curiosity",
+    "learning",
+    "creativity",
+    "mental health",
+    "sleep",
+    "阅读",
+    "运动",
+    "独立性",
+    "生活技能",
+    "好奇心",
+    "学习能力",
+    "创造力",
+    "心理健康",
+    "睡眠",
+]
+SEASONAL_WRITABLE_KEYWORDS = [
+    "reflects",
+    "discusses",
+    "explains",
+    "how",
+    "guide",
+    "why",
+    "tips",
+    "方法",
+    "反思",
+    "讨论",
+    "解释",
+    "为什么",
+    "怎么",
+    "建议",
+]
+SEASONAL_RISK_KEYWORDS = [
+    "limited-time discount",
+    "enrollment discount",
+    "sign-up bonus",
+    "consultation form",
+    "hotel packages",
+    "shopping discounts",
+    "luxury resorts",
+    "ticket prices",
+    "fast pass rules",
+    "expired promotion",
+    "paid summer camp packages",
+    "training company",
+    "招生",
+    "报名优惠",
+    "限时优惠",
+    "留资",
+    "咨询表",
+    "教培",
+    "酒店套餐",
+    "购物折扣",
+    "奢华度假村",
+    "票价",
+    "过期促销",
+    "纯营销",
+]
+SEASONAL_HARD_NOISE_KEYWORDS = [
+    "limited-time summer camp enrollment discount",
+    "paid summer camp packages",
+    "consultation forms",
+    "sign-up bonuses",
+    "top luxury resorts",
+    "hotel packages",
+    "shopping discounts",
+    "ticket prices and fast pass rules from 2017",
+    "outdated ticket prices",
+    "expired promotion details",
+    "medical treatment",
+    "diagnosis",
+    "medicine dosage",
+    "夏令营招生",
+    "课程招生",
+    "旅游软文",
+    "过时票价",
+    "过时政策",
+    "过期活动",
+    "用药",
+    "诊断",
+]
 
 
 def load_keyword_rules() -> dict:
@@ -1461,6 +1761,115 @@ def mark_duplicates(items: list[dict], seen_items: dict) -> int:
     return duplicate_count
 
 
+def repeat_fallback_age_days(item: dict, current_date: date | datetime | str | None) -> int | None:
+    first_seen = item.get("first_seen_date", "")
+    if not first_seen:
+        return None
+    try:
+        first_seen_date = date.fromisoformat(first_seen[:10])
+    except ValueError:
+        return None
+    if current_date is not None:
+        reference_date = coerce_report_date(current_date)
+    else:
+        published = parse_published_at(item.get("published_at", ""))
+        reference_date = published.astimezone(REPORT_TZ).date() if published else datetime.now(REPORT_TZ).date()
+    return (reference_date - first_seen_date).days
+
+
+def duplicate_reason_value(item: dict) -> str:
+    reason = item.get("duplicate_reason", "")
+    first_seen = item.get("first_seen_date", "")
+    return f"duplicate:{reason}:{first_seen}" if first_seen else f"duplicate:{reason}"
+
+
+def has_repeat_fallback_hard_noise(item: dict) -> bool:
+    tags = item.get("tags", [])
+    text = item_text(item, tags)
+    return bool(set(tags) & RESOURCE_NOISE_TAGS) or has_any(
+        text,
+        RESOURCE_HARD_NOISE_KEYWORDS
+        + SEASONAL_HARD_NOISE_KEYWORDS
+        + [
+            "marketing",
+            "sponsored",
+            "press release",
+            "limited-time discount",
+            "sign up",
+            "consultation",
+            "enrollment discount",
+            "hotel package",
+            "shopping discount",
+            "招生",
+            "留资",
+            "促销",
+            "团购",
+        ],
+    )
+
+
+def repeat_fallback_tag_bonus(item: dict) -> int:
+    tags = set(item.get("tags", []))
+    bonus = min(len(tags & REPEAT_FALLBACK_HIGH_VALUE_TAGS) * 8, 32)
+    if item.get("source") in REPEAT_FALLBACK_PREFERRED_SOURCES:
+        bonus += 8
+    reason = item.get("duplicate_reason", "")
+    if reason in {"same_title", "similar_title"}:
+        bonus += 6
+    return bonus
+
+
+def can_use_repeat_fallback(item: dict, current_date: date | datetime | str | None = None) -> bool:
+    if not item.get("is_duplicate"):
+        return False
+    if item.get("is_evergreen_fallback") or item.get("topic_type") == "seasonal_evergreen_fallback":
+        return False
+    reason = item.get("duplicate_reason", "")
+    if reason not in {"same_link", "same_title", "similar_title"}:
+        return False
+    score = int(item.get("priority_score") or 0)
+    tags = set(item.get("tags", []))
+    has_high_value_tag = bool(tags & REPEAT_FALLBACK_HIGH_VALUE_TAGS)
+    if score < REPEAT_FALLBACK_MIN_SCORE and not (score >= REPEAT_FALLBACK_TAG_MIN_SCORE and has_high_value_tag):
+        return False
+    if reason == "same_link":
+        age_days = repeat_fallback_age_days(item, current_date)
+        if age_days is not None and age_days <= 1:
+            return False
+    if has_repeat_fallback_hard_noise(item):
+        return False
+    if not general_tech_reserve_can_enter_top20(item):
+        return False
+    if not supplemental_education_media_can_enter_top20(item):
+        return False
+    if not learning_resource_can_enter_top20(item):
+        return False
+    title = item.get("title", "")
+    summary = item.get("summary", "")
+    return has_qiba_signal(title, summary, item.get("tags", [])) or has_high_value_tag
+
+
+def repeat_fallback_sort_key(item: dict, current_date: date | datetime | str | None = None) -> tuple[int, int, int, int, int, str]:
+    reason_priority = {"same_title": 3, "similar_title": 2, "same_link": 1}.get(item.get("duplicate_reason", ""), 0)
+    age_days = repeat_fallback_age_days(item, current_date)
+    age_value = age_days if age_days is not None else 0
+    source_value = 1 if item.get("source") in REPEAT_FALLBACK_PREFERRED_SOURCES else 0
+    return (
+        int(item.get("priority_score") or 0),
+        repeat_fallback_tag_bonus(item),
+        reason_priority,
+        age_value,
+        source_value,
+        item.get("published_at", ""),
+    )
+
+
+def repeat_fallback_source_limit(source: str) -> int:
+    if source in REPEAT_FALLBACK_PREFERRED_SOURCES:
+        return MAX_TOP_PICKS_PER_SOURCE + 1
+    return MAX_TOP_PICKS_PER_SOURCE
+
+
 def build_archive_index(data_dir: Path) -> tuple[list[dict], dict[str, list[dict]]]:
     archive_index: list[dict] = []
     archive_data: dict[str, list[dict]] = {}
@@ -1502,6 +1911,19 @@ def build_archive_index(data_dir: Path) -> tuple[list[dict], dict[str, list[dict
         elif resources_md_file.exists():
             entry["resourcesMarkdownFile"] = f"data/{date_text}_resources.md"
             entry["resourceCount"] = 0
+        seasonal_file = data_dir / f"{date_text}_seasonal.json"
+        seasonal_md_file = data_dir / f"{date_text}_seasonal.md"
+        if seasonal_file.exists():
+            try:
+                seasonal_items = json.loads(seasonal_file.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                seasonal_items = []
+            entry["seasonalFile"] = f"data/{date_text}_seasonal.json"
+            entry["seasonalMarkdownFile"] = f"data/{date_text}_seasonal.md"
+            entry["seasonalCount"] = len(seasonal_items)
+        elif seasonal_md_file.exists():
+            entry["seasonalMarkdownFile"] = f"data/{date_text}_seasonal.md"
+            entry["seasonalCount"] = 0
         if total_count is not None:
             entry["totalCount"] = total_count
         if duplicate_count is not None:
@@ -1513,7 +1935,11 @@ def build_archive_index(data_dir: Path) -> tuple[list[dict], dict[str, list[dict
     return archive_index, archive_data
 
 
-def select_top_picks(items: list[dict], limit: int = TOP_PICK_LIMIT) -> list[dict]:
+def select_top_picks(
+    items: list[dict],
+    limit: int = TOP_PICK_LIMIT,
+    current_date: date | datetime | str | None = None,
+) -> list[dict]:
     best_by_key: dict[tuple[str, str, str], dict] = {}
     for item in [candidate for candidate in items if not candidate.get("is_duplicate")]:
         key = similarity_key(item)
@@ -1549,6 +1975,31 @@ def select_top_picks(items: list[dict], limit: int = TOP_PICK_LIMIT) -> list[dic
             supplemental_education_media_count += 1
         if len(selected) == limit:
             return selected
+
+    if len(selected) < limit:
+        selected_links = {item.get("link") for item in selected}
+        repeat_candidates = [
+            item
+            for item in items
+            if item.get("link")
+            and item.get("link") not in selected_links
+            and can_use_repeat_fallback(item, current_date)
+        ]
+        repeat_candidates.sort(key=lambda item: repeat_fallback_sort_key(item, current_date), reverse=True)
+        for item in repeat_candidates:
+            source = item.get("source", "")
+            if source_counts.get(source, 0) >= repeat_fallback_source_limit(source):
+                continue
+            fallback_item = dict(item)
+            fallback_item["is_repeat_fallback"] = True
+            fallback_item["allow_repeat"] = True
+            fallback_item["repeat_reason"] = duplicate_reason_value(item)
+            fallback_item["top20_fill_reason"] = "主榜非重复候选不足20，作为高价值历史候选补位"
+            selected.append(fallback_item)
+            selected_links.add(fallback_item.get("link"))
+            source_counts[source] = source_counts.get(source, 0) + 1
+            if len(selected) == limit:
+                return selected
     return selected
 
 
@@ -1827,11 +2278,312 @@ def select_daily_resources(items: list[dict], limit: int = RESOURCE_PICK_LIMIT) 
     return selected
 
 
-def build_digest() -> tuple[Path, Path, Path, Path, Path, Path]:
+def coerce_report_date(today: date | datetime | str) -> date:
+    if isinstance(today, datetime):
+        return today.astimezone(REPORT_TZ).date() if today.tzinfo else today.date()
+    if isinstance(today, date):
+        return today
+    return datetime.strptime(today, "%Y-%m-%d").date()
+
+
+def month_day_in_range(month_day: str, start: str, end: str) -> bool:
+    if start <= end:
+        return start <= month_day <= end
+    return month_day >= start or month_day <= end
+
+
+def get_seasonal_window(today: date | datetime | str) -> str:
+    report_day = coerce_report_date(today)
+    month_day = report_day.strftime("%m-%d")
+    for window, config in SEASONAL_CALENDAR.items():
+        for start, end in config["ranges"]:
+            if month_day_in_range(month_day, start, end):
+                return window
+    return ""
+
+
+def get_active_seasonal_topics(today: date | datetime | str) -> list[str]:
+    window = get_seasonal_window(today)
+    if not window:
+        return []
+    return list(SEASONAL_CALENDAR[window]["topics"])
+
+
+def matched_seasonal_topics(tags: list[str], text: str, today: date | datetime | str) -> list[str]:
+    active_topics = get_active_seasonal_topics(today)
+    tag_set = set(tags)
+    matches = []
+    for topic in active_topics:
+        keywords = SEASONAL_TOPIC_KEYWORDS.get(topic, [topic])
+        if topic in tag_set or has_any(text, keywords):
+            matches.append(topic)
+    return matches
+
+
+def has_seasonal_hard_noise(text: str) -> bool:
+    return has_any(text, SEASONAL_HARD_NOISE_KEYWORDS)
+
+
+def classify_seasonal_theme(item: dict, tags: list[str], text: str, today: date | datetime | str) -> str:
+    topics = matched_seasonal_topics(tags, text, today)
+    if topics:
+        return " / ".join(topics[:3])
+    active_topics = get_active_seasonal_topics(today)
+    return active_topics[0] if active_topics else "教育时令"
+
+
+def score_seasonal_relevance(item: dict, tags: list[str], text: str, today: date | datetime | str) -> int:
+    if not (item.get("link") or item.get("url")):
+        return 0
+    if has_seasonal_hard_noise(text):
+        return 0
+    topics = matched_seasonal_topics(tags, text, today)
+    if not topics:
+        return 0
+    score = 0
+    score += min(10 + len(topics) * 5, 25)
+
+    if has_any(text, SEASONAL_PARENT_CHILD_KEYWORDS) or set(tags) & {"家庭教育", "亲子教育", "儿童与青少年", "K12教育"}:
+        score += 20
+    else:
+        score += 8
+
+    if has_any(text, SEASONAL_DECISION_KEYWORDS):
+        score += 15
+    else:
+        score += 5
+
+    if has_any(text, SEASONAL_GROWTH_KEYWORDS) or set(tags) & {"阅读", "数学", "屏幕时间", "心理健康", "学习能力"}:
+        score += 15
+    else:
+        score += 6
+
+    if has_any(text, SEASONAL_WRITABLE_KEYWORDS) or item.get("priority_score", 0) >= 55:
+        score += 15
+    else:
+        score += 7
+
+    if has_any(text, ["Chinese families", "parents", "families", "家长", "中国家庭", "亲子"]):
+        score += 5
+    else:
+        score += 2
+
+    if has_any(text, SEASONAL_RISK_KEYWORDS):
+        score -= 35
+    if has_any(text, ["2017", "2018", "outdated", "expired", "过时", "过期"]):
+        score -= 20
+    return max(0, min(100, score))
+
+
+def published_age_days(item: dict, today: date | datetime | str) -> int | None:
+    published = parse_published_at(item.get("published_at", ""))
+    if not published:
+        return None
+    report_day = coerce_report_date(today)
+    if published.tzinfo:
+        published_day = published.astimezone(REPORT_TZ).date()
+    else:
+        published_day = published.date()
+    return (report_day - published_day).days
+
+
+def classify_recent_seasonal_content_type(item: dict, tags: list[str], text: str, today: date | datetime | str) -> tuple[str, str]:
+    age_days = published_age_days(item, today)
+    news_signals = ["breaking", "announces", "announced", "launch", "launched", "report", "study", "survey", "policy", "发布", "报告", "研究", "调查", "政策"]
+    if age_days is not None and 0 <= age_days <= 7 and has_any(text, news_signals):
+        return "今日新闻", "seasonal_recent"
+    return "近期文章", "seasonal_recent_analysis"
+
+
+def load_evergreen_seasonal_items() -> list[dict]:
+    if not EVERGREEN_SEASONAL_FILE.exists():
+        return []
+    with EVERGREEN_SEASONAL_FILE.open("r", encoding="utf-8") as file:
+        config = yaml.safe_load(file) or {}
+    return config.get("items", [])
+
+
+def evergreen_text(item: dict) -> str:
+    return " ".join(
+        [
+            str(item.get("title", "")),
+            str(item.get("source", "")),
+            " ".join(str(theme) for theme in item.get("themes", [])),
+            str(item.get("qiba_angle", "")),
+            str(item.get("why_still_relevant", "")),
+            str(item.get("notes", "")),
+        ]
+    )
+
+
+def evergreen_matches_today(item: dict, today: date | datetime | str) -> bool:
+    if not item.get("url"):
+        return False
+    if item.get("exclude_from_top20") is not True:
+        return False
+    if item.get("stale_risk") not in {"low", "medium"}:
+        return False
+    if int(item.get("evergreen_score") or 0) < EVERGREEN_SEASONAL_MIN_SCORE:
+        return False
+    window = get_seasonal_window(today)
+    if window not in item.get("seasonal_windows", []):
+        return False
+    return True
+
+
+def build_evergreen_seasonal_item(item: dict, today: date | datetime | str) -> dict:
+    themes = item.get("themes", [])
+    score = int(item.get("evergreen_score") or 0)
+    return {
+        "title": item.get("title", ""),
+        "source": item.get("source", ""),
+        "url": item.get("url", ""),
+        "published_at": item.get("published_at", ""),
+        "original_year": item.get("original_year", ""),
+        "language": item.get("language", ""),
+        "region": item.get("region", ""),
+        "seasonal_window": get_seasonal_window(today),
+        "theme": " / ".join(themes[:3]) if themes else "教育时令",
+        "seasonal_topics": themes,
+        "seasonal_score": score,
+        "priority_score": 0,
+        "content_type": item.get("content_type", "经典重读"),
+        "topic_type": "seasonal_evergreen_fallback",
+        "is_evergreen_fallback": True,
+        "exclude_from_top20": True,
+        "stale_risk": item.get("stale_risk", ""),
+        "seasonal_reason": item.get("why_still_relevant", ""),
+        "seasonal_qiba_angle": item.get("qiba_angle", ""),
+        "summary": item.get("why_still_relevant", ""),
+        "tags": themes,
+        "is_seasonal_pick": False,
+    }
+
+
+def build_seasonal_reason(item: dict, tags: list[str], text: str, today: date | datetime | str) -> str:
+    theme = classify_seasonal_theme(item, tags, text, today)
+    window = get_seasonal_window(today)
+    if has_any(theme, ["期末", "考试"]):
+        return compact_chinese("当前处在期末和暑假交界，家长最需要的是低焦虑复习、睡眠和成绩沟通，而不是继续加压。", 120)
+    if has_any(theme, ["暑假阅读", "暑假书单", "自主阅读", "阅读兴趣", "亲子阅读"]):
+        return compact_chinese("暑假前后是阅读计划最容易启动的窗口，这条线索适合讨论书单、自主选书和保护孩子阅读兴趣。", 120)
+    if has_any(theme, ["夏季运动", "游泳安全", "户外活动", "儿童运动"]):
+        return compact_chinese("暑期运动需求上升，这条线索适合提醒家庭把运动安排、安全边界和长期习惯一起考虑。", 120)
+    if has_any(theme, ["亲子游", "旅行学习", "博物馆", "科技馆", "主题乐园", "迪士尼"]):
+        return compact_chinese("暑期出行不是纯消费，也可以转成博物馆、科技馆、主题乐园里的观察、学习和亲子关系选题。", 120)
+    if has_any(theme, ["夏令营", "营地", "美食营", "食育", "生活技能"]):
+        return compact_chinese("暑假前后是营地和生活教育决策期，这条线索适合帮助家长从成长价值、安全和独立性判断。", 120)
+    return compact_chinese(f"当前时令窗口是{window}，这条内容与{theme}相关，适合作为近期家庭教育选题储备。", 120)
+
+
+def build_seasonal_qiba_angle(item: dict, tags: list[str], text: str, today: date | datetime | str) -> str:
+    theme = classify_seasonal_theme(item, tags, text, today)
+    if has_any(theme, ["期末", "考试"]):
+        return compact_chinese("七爸写法可从“期末最该帮孩子稳住节奏，而不是制造二次焦虑”切入。", 120)
+    if has_any(theme, ["阅读"]):
+        return compact_chinese("七爸写法可从“暑假阅读不是完成书单，而是让孩子重新拥有选书和读下去的动力”切入。", 120)
+    if has_any(theme, ["运动", "游泳"]):
+        return compact_chinese("七爸写法可从“暑假运动不是报班打卡，而是安全、户外和体能习惯的家庭工程”切入。", 120)
+    if has_any(theme, ["亲子游", "旅行", "博物馆", "科技馆", "主题乐园", "迪士尼"]):
+        return compact_chinese("七爸写法可从“亲子游最贵的不是门票，而是父母有没有把体验变成孩子的观察和表达”切入。", 120)
+    if has_any(theme, ["夏令营", "营地", "食育", "美食营", "生活技能"]):
+        return compact_chinese("七爸写法可从“给孩子选暑期项目，先看它训练独立性还是只是在卖焦虑”切入。", 120)
+    return compact_chinese("七爸写法可从当前家庭最需要的时令问题切入，落到可执行的亲子沟通和学习安排。", 120)
+
+
+def build_seasonal_item(item: dict, today: date | datetime | str) -> dict:
+    tags = item.get("tags", [])
+    text = item_text(item, tags)
+    score = score_seasonal_relevance(item, tags, text, today)
+    content_type, topic_type = classify_recent_seasonal_content_type(item, tags, text, today)
+    return {
+        "title": item.get("title", ""),
+        "source": item.get("source", ""),
+        "url": item.get("link", ""),
+        "published_at": item.get("published_at", ""),
+        "original_year": "",
+        "seasonal_window": get_seasonal_window(today),
+        "theme": classify_seasonal_theme(item, tags, text, today),
+        "seasonal_topics": matched_seasonal_topics(tags, text, today),
+        "seasonal_score": score,
+        "priority_score": item.get("priority_score", 0),
+        "content_type": content_type,
+        "seasonal_reason": build_seasonal_reason(item, tags, text, today),
+        "seasonal_qiba_angle": build_seasonal_qiba_angle(item, tags, text, today),
+        "topic_type": topic_type,
+        "is_evergreen_fallback": False,
+        "exclude_from_top20": False,
+        "stale_risk": "",
+        "summary": item.get("summary", ""),
+        "tags": tags,
+        "is_seasonal_pick": False,
+    }
+
+
+def select_daily_seasonal_topics(
+    items: list[dict],
+    today: date | datetime | str,
+    evergreen_items: list[dict] | None = None,
+    limit: int = SEASONAL_PICK_LIMIT,
+) -> list[dict]:
+    """Select link-only seasonal topics for the current week.
+
+    The public module is weekly: recent seasonal links are preferred, evergreen
+    links only fill gaps, and every selected item must keep a real URL.
+    """
+    recent_candidates = []
+    for item in items:
+        if item.get("is_top_pick"):
+            continue
+        seasonal = build_seasonal_item(item, today)
+        if seasonal.get("url") and seasonal["seasonal_score"] >= SEASONAL_MIN_SCORE:
+            recent_candidates.append(seasonal)
+    recent_candidates.sort(key=lambda item: (item["seasonal_score"], item.get("published_at", "")), reverse=True)
+
+    selected: list[dict] = []
+    selected_urls: set[str] = set()
+    for seasonal in recent_candidates[:limit]:
+        url = seasonal.get("url", "")
+        if not url or url in selected_urls:
+            continue
+        seasonal["is_seasonal_pick"] = True
+        selected.append(seasonal)
+        selected_urls.add(url)
+        if len(selected) == limit:
+            return selected
+
+    if len(selected) >= SEASONAL_TARGET_COUNT:
+        return selected[:limit]
+
+    evergreen_candidates = []
+    for evergreen in evergreen_items or []:
+        if not evergreen_matches_today(evergreen, today):
+            continue
+        seasonal = build_evergreen_seasonal_item(evergreen, today)
+        if seasonal.get("url") and seasonal["seasonal_score"] >= EVERGREEN_SEASONAL_MIN_SCORE:
+            evergreen_candidates.append(seasonal)
+    evergreen_candidates.sort(key=lambda item: (item["seasonal_score"], str(item.get("published_at", ""))), reverse=True)
+
+    needed = min(limit - len(selected), SEASONAL_TARGET_COUNT - len(selected))
+    for seasonal in evergreen_candidates:
+        if needed <= 0:
+            break
+        url = seasonal.get("url", "")
+        if not url or url in selected_urls:
+            continue
+        seasonal["is_seasonal_pick"] = True
+        selected.append(seasonal)
+        selected_urls.add(url)
+        needed -= 1
+    return selected
+
+
+def build_digest() -> tuple[Path, Path, Path, Path, Path, Path, Path, Path]:
     rules = load_keyword_rules()
     raw_file = latest_raw_file()
     date_text = raw_file.name.replace(".raw.json", "")
     raw_items = json.loads(raw_file.read_text(encoding="utf-8"))
+    evergreen_items = load_evergreen_seasonal_items()
     now = datetime.now(timezone.utc)
     seen_items = load_seen_items(DATA_DIR, date_text)
 
@@ -1872,13 +2624,25 @@ def build_digest() -> tuple[Path, Path, Path, Path, Path, Path]:
         )
 
     duplicate_count = mark_duplicates(digest_items, seen_items)
-    top_items = select_top_picks(digest_items)
-    top_links = {item["link"] for item in top_items}
+    report_date = coerce_report_date(date_text)
+    top_items = select_top_picks(digest_items, current_date=report_date)
+    selected_by_link = {item["link"]: item for item in top_items}
+    top_links = set(selected_by_link)
     for item in digest_items:
         item["is_top_pick"] = item["link"] in top_links
-    top_items = [item for item in digest_items if item["is_top_pick"]]
+        if item["is_top_pick"]:
+            item.update(selected_by_link[item["link"]])
+            item["is_top_pick"] = True
+    top_items = [dict(item) for item in top_items]
     top_items.sort(key=lambda item: (item["priority_score"], item.get("published_at", "")), reverse=True)
     resource_items = select_daily_resources(digest_items)
+    seasonal_items = select_daily_seasonal_topics(digest_items, report_date, evergreen_items)
+    week_start = (report_date - timedelta(days=report_date.weekday())).isoformat()
+    week_end = (report_date + timedelta(days=6 - report_date.weekday())).isoformat()
+    for seasonal_item in seasonal_items:
+        seasonal_item["seasonal_period"] = SEASONAL_PERIOD
+        seasonal_item["week_start"] = week_start
+        seasonal_item["week_end"] = week_end
 
     json_file = DATA_DIR / f"{date_text}.json"
     md_file = DATA_DIR / f"{date_text}.md"
@@ -1886,6 +2650,8 @@ def build_digest() -> tuple[Path, Path, Path, Path, Path, Path]:
     top_md_file = DATA_DIR / f"{date_text}_top20.md"
     resources_json_file = DATA_DIR / f"{date_text}_resources.json"
     resources_md_file = DATA_DIR / f"{date_text}_resources.md"
+    seasonal_json_file = DATA_DIR / f"{date_text}_seasonal.json"
+    seasonal_md_file = DATA_DIR / f"{date_text}_seasonal.md"
     archive_index_file = DATA_DIR / "archive_index.json"
     json_file.write_text(json.dumps(digest_items, ensure_ascii=False, indent=2), encoding="utf-8")
     md_file.write_text(render_markdown(date_text, digest_items, "七爸新闻雷达｜完整线索"), encoding="utf-8")
@@ -1893,15 +2659,19 @@ def build_digest() -> tuple[Path, Path, Path, Path, Path, Path]:
     top_md_file.write_text(render_markdown(date_text, top_items, "七爸新闻雷达｜今日精选 Top 20"), encoding="utf-8")
     resources_json_file.write_text(json.dumps(resource_items, ensure_ascii=False, indent=2), encoding="utf-8")
     resources_md_file.write_text(render_resources_markdown(date_text, resource_items), encoding="utf-8")
+    seasonal_json_file.write_text(json.dumps(seasonal_items, ensure_ascii=False, indent=2), encoding="utf-8")
+    seasonal_md_file.write_text(render_seasonal_markdown(date_text, seasonal_items), encoding="utf-8")
     archive_index, archive_data = build_archive_index(DATA_DIR)
     archive_index_file.write_text(json.dumps(archive_index, ensure_ascii=False, indent=2), encoding="utf-8")
-    render_html(date_text, top_items, resource_items, len(digest_items), duplicate_count, archive_index, archive_data)
+    render_html(date_text, top_items, resource_items, seasonal_items, len(digest_items), duplicate_count, archive_index, archive_data)
     print(f"History top20 files found: {len(seen_items['history_files'])}")
     print(f"History top20 files used: {len(seen_items['used_history_files'])}")
     print(f"History top20 items collected: {seen_items['item_count']}")
     print(f"Filtered duplicate candidates: {duplicate_count}")
+    if len(seasonal_items) < SEASONAL_TARGET_COUNT:
+        print("WARNING: 本周时令选题不足 3 条，原因是 recent 与 evergreen 链接池不足。")
     print(f"Updated archive index: {archive_index_file}")
-    return json_file, md_file, top_json_file, top_md_file, resources_json_file, resources_md_file
+    return json_file, md_file, top_json_file, top_md_file, resources_json_file, resources_md_file, seasonal_json_file, seasonal_md_file
 
 
 def render_markdown(date_text: str, items: list[dict], title: str) -> str:
@@ -1955,6 +2725,36 @@ def render_resources_markdown(date_text: str, resources: list[dict]) -> str:
     return "\n".join(lines)
 
 
+def render_seasonal_markdown(date_text: str, seasonal_items: list[dict]) -> str:
+    week_start = seasonal_items[0].get("week_start", "") if seasonal_items else ""
+    week_end = seasonal_items[0].get("week_end", "") if seasonal_items else ""
+    period_line = f"周期：{week_start} 至 {week_end}" if week_start and week_end else "周期：本周"
+    lines = ["# 本周时令选题", "", f"生成日期：{date_text}", period_line, f"数量：{len(seasonal_items)}", ""]
+    if not seasonal_items:
+        lines.append("本周暂无高置信时令链接。建议补充 evergreen_seasonal.yml 或扩展 seasonal sources。")
+        return "\n".join(lines)
+    for index, item in enumerate(seasonal_items, start=1):
+        lines.extend(
+            [
+                f"## {index}. {item['title']}",
+                f"- 来源：{item['source']}",
+                f"- 内容类型：{item.get('content_type', '近期文章')}",
+                f"- 主题：{item['theme']}",
+                f"- 时令窗口：{item['seasonal_window']}",
+                f"- 时令分数：{item['seasonal_score']}",
+                f"- 话题类型：{item['topic_type']}",
+                f"- 原始年份：{item.get('original_year') or '无'}",
+                f"- 链接：{item['url']}",
+                f"- 推荐理由：{item['seasonal_reason']}",
+                f"- 七爸写法：{item['seasonal_qiba_angle']}",
+                "",
+            ]
+        )
+    if len(seasonal_items) < SEASONAL_TARGET_COUNT:
+        lines.append("本周时令链接不足 3 条，需补充 evergreen_seasonal.yml 或扩展 seasonal sources。")
+    return "\n".join(lines)
+
+
 def script_json(data: object) -> str:
     return json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 
@@ -1963,6 +2763,7 @@ def render_html(
     date_text: str,
     items: list[dict],
     resources: list[dict],
+    seasonal_items: list[dict],
     total_count: int,
     duplicate_count: int,
     archive_index: list[dict],
@@ -1975,6 +2776,7 @@ def render_html(
         ("资料储备", [item for item in items if item["priority_score"] < 65]),
     ]
     resource_section = render_resources_section(resources)
+    seasonal_section = render_seasonal_section(seasonal_items)
     grouped_sections = "\n".join(render_group(title, group_items) for title, group_items in groups)
     shortage_notice = ""
     if len(items) < TOP_PICK_LIMIT:
@@ -2001,14 +2803,17 @@ def render_html(
     .group-header {{ display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin: 0 0 12px; border-bottom: 1px solid #e5e7eb; padding-bottom: 8px; }}
     .group-header h2 {{ margin: 0; font-size: 22px; line-height: 1.3; }}
     .group-count {{ color: #6b7280; font-size: 14px; white-space: nowrap; }}
+    .group-note {{ margin: 0 0 14px; color: #4b5563; font-size: 14px; line-height: 1.7; }}
     .empty {{ background: #ffffff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 18px; color: #6b7280; }}
     .item {{ background: #ffffff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 18px; margin-bottom: 16px; }}
     .resource-item {{ border-left: 4px solid #0f766e; }}
+    .seasonal-item {{ border-left: 4px solid #b45309; }}
     .meta {{ color: #6b7280; font-size: 14px; margin: 8px 0; }}
     .score-row {{ display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0; color: #374151; font-size: 14px; }}
     .score-pill {{ background: #ecfdf5; color: #065f46; border-radius: 999px; padding: 4px 10px; font-weight: 600; }}
     .level-pill {{ background: #fff7ed; color: #9a3412; border-radius: 999px; padding: 4px 10px; font-weight: 600; }}
     .resource-pill {{ background: #f0fdfa; color: #115e59; border-radius: 999px; padding: 4px 10px; font-weight: 600; }}
+    .seasonal-pill {{ background: #fffbeb; color: #92400e; border-radius: 999px; padding: 4px 10px; font-weight: 600; }}
     .tags {{ display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }}
     .tag {{ background: #eef2ff; color: #3730a3; border-radius: 999px; padding: 3px 9px; font-size: 13px; }}
     .news-section {{ border-top: 1px solid #eef0f3; margin-top: 14px; padding-top: 12px; }}
@@ -2031,6 +2836,7 @@ def render_html(
   </header>
   <main id="digest-content">
     {resource_section}
+    {seasonal_section}
     {grouped_sections}
   </main>
   <script id="archive-index-data" type="application/json">{archive_index_json}</script>
@@ -2097,6 +2903,43 @@ def render_html(
 </section>`;
     }}
 
+    function renderSeasonalCard(item) {{
+      const year = item.original_year ? ` · ${{escapeHtml(item.original_year)}}` : "";
+      return `<article class="item seasonal-item">
+  <h2><a href="${{escapeHtml(item.url || "#")}}" target="_blank" rel="noopener noreferrer">${{escapeHtml(item.title || "")}}</a></h2>
+  <p class="meta">${{escapeHtml(item.source || "")}}｜${{escapeHtml(item.content_type || "近期文章")}}${{year}}｜${{escapeHtml(item.theme || "")}}｜${{escapeHtml(item.seasonal_window || "")}}</p>
+  <div class="score-row">
+    <span class="seasonal-pill">时令分数：${{escapeHtml(item.seasonal_score ?? "")}}</span>
+    <span class="level-pill">${{escapeHtml(item.topic_type || "seasonal_current")}}</span>
+  </div>
+  <section class="news-section">
+    <h3>推荐理由</h3>
+    <p>${{escapeHtml(item.seasonal_reason || "暂无推荐理由")}}</p>
+  </section>
+  <section class="news-section">
+    <h3>七爸写法</h3>
+    <p>${{escapeHtml(item.seasonal_qiba_angle || "暂无七爸写法")}}</p>
+  </section>
+  <section class="news-section">
+    <h3>链接</h3>
+    <p><a href="${{escapeHtml(item.url || "#")}}" target="_blank" rel="noopener noreferrer">打开原文</a></p>
+  </section>
+</article>`;
+    }}
+
+    function renderSeasonalSection(seasonalItems) {{
+      const warning = seasonalItems.length && seasonalItems.length < {SEASONAL_TARGET_COUNT} ? '<p class="notice">本周时令链接不足 3 条，需补充 evergreen_seasonal.yml 或扩展 seasonal sources。</p>' : "";
+      const body = seasonalItems.length ? seasonalItems.map(renderSeasonalCard).join("") + warning : '<p class="empty">本周暂无高置信时令链接。建议补充 evergreen_seasonal.yml 或扩展 seasonal sources。</p>';
+      return `<section class="group">
+  <div class="group-header">
+    <h2>本周时令选题</h2>
+    <span class="group-count">${{seasonalItems.length}} 条</span>
+  </div>
+  <p class="group-note">围绕当前学期与季节，本周最适合七爸关注的 3 个教育/家庭生活选题。</p>
+  ${{body}}
+</section>`;
+    }}
+
     function renderCard(item) {{
       const tags = (item.tags || []).map((tag) => `<span class="tag">${{escapeHtml(tag)}}</span>`).join("");
       return `<article class="item">
@@ -2158,9 +3001,24 @@ def render_html(
       }}
     }}
 
-    function renderArchive(entry, items, resources) {{
+    async function loadArchiveSeasonal(entry) {{
+      if (!entry.seasonalFile) return [];
+      const cacheKey = `${{entry.date}}:seasonal`;
+      if (archiveCache[cacheKey]) return archiveCache[cacheKey];
+      try {{
+        const response = await fetch(`../${{entry.seasonalFile}}`, {{ cache: "no-store" }});
+        if (!response.ok) throw new Error("seasonal file not found");
+        const seasonalItems = await response.json();
+        archiveCache[cacheKey] = seasonalItems;
+        return seasonalItems;
+      }} catch (error) {{
+        return [];
+      }}
+    }}
+
+    function renderArchive(entry, items, resources, seasonalItems) {{
       updateMeta(entry, items);
-      contentEl.innerHTML = renderResourcesSection(resources) + groupItems(items).map(([title, group]) => renderGroup(title, group)).join("");
+      contentEl.innerHTML = renderResourcesSection(resources) + renderSeasonalSection(seasonalItems) + groupItems(items).map(([title, group]) => renderGroup(title, group)).join("");
       dateSelect.value = entry.date;
       const url = new URL(window.location.href);
       url.searchParams.set("date", entry.date);
@@ -2203,7 +3061,8 @@ def render_html(
       try {{
         const items = await loadArchiveItems(entry);
         const resources = await loadArchiveResources(entry);
-        renderArchive(entry, items, resources);
+        const seasonalItems = await loadArchiveSeasonal(entry);
+        renderArchive(entry, items, resources, seasonalItems);
       }} catch (error) {{
         noticeEl.textContent = "该日期归档加载失败，请检查 data 文件是否存在。";
       }}
@@ -2250,6 +3109,22 @@ def render_resources_section(resources: list[dict]) -> str:
 </section>"""
 
 
+def render_seasonal_section(seasonal_items: list[dict]) -> str:
+    cards = "\n".join(render_seasonal_card(item) for item in seasonal_items)
+    warning = ""
+    if seasonal_items and len(seasonal_items) < SEASONAL_TARGET_COUNT:
+        warning = '<p class="notice">本周时令链接不足 3 条，需补充 evergreen_seasonal.yml 或扩展 seasonal sources。</p>'
+    body = (cards + ("\n" + warning if warning else "")) or '<p class="empty">本周暂无高置信时令链接。建议补充 evergreen_seasonal.yml 或扩展 seasonal sources。</p>'
+    return f"""<section class="group">
+  <div class="group-header">
+    <h2>本周时令选题</h2>
+    <span class="group-count">{len(seasonal_items)} 条</span>
+  </div>
+  <p class="group-note">围绕当前学期与季节，本周最适合七爸关注的 3 个教育/家庭生活选题。</p>
+  {body}
+</section>"""
+
+
 def render_resource_card(resource: dict) -> str:
     return f"""<article class="item resource-item">
   <h2>{escape(resource['title'])}</h2>
@@ -2269,6 +3144,30 @@ def render_resource_card(resource: dict) -> str:
   <section class="news-section">
     <h3>链接</h3>
     <p><a href="{escape(resource['url'])}" target="_blank" rel="noopener noreferrer">打开资源</a></p>
+  </section>
+</article>"""
+
+
+def render_seasonal_card(item: dict) -> str:
+    year = f" · {escape(str(item.get('original_year')))}" if item.get("original_year") else ""
+    return f"""<article class="item seasonal-item">
+  <h2><a href="{escape(item['url'])}" target="_blank" rel="noopener noreferrer">{escape(item['title'])}</a></h2>
+  <p class="meta">{escape(item['source'])}｜{escape(item.get('content_type') or '近期文章')}{year}｜{escape(item['theme'])}｜{escape(item['seasonal_window'])}</p>
+  <div class="score-row">
+    <span class="seasonal-pill">时令分数：{item['seasonal_score']}</span>
+    <span class="level-pill">{escape(item.get('topic_type') or 'seasonal_current')}</span>
+  </div>
+  <section class="news-section">
+    <h3>推荐理由</h3>
+    <p>{escape(item.get('seasonal_reason') or '暂无推荐理由')}</p>
+  </section>
+  <section class="news-section">
+    <h3>七爸写法</h3>
+    <p>{escape(item.get('seasonal_qiba_angle') or '暂无七爸写法')}</p>
+  </section>
+  <section class="news-section">
+    <h3>链接</h3>
+    <p><a href="{escape(item['url'])}" target="_blank" rel="noopener noreferrer">打开原文</a></p>
   </section>
 </article>"""
 
@@ -2300,10 +3199,11 @@ def render_card(item: dict) -> str:
 
 
 def main() -> None:
-    json_file, md_file, top_json_file, top_md_file, resources_json_file, resources_md_file = build_digest()
+    json_file, md_file, top_json_file, top_md_file, resources_json_file, resources_md_file, seasonal_json_file, seasonal_md_file = build_digest()
     print(f"Saved digest to {json_file} and {md_file}")
     print(f"Saved top picks to {top_json_file} and {top_md_file}")
     print(f"Saved resources to {resources_json_file} and {resources_md_file}")
+    print(f"Saved seasonal topics to {seasonal_json_file} and {seasonal_md_file}")
     print(f"Updated {DOCS_DIR / 'index.html'}")
 
 
