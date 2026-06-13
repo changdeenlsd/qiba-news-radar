@@ -1719,6 +1719,256 @@ tags:
       - 品牌营销
       - 营销活动
 
+  summer_reading:
+    label: 暑假阅读
+    keywords:
+      - summer reading
+      - 暑假阅读
+      - 暑期阅读
+
+  summer_book_list:
+    label: 暑假书单
+    keywords:
+      - summer book list
+      - required reading
+      - school reading list
+      - 暑假书单
+      - 学校指定阅读
+      - 名著书单
+
+  final_exam_review:
+    label: 期末复习
+    keywords:
+      - final exams
+      - exam preparation
+      - review plan
+      - end-of-term review
+      - 期末复习
+      - 期末考试
+      - 复习计划
+
+  test_anxiety:
+    label: 考试焦虑
+    keywords:
+      - test anxiety
+      - exam stress
+      - 考试焦虑
+      - 考试压力
+      - 考前焦虑
+
+  summer_planning:
+    label: 暑假规划
+    keywords:
+      - summer plan
+      - summer planning
+      - summer routine
+      - 暑假规划
+      - 暑假计划
+      - 暑假作息
+
+  independent_reading:
+    label: 自主阅读
+    keywords:
+      - independent reading
+      - reading choice
+      - student choice
+      - 自主阅读
+      - 孩子自主选书
+
+  reading_interest:
+    label: 阅读兴趣
+    keywords:
+      - reading interest
+      - love of reading
+      - protect children's reading interest
+      - 阅读兴趣
+      - 孩子为什么不读书
+
+  parent_child_reading:
+    label: 亲子阅读
+    keywords:
+      - family reading
+      - read with children
+      - parent-child reading
+      - 亲子阅读
+
+  learning_habits:
+    label: 学习习惯
+    keywords:
+      - learning habits
+      - study habits
+      - 学习习惯
+
+  mistake_review:
+    label: 错题整理
+    keywords:
+      - mistake notebook
+      - error analysis
+      - 错题整理
+      - 错题本
+
+  back_to_school:
+    label: 开学准备
+    keywords:
+      - back to school
+      - school preparation
+      - 开学准备
+      - 收心
+
+  summer_homework:
+    label: 暑假作业
+    keywords:
+      - summer homework
+      - 暑假作业
+
+  english_input:
+    label: 英语输入
+    keywords:
+      - English input
+      - English reading
+      - English listening
+      - 英语输入
+      - 英语听力
+
+  math_practice:
+    label: 数学保持
+    keywords:
+      - math practice
+      - math maintenance
+      - 数学保持
+      - 数学练习
+
+  children_sports:
+    label: 儿童运动
+    keywords:
+      - children's sports
+      - children sports
+      - 儿童运动
+      - 孩子运动
+
+  summer_sports:
+    label: 夏季运动
+    keywords:
+      - summer sports
+      - summer exercise
+      - 夏季运动
+      - 暑期运动
+
+  swimming_safety:
+    label: 游泳安全
+    keywords:
+      - swimming safety
+      - water safety
+      - 游泳安全
+      - 防溺水
+
+  outdoor_activities:
+    label: 户外活动
+    keywords:
+      - outdoor activities
+      - outdoor activity
+      - 户外活动
+
+  myopia_prevention:
+    label: 近视防控
+    keywords:
+      - myopia prevention
+      - vision health
+      - 近视防控
+      - 视力保护
+
+  summer_camp:
+    label: 夏令营
+    keywords:
+      - summer camp
+      - camp education
+      - 夏令营
+      - 营地教育
+
+  camp_education:
+    label: 营地教育
+    keywords:
+      - camp education
+      - camp choice
+      - 营地教育
+      - 营地选择
+
+  study_tour:
+    label: 研学
+    keywords:
+      - study tour
+      - educational travel
+      - 研学
+
+  cooking_camp:
+    label: 美食营
+    keywords:
+      - cooking camp
+      - food camp
+      - 美食营
+      - 烹饪营
+
+  food_education:
+    label: 食育
+    keywords:
+      - food education
+      - cooking education
+      - nutrition education
+      - 食育
+      - 儿童烹饪
+
+  family_travel:
+    label: 亲子游
+    keywords:
+      - family travel
+      - family trip
+      - summer travel
+      - 亲子游
+      - 暑假旅行
+
+  theme_park:
+    label: 主题乐园
+    keywords:
+      - theme park
+      - 主题乐园
+
+  disney:
+    label: 迪士尼
+    keywords:
+      - Disney
+      - 迪士尼
+
+  museum_education:
+    label: 博物馆教育
+    keywords:
+      - museum education
+      - museum visits
+      - 博物馆教育
+      - 博物馆
+
+  science_museum:
+    label: 科技馆
+    keywords:
+      - science museum
+      - 科技馆
+
+  travel_learning:
+    label: 旅行学习
+    keywords:
+      - travel learning
+      - learning during summer trips
+      - 旅行学习
+      - 旅行中的学习
+
+  life_skills:
+    label: 生活技能
+    keywords:
+      - life skills
+      - chores
+      - 生活技能
+      - 家务
+      - 劳动教育
+
 importance:
   must_read:
     label: 必看

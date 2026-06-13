@@ -1,0 +1,175 @@
+items:
+  - title: The Tale of Two Tables
+    url: https://www.edweek.org/education/opinion-the-tale-of-two-tables/2008/07
+    source: Education Week
+    original_year: 2008
+    published_at: "2008-07-16"
+    language: en
+    region: 英文世界
+    seasonal_windows:
+      - late_may_june
+      - july_august
+    themes:
+      - 暑假阅读
+      - 暑假书单
+      - 学校指定阅读
+      - 自主阅读
+      - 阅读兴趣
+      - 亲子阅读
+    evergreen_score: 90
+    stale_risk: low
+    content_type: 经典重读
+    topic_type: seasonal_evergreen_fallback
+    is_evergreen_fallback: true
+    exclude_from_top20: true
+    qiba_angle: 为什么暑假书单越长，孩子反而越不想读书？真正需要保护的是孩子自己选书的权利。
+    why_still_relevant: 每年暑假前后，学校书单、指定阅读、阅读打卡和孩子自主选书都会重新成为家庭教育议题。文章讨论的是阅读兴趣与阅读自主权，不依赖过时政策、价格或产品信息。
+    notes: 旧文只作为本周时令选题 fallback，不进入 Top20。
+  - title: "Summer Reading Loss"
+    url: "https://www.readingrockets.org/topics/summer-reading/articles/summer-reading-loss"
+    source: "Reading Rockets"
+    original_year: null
+    published_at: null
+    language: "English"
+    region: "英文世界"
+    seasonal_windows:
+      - "late_may_june"
+      - "july_august"
+    themes:
+      - "暑假阅读"
+      - "summer learning loss"
+      - "家庭阅读"
+      - "阅读兴趣"
+    evergreen_score: 93
+    stale_risk: "low"
+    content_type: "经典重读"
+    topic_type: "seasonal_evergreen_fallback"
+    is_evergreen_fallback: true
+    exclude_from_top20: true
+    qiba_angle: "暑假不是把阅读变成任务清单，而是给孩子重新建立每天有书可读、想读什么能拿到的环境。"
+    why_still_relevant: "每年暑假前，家长都会重新面对阅读滑坡、阅读兴趣和图书可及性问题。"
+    notes: "研究引用较旧，但主题常青，适合做暑假阅读底层材料。"
+  - title: "What to Do (and Not Do) When Children Are Anxious"
+    url: "https://childmind.org/article/what-to-do-and-not-do-when-children-are-anxious/"
+    source: "Child Mind Institute"
+    original_year: null
+    published_at: "2025-11-12"
+    language: "English"
+    region: "英文世界"
+    seasonal_windows:
+      - "late_may_june"
+      - "november_december"
+    themes:
+      - "考试焦虑"
+      - "家长陪考"
+      - "亲子沟通"
+      - "心理健康"
+    evergreen_score: 90
+    stale_risk: "low"
+    content_type: "经典重读"
+    topic_type: "seasonal_evergreen_fallback"
+    is_evergreen_fallback: true
+    exclude_from_top20: true
+    qiba_angle: "期末前，父母最该做的不是替孩子消灭焦虑，而是别把自己的焦虑放大给孩子。"
+    why_still_relevant: "考试前后，孩子焦虑和父母过度保护每年都会出现，文章原则稳定。"
+    notes: "心理健康类内容，只作家庭沟通建议，不作医疗诊断。"
+  - title: "How to Help Kids Balance Phones and Screens with Sleep"
+    url: "https://www.commonsensemedia.org/articles/how-to-help-kids-balance-phones-and-screens-with-sleep"
+    source: "Common Sense Media"
+    original_year: 2023
+    published_at: "2023-09-26"
+    language: "English"
+    region: "英文世界"
+    seasonal_windows:
+      - "late_may_june"
+      - "july_august"
+      - "january_february"
+    themes:
+      - "屏幕时间"
+      - "暑假作息"
+      - "睡眠"
+      - "家庭规则"
+    evergreen_score: 88
+    stale_risk: "low"
+    content_type: "经典重读"
+    topic_type: "seasonal_evergreen_fallback"
+    is_evergreen_fallback: true
+    exclude_from_top20: true
+    qiba_angle: "暑假真正难管的不是手机本身，而是手机把睡眠、作息和亲子边界一起打乱了。"
+    why_still_relevant: "暑假和寒假都会放大屏幕时间与睡眠冲突，适合反复使用。"
+    notes: "数字产品功能会变化，但家庭规则和睡眠原则常青。"
+  - title: "Summer learning loss: What is it, and what can we do about it?"
+    url: "https://www.brookings.edu/articles/summer-learning-loss-what-is-it-and-what-can-we-do-about-it/"
+    source: "Brookings"
+    original_year: 2017
+    published_at: "2017-09-14"
+    language: "English"
+    region: "英文世界"
+    seasonal_windows:
+      - "late_may_june"
+      - "july_august"
+    themes:
+      - "暑假规划"
+      - "summer learning loss"
+      - "数学保持"
+      - "阅读保持"
+      - "教育公平"
+    evergreen_score: 86
+    stale_risk: "medium"
+    content_type: "经典重读"
+    topic_type: "seasonal_evergreen_fallback"
+    is_evergreen_fallback: true
+    exclude_from_top20: true
+    qiba_angle: "暑假不是要把孩子塞进另一个学期，而是要防止学习水龙头完全关掉。"
+    why_still_relevant: "暑假学习滑坡是每年都会出现的家庭决策问题，适合做暑假规划底层解释。"
+    notes: "年份偏旧，不能当最新数据报道。"
+  - title: "Water Safety"
+    url: "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/water-safety.html"
+    source: "American Red Cross"
+    original_year: null
+    published_at: null
+    language: "English"
+    region: "英文世界"
+    seasonal_windows:
+      - "late_may_june"
+      - "july_august"
+    themes:
+      - "游泳安全"
+      - "儿童运动"
+      - "暑期运动"
+      - "户外活动"
+    evergreen_score: 91
+    stale_risk: "low"
+    content_type: "经典重读"
+    topic_type: "seasonal_evergreen_fallback"
+    is_evergreen_fallback: true
+    exclude_from_top20: true
+    qiba_angle: "暑假报游泳课之前，父母先要理解会游泳不等于水边安全。"
+    why_still_relevant: "每年暑假前都适合提醒家长水域能力、看护、救生衣和 water watcher。"
+    notes: "页面含课程入口，但主体是公益安全教育。"
+  - title: "Smithsonian Learning Lab"
+    url: "https://learninglab.si.edu/"
+    source: "Smithsonian"
+    original_year: null
+    published_at: null
+    language: "English"
+    region: "英文世界"
+    seasonal_windows:
+      - "late_may_june"
+      - "july_august"
+      - "october"
+    themes:
+      - "博物馆教育"
+      - "亲子游"
+      - "旅行学习"
+      - "科学/STEM"
+      - "项目活动"
+    evergreen_score: 87
+    stale_risk: "low"
+    content_type: "经典重读"
+    topic_type: "seasonal_evergreen_fallback"
+    is_evergreen_fallback: true
+    exclude_from_top20: true
+    qiba_angle: "亲子游不一定要赶景点，博物馆真正的用法是让孩子带着一个问题进去。"
+    why_still_relevant: "暑假亲子游、博物馆学习和家庭项目学习每年都会重新出现。"
+    notes: "资源平台而非单篇文章，适合做时令资源入口。"

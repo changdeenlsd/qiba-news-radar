@@ -720,15 +720,18 @@
     "qiba_pitch": "适合写成主稿，角度可定为“AI 家教真的能帮孩子学数学吗”。重点解释工具如何提升练习反馈、信心和学习效率，同时提醒家长别把陪伴、诊断和鼓励完全交给系统。 可作为早间选题会的辅助判断。",
     "priority_score": 69,
     "recommendation_level": "可收藏",
-    "is_top_pick": false,
+    "is_top_pick": true,
     "is_duplicate": true,
     "duplicate_reason": "same_link",
     "first_seen_date": "2026-05-29",
-    "allow_repeat": false,
+    "allow_repeat": true,
     "directions": [
       "AI 产品和研究有哪些新进展？",
       "这条新闻是否适合解释给普通家长和学生？"
-    ]
+    ],
+    "is_repeat_fallback": true,
+    "repeat_reason": "duplicate:same_link:2026-05-29",
+    "top20_fill_reason": "主榜非重复候选不足20，作为高价值历史候选补位"
   },
   {
     "title": "Catch up on 12 major I/O 2026 moments",
@@ -1083,7 +1086,8 @@
     "tags": [
       "教育研究",
       "家庭教育",
-      "教育热点"
+      "教育热点",
+      "期末复习"
     ],
     "normalized_title": "helping students and parents prepare for the final exams period",
     "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
@@ -1120,15 +1124,18 @@
     "qiba_pitch": "适合写成主稿，角度可定为“AI 家教真的能帮孩子学数学吗”。重点解释工具如何提升练习反馈、信心和学习效率，同时提醒家长别把陪伴、诊断和鼓励完全交给系统。 可作为早间选题会的辅助判断。",
     "priority_score": 72,
     "recommendation_level": "可写",
-    "is_top_pick": false,
+    "is_top_pick": true,
     "is_duplicate": true,
     "duplicate_reason": "same_link",
     "first_seen_date": "2026-06-10",
-    "allow_repeat": false,
+    "allow_repeat": true,
     "directions": [
       "AI 产品和研究有哪些新进展？",
       "这条新闻是否适合解释给普通家长和学生？"
-    ]
+    ],
+    "is_repeat_fallback": true,
+    "repeat_reason": "duplicate:same_link:2026-06-10",
+    "top20_fill_reason": "主榜非重复候选不足20，作为高价值历史候选补位"
   },
   {
     "title": "Utah State brings Gemini for Education to all K-12 schools",
@@ -1284,15 +1291,18 @@
     "qiba_pitch": "适合写成文章，角度应从家长能感知的变化切入：学校、学习工具、孩子能力培养或未来职业。正文需要补充家庭或课堂场景，避免写成普通科技新闻摘要。 可作为早间选题会的辅助判断。",
     "priority_score": 74,
     "recommendation_level": "可写",
-    "is_top_pick": false,
+    "is_top_pick": true,
     "is_duplicate": true,
     "duplicate_reason": "same_link",
     "first_seen_date": "2026-05-28",
-    "allow_repeat": false,
+    "allow_repeat": true,
     "directions": [
       "AI 产品和研究有哪些新进展？",
       "这条新闻是否适合解释给普通家长和学生？"
-    ]
+    ],
+    "is_repeat_fallback": true,
+    "repeat_reason": "duplicate:same_link:2026-05-28",
+    "top20_fill_reason": "主榜非重复候选不足20，作为高价值历史候选补位"
   },
   {
     "title": "Digitize your paper notes with Gemini.",
@@ -1593,6 +1603,38 @@
     ]
   },
   {
+    "title": "5 foundations for reshaping the future of education and AI",
+    "link": "https://www.microsoft.com/en-us/education/blog/2026/06/5-foundations-for-reshaping-the-future-of-education-and-ai/",
+    "source": "Microsoft Education Blog",
+    "source_category": "ai_education",
+    "published_at": "2026-06-11T16:00:00+00:00",
+    "summary": "As AI reshapes work, education is evolving. Explore five essential skills and shifts helping students build adaptability, judgment, and real-world readiness for an AI-powered future. The post 5 foundations for reshaping the future of education and AI appeared first on Microsoft Education Blog.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "科技巨头",
+      "未来职业",
+      "Microsoft",
+      "学生Builder",
+      "未来学习"
+    ],
+    "normalized_title": "5 foundations for reshaping the future of education and ai",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "这条新闻可以转化为七爸选题：AI时代好学生画像正在变化。重点不是孩子会不会使用 AI 工具，而是能不能用 AI 解决真实问题、做出真实项目。适合延展到孩子该不该学 AI、项目制学习、英文资料检索和跨学科能力。",
+    "priority_score": 78,
+    "recommendation_level": "可写",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
     "title": "Microsoft Elevate for Educators: Advanced recognition application guide 2026-2027",
     "link": "https://www.microsoft.com/en-us/education/blog/2026/05/microsoft-elevate-for-educators-advanced-recognition-application-guide-2026-2027/",
     "source": "Microsoft Education Blog",
@@ -1878,15 +1920,18 @@
     "qiba_pitch": "适合写成文章，角度应从家长能感知的变化切入：学校、学习工具、孩子能力培养或未来职业。正文需要补充家庭或课堂场景，避免写成普通科技新闻摘要。 可作为早间选题会的辅助判断。",
     "priority_score": 66,
     "recommendation_level": "可收藏",
-    "is_top_pick": false,
+    "is_top_pick": true,
     "is_duplicate": true,
     "duplicate_reason": "same_link",
     "first_seen_date": "2026-05-28",
-    "allow_repeat": false,
+    "allow_repeat": true,
     "directions": [
       "AI 产品和研究有哪些新进展？",
       "这条新闻是否适合解释给普通家长和学生？"
-    ]
+    ],
+    "is_repeat_fallback": true,
+    "repeat_reason": "duplicate:same_link:2026-05-28",
+    "top20_fill_reason": "主榜非重复候选不足20，作为高价值历史候选补位"
   },
   {
     "title": "Solve coding puzzles to survive the night in the new Minecraft Hour of AI",
@@ -1911,36 +1956,6 @@
     "is_duplicate": true,
     "duplicate_reason": "same_link",
     "first_seen_date": "2026-05-31",
-    "allow_repeat": false,
-    "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
-    "title": "Building data-empowered higher education institutions",
-    "link": "https://www.microsoft.com/en-us/education/blog/2025/10/building-data-empowered-higher-education-institutions/",
-    "source": "Microsoft Education Blog",
-    "source_category": "ai_education",
-    "published_at": "2025-10-22T16:00:00+00:00",
-    "summary": "Discover how Microsoft Fabric in higher education helps unify data, scale AI, and drive agility. Download the free Data-Empowered Institution e-book. The post Building data-empowered higher education institutions appeared first on Microsoft Education Blog.",
-    "tags": [
-      "AI",
-      "教育研究",
-      "美国高校",
-      "科技巨头",
-      "Microsoft"
-    ],
-    "normalized_title": "building data empowered higher education institutions",
-    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
-    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
-    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
-    "priority_score": 64,
-    "recommendation_level": "可收藏",
-    "is_top_pick": false,
-    "is_duplicate": true,
-    "duplicate_reason": "same_link",
-    "first_seen_date": "2026-05-28",
     "allow_repeat": false,
     "directions": [
       "AI 产品和研究有哪些新进展？",
@@ -2953,15 +2968,18 @@
     "qiba_pitch": "适合写成文章，角度可定为“AI 素养会不会成为下一代基础能力”。可从国家、大学和平台都在推动 AI 教育切入，落到普通家庭如何启蒙、如何避免只学工具不学判断力。",
     "priority_score": 78,
     "recommendation_level": "可写",
-    "is_top_pick": false,
+    "is_top_pick": true,
     "is_duplicate": true,
     "duplicate_reason": "same_link",
     "first_seen_date": "2026-05-26",
-    "allow_repeat": false,
+    "allow_repeat": true,
     "directions": [
       "AI 产品和研究有哪些新进展？",
       "这条新闻是否适合解释给普通家长和学生？"
-    ]
+    ],
+    "is_repeat_fallback": true,
+    "repeat_reason": "duplicate:same_link:2026-05-26",
+    "top20_fill_reason": "主榜非重复候选不足20，作为高价值历史候选补位"
   },
   {
     "title": "Study: Firms often use automation to control certain workers’ wages",
@@ -3402,6 +3420,32 @@
     ]
   },
   {
+    "title": "The future of Hollywood isn’t feeding prompts into vanilla gen AI models",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/948425/tribeca-2026-dear-upstairs-neighbors-google-deepmind-openai",
+    "source": "The Verge AI",
+    "source_category": "ai",
+    "published_at": "2026-06-13T11:00:00+00:00",
+    "summary": "For all the noise that's been made about how generative AI is poised to revolutionize the filmmaking industry, there haven't really been any projects created with the technology that felt like the sort of entertainment people would pay to see. Most AI firms' video models are still only capable of ch",
+    "tags": [
+      "AI"
+    ],
+    "normalized_title": "the future of hollywood isn t feeding prompts into vanilla gen ai models",
+    "zh_summary": "The Verge相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 35,
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
     "title": "Siri is good now??",
     "link": "https://www.theverge.com/podcast/949079/siri-ai-good-vergecast",
     "source": "The Verge AI",
@@ -3642,37 +3686,6 @@
     "is_duplicate": false,
     "duplicate_reason": "",
     "first_seen_date": "",
-    "allow_repeat": false,
-    "directions": [
-      "AI 产品和研究有哪些新进展？",
-      "这条新闻是否适合解释给普通家长和学生？"
-    ]
-  },
-  {
-    "title": "Microsoft, like, totally gets why students are booing AI-pilled graduation speakers",
-    "link": "https://www.theverge.com/news/947831/college-speakers-booed-ai-microsoft",
-    "source": "The Verge AI",
-    "source_category": "ai",
-    "published_at": "2026-06-10T17:45:11+00:00",
-    "summary": "New college graduates around the country have been booing and heckling commencement speakers who hype up AI. Microsoft would like everyone to talk it out. In a blog post running more than 3,100 words, Microsoft vice chair and president Brad Smith addressed the recent spate of viral clips from gradua",
-    "tags": [
-      "AI",
-      "教育研究",
-      "美国高校",
-      "科技巨头",
-      "Google",
-      "Microsoft"
-    ],
-    "normalized_title": "microsoft like totally gets why students are booing ai pilled graduation speakers",
-    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
-    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
-    "qiba_pitch": "适合写成主稿，角度可定为“AI 家教真的能帮孩子学数学吗”。重点解释工具如何提升练习反馈、信心和学习效率，同时提醒家长别把陪伴、诊断和鼓励完全交给系统。 可作为早间选题会的辅助判断。",
-    "priority_score": 65,
-    "recommendation_level": "可收藏",
-    "is_top_pick": false,
-    "is_duplicate": true,
-    "duplicate_reason": "same_link",
-    "first_seen_date": "2026-06-11",
     "allow_repeat": false,
     "directions": [
       "AI 产品和研究有哪些新进展？",
