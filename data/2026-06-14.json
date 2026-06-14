@@ -3291,7 +3291,7 @@
     "zh_summary": "这项研究围绕AI 模型、智能体或技术应用展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
     "story_angle": "适合作为教育研究或科技背景资料，暂不急着写主稿；可积累为解释学习科学、AI 影响教育的证据线索。",
     "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
-    "priority_score": 15,
+    "priority_score": 11,
     "topic_family": "pure_ai_tech",
     "recommendation_level": "观察中",
     "is_top_pick": false,
@@ -3663,7 +3663,7 @@
     "zh_summary": "The Verge相关动态显示，AI 产品、平台生态或基础设施仍在快速变化，适合持续跟踪产业信号。",
     "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
     "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
-    "priority_score": 23,
+    "priority_score": 19,
     "topic_family": "pure_ai_tech",
     "recommendation_level": "观察中",
     "is_top_pick": false,
@@ -4911,6 +4911,32 @@
     ]
   },
   {
+    "title": "Opinion: In Dallas Schools, Community Engagement Isn’t Outreach — It’s Infrastructure",
+    "link": "https://www.the74million.org/article/in-dallas-schools-community-engagement-isnt-outreach-its-infrastructure/",
+    "source": "The 74",
+    "source_category": "education_media",
+    "published_at": "2026-06-14T10:30:00+00:00",
+    "summary": "A recent commentary by Chad Aldeman highlighted research, drawn from focus groups in seven states, that found people in struggling school districts are not disengaged; rather, they run into walls when they try to get involved. It&#8217;s a structural problem that explains why community engagement ef",
+    "tags": [
+      "教育研究"
+    ],
+    "normalized_title": "opinion in dallas schools community engagement isn t outreach it s infrastructure",
+    "zh_summary": "这项研究围绕学生学习、学校教育或教学方式展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "更适合放入 AI 工具和技术趋势资料库，记录企业级应用、模型能力或基础设施变化。它离普通家长的日常问题较远，除非后续出现教育场景，不建议单独成文。 可作为早间选题会的辅助判断。",
+    "priority_score": 18,
+    "topic_family": "education_policy_research",
+    "recommendation_level": "观察中",
+    "is_top_pick": false,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？"
+    ]
+  },
+  {
     "title": "Wyoming Students Spend Less Time in PE. An Expert Wants to Change That.",
     "link": "https://www.the74million.org/article/wyoming-students-spend-less-time-in-pe-an-expert-wants-to-change-that/",
     "source": "The 74",
@@ -4953,7 +4979,7 @@
     "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
     "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
     "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
-    "priority_score": 2,
+    "priority_score": 0,
     "topic_family": "other",
     "recommendation_level": "观察中",
     "is_top_pick": false,
@@ -5228,9 +5254,9 @@
     "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
     "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
     "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
-    "priority_score": 56,
+    "priority_score": 52,
     "topic_family": "learning_psychology_family",
-    "recommendation_level": "可收藏",
+    "recommendation_level": "观察中",
     "is_top_pick": false,
     "is_duplicate": true,
     "duplicate_reason": "same_link",
@@ -5427,34 +5453,6 @@
     "allow_repeat": false,
     "directions": [
       "是否可以发展成一篇面向公众号读者的选题线索？"
-    ]
-  },
-  {
-    "title": "Educators Inspired by Kansas High School Students Hoping to Become Teachers",
-    "link": "https://www.the74million.org/article/educators-inspired-by-kansas-high-school-students-hoping-to-become-teachers/",
-    "source": "The 74",
-    "source_category": "education_media",
-    "published_at": "2026-06-09T18:30:00+00:00",
-    "summary": "EMPORIA, Kan. — Teacher Sheila Peterson says this era of education is a renaissance. Peterson, an acclaimed North Dakota teacher, flew to Kansas for the Kansas Future Teachers Academy at Emporia State University and to work with Kansas high schoolers who want to become teachers. She left feeling hop",
-    "tags": [
-      "教育研究",
-      "美国高校"
-    ],
-    "normalized_title": "educators inspired by kansas high school students hoping to become teachers",
-    "zh_summary": "The 74与Kansas high schoolers who want达成合作，核心看点是内容、技术或渠道资源被接入 AI 产品和服务生态。",
-    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
-    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
-    "priority_score": 42,
-    "topic_family": "education_policy_research",
-    "recommendation_level": "观察中",
-    "is_top_pick": false,
-    "is_duplicate": true,
-    "duplicate_reason": "same_link",
-    "first_seen_date": "2026-06-10",
-    "allow_repeat": false,
-    "directions": [
-      "这条新闻对学习方式、学校教育或家庭教育有什么启发？",
-      "美国高校的研究或政策变化是否值得跟踪？"
     ]
   },
   {
