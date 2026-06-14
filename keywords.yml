@@ -2124,6 +2124,311 @@ importance:
       - 传闻
       - 小更新
 
+  study_habits:
+    label: 学习习惯
+    keywords:
+      - study habits
+      - learning habits
+      - homework routines
+      - study routine
+      - learning routine
+      - 学习习惯
+      - 学习常规
+      - 作业习惯
+      - 复习习惯
+
+  learning_methods:
+    label: 学习方法
+    keywords:
+      - learning strategies
+      - study skills
+      - retrieval practice
+      - spaced repetition
+      - note-taking
+      - 学习方法
+      - 学习策略
+      - 复习方法
+      - 检索练习
+      - 间隔重复
+      - 笔记方法
+
+  learning_motivation:
+    label: 学习动机
+    keywords:
+      - learning motivation
+      - student motivation
+      - academic motivation
+      - reading motivation
+      - intrinsic motivation
+      - 学习动机
+      - 学生动机
+      - 内在动机
+      - 阅读动机
+
+  self_regulation:
+    label: 自我管理
+    keywords:
+      - self-regulation
+      - self regulation
+      - self-management
+      - goal setting
+      - time management
+      - 自我管理
+      - 自我调节
+      - 目标管理
+      - 时间管理
+
+  executive_function:
+    label: 执行功能
+    keywords:
+      - executive function
+      - executive functioning
+      - working memory
+      - impulse control
+      - cognitive flexibility
+      - 执行功能
+      - 工作记忆
+      - 冲动控制
+      - 认知灵活性
+
+  attention:
+    label: 注意力
+    keywords:
+      - attention
+      - focus
+      - concentration
+      - attention span
+      - 注意力
+      - 专注力
+      - 注意广度
+
+  metacognition:
+    label: 元认知
+    keywords:
+      - metacognition
+      - metacognitive
+      - learning reflection
+      - thinking about thinking
+      - 元认知
+      - 学习反思
+
+  exam_stress:
+    label: 考试压力
+    keywords:
+      - exam stress
+      - test stress
+      - academic pressure
+      - student stress
+      - 考试压力
+      - 学业压力
+      - 学生压力
+
+  test_anxiety:
+    label: 考试焦虑
+    keywords:
+      - test anxiety
+      - exam anxiety
+      - performance anxiety
+      - 考试焦虑
+      - 考前焦虑
+      - 表现焦虑
+
+  youth_mental_health:
+    label: 青少年心理健康
+    keywords:
+      - youth mental health
+      - teen mental health
+      - adolescent mental health
+      - student mental health
+      - 青少年心理健康
+      - 学生心理健康
+      - 未成年人心理健康
+      - 学生心理危机
+
+  depression:
+    label: 抑郁
+    keywords:
+      - depression
+      - depressive symptoms
+      - teen depression
+      - adolescent depression
+      - 抑郁
+      - 抑郁症状
+      - 青少年抑郁
+      - 学生抑郁
+
+  anxiety:
+    label: 焦虑
+    keywords:
+      - anxiety
+      - anxious
+      - teen anxiety
+      - adolescent anxiety
+      - 焦虑
+      - 青少年焦虑
+      - 学生焦虑
+
+  self_harm_prevention:
+    label: 自伤预防
+    keywords:
+      - self-harm prevention
+      - suicide prevention
+      - self injury prevention
+      - crisis prevention
+      - 自伤预防
+      - 自杀预防
+      - 危机干预
+      - 生命教育
+
+  school_pressure:
+    label: 校园压力
+    keywords:
+      - school pressure
+      - campus stress
+      - school stress
+      - peer pressure
+      - 校园压力
+      - 学校压力
+      - 同伴压力
+      - 厌学
+
+  parent_child_relationship:
+    label: 亲子关系
+    keywords:
+      - parent-child relationship
+      - parent child relationship
+      - parent teen relationship
+      - family communication
+      - 亲子关系
+      - 亲子沟通
+      - 亲子冲突
+      - 家庭沟通
+
+  sleep:
+    label: 睡眠
+    keywords:
+      - sleep
+      - sleep and learning
+      - sleep deprivation
+      - teen sleep
+      - adolescent sleep
+      - 睡眠
+      - 睡眠与学习
+      - 睡眠不足
+      - 青少年睡眠
+
+  phone_addiction:
+    label: 手机成瘾
+    keywords:
+      - phone addiction
+      - smartphone addiction
+      - problematic smartphone use
+      - social media addiction
+      - 手机成瘾
+      - 手机依赖
+      - 电子产品成瘾
+      - 社交媒体成瘾
+
+  exercise_learning:
+    label: 运动与学习
+    keywords:
+      - exercise and learning
+      - physical activity and learning
+      - sports and learning
+      - movement and learning
+      - 运动与学习
+      - 体育运动与学习
+      - 身体活动与学习
+
+  brain_science:
+    label: 脑科学
+    keywords:
+      - brain science
+      - adolescent brain
+      - brain development
+      - learning brain
+      - 脑科学
+      - 青春期大脑
+      - 青少年大脑
+      - 大脑发育
+
+  cognitive_science:
+    label: 认知科学
+    keywords:
+      - cognitive science
+      - cognition
+      - cognitive development
+      - 认知科学
+      - 认知发展
+
+  learning_science_research:
+    label: 学习科学研究
+    keywords:
+      - learning science research
+      - science of learning
+      - learning research
+      - 学习科学研究
+      - 学习研究
+      - 学习的科学
+
+  social_emotional_learning:
+    label: 社交情绪学习
+    keywords:
+      - social emotional learning
+      - social-emotional learning
+      - SEL
+      - emotional regulation
+      - 社交情绪学习
+      - 情绪调节
+
+  adolescence:
+    label: 青春期
+    keywords:
+      - adolescence
+      - puberty
+      - adolescent development
+      - 青春期
+      - 青春期发展
+
+  stress_management:
+    label: 压力管理
+    keywords:
+      - stress management
+      - coping skills
+      - stress coping
+      - 压力管理
+      - 应对压力
+      - 压力应对
+
+  resilience:
+    label: 心理韧性
+    keywords:
+      - resilience
+      - psychological resilience
+      - student resilience
+      - 心理韧性
+      - 抗挫力
+      - 复原力
+
+  reading_interest:
+    label: 阅读兴趣
+    keywords:
+      - reading interest
+      - love of reading
+      - reading motivation
+      - independent reading
+      - 阅读兴趣
+      - 阅读动机
+      - 自主阅读
+
+  math_anxiety:
+    label: 数学焦虑
+    keywords:
+      - math anxiety
+      - mathematics anxiety
+      - 数学焦虑
+      - 数学恐惧
+
 directions:
   ai:
     - AI 产品和研究有哪些新进展？

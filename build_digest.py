@@ -28,6 +28,10 @@ MAX_TOP_PICKS_PER_SOURCE = 3
 MAX_SUPPLEMENTAL_EDUCATION_MEDIA_TOP_PICKS = 5
 REPEAT_FALLBACK_MIN_SCORE = 58
 REPEAT_FALLBACK_TAG_MIN_SCORE = 55
+AI_TECH_SOFT_CAP = 10
+PURE_AI_TECH_SOFT_CAP = 5
+LEARNING_PSYCH_FAMILY_TARGET = 5
+TOPIC_FAMILY_RELAXED_MIN_SCORE = 28
 TOP20_FILE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})_top20\.json$")
 RESOURCE_FILE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})_resources\.json$")
 SEASONAL_FILE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})_seasonal\.json$")
@@ -44,6 +48,13 @@ PRIORITY_SOURCES = {
     "Stanford HAI": 24,
     "Harvard Graduate School of Education": 24,
     "EdWorkingPapers": 23,
+    "Child Mind Institute": 18,
+    "ScienceDaily Education": 17,
+    "ScienceDaily Mind & Brain": 16,
+    "The Conversation US Education": 14,
+    "The Conversation UK Education": 14,
+    "Greater Good Magazine": 13,
+    "Neuroscience News": 12,
     "Google for Education Blog": 20,
     "Microsoft Education Blog": 20,
     "MIT Technology Review": 21,
@@ -65,6 +76,138 @@ MEDIA_SOURCES = {
 }
 SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES = {"The 74", "Inside Higher Ed", "Times Higher Education"}
 EDUCATION_MEDIA_SOURCES = {"EdSurge"} | SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES
+BROAD_WELLBEING_RESEARCH_SOURCES = {
+    "Greater Good Magazine",
+    "ScienceDaily Education",
+    "ScienceDaily Mind & Brain",
+    "Neuroscience News",
+}
+BROAD_WELLBEING_CONTEXT_KEYWORDS = [
+    "student",
+    "students",
+    "school",
+    "schools",
+    "teacher",
+    "teachers",
+    "classroom",
+    "education",
+    "learning",
+    "homework",
+    "parent",
+    "parents",
+    "parenting",
+    "family",
+    "families",
+    "child",
+    "children",
+    "kid",
+    "kids",
+    "teen",
+    "teens",
+    "adolescent",
+    "adolescents",
+    "youth",
+    "exam",
+    "test anxiety",
+    "academic pressure",
+    "screen time",
+    "sleep",
+    "attention",
+    "reading",
+    "math",
+    "学生",
+    "学校",
+    "教育",
+    "学习",
+    "课堂",
+    "教师",
+    "家长",
+    "父母",
+    "家庭",
+    "孩子",
+    "儿童",
+    "青少年",
+    "青春期",
+    "考试",
+    "学业压力",
+    "屏幕时间",
+    "睡眠",
+    "注意力",
+]
+BROAD_WELLBEING_MEDICAL_NOISE_KEYWORDS = [
+    "older adults",
+    "middle age",
+    "elderly",
+    "70s",
+    "80s",
+    "cancer",
+    "chemotherapy",
+    "patients",
+    "patient",
+    "embryo",
+    "maternal age",
+    "glp-1",
+    "biomarker",
+    "saliva",
+    "dopamine",
+    "autophagy",
+    "substance use",
+    "clinical trial",
+    "drug",
+    "therapy",
+    "therapies",
+    "老年",
+    "中年",
+    "癌症",
+    "化疗",
+    "患者",
+    "胚胎",
+    "药物",
+    "临床",
+]
+BROAD_WELLBEING_STRONG_CONTEXT_KEYWORDS = [
+    "student",
+    "students",
+    "school",
+    "schools",
+    "teacher",
+    "teachers",
+    "classroom",
+    "education",
+    "homework",
+    "parent",
+    "parents",
+    "parenting",
+    "family",
+    "families",
+    "child",
+    "children",
+    "kid",
+    "kids",
+    "teen",
+    "teens",
+    "adolescent",
+    "adolescents",
+    "youth",
+    "exam",
+    "academic pressure",
+    "screen time",
+    "学生",
+    "学校",
+    "教育",
+    "课堂",
+    "教师",
+    "家长",
+    "父母",
+    "家庭",
+    "孩子",
+    "儿童",
+    "青少年",
+    "青春期",
+    "考试",
+    "学业压力",
+    "屏幕时间",
+]
 SUPPLEMENTAL_TOP_PICK_TAGS = {
     "AI时代学生画像",
     "AI教育",
@@ -78,8 +221,21 @@ SUPPLEMENTAL_TOP_PICK_TAGS = {
     "学习能力",
     "科技教育",
     "心理健康",
+    "青少年心理健康",
+    "考试压力",
+    "考试焦虑",
+    "学习习惯",
+    "学习方法",
+    "学习动机",
+    "脑科学",
+    "认知科学",
+    "亲子关系",
+    "睡眠",
+    "运动与学习",
     "阅读",
+    "阅读兴趣",
     "数学",
+    "数学焦虑",
     "屏幕时间",
 }
 LEARNING_RESOURCE_MAJOR_TOP_PICK_TAGS = {
@@ -111,10 +267,18 @@ THEME_KEYWORDS = [
     "learning",
     "student",
     "school",
+    "parents",
+    "family",
     "university",
     "research",
     "children",
     "teen",
+    "adolescent",
+    "mental health",
+    "test anxiety",
+    "exam stress",
+    "study habits",
+    "learning science",
     "screen time",
     "ai tutor",
     "coding agent",
@@ -136,7 +300,8 @@ THEME_KEYWORDS = [
 ]
 
 AI_KEYWORDS = ["ai", "artificial intelligence", "chatgpt", "openai", "generative ai", "model", "coding agent"]
-EDUCATION_KEYWORDS = ["education", "learning", "student", "school", "children", "teen", "ai tutor", "science education", "math", "tutoring", "skills"]
+TECH_NEWS_SOURCES = {"TechCrunch AI", "The Verge AI", "NVIDIA Blog", "MIT Technology Review", "Google AI Blog", "OpenAI Blog", "Google DeepMind Blog", "Microsoft AI Blog", "Meta AI Blog"}
+EDUCATION_KEYWORDS = ["education", "learning", "student", "school", "parents", "family", "children", "teen", "adolescent", "ai tutor", "science education", "math", "tutoring", "skills"]
 FIT_TAGS = {
     "教育研究",
     "AI教育",
@@ -159,10 +324,23 @@ REPEAT_FALLBACK_HIGH_VALUE_TAGS = {
     "项目制学习",
     "屏幕时间",
     "心理健康",
+    "青少年心理健康",
+    "考试压力",
+    "考试焦虑",
+    "学习习惯",
+    "学习方法",
+    "学习动机",
+    "脑科学",
+    "认知科学",
     "家庭教育",
+    "亲子关系",
+    "睡眠",
+    "运动与学习",
     "数学学习",
+    "数学焦虑",
     "数学",
     "阅读教育",
+    "阅读兴趣",
     "阅读",
 }
 REPEAT_FALLBACK_PREFERRED_SOURCES = {
@@ -194,6 +372,11 @@ DOWNRANK_KEYWORDS = [
     "finance",
     "ads",
     "i/o",
+    "ipo",
+    "benchmark",
+    "model upgrade",
+    "developer tool",
+    "cloud service",
 ]
 ENTERPRISE_ONLY_KEYWORDS = ["enterprise", "developer", "coding agent", "sandbox", "infrastructure", "data center", "gpu", "partnership", "partners with", "cloud", "builders"]
 AI_STUDENT_SUBJECT_SIGNALS = [
@@ -717,6 +900,268 @@ GENERAL_TECH_EDUCATION_TRANSLATION_SIGNALS = [
     "心理健康",
     "升学",
     "职业准备",
+]
+PURE_AI_TECH_KEYWORDS = [
+    "launches",
+    "announces",
+    "introduces",
+    "new model",
+    "model upgrade",
+    "benchmark",
+    "infrastructure",
+    "data center",
+    "gpu",
+    "chip",
+    "developer",
+    "coding agent",
+    "api",
+    "cloud",
+    "enterprise",
+    "partnership",
+    "ipo",
+    "funding",
+    "financing",
+    "subscription",
+    "productivity",
+    "发布",
+    "推出",
+    "模型升级",
+    "基准测试",
+    "基础设施",
+    "数据中心",
+    "芯片",
+    "开发者",
+    "云服务",
+    "企业",
+    "合作",
+    "融资",
+    "上市",
+]
+AI_EDUCATION_STUDENT_KEYWORDS = [
+    "ai literacy",
+    "future of learning",
+    "students use ai",
+    "students using ai",
+    "student project",
+    "student innovation",
+    "classroom ai",
+    "ai in schools",
+    "ai tutor",
+    "homework",
+    "assessment",
+    "teacher",
+    "classroom",
+    "school",
+    "education",
+    "student learning",
+    "school learning",
+    "learning outcomes",
+    "学生",
+    "课堂",
+    "学校",
+    "学习",
+    "作业",
+    "测评",
+    "教师",
+    "AI素养",
+    "未来学习",
+]
+LEARNING_PSYCHOLOGY_FAMILY_TAGS = {
+    "学习习惯",
+    "学习方法",
+    "学习动机",
+    "自我管理",
+    "注意力",
+    "执行功能",
+    "元认知",
+    "考试压力",
+    "考试焦虑",
+    "青少年心理健康",
+    "心理健康",
+    "抑郁",
+    "焦虑",
+    "自伤预防",
+    "校园压力",
+    "亲子关系",
+    "家庭教育",
+    "屏幕时间",
+    "手机成瘾",
+    "睡眠",
+    "运动与学习",
+    "脑科学",
+    "认知科学",
+    "学习科学",
+    "学习科学研究",
+    "社交情绪学习",
+    "SEL",
+    "青春期",
+    "压力管理",
+    "心理韧性",
+    "阅读兴趣",
+    "数学焦虑",
+}
+LEARNING_PSYCHOLOGY_CONTEXT_KEYWORDS = [
+    "student",
+    "students",
+    "school",
+    "schools",
+    "teacher",
+    "teachers",
+    "classroom",
+    "homework",
+    "parents",
+    "parent",
+    "family",
+    "families",
+    "children",
+    "kids",
+    "teen",
+    "teens",
+    "adolescent",
+    "adolescents",
+    "youth",
+    "learning",
+    "academic",
+    "exam",
+    "test",
+    "学生",
+    "学校",
+    "课堂",
+    "老师",
+    "教师",
+    "作业",
+    "家长",
+    "父母",
+    "家庭",
+    "孩子",
+    "儿童",
+    "青少年",
+    "青春期",
+    "学习",
+    "学业",
+    "考试",
+    "校园",
+    "亲子",
+]
+GENERIC_PSYCHOLOGY_TAGS = {"心理健康", "抑郁", "焦虑", "压力管理", "心理韧性"}
+GENERIC_PSYCHOLOGY_KEYWORDS = [
+    "mental health",
+    "depression",
+    "anxiety",
+    "stress management",
+    "resilience",
+    "心理健康",
+    "抑郁",
+    "焦虑",
+    "压力管理",
+    "心理韧性",
+]
+LEARNING_PSYCHOLOGY_FAMILY_KEYWORDS = [
+    "study habits",
+    "learning habits",
+    "learning motivation",
+    "self-regulation",
+    "executive function",
+    "attention",
+    "metacognition",
+    "test anxiety",
+    "exam stress",
+    "academic pressure",
+    "student stress",
+    "youth mental health",
+    "teen mental health",
+    "adolescent mental health",
+    "depression",
+    "anxiety",
+    "self-harm prevention",
+    "suicide prevention",
+    "school pressure",
+    "parent-child relationship",
+    "screen time",
+    "sleep and learning",
+    "exercise and learning",
+    "brain science",
+    "cognitive science",
+    "learning science",
+    "social emotional learning",
+    "adolescent brain",
+    "math anxiety",
+    "reading motivation",
+    "学习习惯",
+    "学习方法",
+    "学习动机",
+    "自我管理",
+    "执行功能",
+    "注意力",
+    "元认知",
+    "考试压力",
+    "考试焦虑",
+    "学业压力",
+    "青少年心理健康",
+    "抑郁",
+    "焦虑",
+    "自伤",
+    "自杀预防",
+    "校园压力",
+    "学生心理危机",
+    "亲子关系",
+    "亲子冲突",
+    "屏幕时间",
+    "手机成瘾",
+    "睡眠",
+    "睡眠不足",
+    "运动与学习",
+    "脑科学",
+    "认知科学",
+    "社交情绪学习",
+    "青春期",
+    "厌学",
+    "生命教育",
+    "压力管理",
+    "心理韧性",
+    "阅读兴趣",
+    "数学焦虑",
+]
+SUBJECT_LEARNING_TAGS = {"阅读", "阅读教育", "数学", "数学学习", "英语学习", "英语输入", "STEM资源", "科学/STEM"}
+SUBJECT_LEARNING_KEYWORDS = [
+    "reading",
+    "literacy",
+    "writing",
+    "math",
+    "mathematics",
+    "english learning",
+    "vocabulary",
+    "grammar",
+    "stem",
+    "science learning",
+    "阅读",
+    "写作",
+    "数学",
+    "英语",
+    "词汇",
+    "语法",
+    "科学学习",
+]
+LOW_QUALITY_PSYCHOLOGY_NOISE_KEYWORDS = [
+    "secret trick",
+    "one simple trick",
+    "miracle",
+    "cure anxiety",
+    "limited-time",
+    "bootcamp",
+    "course sale",
+    "consultation",
+    "sign up",
+    "coaching package",
+    "标题党",
+    "焦虑营销",
+    "限时优惠",
+    "训练营",
+    "课程销售",
+    "心理咨询套餐",
+    "报名咨询",
+    "逆袭",
+    "鸡娃",
 ]
 RESOURCE_POSITIVE_TAGS = {
     "七爸干货资源",
@@ -1645,9 +2090,98 @@ def is_enterprise_only(title: str, summary: str, tags: list[str]) -> bool:
     return has_any(text, ENTERPRISE_ONLY_KEYWORDS) and not has_qiba_signal(title, summary, tags)
 
 
+def is_ai_education_or_student_case(item: dict) -> bool:
+    tags = set(item.get("tags", []))
+    text = item_text(item, item.get("tags", []))
+    if tags & {"AI教育", "AI时代学生画像", "学生Builder", "未来学习", "项目制学习"}:
+        return True
+    return has_any(text, AI_STUDENT_TECH_SIGNALS) and has_any(text, AI_EDUCATION_STUDENT_KEYWORDS)
+
+
+def is_pure_ai_tech_news(item: dict) -> bool:
+    tags = set(item.get("tags", []))
+    text = item_text(item, item.get("tags", []))
+    source = item.get("source", "")
+    has_ai_or_tech = source in TECH_NEWS_SOURCES or bool(tags & {"AI", "高科技", "科技巨头", "OpenAI", "Google", "Microsoft", "Meta", "Apple", "NVIDIA"}) or has_any(text, AI_KEYWORDS + ["anthropic", "mistral", "spacex", "gemini"])
+    if not has_ai_or_tech:
+        return False
+    if is_ai_education_or_student_case(item):
+        return False
+    if has_any(text, GENERAL_TECH_EDUCATION_TRANSLATION_SIGNALS) and not has_any(text, PURE_AI_TECH_KEYWORDS):
+        return False
+    return source in TECH_NEWS_SOURCES or has_any(text, PURE_AI_TECH_KEYWORDS) or bool(tags & {"高科技", "科技巨头", "OpenAI", "Google", "Microsoft", "Meta", "Apple", "NVIDIA"})
+
+
+def is_low_quality_psychology_noise(item: dict) -> bool:
+    text = item_text(item, item.get("tags", []))
+    return has_any(text, LOW_QUALITY_PSYCHOLOGY_NOISE_KEYWORDS) or bool(set(item.get("tags", [])) & {"教培广告", "课程销售", "留资引流", "纯营销发布"})
+
+
+def is_learning_psychology_family(item: dict) -> bool:
+    tags = set(item.get("tags", []))
+    text = item_text(item, item.get("tags", []))
+    plain_text = f"{item.get('title', '')} {item.get('summary', '')}"
+    if is_low_quality_psychology_noise(item):
+        return False
+    has_context = has_any(plain_text, LEARNING_PSYCHOLOGY_CONTEXT_KEYWORDS)
+    specific_tags = tags & (LEARNING_PSYCHOLOGY_FAMILY_TAGS - GENERIC_PSYCHOLOGY_TAGS)
+    if specific_tags:
+        return True
+    if tags & GENERIC_PSYCHOLOGY_TAGS:
+        return has_context
+    if has_any(text, GENERIC_PSYCHOLOGY_KEYWORDS) and not has_context:
+        return False
+    return has_any(text, LEARNING_PSYCHOLOGY_FAMILY_KEYWORDS) and has_context
+
+
+def classify_topic_family(item: dict) -> str:
+    tags = set(item.get("tags", []))
+    text = item_text(item, item.get("tags", []))
+    if is_ai_education_or_student_case(item):
+        return "ai_education_student"
+    if is_pure_ai_tech_news(item):
+        return "pure_ai_tech"
+    if is_learning_psychology_family(item):
+        return "learning_psychology_family"
+    if bool(tags & SUBJECT_LEARNING_TAGS) or has_any(text, SUBJECT_LEARNING_KEYWORDS):
+        return "subject_learning"
+    if bool(tags & {"教育研究", "儿童与青少年", "美国高校", "教育热点"}) or has_any(text, ["education policy", "school district", "education research", "public school", "naep", "教育政策", "学校制度", "教育研究"]):
+        return "education_policy_research"
+    return "other"
+
+
+def apply_topic_family_score_adjustment(item: dict) -> int:
+    family = classify_topic_family(item)
+    text = item_text(item, item.get("tags", []))
+    if is_low_quality_psychology_noise(item):
+        return -25
+    if family == "learning_psychology_family":
+        bonus = 12
+        if has_any(text, ["study", "research", "report", "guidance", "guide", "public health", "academy", "university", "研究", "报告", "指南", "大学", "公共卫生"]):
+            bonus += 4
+        return bonus
+    if family == "ai_education_student":
+        bonus = 4
+        if has_any(text, ["classroom", "students use", "student project", "teacher", "homework", "assessment", "课堂", "学生使用", "学生项目", "作业", "测评"]):
+            bonus += 4
+        return bonus
+    if family == "subject_learning":
+        return 5
+    if family == "education_policy_research":
+        return 2
+    if family == "pure_ai_tech":
+        penalty = -12
+        if has_any(text, PURE_AI_TECH_KEYWORDS):
+            penalty -= 8
+        return penalty
+    return 0
+
+
 def calculate_priority_score(item: dict, tags: list[str], now: datetime) -> int:
     title = clean_text(item.get("title", ""))
     summary = clean_text(item.get("summary", ""))
+    scoring_item = dict(item)
+    scoring_item["tags"] = tags
     text = f"{title} {summary} {' '.join(tags)}"
     score = (
         source_priority(item.get("source", ""))
@@ -1657,7 +2191,12 @@ def calculate_priority_score(item: dict, tags: list[str], now: datetime) -> int:
         - downrank_penalty(title, summary)
         - education_media_penalty(item, tags)
         + ai_student_builder_bonus(item, tags, text)
+        + apply_topic_family_score_adjustment(scoring_item)
     )
+    if is_low_quality_psychology_noise(scoring_item):
+        score = min(score, 45)
+    if classify_topic_family(scoring_item) == "pure_ai_tech":
+        score = min(score, 62)
     if not has_qiba_signal(title, summary, tags):
         score = min(score, 58)
     if is_enterprise_only(title, summary, tags):
@@ -1811,6 +2350,13 @@ def has_repeat_fallback_hard_noise(item: dict) -> bool:
 def repeat_fallback_tag_bonus(item: dict) -> int:
     tags = set(item.get("tags", []))
     bonus = min(len(tags & REPEAT_FALLBACK_HIGH_VALUE_TAGS) * 8, 32)
+    family = classify_topic_family(item)
+    if family == "learning_psychology_family":
+        bonus += 16
+    elif family == "subject_learning":
+        bonus += 8
+    elif family == "pure_ai_tech":
+        bonus -= 20
     if item.get("source") in REPEAT_FALLBACK_PREFERRED_SOURCES:
         bonus += 8
     reason = item.get("duplicate_reason", "")
@@ -1837,6 +2383,8 @@ def can_use_repeat_fallback(item: dict, current_date: date | datetime | str | No
         if age_days is not None and age_days <= 1:
             return False
     if has_repeat_fallback_hard_noise(item):
+        return False
+    if classify_topic_family(item) == "pure_ai_tech" and score < 75:
         return False
     if not general_tech_reserve_can_enter_top20(item):
         return False
@@ -1868,6 +2416,98 @@ def repeat_fallback_source_limit(source: str) -> int:
     if source in REPEAT_FALLBACK_PREFERRED_SOURCES:
         return MAX_TOP_PICKS_PER_SOURCE + 1
     return MAX_TOP_PICKS_PER_SOURCE
+
+
+def is_ai_tech_family(family: str) -> bool:
+    return family in {"pure_ai_tech", "ai_education_student"}
+
+
+def has_high_quality_topic_override(item: dict) -> bool:
+    family = classify_topic_family(item)
+    score = int(item.get("priority_score") or 0)
+    if family == "learning_psychology_family" and score >= 48:
+        return True
+    if family == "ai_education_student" and score >= 78:
+        return True
+    if family == "subject_learning" and score >= 55:
+        return True
+    return score >= 82 and has_qiba_signal(item.get("title", ""), item.get("summary", ""), item.get("tags", []))
+
+
+def top20_candidate_quality_ok(item: dict) -> bool:
+    if is_low_quality_psychology_noise(item):
+        return False
+    if not general_tech_reserve_can_enter_top20(item):
+        return False
+    if not supplemental_education_media_can_enter_top20(item):
+        return False
+    if not learning_resource_can_enter_top20(item):
+        return False
+    source = item.get("source", "")
+    if source in BROAD_WELLBEING_RESEARCH_SOURCES:
+        plain_text = f"{item.get('title', '')} {item.get('summary', '')}"
+        if not has_any(plain_text, BROAD_WELLBEING_STRONG_CONTEXT_KEYWORDS):
+            return False
+        if has_any(plain_text, BROAD_WELLBEING_MEDICAL_NOISE_KEYWORDS) and not has_any(
+            plain_text,
+            ["child", "children", "kid", "kids", "teen", "teens", "adolescent", "adolescents", "youth", "student", "students", "孩子", "儿童", "青少年", "学生"],
+        ):
+            return False
+    return True
+
+
+def can_select_with_topic_balance(
+    item: dict,
+    selected: list[dict],
+    source_counts: dict[str, int],
+    supplemental_education_media_count: int,
+    strict: bool = True,
+    enforce_soft_caps: bool = True,
+) -> bool:
+    source = item.get("source", "")
+    score = int(item.get("priority_score") or 0)
+    family = classify_topic_family(item)
+    is_high_score = score >= 80
+    if not top20_candidate_quality_ok(item):
+        return False
+    if family == "pure_ai_tech" and score < 35:
+        return False
+    if family == "ai_education_student" and score < 30:
+        return False
+    if family == "learning_psychology_family" and score < 35:
+        return False
+    if family == "subject_learning" and score < 28:
+        return False
+    if family == "education_policy_research" and score < 35:
+        return False
+    if family == "other" and score < 30:
+        return False
+    source_limit = MAX_TOP_PICKS_PER_SOURCE
+    if is_high_score and source not in BROAD_WELLBEING_RESEARCH_SOURCES:
+        source_limit += 1
+    if source_counts.get(source, 0) >= source_limit:
+        return False
+    if (
+        not is_high_score
+        and source in SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES
+        and supplemental_education_media_count >= MAX_SUPPLEMENTAL_EDUCATION_MEDIA_TOP_PICKS
+    ):
+        return False
+    if enforce_soft_caps and family == "pure_ai_tech":
+        pure_count = sum(1 for selected_item in selected if classify_topic_family(selected_item) == "pure_ai_tech")
+        if pure_count >= PURE_AI_TECH_SOFT_CAP:
+            return False
+    if enforce_soft_caps and is_ai_tech_family(family):
+        ai_count = sum(1 for selected_item in selected if is_ai_tech_family(classify_topic_family(selected_item)))
+        if ai_count >= AI_TECH_SOFT_CAP and not (score >= 82 and family == "ai_education_student"):
+            return False
+    if not strict:
+        if family == "pure_ai_tech" and score < 50:
+            return False
+        if family == "other" and score < 30:
+            return False
+        return score >= TOPIC_FAMILY_RELAXED_MIN_SCORE or has_high_quality_topic_override(item)
+    return True
 
 
 def build_archive_index(data_dir: Path) -> tuple[list[dict], dict[str, list[dict]]]:
@@ -1951,25 +2591,40 @@ def select_top_picks(
     selected: list[dict] = []
     source_counts: dict[str, int] = {}
     supplemental_education_media_count = 0
-    for item in ranked:
+    selected_links: set[str] = set()
+
+    learning_candidates = [
+        item
+        for item in ranked
+        if classify_topic_family(item) == "learning_psychology_family"
+        and int(item.get("priority_score") or 0) >= 45
+        and top20_candidate_quality_ok(item)
+    ]
+    for item in learning_candidates:
+        learning_count = sum(1 for selected_item in selected if classify_topic_family(selected_item) == "learning_psychology_family")
+        if learning_count >= LEARNING_PSYCH_FAMILY_TARGET:
+            break
+        if item.get("link") in selected_links:
+            continue
+        if not can_select_with_topic_balance(item, selected, source_counts, supplemental_education_media_count, strict=True):
+            continue
         source = item.get("source", "")
-        score = int(item.get("priority_score") or 0)
-        is_high_score = score >= 80
-        if not general_tech_reserve_can_enter_top20(item):
-            continue
-        if not supplemental_education_media_can_enter_top20(item):
-            continue
-        if not learning_resource_can_enter_top20(item):
-            continue
-        if not is_high_score and source_counts.get(source, 0) >= MAX_TOP_PICKS_PER_SOURCE:
-            continue
-        if (
-            not is_high_score
-            and source in SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES
-            and supplemental_education_media_count >= MAX_SUPPLEMENTAL_EDUCATION_MEDIA_TOP_PICKS
-        ):
-            continue
         selected.append(item)
+        selected_links.add(item.get("link"))
+        source_counts[source] = source_counts.get(source, 0) + 1
+        if source in SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES:
+            supplemental_education_media_count += 1
+        if len(selected) == limit:
+            return selected
+
+    for item in ranked:
+        if item.get("link") in selected_links:
+            continue
+        if not can_select_with_topic_balance(item, selected, source_counts, supplemental_education_media_count, strict=True):
+            continue
+        source = item.get("source", "")
+        selected.append(item)
+        selected_links.add(item.get("link"))
         source_counts[source] = source_counts.get(source, 0) + 1
         if source in SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES:
             supplemental_education_media_count += 1
@@ -1977,7 +2632,28 @@ def select_top_picks(
             return selected
 
     if len(selected) < limit:
-        selected_links = {item.get("link") for item in selected}
+        for item in ranked:
+            if item.get("link") in selected_links:
+                continue
+            if not can_select_with_topic_balance(
+                item,
+                selected,
+                source_counts,
+                supplemental_education_media_count,
+                strict=False,
+                enforce_soft_caps=False,
+            ):
+                continue
+            source = item.get("source", "")
+            selected.append(item)
+            selected_links.add(item.get("link"))
+            source_counts[source] = source_counts.get(source, 0) + 1
+            if source in SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES:
+                supplemental_education_media_count += 1
+            if len(selected) == limit:
+                return selected
+
+    if len(selected) < limit:
         repeat_candidates = [
             item
             for item in items
@@ -1988,6 +2664,15 @@ def select_top_picks(
         repeat_candidates.sort(key=lambda item: repeat_fallback_sort_key(item, current_date), reverse=True)
         for item in repeat_candidates:
             source = item.get("source", "")
+            if not can_select_with_topic_balance(
+                item,
+                selected,
+                source_counts,
+                supplemental_education_media_count,
+                strict=True,
+                enforce_soft_caps=False,
+            ):
+                continue
             if source_counts.get(source, 0) >= repeat_fallback_source_limit(source):
                 continue
             fallback_item = dict(item)
@@ -2599,6 +3284,7 @@ def build_digest() -> tuple[Path, Path, Path, Path, Path, Path, Path, Path]:
         story_angle = build_story_angle(item, tags)
         priority_score = calculate_priority_score(item, tags, now)
         qiba_pitch = normalize_qiba_pitch(build_qiba_pitch(item, tags, priority_score))
+        topic_family = classify_topic_family({**item, "tags": tags})
         digest_items.append(
             {
                 "title": clean_text(item.get("title", "")),
@@ -2613,6 +3299,7 @@ def build_digest() -> tuple[Path, Path, Path, Path, Path, Path, Path, Path]:
                 "story_angle": story_angle,
                 "qiba_pitch": qiba_pitch,
                 "priority_score": priority_score,
+                "topic_family": topic_family,
                 "recommendation_level": recommendation_level(priority_score),
                 "is_top_pick": False,
                 "is_duplicate": False,

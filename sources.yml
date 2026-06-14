@@ -123,6 +123,62 @@ sources:
     weight: 1
     notes: Verified public RSS; useful for higher education, AI in universities, students, campuses, and institutional change.
 
+  - name: Child Mind Institute
+    url: https://childmind.org/feed/
+    category: youth_mental_health
+    region: US
+    priority: high
+    weight: 3
+    notes: Verified public RSS; useful for youth mental health, anxiety, school stress, parent guidance, and adolescent development. Filter out clinical detail that is not family/education relevant.
+
+  - name: ScienceDaily Education
+    url: https://www.sciencedaily.com/rss/mind_brain/educational_psychology.xml
+    category: learning_science
+    region: US
+    priority: medium
+    weight: 2
+    notes: Verified public RSS; useful for educational psychology, learning science, cognition, memory, motivation, and school-related research. Filter medical or adult-only research unless family-learning relevant.
+
+  - name: ScienceDaily Mind & Brain
+    url: https://www.sciencedaily.com/rss/mind_brain.xml
+    category: brain_science
+    region: US
+    priority: medium
+    weight: 2
+    notes: Verified public RSS; broad mind and brain research. Use for adolescent brain, sleep, attention, mental health, cognition, and learning; filter biomedical noise.
+
+  - name: The Conversation US Education
+    url: https://theconversation.com/us/education/articles.atom
+    category: education_research_media
+    region: US
+    priority: medium
+    weight: 2
+    notes: Verified public Atom feed; useful for education research, school policy, learning, equity, teachers, students, and family-readable public scholarship.
+
+  - name: The Conversation UK Education
+    url: https://theconversation.com/uk/education/articles.atom
+    category: education_research_media
+    region: UK/Europe
+    priority: medium
+    weight: 2
+    notes: Verified public Atom feed; useful for European/UK education research, AI and learning, school systems, student wellbeing, and family-readable public scholarship.
+
+  - name: Greater Good Magazine
+    url: https://greatergood.berkeley.edu/rss
+    category: learning_wellbeing
+    region: US
+    priority: medium
+    weight: 2
+    notes: Verified public RSS; useful for social-emotional learning, wellbeing, family relationships, motivation, compassion, and psychology. Filter generic adult self-help if not student/family relevant.
+
+  - name: Neuroscience News
+    url: https://neurosciencenews.com/feed/
+    category: brain_science
+    region: US
+    priority: supplemental
+    weight: 1
+    notes: Verified public RSS; broad neuroscience source. Use only when adolescent brain, learning, attention, sleep, cognition, mental health, or education relevance is clear.
+
   - name: Bloomberg Technology
     url: ""
     category: high_tech

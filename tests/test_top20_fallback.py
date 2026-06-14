@@ -47,20 +47,63 @@ def make_item(
 
 
 def main() -> int:
-    main_candidates = [make_item(i, score=80, duplicate=False) for i in range(14)]
-    fallback_candidates = [
-        make_item(100 + i, title=f"Repeat high value AI education candidate {i}", source=source, score=60, duplicate=True)
-        for i, source in enumerate(
-            [
-                "OpenAI Blog",
-                "Google for Education Blog",
-                "Microsoft Education Blog",
-                "MIT News",
-                "EdSurge",
-                "Stanford HAI",
-            ],
-            start=1,
+    main_candidates = []
+    for i in range(5):
+        main_candidates.append(
+            make_item(
+                i,
+                title=f"AI education classroom candidate {i}",
+                score=80,
+                duplicate=False,
+                tags=["AI教育", "未来学习", "学生Builder"],
+                summary="Students and teachers use AI in classroom learning, homework feedback and future skills.",
+            )
         )
+    for i in range(5, 9):
+        main_candidates.append(
+            make_item(
+                i,
+                title=f"Learning psychology candidate {i}",
+                score=78,
+                duplicate=False,
+                tags=["学习习惯", "青少年心理健康", "家庭教育"],
+                summary="Parents and schools support study habits, teen mental health and academic pressure with evidence-based guidance.",
+            )
+        )
+    for i in range(9, 12):
+        main_candidates.append(
+            make_item(
+                i,
+                title=f"Subject learning candidate {i}",
+                score=74,
+                duplicate=False,
+                tags=["阅读兴趣", "数学焦虑", "学习方法"],
+                summary="Students build reading motivation, math confidence and learning methods in middle school.",
+            )
+        )
+    for i in range(12, 14):
+        main_candidates.append(
+            make_item(
+                i,
+                title=f"Family education research candidate {i}",
+                score=72,
+                duplicate=False,
+                tags=["家庭教育", "亲子关系", "屏幕时间"],
+                summary="Families navigate screen time, parent-child relationships and school expectations.",
+            )
+        )
+
+    fallback_specs = [
+        ("Repeat high value AI education candidate 1", "OpenAI Blog", ["AI教育", "未来学习"], "Students use AI for learning and creativity in school."),
+        ("Repeat high value AI education candidate 2", "Google for Education Blog", ["AI教育", "学生Builder"], "Teachers and students test AI learning workflows in classrooms."),
+        ("Repeat high value study habits candidate", "Microsoft Education Blog", ["学习习惯", "自我管理"], "Students improve study habits, planning and self-regulation."),
+        ("Repeat high value teen stress candidate", "MIT News", ["青少年心理健康", "考试压力"], "Research explains student stress, anxiety and school pressure."),
+        ("Repeat high value reading candidate", "EdSurge", ["阅读兴趣", "学习动机"], "Students build reading motivation and durable learning habits."),
+        ("Repeat high value family candidate", "Stanford HAI", ["家庭教育", "亲子关系", "屏幕时间"], "Families discuss screen time, attention and parent-child communication."),
+    ]
+    fallback_candidates = [
+        make_item(100 + i, title=title, source=source, score=60, duplicate=True, tags=tags, summary=summary)
+        for i, (title, source, tags, summary) in enumerate(fallback_specs, start=1)
     ]
     selected = select_top_picks(main_candidates + fallback_candidates, current_date="2026-06-13")
     assert len(selected) == 20, selected
