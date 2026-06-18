@@ -1,0 +1,602 @@
+[
+  {
+    "title": "What We Get Wrong About Fathers Who Don’t Live With Their Kids",
+    "link": "https://greatergood.berkeley.edu/article/item/what_we_get_wrong_about_fathers_who_dont_live_with_their_kids",
+    "source": "Greater Good Magazine",
+    "source_category": "learning_wellbeing",
+    "published_at": "2026-06-15T13:00:00+00:00",
+    "summary": "Popular culture tends to stigmatize fathers who don’t live with their children. From reality television to TikTok shaming, nonresident fathers are often thought to be absent from their children’s lives: “deadbeat dads.” The reality is quite different. As a researcher who studies nonresident fathers,",
+    "tags": [
+      "教育研究",
+      "美国高校",
+      "学习科学",
+      "儿童与青少年",
+      "家庭教育",
+      "未来职业",
+      "亲子沟通",
+      "社会评论"
+    ],
+    "normalized_title": "what we get wrong about fathers who don t live with their kids",
+    "zh_summary": "这项研究围绕学生学习、学校教育或教学方式展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成文章，角度应从家长能感知的变化切入：学校、学习工具、孩子能力培养或未来职业。正文需要补充家庭或课堂场景，避免写成普通科技新闻摘要。 可作为早间选题会的辅助判断。",
+    "priority_score": 100,
+    "topic_family": "learning_psychology_family",
+    "recommendation_level": "必看",
+    "is_top_pick": false,
+    "is_duplicate": true,
+    "duplicate_reason": "same_link",
+    "first_seen_date": "2026-06-16",
+    "allow_repeat": true,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？",
+      "美国高校的研究或政策变化是否值得跟踪？"
+    ],
+    "is_repeat_fallback": true,
+    "repeat_reason": "duplicate:same_link:2026-06-16",
+    "top20_fill_reason": "主榜非重复候选不足20，作为高价值历史候选补位"
+  },
+  {
+    "title": "Start learning with Google’s new AI Educator Series.",
+    "link": "https://blog.google/products-and-platforms/products/education/ai-educator-series/",
+    "source": "Google for Education Blog",
+    "source_category": "ai_education",
+    "published_at": "2026-05-13T17:00:00+00:00",
+    "summary": "Free AI literacy training is available to all 6 million K-12 and higher education teachers across the U.S.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "美国高校",
+      "科技巨头",
+      "Google",
+      "AI教育"
+    ],
+    "normalized_title": "start learning with google s new ai educator series",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成文章，角度应从家长能感知的变化切入：学校、学习工具、孩子能力培养或未来职业。正文需要补充家庭或课堂场景，避免写成普通科技新闻摘要。 可作为早间选题会的辅助判断。",
+    "priority_score": 82,
+    "topic_family": "ai_education_student",
+    "recommendation_level": "可写",
+    "is_top_pick": false,
+    "is_duplicate": true,
+    "duplicate_reason": "same_link",
+    "first_seen_date": "2026-05-28",
+    "allow_repeat": true,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ],
+    "is_repeat_fallback": true,
+    "repeat_reason": "duplicate:same_link:2026-05-28",
+    "top20_fill_reason": "主榜非重复候选不足20，作为高价值历史候选补位"
+  },
+  {
+    "title": "5 foundations for reshaping the future of education and AI",
+    "link": "https://www.microsoft.com/en-us/education/blog/2026/06/5-foundations-for-reshaping-the-future-of-education-and-ai/",
+    "source": "Microsoft Education Blog",
+    "source_category": "ai_education",
+    "published_at": "2026-06-11T16:00:00+00:00",
+    "summary": "As AI reshapes work, education is evolving. Explore five essential skills and shifts helping students build adaptability, judgment, and real-world readiness for an AI-powered future. The post 5 foundations for reshaping the future of education and AI appeared first on Microsoft Education Blog.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "科技巨头",
+      "未来职业",
+      "Microsoft",
+      "学生Builder",
+      "未来学习"
+    ],
+    "normalized_title": "5 foundations for reshaping the future of education and ai",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "这条新闻可以转化为七爸选题：AI时代好学生画像正在变化。重点不是孩子会不会使用 AI 工具，而是能不能用 AI 解决真实问题、做出真实项目。适合延展到孩子该不该学 AI、项目制学习、英文资料检索和跨学科能力。",
+    "priority_score": 78,
+    "topic_family": "ai_education_student",
+    "recommendation_level": "可写",
+    "is_top_pick": false,
+    "is_duplicate": true,
+    "duplicate_reason": "same_link",
+    "first_seen_date": "2026-06-13",
+    "allow_repeat": true,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ],
+    "is_repeat_fallback": true,
+    "repeat_reason": "duplicate:same_link:2026-06-13",
+    "top20_fill_reason": "主榜非重复候选不足20，作为高价值历史候选补位"
+  },
+  {
+    "title": "The future of learning in the AI age",
+    "link": "https://blog.google/products-and-platforms/products/education/future-learning-ai-era/",
+    "source": "Google for Education Blog",
+    "source_category": "ai_education",
+    "published_at": "2026-06-09T10:00:00+00:00",
+    "summary": "A photo of Ben speaking in front of Tokyo University students.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "美国高校",
+      "AI教育",
+      "未来学习"
+    ],
+    "normalized_title": "the future of learning in the ai age",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成主稿，角度可定为“AI 家教真的能帮孩子学数学吗”。重点解释工具如何提升练习反馈、信心和学习效率，同时提醒家长别把陪伴、诊断和鼓励完全交给系统。 可作为早间选题会的辅助判断。",
+    "priority_score": 76,
+    "topic_family": "ai_education_student",
+    "recommendation_level": "可写",
+    "is_top_pick": false,
+    "is_duplicate": true,
+    "duplicate_reason": "same_link",
+    "first_seen_date": "2026-06-10",
+    "allow_repeat": true,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ],
+    "is_repeat_fallback": true,
+    "repeat_reason": "duplicate:same_link:2026-06-10",
+    "top20_fill_reason": "主榜非重复候选不足20，作为高价值历史候选补位"
+  },
+  {
+    "title": "Q&A: Expanding MIT’s global reach through Universal Learning",
+    "link": "https://news.mit.edu/2026/qa-expanding-mit-global-reach-through-universal-learning-0512",
+    "source": "MIT News",
+    "source_category": "us_university",
+    "published_at": "2026-05-12T15:00:00+00:00",
+    "summary": "Dimitris Bertsimas and Megan Mitchell discuss the motivation behind Universal Learning, and what sets the new MIT Open Learning educational initiative apart.",
+    "tags": [
+      "教育研究",
+      "美国高校",
+      "学习科学",
+      "MIT"
+    ],
+    "normalized_title": "q a expanding mit s global reach through universal learning",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成文章，角度可定为“AI 素养会不会成为下一代基础能力”。可从国家、大学和平台都在推动 AI 教育切入，落到普通家庭如何启蒙、如何避免只学工具不学判断力。",
+    "priority_score": 74,
+    "topic_family": "learning_psychology_family",
+    "recommendation_level": "可写",
+    "is_top_pick": false,
+    "is_duplicate": true,
+    "duplicate_reason": "same_link",
+    "first_seen_date": "2026-05-26",
+    "allow_repeat": true,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？",
+      "美国高校的研究或政策变化是否值得跟踪？"
+    ],
+    "is_repeat_fallback": true,
+    "repeat_reason": "duplicate:same_link:2026-05-26",
+    "top20_fill_reason": "主榜非重复候选不足20，作为高价值历史候选补位"
+  },
+  {
+    "title": "Check out real-life AI prototypes from the Futures Lab.",
+    "link": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+    "source": "Google AI Blog",
+    "source_category": "tech_giant",
+    "published_at": "2026-05-29T12:00:00+00:00",
+    "summary": "University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "美国高校",
+      "未来学习"
+    ],
+    "normalized_title": "check out real life ai prototypes from the futures lab",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成主稿，角度可定为“AI 家教真的能帮孩子学数学吗”。重点解释工具如何提升练习反馈、信心和学习效率，同时提醒家长别把陪伴、诊断和鼓励完全交给系统。 可作为早间选题会的辅助判断。",
+    "priority_score": 73,
+    "topic_family": "ai_education_student",
+    "recommendation_level": "可写",
+    "is_top_pick": false,
+    "is_duplicate": true,
+    "duplicate_reason": "same_link",
+    "first_seen_date": "2026-05-29",
+    "allow_repeat": true,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ],
+    "is_repeat_fallback": true,
+    "repeat_reason": "duplicate:same_link:2026-05-29",
+    "top20_fill_reason": "主榜非重复候选不足20，作为高价值历史候选补位"
+  },
+  {
+    "title": "Unlock AI learning with Hour of AI for Computer Science Education Week",
+    "link": "https://www.microsoft.com/en-us/education/blog/2025/12/unlock-ai-learning-with-hour-of-ai-for-computer-science-education-week/",
+    "source": "Microsoft Education Blog",
+    "source_category": "ai_education",
+    "published_at": "2025-12-01T14:00:00+00:00",
+    "summary": "Join Hour of AI during CS Ed Week 2025—get lessons and resources from Microsoft Education to spark curiosity and create AI learning experiences. The post Unlock AI learning with Hour of AI for Computer Science Education Week appeared first on Microsoft Education Blog.",
+    "tags": [
+      "AI",
+      "教育研究",
+      "科技巨头",
+      "Microsoft",
+      "Science",
+      "AI教育"
+    ],
+    "normalized_title": "unlock ai learning with hour of ai for computer science education week",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成文章，角度应从家长能感知的变化切入：学校、学习工具、孩子能力培养或未来职业。正文需要补充家庭或课堂场景，避免写成普通科技新闻摘要。 可作为早间选题会的辅助判断。",
+    "priority_score": 70,
+    "topic_family": "ai_education_student",
+    "recommendation_level": "可写",
+    "is_top_pick": false,
+    "is_duplicate": true,
+    "duplicate_reason": "same_link",
+    "first_seen_date": "2026-05-28",
+    "allow_repeat": true,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ],
+    "is_repeat_fallback": true,
+    "repeat_reason": "duplicate:same_link:2026-05-28",
+    "top20_fill_reason": "主榜非重复候选不足20，作为高价值历史候选补位"
+  },
+  {
+    "title": "Does screen time mean children are missing out on play?",
+    "link": "https://theconversation.com/does-screen-time-mean-children-are-missing-out-on-play-284765",
+    "source": "The Conversation UK Education",
+    "source_category": "education_research_media",
+    "published_at": "2026-06-17T15:31:00+00:00",
+    "summary": "Different play experiences may provide different developmental opportunities.",
+    "tags": [
+      "儿童与青少年",
+      "屏幕时间"
+    ],
+    "normalized_title": "does screen time mean children are missing out on play",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入媒介素养资料库，观察 AI 内容、娱乐产品和公共讨论如何影响青少年数字生活。若没有儿童、学校或家庭冲突案例支撑，不建议单独成文，可等待更贴近家长的案例。",
+    "priority_score": 64,
+    "topic_family": "learning_psychology_family",
+    "recommendation_level": "可收藏",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻是否适合延展为屏幕时间或数字生活选题？"
+    ]
+  },
+  {
+    "title": "How universities are preparing students for an AI-powered future",
+    "link": "https://blog.google/products-and-platforms/products/education/higher-education-gemini-notebooklm/",
+    "source": "Google for Education Blog",
+    "source_category": "ai_education",
+    "published_at": "2026-06-17T16:00:00+00:00",
+    "summary": "Several students seated in a lecture hall",
+    "tags": [
+      "AI",
+      "教育研究"
+    ],
+    "normalized_title": "how universities are preparing students for an ai powered future",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成主稿，角度可定为“AI 家教真的能帮孩子学数学吗”。重点解释工具如何提升练习反馈、信心和学习效率，同时提醒家长别把陪伴、诊断和鼓励完全交给系统。 可作为早间选题会的辅助判断。",
+    "priority_score": 56,
+    "topic_family": "education_policy_research",
+    "recommendation_level": "可收藏",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "Nature Neuroscience: Autism subtypes identified using cross-species functional connectivity analyses",
+    "link": "https://childmind.org/blog/nature-neuroscience-autism-subtypes-identified-using-cross-species-functional-connectivity-analyses/",
+    "source": "Child Mind Institute",
+    "source_category": "youth_mental_health",
+    "published_at": "2026-05-22T17:37:02+00:00",
+    "summary": "It is often assumed that phenotypic heterogeneity in autism reflects underlying pathobiological variation. However, direct evidence supporting this link is lacking. Leveraging cross-species functional neuroimaging, we show that brain dysconnectivity patterns in autism can be parsed into biologically",
+    "tags": [
+      "学习科学",
+      "儿童与青少年",
+      "Nature"
+    ],
+    "normalized_title": "nature neuroscience autism subtypes identified using cross species functional connectivity analyses",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 52,
+    "topic_family": "learning_psychology_family",
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻能否帮助读者理解孩子如何学习？"
+    ]
+  },
+  {
+    "title": "JAACAP Open: Negative Online Experiences and Reporting Rates in Youth With Mental Health Conditions",
+    "link": "https://childmind.org/blog/jaacap-open-negative-online-experiences-and-reporting-rates-in-youth-with-mental-health-conditions/",
+    "source": "Child Mind Institute",
+    "source_category": "youth_mental_health",
+    "published_at": "2026-05-28T21:21:24+00:00",
+    "summary": "Growing engagement with digital spaces among children and adolescents increases the risk of negative online experiences (NOE). This study examined the prevalence, risk factors, and reporting barriers for NOE among youth with mental health and neurodevelopmental conditions. The post JAACAP Open: Nega",
+    "tags": [
+      "儿童与青少年",
+      "亲子沟通"
+    ],
+    "normalized_title": "jaacap open negative online experiences and reporting rates in youth with mental health conditions",
+    "zh_summary": "这项研究围绕儿童青少年与数字生活展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 48,
+    "topic_family": "education_policy_research",
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "The Child Mind Institute Names Dr. Vera Feuer as Chief Clinical Officer",
+    "link": "https://childmind.org/blog/dr-vera-feuer-as-chief-clinical-officer/",
+    "source": "Child Mind Institute",
+    "source_category": "youth_mental_health",
+    "published_at": "2026-05-04T14:00:00+00:00",
+    "summary": "Feuer brings more than two decades of clinical leadership to inaugural role New York, NY – The Child Mind Institute, an independent nonprofit dedicated to transforming the lives of children affected by mental health disorders, today announced Vera Feuer, MD, as the organization’s first-ever Chief Cl",
+    "tags": [
+      "儿童与青少年",
+      "亲子沟通"
+    ],
+    "normalized_title": "the child mind institute names dr vera feuer as chief clinical officer",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 48,
+    "topic_family": "education_policy_research",
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "How My Daughter and I Connected Over the Knicks",
+    "link": "https://greatergood.berkeley.edu/article/item/how_my_daughter_and_i_connected_over_the_knicks",
+    "source": "Greater Good Magazine",
+    "source_category": "learning_wellbeing",
+    "published_at": "2026-06-17T12:43:00+00:00",
+    "summary": "I remember exactly when my daughter became a diehard New York Knicks fan. I had long dreamed about it happening but had accepted it might never occur, in the way that parents often must resign themselves when it comes to their children’s passions and proclivities. It was last May and the Knicks were",
+    "tags": [
+      "儿童与青少年",
+      "家庭教育",
+      "屏幕时间",
+      "Meta",
+      "社会评论",
+      "选题储备"
+    ],
+    "normalized_title": "how my daughter and i connected over the knicks",
+    "zh_summary": "这项研究围绕儿童青少年与数字生活展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合放入媒介素养资料库，观察 AI 内容、娱乐产品和公共讨论如何影响青少年数字生活。若没有儿童、学校或家庭冲突案例支撑，不建议单独成文，可等待更贴近家长的案例。",
+    "priority_score": 47,
+    "topic_family": "pure_ai_tech",
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻是否适合延展为屏幕时间或数字生活选题？"
+    ]
+  },
+  {
+    "title": "Social media’s next evolution: user-controlled algorithms",
+    "link": "https://techcrunch.com/2026/06/17/social-medias-next-evolution-user-controlled-algorithms/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-06-17T18:19:48+00:00",
+    "summary": "Social media feeds are becoming more customizable as platforms like Threads, Instagram, and TikTok introduce tools that let users directly influence the algorithms powering their recommendations.",
+    "tags": [
+      "媒介素养",
+      "屏幕时间",
+      "Meta"
+    ],
+    "normalized_title": "social media s next evolution user controlled algorithms",
+    "zh_summary": "TechCrunch发布或更新了相关产品能力，重点在 AI 工具、平台功能或技术基础设施的持续演进。",
+    "story_angle": "可放入科技巨头动态观察，重点看平台、模型和生态变化；除非牵涉教育和青少年，否则不建议单独成稿。",
+    "qiba_pitch": "适合放入媒介素养资料库，观察 AI 内容、娱乐产品和公共讨论如何影响青少年数字生活。若没有儿童、学校或家庭冲突案例支撑，不建议单独成文，可等待更贴近家长的案例。",
+    "priority_score": 46,
+    "topic_family": "learning_psychology_family",
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻是否适合延展为屏幕时间或数字生活选题？"
+    ]
+  },
+  {
+    "title": "Opinion: What School and District Leaders Need to Know Before They Invest in AI",
+    "link": "https://www.the74million.org/article/what-school-and-district-leaders-need-to-know-before-they-invest-in-ai/",
+    "source": "The 74",
+    "source_category": "education_media",
+    "published_at": "2026-06-18T12:30:00+00:00",
+    "summary": "The end of the fiscal year is near. For many school administrators, that means scrambling to decide whether to spend more money on artificial intelligence-driven ed tech products that promise everything from letting teachers operate on autopilot to ensuring that all students receive exactly what the",
+    "tags": [
+      "AI",
+      "教育研究"
+    ],
+    "normalized_title": "opinion what school and district leaders need to know before they invest in ai",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "适合七点半爸爸主稿，可写成 AI、学校学习或数字生活如何进入普通家庭决策的角度，重点放在家长能理解的变化。",
+    "qiba_pitch": "适合写成主稿，角度可定为“AI 家教真的能帮孩子学数学吗”。重点解释工具如何提升练习反馈、信心和学习效率，同时提醒家长别把陪伴、诊断和鼓励完全交给系统。 可作为早间选题会的辅助判断。",
+    "priority_score": 44,
+    "topic_family": "ai_education_student",
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "AI 产品和研究有哪些新进展？",
+      "这条新闻是否适合解释给普通家长和学生？"
+    ]
+  },
+  {
+    "title": "In game theory, generalists sometimes win out over specialists",
+    "link": "https://news.mit.edu/2026/game-theory-generalists-sometimes-win-out-over-specialists-0617",
+    "source": "MIT News",
+    "source_category": "us_university",
+    "published_at": "2026-06-17T19:20:00+00:00",
+    "summary": "Researchers show that for certain kinds of games, an overlooked class of algorithms performs much better than expected.",
+    "tags": [
+      "媒介素养"
+    ],
+    "normalized_title": "in game theory generalists sometimes win out over specialists",
+    "zh_summary": "这项研究围绕一个值得跟踪的研究问题展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 40,
+    "topic_family": "other",
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  },
+  {
+    "title": "The slowtech revolution is here to kill your phone addiction and rescue your attention span",
+    "link": "https://techcrunch.com/2026/06/17/the-slowtech-revolution-is-here-to-kill-your-phone-addiction-and-rescue-your-attention-span/",
+    "source": "TechCrunch AI",
+    "source_category": "ai",
+    "published_at": "2026-06-17T15:24:41+00:00",
+    "summary": "“People just really want to take back control of their time, their lives, their attention... They’re down for whatever helps them do that.”",
+    "tags": [
+      "学习科学"
+    ],
+    "normalized_title": "the slowtech revolution is here to kill your phone addiction and rescue your attention span",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 40,
+    "topic_family": "learning_psychology_family",
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻能否帮助读者理解孩子如何学习？"
+    ]
+  },
+  {
+    "title": "Gender-neutral pronouns in French exams: how language classrooms respond to linguistic change",
+    "link": "https://theconversation.com/gender-neutral-pronouns-in-french-exams-how-language-classrooms-respond-to-linguistic-change-283436",
+    "source": "The Conversation UK Education",
+    "source_category": "education_research_media",
+    "published_at": "2026-06-17T15:35:00+00:00",
+    "summary": "Should language teaching describe how a language is used, or how it should be used?",
+    "tags": [
+      "教育研究",
+      "教育热点"
+    ],
+    "normalized_title": "gender neutral pronouns in french exams how language classrooms respond to linguistic change",
+    "zh_summary": "内容聚焦教育、学习或高校场景，适合关注技术变化如何影响学生、教师和家庭的日常选择。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 38,
+    "topic_family": "education_policy_research",
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "这条新闻对学习方式、学校教育或家庭教育有什么启发？"
+    ]
+  },
+  {
+    "title": "How To Find the Wow In Life",
+    "link": "https://greatergood.berkeley.edu/podcasts/item/how_to_find_the_wow_in_life",
+    "source": "Greater Good Magazine",
+    "source_category": "learning_wellbeing",
+    "published_at": "2026-06-18T10:00:00+00:00",
+    "summary": "What can a singing bird, a neighborhood walk, and a pair of puppet adventurers teach us about awe? Sit down with Wowsabout! creators Dorien Davies and Halle Stanford to discuss helping kids—and grownups—find wonder wherever they are.",
+    "tags": [
+      "美国高校",
+      "儿童与青少年",
+      "Stanford"
+    ],
+    "normalized_title": "how to find the wow in life",
+    "zh_summary": "相关动态提供了科技、研究或教育领域的新背景，可先记录关键信号，等待更明确的公共议题出现。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入教育趋势资料库，后续可与学校学习、AI 教育、家庭教育或未来职业案例合并使用。单条信息力度有限，暂不建议单独成文，适合等同类案例成组后再写。 可作为早间选题会的辅助判断。",
+    "priority_score": 37,
+    "topic_family": "education_policy_research",
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "美国高校的研究或政策变化是否值得跟踪？"
+    ]
+  },
+  {
+    "title": "Seven Perfect Shuffles Randomize a Deck of Cards. But How Many Sloppy Ones?",
+    "link": "https://www.quantamagazine.org/seven-perfect-shuffles-randomize-a-deck-of-cards-but-how-many-sloppy-ones-20260617/",
+    "source": "Quanta Magazine",
+    "source_category": "science",
+    "published_at": "2026-06-17T14:35:35+00:00",
+    "summary": "A decades-old proof showed that seven shuffles are enough to mix up a deck of cards. But it requires you to cut the deck with the precision of a professional magician. A new proof gets around that obstacle. The post Seven Perfect Shuffles Randomize a Deck of Cards. But How Many Sloppy Ones? first ap",
+    "tags": [
+      "观察"
+    ],
+    "normalized_title": "seven perfect shuffles randomize a deck of cards but how many sloppy ones",
+    "zh_summary": "这项研究围绕基础科学和前沿技术展开，提供了新的发现、方法或比较框架，可作为后续分析的背景材料。",
+    "story_angle": "暂时适合作为选题储备，先记录其技术或研究背景；若后续出现教育、家庭或青少年关联，再考虑扩展成稿。",
+    "qiba_pitch": "适合放入科技背景资料库，主要用于跟踪 AI 公司、模型和平台生态变化。与普通家长、孩子学习关联较弱，不建议单独成文，只作为判断行业方向的辅助材料。 可作为早间选题会的辅助判断。",
+    "priority_score": 30,
+    "topic_family": "other",
+    "recommendation_level": "观察中",
+    "is_top_pick": true,
+    "is_duplicate": false,
+    "duplicate_reason": "",
+    "first_seen_date": "",
+    "allow_repeat": false,
+    "directions": [
+      "是否可以发展成一篇面向公众号读者的选题线索？"
+    ]
+  }
+]
