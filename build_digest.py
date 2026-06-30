@@ -3,8 +3,10 @@ from __future__ import annotations
 import json
 import re
 from datetime import date, datetime, timedelta, timezone
+from difflib import SequenceMatcher
 from html import escape
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from zoneinfo import ZoneInfo
 
 import yaml
@@ -70,11 +72,19 @@ MEDIA_SOURCES = {
     "EdSurge": 8,
     "The 74": 4,
     "Inside Higher Ed": 4,
+    "The Hechinger Report": 14,
+    "Chalkbeat": 6,
+    "NPR Education": 14,
+    "ADDitude Magazine": 13,
+    "Internet Matters": 13,
+    "The Learning Scientists": 13,
+    "Cult of Pedagogy": 10,
+    "Reading Rockets": 13,
     "Times Higher Education": 4,
     "Ars Technica": 11,
     "Wired": 11,
 }
-SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES = {"The 74", "Inside Higher Ed", "Times Higher Education"}
+SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES = {"The 74", "Inside Higher Ed", "Times Higher Education", "Chalkbeat"}
 EDUCATION_MEDIA_SOURCES = {"EdSurge"} | SUPPLEMENTAL_EDUCATION_MEDIA_SOURCES
 BROAD_WELLBEING_RESEARCH_SOURCES = {
     "Greater Good Magazine",
@@ -378,6 +388,158 @@ DOWNRANK_KEYWORDS = [
     "developer tool",
     "cloud service",
 ]
+PROMOTION_NOISE_TAGS = {
+    "教培广告",
+    "课程销售",
+    "留资引流",
+    "普通科技工具",
+    "企业培训",
+    "纯营销发布",
+    "活动推广",
+    "注册引流",
+    "产品营销",
+    "企业案例宣传",
+    "融资上市噪音",
+}
+PROMOTION_DIRECT_CTA_KEYWORDS = [
+    "register now",
+    "registration open",
+    "registration is open",
+    "join us",
+    "sign up",
+    "enroll now",
+    "apply now",
+    "applications open",
+    "subscribe now",
+    "newsletter signup",
+    "book a demo",
+    "request a demo",
+    "start a free trial",
+    "limited-time offer",
+    "download guide",
+    "download the guide",
+    "download report",
+    "download the report",
+    "download whitepaper",
+    "download ebook",
+    "报名",
+    "立即注册",
+    "开放报名",
+    "申请加入",
+    "加入我们",
+    "立即订阅",
+    "预约演示",
+    "免费试用",
+    "限时优惠",
+    "报告下载",
+    "资料下载",
+    "白皮书下载",
+]
+PROMOTION_EVENT_KEYWORDS = [
+    "webinar",
+    "event recap",
+    "summit",
+    "research showcase",
+    "showcase celebrates",
+    "conference registration",
+    "conference recap",
+    "upcoming conference",
+    "upcoming summit",
+    "virtual summit",
+    "spring luncheon",
+    "hosts 2026 spring luncheon",
+    "workshop registration",
+    "研讨会报名",
+    "活动回顾",
+    "会议回顾",
+    "峰会报名",
+    "讲座报名",
+    "公开课报名",
+]
+PROMOTION_COURSE_KEYWORDS = [
+    "new course",
+    "new courses",
+    "academy courses",
+    "online course series",
+    "educator series",
+    "hour of ai",
+    "training program launch",
+    "certification program",
+    "paid bootcamp",
+    "course discount",
+    "课程上线",
+    "课程发布",
+    "课程优惠",
+    "付费训练营",
+    "培训项目发布",
+    "认证项目",
+    "营地招生",
+]
+PROMOTION_PRODUCT_KEYWORDS = [
+    "product launch",
+    "launches a new product",
+    "launches new platform",
+    "new platform for schools",
+    "solution for schools",
+    "how to use our product",
+    "product demo",
+    "built for your student",
+    "introducing ask kai",
+    "promotional launch",
+    "sponsored content",
+    "press release",
+    "sale brings",
+    "membership savings",
+    "平台上线",
+    "新品发布",
+    "产品发布",
+    "学校解决方案",
+    "产品演示",
+    "赞助内容",
+    "促销活动",
+    "折扣优惠",
+]
+PROMOTION_PARTNERSHIP_KEYWORDS = [
+    "partnership announcement",
+    "announces partnership",
+    "announce an initiative",
+    "announces an initiative",
+    "initiative builds momentum",
+    "partners with",
+    "collaborate to advance",
+    "build an ai factory",
+    "customer story",
+    "customer success story",
+    "enterprise case study",
+    "合作发布",
+    "宣布合作",
+    "商业合作",
+    "客户案例",
+    "企业案例",
+]
+PROMOTION_FUNDING_KEYWORDS = [
+    "files for ipo",
+    "filed for ipo",
+    "confidential submission of draft s-1",
+    "funding round",
+    "series a funding",
+    "series b funding",
+    "series c funding",
+    "raises $",
+    "fundraise",
+    "融资",
+    "上市申请",
+    "提交上市",
+]
+COMPANY_OFFICIAL_MARKETING_SOURCES = {
+    "OpenAI Blog",
+    "Google AI Blog",
+    "Google for Education Blog",
+    "Microsoft AI Blog",
+    "Microsoft Education Blog",
+    "Meta AI Blog",
+    "NVIDIA Blog",
+}
 ENTERPRISE_ONLY_KEYWORDS = ["enterprise", "developer", "coding agent", "sandbox", "infrastructure", "data center", "gpu", "partnership", "partners with", "cloud", "builders"]
 AI_STUDENT_SUBJECT_SIGNALS = [
     "student",
@@ -1972,6 +2134,79 @@ def downrank_penalty(title: str, summary: str) -> int:
     return min(penalty, 25)
 
 
+def is_event_or_registration_content(item: dict) -> bool:
+    text = f"{item.get('title', '')} {item.get('summary', '')}"
+    return has_any(text, PROMOTION_DIRECT_CTA_KEYWORDS + PROMOTION_EVENT_KEYWORDS + PROMOTION_COURSE_KEYWORDS)
+
+
+def is_product_marketing_content(item: dict) -> bool:
+    title = clean_text(item.get("title", ""))
+    text = f"{title} {item.get('summary', '')}"
+    source = item.get("source", "")
+    if has_any(text, PROMOTION_PRODUCT_KEYWORDS + PROMOTION_PARTNERSHIP_KEYWORDS + PROMOTION_FUNDING_KEYWORDS):
+        return True
+    if has_any(text, ["initiative", "项目"]) and has_any(text, ["builds momentum", "项目推进"]):
+        return True
+    if source in COMPANY_OFFICIAL_MARKETING_SOURCES:
+        if title.lower().startswith("introducing "):
+            return True
+        if has_any(
+            title,
+            [
+                "everything new in our",
+                "things we announced",
+                "catch up on",
+                "our new community investments",
+                "built to benefit everyone: our plan",
+                "from policy to practice",
+                "strengthen security",
+                "prepare your institution",
+                "scale ai safely",
+                "what's new in the microsoft",
+                "microsoft education ai toolkit",
+                "zero trust security",
+                "workforce opportunity",
+            ],
+        ):
+            return True
+        if title.lower().startswith("how ") and has_any(
+            text,
+            ["with openai", "using openai", "combines ai", "puts ai at the core", "scaling trusted ai"],
+        ):
+            return True
+    return False
+
+
+def promotional_content_reasons(item: dict) -> list[str]:
+    tags = set(item.get("tags", []))
+    title = clean_text(item.get("title", ""))
+    reasons: list[str] = []
+    title_has_promotion_signal = has_any(
+        title,
+        PROMOTION_DIRECT_CTA_KEYWORDS
+        + PROMOTION_EVENT_KEYWORDS
+        + PROMOTION_COURSE_KEYWORDS
+        + PROMOTION_PRODUCT_KEYWORDS
+        + PROMOTION_PARTNERSHIP_KEYWORDS
+        + PROMOTION_FUNDING_KEYWORDS,
+    )
+    if tags & PROMOTION_NOISE_TAGS and title_has_promotion_signal:
+        reasons.append("promotion_noise_tag")
+    if has_any(title, PROMOTION_DIRECT_CTA_KEYWORDS):
+        reasons.append("registration_or_download_cta")
+    if has_any(title, PROMOTION_EVENT_KEYWORDS):
+        reasons.append("event_or_webinar")
+    if has_any(title, PROMOTION_COURSE_KEYWORDS):
+        reasons.append("course_or_training_promotion")
+    if is_product_marketing_content(item):
+        reasons.append("product_partnership_or_funding_marketing")
+    return list(dict.fromkeys(reasons))
+
+
+def is_promotional_content(item: dict) -> bool:
+    return bool(promotional_content_reasons(item))
+
+
 def has_education_media_relevance(text: str, tags: list[str]) -> bool:
     return bool(set(tags) & ({"AI教育", "屏幕时间", "家庭教育", "儿童与青少年", "未来职业"} | HIGH_VALUE_EDUCATION_TAGS)) or has_any(
         text,
@@ -2223,13 +2458,79 @@ def similarity_key(item: dict) -> tuple[str, str, str]:
     return (item.get("source", ""), date, " ".join(useful_words[:8]))
 
 
+def normalize_url(url: str) -> str:
+    if not url:
+        return ""
+    try:
+        parsed = urlsplit(url.strip())
+    except ValueError:
+        return url.strip()
+    tracking_keys = {
+        "ref",
+        "source",
+        "campaign",
+        "mc_cid",
+        "mc_eid",
+        "fbclid",
+        "gclid",
+    }
+    query = [
+        (key, value)
+        for key, value in parse_qsl(parsed.query, keep_blank_values=True)
+        if not key.lower().startswith("utm_") and key.lower() not in tracking_keys
+    ]
+    scheme = "https" if parsed.scheme.lower() in {"http", "https"} else parsed.scheme.lower()
+    host = parsed.netloc.lower()
+    if host.startswith("www."):
+        host = host[4:]
+    return urlunsplit(
+        (
+            scheme,
+            host,
+            parsed.path.rstrip("/") or "/",
+            urlencode(query),
+            "",
+        )
+    )
+
+
+def days_between_dates(current_date: str, previous_date: str) -> int | None:
+    try:
+        return (date.fromisoformat(current_date[:10]) - date.fromisoformat(previous_date[:10])).days
+    except (TypeError, ValueError):
+        return None
+
+
+def normalized_title_tokens(title: str) -> set[str]:
+    stop_words = {"the", "a", "an", "and", "or", "to", "of", "in", "for", "with", "on", "by", "from", "how", "why", "what"}
+    return {word for word in normalize_title(title).split() if word not in stop_words}
+
+
+def title_similarity_score(left: str, right: str) -> tuple[float, float]:
+    left_normalized = normalize_title(left)
+    right_normalized = normalize_title(right)
+    if not left_normalized or not right_normalized:
+        return 0.0, 0.0
+    sequence_score = SequenceMatcher(None, left_normalized, right_normalized).ratio()
+    left_tokens = normalized_title_tokens(left_normalized)
+    right_tokens = normalized_title_tokens(right_normalized)
+    union = left_tokens | right_tokens
+    token_score = len(left_tokens & right_tokens) / len(union) if union else 0.0
+    return sequence_score, token_score
+
+
 def load_seen_items(data_dir: Path, current_date: str) -> dict:
     seen = {
         "links": {},
         "titles": {},
+        "first_links": {},
+        "first_titles": {},
+        "link_records": {},
+        "title_records": {},
         "history_files": [],
         "used_history_files": [],
         "item_count": 0,
+        "current_date": current_date,
     }
     for path in sorted(data_dir.glob("*_top20.json")):
         match = TOP20_FILE_RE.match(path.name)
@@ -2246,54 +2547,196 @@ def load_seen_items(data_dir: Path, current_date: str) -> dict:
         seen["used_history_files"].append(str(path))
         for item in items:
             seen["item_count"] += 1
-            link = item.get("link", "").strip()
+            link = normalize_url(item.get("link", "").strip())
             title = clean_text(item.get("title", ""))
             normalized = item.get("normalized_title") or normalize_title(title)
-            if link and link not in seen["links"]:
+            record = {
+                "date": file_date,
+                "title": title,
+                "source": item.get("source", ""),
+                "url": item.get("link", "").strip(),
+                "normalized_title": normalized,
+            }
+            if link:
+                seen["first_links"].setdefault(link, file_date)
                 seen["links"][link] = file_date
-            if normalized and normalized not in seen["titles"]:
+                seen["link_records"][link] = record
+            if normalized:
+                seen["first_titles"].setdefault(normalized, file_date)
                 seen["titles"][normalized] = file_date
+                seen["title_records"][normalized] = record
     return seen
 
 
-def similar_seen_title(normalized_title: str, seen_titles: dict[str, str]) -> tuple[bool, str]:
+def similar_seen_title(
+    normalized_title: str,
+    title_records: dict[str, dict],
+    current_date: str,
+) -> tuple[str, dict, float]:
     if not normalized_title or len(normalized_title) <= 20:
-        return False, ""
-    for seen_title, first_seen_date in seen_titles.items():
+        return "", {}, 0.0
+    best_reason = ""
+    best_record: dict = {}
+    best_score = 0.0
+    for seen_title, record in title_records.items():
         if len(seen_title) <= 20:
             continue
-        if normalized_title in seen_title or seen_title in normalized_title:
-            return True, first_seen_date
-    return False, ""
+        last_selected_date = record.get("date", "")
+        age_days = days_between_dates(current_date, last_selected_date)
+        if age_days is None or age_days < 1:
+            continue
+        sequence_score, token_score = title_similarity_score(normalized_title, seen_title)
+        combined_score = max(sequence_score, token_score)
+        shorter_ratio = min(len(normalized_title), len(seen_title)) / max(len(normalized_title), len(seen_title))
+        is_contained_match = (
+            (normalized_title in seen_title or seen_title in normalized_title)
+            and shorter_ratio >= 0.82
+        )
+        if is_contained_match or sequence_score >= 0.92 or token_score >= 0.80:
+            reason = "similar_title"
+        elif age_days <= 3 and (sequence_score >= 0.72 or token_score >= 0.52):
+            reason = "same_event"
+        else:
+            continue
+        if combined_score > best_score or (
+            combined_score == best_score
+            and last_selected_date > best_record.get("date", "")
+        ):
+            best_reason = reason
+            best_record = record
+            best_score = combined_score
+    return best_reason, best_record, best_score
 
 
 def mark_duplicates(items: list[dict], seen_items: dict) -> int:
     duplicate_count = 0
     seen_links = seen_items.get("links", {})
     seen_titles = seen_items.get("titles", {})
+    first_links = seen_items.get("first_links", {})
+    first_titles = seen_items.get("first_titles", {})
+    link_records = seen_items.get("link_records", {})
+    title_records = seen_items.get("title_records", {})
+    current_date = seen_items.get("current_date", report_date_today())
     for item in items:
-        link = item.get("link", "").strip()
+        link = normalize_url(item.get("link", "").strip())
         normalized = normalize_title(item.get("title", ""))
         item["normalized_title"] = normalized
+        item["normalized_url"] = link
         item["is_duplicate"] = False
         item["duplicate_reason"] = ""
         item["first_seen_date"] = ""
+        item["last_selected_date"] = ""
+        item["days_since_last_selected"] = None
+        item["same_url_recent_days"] = None
+        item["similar_title_recent_days"] = None
+        item["duplicate_block_reason"] = ""
+        item["historical_match_date"] = ""
+        item["historical_match_title"] = ""
+        item["historical_match_source"] = ""
+        item["historical_match_url"] = ""
+        item["duplicate_match_type"] = ""
+        item["title_similarity"] = 0.0
+        item["is_recent_event_overlap"] = False
+        item["event_overlap_date"] = ""
+        item["event_overlap_score"] = 0.0
         item["allow_repeat"] = False
 
         if link in seen_links:
+            last_selected_date = seen_links[link]
+            record = link_records.get(
+                link,
+                {
+                    "date": last_selected_date,
+                    "title": "",
+                    "source": "",
+                    "url": "",
+                    "normalized_title": "",
+                },
+            )
+            age_days = days_between_dates(current_date, last_selected_date)
+            item["first_seen_date"] = first_links.get(link, last_selected_date)
+            item["last_selected_date"] = last_selected_date
+            item["days_since_last_selected"] = age_days
+            item["same_url_recent_days"] = age_days
             item["is_duplicate"] = True
             item["duplicate_reason"] = "same_link"
-            item["first_seen_date"] = seen_links[link]
+            item["duplicate_match_type"] = "same_canonical_url_all_history"
+            item["duplicate_block_reason"] = "same_canonical_url_all_history"
+            item["historical_match_date"] = record.get("date", last_selected_date)
+            item["historical_match_title"] = record.get("title", "")
+            item["historical_match_source"] = record.get("source", "")
+            item["historical_match_url"] = record.get("url", "")
+            item["title_similarity"] = 1.0 if normalized == record.get("normalized_title") else 0.0
         elif normalized in seen_titles:
+            last_selected_date = seen_titles[normalized]
+            record = title_records.get(
+                normalized,
+                {
+                    "date": last_selected_date,
+                    "title": normalized,
+                    "source": "",
+                    "url": "",
+                    "normalized_title": normalized,
+                },
+            )
+            age_days = days_between_dates(current_date, last_selected_date)
+            item["first_seen_date"] = first_titles.get(normalized, last_selected_date)
+            item["last_selected_date"] = last_selected_date
+            item["days_since_last_selected"] = age_days
+            item["similar_title_recent_days"] = age_days
             item["is_duplicate"] = True
             item["duplicate_reason"] = "same_title"
-            item["first_seen_date"] = seen_titles[normalized]
+            item["duplicate_match_type"] = "same_normalized_title_all_history"
+            item["duplicate_block_reason"] = "same_normalized_title_all_history"
+            item["historical_match_date"] = record.get("date", last_selected_date)
+            item["historical_match_title"] = record.get("title", normalized)
+            item["historical_match_source"] = record.get("source", "")
+            item["historical_match_url"] = record.get("url", "")
+            item["title_similarity"] = 1.0
         else:
-            is_similar, first_seen_date = similar_seen_title(normalized, seen_titles)
-            if is_similar:
+            records = title_records or {
+                title: {
+                    "date": selected_date,
+                    "title": title,
+                    "source": "",
+                    "url": "",
+                    "normalized_title": title,
+                }
+                for title, selected_date in seen_titles.items()
+            }
+            similarity_reason, record, similarity_score = similar_seen_title(
+                normalized,
+                records,
+                current_date,
+            )
+            last_selected_date = record.get("date", "")
+            age_days = days_between_dates(current_date, last_selected_date) if last_selected_date else None
+            if similarity_reason == "similar_title":
                 item["is_duplicate"] = True
                 item["duplicate_reason"] = "similar_title"
-                item["first_seen_date"] = first_seen_date
+                item["first_seen_date"] = last_selected_date
+                item["last_selected_date"] = last_selected_date
+                item["days_since_last_selected"] = age_days
+                item["similar_title_recent_days"] = age_days
+                item["duplicate_match_type"] = "similar_title_all_history"
+                item["duplicate_block_reason"] = "similar_title_all_history"
+                item["historical_match_date"] = last_selected_date
+                item["historical_match_title"] = record.get("title", "")
+                item["historical_match_source"] = record.get("source", "")
+                item["historical_match_url"] = record.get("url", "")
+                item["title_similarity"] = round(similarity_score, 3)
+            elif similarity_reason == "same_event":
+                item["is_recent_event_overlap"] = True
+                item["event_overlap_date"] = last_selected_date
+                item["event_overlap_score"] = round(similarity_score, 3)
+                item["historical_match_date"] = last_selected_date
+                item["historical_match_title"] = record.get("title", "")
+                item["historical_match_source"] = record.get("source", "")
+                item["historical_match_url"] = record.get("url", "")
+                item["duplicate_match_type"] = "same_event_recent"
+                item["title_similarity"] = round(similarity_score, 3)
+                item["priority_score"] = max(0, int(item.get("priority_score") or 0) - (24 if age_days == 1 else 16))
+                item["recommendation_level"] = recommendation_level(item["priority_score"])
 
         if item["is_duplicate"]:
             duplicate_count += 1
@@ -2301,11 +2744,11 @@ def mark_duplicates(items: list[dict], seen_items: dict) -> int:
 
 
 def repeat_fallback_age_days(item: dict, current_date: date | datetime | str | None) -> int | None:
-    first_seen = item.get("first_seen_date", "")
-    if not first_seen:
+    selected_date = item.get("last_selected_date") or item.get("first_seen_date", "")
+    if not selected_date:
         return None
     try:
-        first_seen_date = date.fromisoformat(first_seen[:10])
+        previous_selected_date = date.fromisoformat(selected_date[:10])
     except ValueError:
         return None
     if current_date is not None:
@@ -2313,16 +2756,18 @@ def repeat_fallback_age_days(item: dict, current_date: date | datetime | str | N
     else:
         published = parse_published_at(item.get("published_at", ""))
         reference_date = published.astimezone(REPORT_TZ).date() if published else datetime.now(REPORT_TZ).date()
-    return (reference_date - first_seen_date).days
+    return (reference_date - previous_selected_date).days
 
 
 def duplicate_reason_value(item: dict) -> str:
     reason = item.get("duplicate_reason", "")
-    first_seen = item.get("first_seen_date", "")
-    return f"duplicate:{reason}:{first_seen}" if first_seen else f"duplicate:{reason}"
+    selected_date = item.get("last_selected_date") or item.get("first_seen_date", "")
+    return f"duplicate:{reason}:{selected_date}" if selected_date else f"duplicate:{reason}"
 
 
 def has_repeat_fallback_hard_noise(item: dict) -> bool:
+    if is_promotional_content(item):
+        return True
     tags = item.get("tags", [])
     text = item_text(item, tags)
     return bool(set(tags) & RESOURCE_NOISE_TAGS) or has_any(
@@ -2370,31 +2815,9 @@ def can_use_repeat_fallback(item: dict, current_date: date | datetime | str | No
         return False
     if item.get("is_evergreen_fallback") or item.get("topic_type") == "seasonal_evergreen_fallback":
         return False
-    reason = item.get("duplicate_reason", "")
-    if reason not in {"same_link", "same_title", "similar_title"}:
-        return False
-    score = int(item.get("priority_score") or 0)
-    tags = set(item.get("tags", []))
-    has_high_value_tag = bool(tags & REPEAT_FALLBACK_HIGH_VALUE_TAGS)
-    if score < REPEAT_FALLBACK_MIN_SCORE and not (score >= REPEAT_FALLBACK_TAG_MIN_SCORE and has_high_value_tag):
-        return False
-    if reason == "same_link":
-        age_days = repeat_fallback_age_days(item, current_date)
-        if age_days is not None and age_days <= 1:
-            return False
-    if has_repeat_fallback_hard_noise(item):
-        return False
-    if classify_topic_family(item) == "pure_ai_tech" and score < 75:
-        return False
-    if not general_tech_reserve_can_enter_top20(item):
-        return False
-    if not supplemental_education_media_can_enter_top20(item):
-        return False
-    if not learning_resource_can_enter_top20(item):
-        return False
-    title = item.get("title", "")
-    summary = item.get("summary", "")
-    return has_qiba_signal(title, summary, item.get("tags", [])) or has_high_value_tag
+    # Top20 is a one-time topic pool. Historical duplicates stay available in
+    # the full digest, but never re-enter Top20 through fallback.
+    return False
 
 
 def repeat_fallback_sort_key(item: dict, current_date: date | datetime | str | None = None) -> tuple[int, int, int, int, int, str]:
@@ -2435,6 +2858,10 @@ def has_high_quality_topic_override(item: dict) -> bool:
 
 
 def top20_candidate_quality_ok(item: dict) -> bool:
+    if is_promotional_content(item):
+        return False
+    if has_any(item.get("title", ""), ["repost", "republished", "重新发布", "旧文重发"]):
+        return False
     if is_low_quality_psychology_noise(item):
         return False
     if not general_tech_reserve_can_enter_top20(item):
@@ -3284,7 +3711,9 @@ def build_digest() -> tuple[Path, Path, Path, Path, Path, Path, Path, Path]:
         story_angle = build_story_angle(item, tags)
         priority_score = calculate_priority_score(item, tags, now)
         qiba_pitch = normalize_qiba_pitch(build_qiba_pitch(item, tags, priority_score))
-        topic_family = classify_topic_family({**item, "tags": tags})
+        classified_item = {**item, "tags": tags}
+        topic_family = classify_topic_family(classified_item)
+        promotion_reasons = promotional_content_reasons(classified_item)
         digest_items.append(
             {
                 "title": clean_text(item.get("title", "")),
@@ -3300,11 +3729,27 @@ def build_digest() -> tuple[Path, Path, Path, Path, Path, Path, Path, Path]:
                 "qiba_pitch": qiba_pitch,
                 "priority_score": priority_score,
                 "topic_family": topic_family,
+                "is_promotional": bool(promotion_reasons),
+                "promotion_reasons": promotion_reasons,
                 "recommendation_level": recommendation_level(priority_score),
                 "is_top_pick": False,
                 "is_duplicate": False,
                 "duplicate_reason": "",
                 "first_seen_date": "",
+                "last_selected_date": "",
+                "days_since_last_selected": None,
+                "same_url_recent_days": None,
+                "similar_title_recent_days": None,
+                "duplicate_block_reason": "",
+                "historical_match_date": "",
+                "historical_match_title": "",
+                "historical_match_source": "",
+                "historical_match_url": "",
+                "duplicate_match_type": "",
+                "title_similarity": 0.0,
+                "is_recent_event_overlap": False,
+                "event_overlap_date": "",
+                "event_overlap_score": 0.0,
                 "allow_repeat": False,
                 "directions": directions,
             }

@@ -123,6 +123,70 @@ sources:
     weight: 1
     notes: Verified public RSS; useful for higher education, AI in universities, students, campuses, and institutional change.
 
+  - name: The Hechinger Report
+    url: https://hechingerreport.org/feed/
+    category: education_investigative
+    region: US
+    priority: high
+    weight: 3
+    notes: Verified public RSS; nonprofit education reporting on learning, inequality, schools, students, families, and evidence-based policy.
+
+  - name: Chalkbeat
+    url: https://www.chalkbeat.org/arc/outboundfeeds/rss/
+    category: education_media
+    region: US
+    priority: supplemental
+    weight: 1
+    notes: Verified public RSS; local public-education reporting. Treat as supplemental and require clear family, learning, student wellbeing, classroom, or broadly transferable policy value.
+
+  - name: NPR Education
+    url: https://feeds.npr.org/1013/rss.xml
+    category: education_public_media
+    region: US
+    priority: high
+    weight: 3
+    notes: Verified public RSS; public-interest education reporting on students, schools, families, learning, policy, and youth issues.
+
+  - name: ADDitude Magazine
+    url: https://www.additudemag.com/feed/
+    category: learning_differences
+    region: US
+    priority: medium
+    weight: 2
+    notes: Verified public RSS; useful for ADHD, executive function, school support, parenting, learning differences, and teen mental health. Promotion and course content remain excluded from Top20.
+
+  - name: Internet Matters
+    url: https://www.internetmatters.org/feed/
+    category: digital_wellbeing
+    region: UK/Europe
+    priority: medium
+    weight: 2
+    notes: Verified public RSS; useful for children online safety, screen time, digital wellbeing, AI literacy, parenting, and family technology decisions.
+
+  - name: The Learning Scientists
+    url: https://www.learningscientists.org/blog?format=rss
+    category: learning_science
+    region: US/UK
+    priority: medium
+    weight: 2
+    notes: Verified public RSS; evidence-based learning science, memory, retrieval practice, study habits, metacognition, and teaching-learning research.
+
+  - name: Cult of Pedagogy
+    url: https://www.cultofpedagogy.com/feed/
+    category: teaching_learning
+    region: US
+    priority: medium
+    weight: 2
+    notes: Verified public RSS; practical teaching, learning methods, classroom practice, reading, writing, assessment, and student engagement. Course and registration promotion remains excluded.
+
+  - name: Reading Rockets
+    url: https://www.readingrockets.org/rss.xml
+    category: reading_education
+    region: US
+    priority: medium
+    weight: 2
+    notes: Verified public RSS; nonprofit reading education, literacy, reading motivation, family reading, teaching practice, and learning-difference resources.
+
   - name: Child Mind Institute
     url: https://childmind.org/feed/
     category: youth_mental_health

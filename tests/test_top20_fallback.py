@@ -106,11 +106,9 @@ def main() -> int:
         for i, (title, source, tags, summary) in enumerate(fallback_specs, start=1)
     ]
     selected = select_top_picks(main_candidates + fallback_candidates, current_date="2026-06-13")
-    assert len(selected) == 20, selected
+    assert len(selected) == 14, selected
     repeat_items = [item for item in selected if item.get("is_repeat_fallback")]
-    assert len(repeat_items) == 6, repeat_items
-    assert all(item.get("repeat_reason", "").startswith("duplicate:") for item in repeat_items), repeat_items
-    assert all(item.get("top20_fill_reason") for item in repeat_items), repeat_items
+    assert not repeat_items, repeat_items
 
     evergreen = make_item(
         201,
@@ -163,7 +161,7 @@ def main() -> int:
 
     same_title = make_item(
         601,
-        title="High value same title can fill",
+        title="Yesterday same title should not fill",
         source="MIT News",
         score=60,
         duplicate=True,
@@ -172,7 +170,7 @@ def main() -> int:
     )
     selected_same_title = select_top_picks(main_candidates + [same_title], current_date="2026-06-13")
     same_title_selected = [item for item in selected_same_title if item["link"] == same_title["link"]]
-    assert same_title_selected and same_title_selected[0].get("is_repeat_fallback"), selected_same_title
+    assert not same_title_selected, selected_same_title
 
     commercial = make_item(
         701,
@@ -193,7 +191,7 @@ def main() -> int:
                 "low_score_blocked": low_score["link"] not in {item["link"] for item in selected_low_score},
                 "learning_resource_blocked": ordinary_learning_resource["link"] not in {item["link"] for item in selected_learning_resource},
                 "recent_same_link_blocked": recent_same_link["link"] not in {item["link"] for item in selected_recent_same_link},
-                "same_title_allowed": bool(same_title_selected),
+                "yesterday_same_title_blocked": not bool(same_title_selected),
                 "commercial_blocked": commercial["link"] not in {item["link"] for item in selected_commercial},
             },
             ensure_ascii=False,

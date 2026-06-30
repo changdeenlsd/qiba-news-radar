@@ -1719,6 +1719,94 @@ tags:
       - 品牌营销
       - 营销活动
 
+  event_promotion_noise:
+    label: 活动推广
+    keywords:
+      - register for our webinar
+      - webinar registration
+      - conference registration
+      - event recap
+      - conference recap
+      - upcoming summit
+      - spring luncheon
+      - 研讨会报名
+      - 活动回顾
+      - 会议回顾
+      - 峰会报名
+      - 讲座报名
+      - 公开课报名
+
+  registration_lead_noise:
+    label: 注册引流
+    keywords:
+      - register now
+      - registration is open
+      - join us
+      - apply now
+      - applications open
+      - newsletter signup
+      - download the guide
+      - download the report
+      - download whitepaper
+      - 立即注册
+      - 开放报名
+      - 申请加入
+      - 加入我们
+      - 报告下载
+      - 资料下载
+      - 白皮书下载
+
+  product_marketing_noise:
+    label: 产品营销
+    keywords:
+      - product launch
+      - launches a new product
+      - new platform for schools
+      - solution for schools
+      - how to use our product
+      - product demo
+      - sponsored content
+      - membership savings
+      - 新品发布
+      - 产品发布
+      - 平台上线
+      - 学校解决方案
+      - 产品演示
+      - 赞助内容
+      - 折扣优惠
+
+  customer_story_noise:
+    label: 企业案例宣传
+    keywords:
+      - customer story
+      - customer success story
+      - enterprise case study
+      - partnership announcement
+      - announces partnership
+      - announce an initiative
+      - announces an initiative
+      - initiative builds momentum
+      - collaborate to advance
+      - 客户案例
+      - 企业案例
+      - 合作发布
+      - 宣布合作
+      - 商业合作
+
+  funding_ipo_noise:
+    label: 融资上市噪音
+    keywords:
+      - files for IPO
+      - filed for IPO
+      - confidential submission of draft S-1
+      - funding round
+      - Series A funding
+      - Series B funding
+      - Series C funding
+      - 融资
+      - 上市申请
+      - 提交上市
+
   summer_reading:
     label: 暑假阅读
     keywords:
