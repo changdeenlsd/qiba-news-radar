@@ -1,0 +1,108 @@
+[
+  {
+    "title": "The school year begins in LA with one big change: limited screen time",
+    "source": "NPR Education",
+    "url": "https://www.npr.org/2026/08/11/nx-s1-5913745/screen-limits-begin-la-schools",
+    "published_at": "2026-08-11T09:00:00+00:00",
+    "original_year": "",
+    "seasonal_window": "july_august",
+    "theme": "屏幕时间",
+    "seasonal_topics": [
+      "屏幕时间"
+    ],
+    "seasonal_score": 82,
+    "priority_score": 60,
+    "content_type": "近期文章",
+    "seasonal_reason": "当前时令窗口是july_august，这条内容与屏幕时间相关，适合作为近期家庭教育选题储备。",
+    "seasonal_qiba_angle": "七爸写法可从当前家庭最需要的时令问题切入，落到可执行的亲子沟通和学习安排。",
+    "topic_type": "seasonal_recent_analysis",
+    "is_evergreen_fallback": false,
+    "exclude_from_top20": false,
+    "stale_risk": "",
+    "summary": "As educators in the nation's second-largest district prepare for the new limits on classroom screen time, some teachers say it will be a difficult adjustment.",
+    "tags": [
+      "教育研究",
+      "屏幕时间"
+    ],
+    "is_seasonal_pick": true,
+    "seasonal_period": "weekly",
+    "week_start": "2026-08-17",
+    "week_end": "2026-08-23"
+  },
+  {
+    "title": "What We Talk About When We Talk About the Love of Reading: Part 1",
+    "source": "Reading Rockets",
+    "url": "https://www.readingrockets.org/blogs/shanahan-on-literacy/what-we-talk-about-when-we-talk-about-love-reading-part-1",
+    "published_at": "2026-08-17T19:12:04+00:00",
+    "original_year": "",
+    "seasonal_window": "july_august",
+    "theme": "阅读 / 屏幕时间",
+    "seasonal_topics": [
+      "阅读",
+      "屏幕时间"
+    ],
+    "seasonal_score": 77,
+    "priority_score": 92,
+    "content_type": "今日新闻",
+    "seasonal_reason": "当前时令窗口是july_august，这条内容与阅读 / 屏幕时间相关，适合作为近期家庭教育选题储备。",
+    "seasonal_qiba_angle": "七爸写法可从“暑假阅读不是完成书单，而是让孩子重新拥有选书和读下去的动力”切入。",
+    "topic_type": "seasonal_recent",
+    "is_evergreen_fallback": false,
+    "exclude_from_top20": false,
+    "stale_risk": "",
+    "summary": "What We Talk About When We Talk About the Love of Reading: Part 1 Teacher questionI’m an avid reader of your blog. I know that your focus is on teaching reading, but what about fostering a love of reading? Recently, the news has reported that no one is reading anymore. Shouldn’t we do something abou",
+    "tags": [
+      "AI",
+      "教育研究",
+      "美国高校",
+      "科技巨头",
+      "学习科学",
+      "儿童与青少年",
+      "家庭教育",
+      "屏幕时间",
+      "未来职业",
+      "Meta",
+      "Amazon",
+      "Science",
+      "公办家庭可读",
+      "社会评论",
+      "阅读兴趣"
+    ],
+    "is_seasonal_pick": true,
+    "seasonal_period": "weekly",
+    "week_start": "2026-08-17",
+    "week_end": "2026-08-23"
+  },
+  {
+    "title": "Parents putting screens in front of their kids is more about their own stress than other factors",
+    "source": "The Conversation US Education",
+    "url": "https://theconversation.com/parents-putting-screens-in-front-of-their-kids-is-more-about-their-own-stress-than-other-factors-289115",
+    "published_at": "2026-08-07T12:37:47+00:00",
+    "original_year": "",
+    "seasonal_window": "july_august",
+    "theme": "屏幕时间",
+    "seasonal_topics": [
+      "屏幕时间"
+    ],
+    "seasonal_score": 75,
+    "priority_score": 82,
+    "content_type": "近期文章",
+    "seasonal_reason": "当前时令窗口是july_august，这条内容与屏幕时间相关，适合作为近期家庭教育选题储备。",
+    "seasonal_qiba_angle": "七爸写法可从当前家庭最需要的时令问题切入，落到可执行的亲子沟通和学习安排。",
+    "topic_type": "seasonal_recent_analysis",
+    "is_evergreen_fallback": false,
+    "exclude_from_top20": false,
+    "stale_risk": "",
+    "summary": "Most research on kids’ screen time has focused on a child’s behavior. Far less attention has gone to parents and their role in their children’s media use.",
+    "tags": [
+      "学习科学",
+      "儿童与青少年",
+      "家庭教育",
+      "屏幕时间"
+    ],
+    "is_seasonal_pick": true,
+    "seasonal_period": "weekly",
+    "week_start": "2026-08-17",
+    "week_end": "2026-08-23"
+  }
+]
