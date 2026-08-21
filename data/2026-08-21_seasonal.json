@@ -1,0 +1,97 @@
+[
+  {
+    "title": "Oklahoma Students Head Back to School With Focus on Literacy",
+    "source": "The 74",
+    "url": "https://www.the74million.org/article/oklahoma-students-head-back-to-school-with-focus-on-literacy/",
+    "published_at": "2026-08-18T14:30:00+00:00",
+    "original_year": "",
+    "seasonal_window": "late_august_september",
+    "theme": "开学准备",
+    "seasonal_topics": [
+      "开学准备"
+    ],
+    "seasonal_score": 74,
+    "priority_score": 39,
+    "content_type": "今日新闻",
+    "seasonal_reason": "当前时令窗口是late_august_september，这条内容与开学准备相关，适合作为近期家庭教育选题储备。",
+    "seasonal_qiba_angle": "七爸写法可从当前家庭最需要的时令问题切入，落到可执行的亲子沟通和学习安排。",
+    "topic_type": "seasonal_recent",
+    "is_evergreen_fallback": false,
+    "exclude_from_top20": false,
+    "stale_risk": "",
+    "summary": "OKLAHOMA CITY — Hundreds of thousands of Oklahoma children returned to school this week for their first academic year under strict new literacy laws. It will be their final school year before reading scores carry even higher stakes. More than 21,100 Oklahoma third graders, or 44%, scored below a bas",
+    "tags": [
+      "教育研究",
+      "儿童与青少年",
+      "开学准备"
+    ],
+    "is_seasonal_pick": true,
+    "seasonal_period": "weekly",
+    "week_start": "2026-08-17",
+    "week_end": "2026-08-23"
+  },
+  {
+    "title": "Best in Class: Stream PC Games and Study on the Same Laptop With GeForce NOW",
+    "source": "NVIDIA Blog",
+    "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-back-to-school-2026/",
+    "published_at": "2026-07-30T13:00:20+00:00",
+    "original_year": "",
+    "seasonal_window": "late_august_september",
+    "theme": "开学准备",
+    "seasonal_topics": [
+      "开学准备"
+    ],
+    "seasonal_score": 74,
+    "priority_score": 1,
+    "content_type": "近期文章",
+    "seasonal_reason": "当前时令窗口是late_august_september，这条内容与开学准备相关，适合作为近期家庭教育选题储备。",
+    "seasonal_qiba_angle": "七爸写法可从当前家庭最需要的时令问题切入，落到可执行的亲子沟通和学习安排。",
+    "topic_type": "seasonal_recent_analysis",
+    "is_evergreen_fallback": false,
+    "exclude_from_top20": false,
+    "stale_risk": "",
+    "summary": "Back to school means balancing assignments, deadlines and downtime. GeForce NOW makes it easy to have it all. With cloud gaming, everyday laptops used for class can also become GeForce RTX-powered gaming setups. When it’s time to switch from studying to gaming, members can jump into Halo: Campaign E",
+    "tags": [
+      "教育研究",
+      "屏幕时间",
+      "NVIDIA",
+      "开学准备"
+    ],
+    "is_seasonal_pick": true,
+    "seasonal_period": "weekly",
+    "week_start": "2026-08-17",
+    "week_end": "2026-08-23"
+  },
+  {
+    "title": "Back to School 2026",
+    "source": "Google for Education Blog",
+    "url": "https://blog.google/products-and-platforms/products/education/back-to-school-2026/",
+    "published_at": "2026-08-19T19:00:00+00:00",
+    "original_year": "",
+    "seasonal_window": "late_august_september",
+    "theme": "开学准备",
+    "seasonal_topics": [
+      "开学准备"
+    ],
+    "seasonal_score": 73,
+    "priority_score": 50,
+    "content_type": "今日新闻",
+    "seasonal_reason": "当前时令窗口是late_august_september，这条内容与开学准备相关，适合作为近期家庭教育选题储备。",
+    "seasonal_qiba_angle": "七爸写法可从当前家庭最需要的时令问题切入，落到可执行的亲子沟通和学习安排。",
+    "topic_type": "seasonal_recent",
+    "is_evergreen_fallback": false,
+    "exclude_from_top20": false,
+    "stale_risk": "",
+    "summary": "How Google tools can help students and educators this back-to-school season.",
+    "tags": [
+      "教育研究",
+      "科技巨头",
+      "Google",
+      "开学准备"
+    ],
+    "is_seasonal_pick": true,
+    "seasonal_period": "weekly",
+    "week_start": "2026-08-17",
+    "week_end": "2026-08-23"
+  }
+]
