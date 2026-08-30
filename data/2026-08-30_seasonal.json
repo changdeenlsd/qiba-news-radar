@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Back to School 2026",
+    "source": "Google for Education Blog",
+    "url": "https://blog.google/products-and-platforms/products/education/back-to-school-2026/",
+    "published_at": "2026-08-19T19:00:00+00:00",
+    "original_year": "",
+    "seasonal_window": "late_august_september",
+    "theme": "开学准备",
+    "seasonal_topics": [
+      "开学准备"
+    ],
+    "seasonal_score": 73,
+    "priority_score": 46,
+    "content_type": "近期文章",
+    "seasonal_reason": "当前时令窗口是late_august_september，这条内容与开学准备相关，适合作为近期家庭教育选题储备。",
+    "seasonal_qiba_angle": "七爸写法可从当前家庭最需要的时令问题切入，落到可执行的亲子沟通和学习安排。",
+    "topic_type": "seasonal_recent_analysis",
+    "is_evergreen_fallback": false,
+    "exclude_from_top20": false,
+    "stale_risk": "",
+    "summary": "How Google tools can help students and educators this back-to-school season.",
+    "tags": [
+      "教育研究",
+      "科技巨头",
+      "Google",
+      "开学准备"
+    ],
+    "is_seasonal_pick": true,
+    "seasonal_period": "weekly",
+    "week_start": "2026-08-24",
+    "week_end": "2026-08-30"
+  }
+]
