@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-09-10",
+    "top20File": "data/2026-09-10_top20.json",
+    "count": 18,
+    "resourcesFile": "data/2026-09-10_resources.json",
+    "resourcesMarkdownFile": "data/2026-09-10_resources.md",
+    "resourceCount": 0,
+    "seasonalFile": "data/2026-09-10_seasonal.json",
+    "seasonalMarkdownFile": "data/2026-09-10_seasonal.md",
+    "seasonalCount": 1,
+    "totalCount": 473,
+    "duplicateCount": 181
+  },
+  {
     "date": "2026-09-09",
     "top20File": "data/2026-09-09_top20.json",
     "count": 20,
