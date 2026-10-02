@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Smithsonian Learning Lab",
+    "source": "Smithsonian",
+    "url": "https://learninglab.si.edu/",
+    "published_at": null,
+    "original_year": null,
+    "language": "English",
+    "region": "英文世界",
+    "seasonal_window": "october",
+    "theme": "博物馆教育 / 亲子游 / 旅行学习",
+    "seasonal_topics": [
+      "博物馆教育",
+      "亲子游",
+      "旅行学习",
+      "科学/STEM",
+      "项目活动"
+    ],
+    "seasonal_score": 87,
+    "priority_score": 0,
+    "content_type": "经典重读",
+    "topic_type": "seasonal_evergreen_fallback",
+    "is_evergreen_fallback": true,
+    "exclude_from_top20": true,
+    "stale_risk": "low",
+    "seasonal_reason": "暑假亲子游、博物馆学习和家庭项目学习每年都会重新出现。",
+    "seasonal_qiba_angle": "亲子游不一定要赶景点，博物馆真正的用法是让孩子带着一个问题进去。",
+    "summary": "暑假亲子游、博物馆学习和家庭项目学习每年都会重新出现。",
+    "tags": [
+      "博物馆教育",
+      "亲子游",
+      "旅行学习",
+      "科学/STEM",
+      "项目活动"
+    ],
+    "is_seasonal_pick": true,
+    "seasonal_period": "weekly",
+    "week_start": "2026-09-28",
+    "week_end": "2026-10-04"
+  }
+]
