@@ -1,0 +1,39 @@
+[
+  {
+    "title": "What to Do (and Not Do) When Children Are Anxious",
+    "source": "Child Mind Institute",
+    "url": "https://childmind.org/article/what-to-do-and-not-do-when-children-are-anxious/",
+    "published_at": "2025-11-12",
+    "original_year": null,
+    "language": "English",
+    "region": "英文世界",
+    "seasonal_window": "november_december",
+    "theme": "考试焦虑 / 家长陪考 / 亲子沟通",
+    "seasonal_topics": [
+      "考试焦虑",
+      "家长陪考",
+      "亲子沟通",
+      "心理健康"
+    ],
+    "seasonal_score": 90,
+    "priority_score": 0,
+    "content_type": "经典重读",
+    "topic_type": "seasonal_evergreen_fallback",
+    "is_evergreen_fallback": true,
+    "exclude_from_top20": true,
+    "stale_risk": "low",
+    "seasonal_reason": "考试前后，孩子焦虑和父母过度保护每年都会出现，文章原则稳定。",
+    "seasonal_qiba_angle": "期末前，父母最该做的不是替孩子消灭焦虑，而是别把自己的焦虑放大给孩子。",
+    "summary": "考试前后，孩子焦虑和父母过度保护每年都会出现，文章原则稳定。",
+    "tags": [
+      "考试焦虑",
+      "家长陪考",
+      "亲子沟通",
+      "心理健康"
+    ],
+    "is_seasonal_pick": true,
+    "seasonal_period": "weekly",
+    "week_start": "2026-10-26",
+    "week_end": "2026-11-01"
+  }
+]
