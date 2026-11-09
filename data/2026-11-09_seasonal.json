@@ -1,0 +1,97 @@
+[
+  {
+    "title": "Scientists discover hidden brain changes linked to common sleep disorders",
+    "source": "ScienceDaily Mind & Brain",
+    "url": "https://www.sciencedaily.com/releases/2026/11/261104012303.htm",
+    "published_at": "2026-11-08T04:47:52+00:00",
+    "original_year": "",
+    "seasonal_window": "november_december",
+    "theme": "睡眠",
+    "seasonal_topics": [
+      "睡眠"
+    ],
+    "seasonal_score": 60,
+    "priority_score": 40,
+    "content_type": "近期文章",
+    "seasonal_reason": "当前时令窗口是november_december，这条内容与睡眠相关，适合作为近期家庭教育选题储备。",
+    "seasonal_qiba_angle": "七爸写法可从当前家庭最需要的时令问题切入，落到可执行的亲子沟通和学习安排。",
+    "topic_type": "seasonal_recent_analysis",
+    "is_evergreen_fallback": false,
+    "exclude_from_top20": false,
+    "stale_risk": "",
+    "summary": "Scientists have discovered that sleep disorders are associated with structural changes in brain regions that control attention, decision-making, and emotions, potentially explaining why disrupted sleep can affect everyday thinking and behavior. The findings, drawn from 57 brain imaging studies, reve",
+    "tags": [
+      "学习科学"
+    ],
+    "is_seasonal_pick": true,
+    "seasonal_period": "weekly",
+    "week_start": "2026-11-09",
+    "week_end": "2026-11-15"
+  },
+  {
+    "title": "Scientists discover mysterious “lonely” brain waves linked to memory loss",
+    "source": "ScienceDaily Education",
+    "url": "https://www.sciencedaily.com/releases/2026/11/261101010556.htm",
+    "published_at": "2026-11-05T12:50:34+00:00",
+    "original_year": "",
+    "seasonal_window": "november_december",
+    "theme": "睡眠",
+    "seasonal_topics": [
+      "睡眠"
+    ],
+    "seasonal_score": 60,
+    "priority_score": 37,
+    "content_type": "近期文章",
+    "seasonal_reason": "当前时令窗口是november_december，这条内容与睡眠相关，适合作为近期家庭教育选题储备。",
+    "seasonal_qiba_angle": "七爸写法可从当前家庭最需要的时令问题切入，落到可执行的亲子沟通和学习安排。",
+    "topic_type": "seasonal_recent_analysis",
+    "is_evergreen_fallback": false,
+    "exclude_from_top20": false,
+    "stale_risk": "",
+    "summary": "Scientists have uncovered a surprising link between Alzheimer’s-related protein buildup, disrupted brain waves during deep sleep, and fading memory. The findings suggest that hidden changes in how the brain processes memories overnight may contribute to age-related memory loss long before Alzheimer’",
+    "tags": [
+      "学习科学"
+    ],
+    "is_seasonal_pick": true,
+    "seasonal_period": "weekly",
+    "week_start": "2026-11-09",
+    "week_end": "2026-11-15"
+  },
+  {
+    "title": "What to Do (and Not Do) When Children Are Anxious",
+    "source": "Child Mind Institute",
+    "url": "https://childmind.org/article/what-to-do-and-not-do-when-children-are-anxious/",
+    "published_at": "2025-11-12",
+    "original_year": null,
+    "language": "English",
+    "region": "英文世界",
+    "seasonal_window": "november_december",
+    "theme": "考试焦虑 / 家长陪考 / 亲子沟通",
+    "seasonal_topics": [
+      "考试焦虑",
+      "家长陪考",
+      "亲子沟通",
+      "心理健康"
+    ],
+    "seasonal_score": 90,
+    "priority_score": 0,
+    "content_type": "经典重读",
+    "topic_type": "seasonal_evergreen_fallback",
+    "is_evergreen_fallback": true,
+    "exclude_from_top20": true,
+    "stale_risk": "low",
+    "seasonal_reason": "考试前后，孩子焦虑和父母过度保护每年都会出现，文章原则稳定。",
+    "seasonal_qiba_angle": "期末前，父母最该做的不是替孩子消灭焦虑，而是别把自己的焦虑放大给孩子。",
+    "summary": "考试前后，孩子焦虑和父母过度保护每年都会出现，文章原则稳定。",
+    "tags": [
+      "考试焦虑",
+      "家长陪考",
+      "亲子沟通",
+      "心理健康"
+    ],
+    "is_seasonal_pick": true,
+    "seasonal_period": "weekly",
+    "week_start": "2026-11-09",
+    "week_end": "2026-11-15"
+  }
+]
